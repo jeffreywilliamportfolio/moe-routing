@@ -2,6 +2,8 @@
 
 This archive documents one specific failure mode: an apparent MoE routing-entropy hierarchy that later collapsed under token-position controls.
 
+Many file and run names in this archive are preserved from the original work. They are historical labels, not reader-friendly titles. When possible, this README describes them in plain language first and gives the original filename second.
+
 The shortest honest summary is:
 
 - The original DeepSeek hierarchy claims were invalid.
@@ -20,8 +22,8 @@ Some files in `raw/` are preserved exactly because they show what was believed a
 
 1. `NARRATIVE.md` -- short chronology of what was claimed, what broke, and what survived
 2. `CROSS_MODEL_POSITION_CONFOUND.md` -- final evidence file showing the hierarchy disappears under last-token controls
-3. `raw/168q-r1-deepseek-r1/168q-r1_RESULTS.md` -- original R1 headline result as it was written
-4. `raw/r1-28q-1/r1-28q-1_RESULTS.md` -- generation follow-up that exposed a token-count confound
+3. `raw/168q-r1-deepseek-r1/168q-r1_RESULTS.md` -- the original DeepSeek R1 replication writeup, preserved as originally written
+4. `raw/r1-28q-1/r1-28q-1_RESULTS.md` -- the later R1 generation-phase follow-up that first exposed a token-count confound
 5. `MANIFEST.md` -- full file inventory
 
 If you want the recovery-status view first, read `PARTIAL-RESULTS.md`. It lists which runs are fully supported in the archive and which are only partially recoverable from surviving raw artifacts.
@@ -57,13 +59,13 @@ The recalculated files are easier to scan. The raw files are the source of recor
 ## Scope
 
 Core archive:
-- DeepSeek V3.1 hierarchy buildup
-- DeepSeek R1 hierarchy replication
-- R1 generation follow-up
-- Qwen position-control comparison
+- DeepSeek V3.1 prompt-hierarchy buildup
+- DeepSeek R1 replication of that hierarchy claim
+- R1 generation-phase follow-up that exposed a token-count confound
+- Qwen comparison showing the same position confound under a last-token control
 
 Supplemental archive:
-- DeepSeek v2.2 forced-choice and multiseed runs
+- a separate DeepSeek v2.2 forced-choice prompt suite and multiseed runs
 - post-confound methodology notes
 
 Those supplemental files are preserved because they were adjacent in time, but they are not load-bearing for the token-confound claim.

@@ -2,14 +2,22 @@
 
 This file is the chronology. For the final evidence tables, read `CROSS_MODEL_POSITION_CONFOUND.md`. For file inventory, read `MANIFEST.md`.
 
+Historical run names are kept here because they appear in the original files. The important plain-language mapping is:
+
+- `98q-r1`: the earlier 98-prompt DeepSeek V3.1 baseline
+- `14q-r*`: later 14-prompt expansion batches that extended the hierarchy to higher levels
+- `168q-r1`: the full 168-prompt DeepSeek R1 replication
+- `r1-28q-1`: the 28-prompt R1 generation-phase follow-up
+- `ds31-v22-32q-1`: a separate v2.2 forced-choice prompt suite, not the main hierarchy suite
+
 ## One-Paragraph Summary
 
 The original claim was that MoE routing entropy rose with prompt "cognitive complexity" across a 12-level hierarchy. That claim did not survive. The hierarchy was driven by token position: longer prompts contain more late prefill tokens, and later tokens have systematically higher routing entropy. What remains valid is the confound itself. It is reproducible across DeepSeek V3.1, DeepSeek R1, and Qwen 397B, and it matters for any experiment that averages routing entropy across prompts of different lengths.
 
 ## Reading Order
 
-1. `raw/168q-r1-deepseek-r1/168q-r1_RESULTS.md` -- the original claim
-2. `raw/r1-28q-1/r1-28q-1_RESULTS.md` -- generation follow-up, first confound flag
+1. `raw/168q-r1-deepseek-r1/168q-r1_RESULTS.md` -- the original DeepSeek R1 replication claim
+2. `raw/r1-28q-1/r1-28q-1_RESULTS.md` -- the R1 generation-phase follow-up that first raised the confound flag
 3. `CROSS_MODEL_POSITION_CONFOUND.md` -- the hierarchy breaks
 4. `PARTIAL-RESULTS.md` -- independent recomputation from recovered raw data
 5. `MANIFEST.md`
@@ -32,9 +40,9 @@ Note: Nexus-7 was a fictional AI used as a third person control.
 
 ## Timeline
 
-### 1. Generation first looked confounded
+### 1. The first warning appeared in generation-phase results
 
-The earliest DeepSeek V3.1 generation run already showed a token-count problem.
+An earlier 98-prompt DeepSeek V3.1 generation run already showed a token-count problem.
 
 - `98q-r1` generation:
   - RE vs level: `rho=0.1973`, `p=0.051`
@@ -42,9 +50,9 @@ The earliest DeepSeek V3.1 generation run already showed a token-count problem.
 
 At the time, the interpretation was: generation length is contaminating the mean, so switch to prefill-only mode.
 
-### 2. Prefill-only looked like a clean fix, but was not
+### 2. Restricting analysis to prefill looked like a clean fix, but was not
 
-The suite then grew from 98 prompts to 168 prompts across 12 levels, and the headline hierarchy appeared to strengthen monotonically:
+The main prompt suite then grew from 98 prompts to 168 prompts across 12 levels, and the headline hierarchy appeared to strengthen monotonically:
 
 | Cumulative prompts | Levels | rho (RE vs level) | Added by |
 |--------------------|--------|-------------------|----------|
@@ -55,7 +63,7 @@ The suite then grew from 98 prompts to 168 prompts across 12 levels, and the hea
 | 154 | L1-L11 | 0.8165 | `14q-r4` |
 | 168 | L1-L12 | 0.8517 | `14q-r5` |
 
-Independent DeepSeek R1 replication seemed to confirm it:
+An independent DeepSeek R1 replication seemed to confirm it:
 
 | Run | Levels | rho (RE vs level) |
 |-----|--------|-------------------|
@@ -63,11 +71,11 @@ Independent DeepSeek R1 replication seemed to confirm it:
 
 This was the point where the hierarchy looked strongest and most convincing.
 
-### 3. The actual failure mode
+### 3. What actually went wrong
 
 The key miss was assuming prefill-only averaging was position-invariant. It is not.
 
-In the R1 168q prefill run:
+In the full 168-prompt R1 prefill replication:
 - RE vs level: `rho=0.8360`, `p=3.91e-45`
 - RE vs token count: `rho=0.8589`, `p=4.05e-50`
 
@@ -84,9 +92,9 @@ The decisive move was to compare all-token mean RE against last-token RE.
 
 Last-token RE removes the positional averaging confound by construction. Under that control, the hierarchy disappears in both models.
 
-### 5. Partial raw recovery shows the same caution on a different prompt suite
+### 5. A separate prompt suite shows the same need for caution
 
-Raw router captures from `ds31-v22-32q-1` were recovered from an external SSD (17 of 32 prompts, L1-L3 only, v2.2 choice-format prompts). These are longer, more uniform prompts (227-245 tokens) from a different suite than the 12-level hierarchy: structured operational triage prompts with tightly controlled wording and JSON-output instructions. Recomputed from `.npy` files:
+Raw router captures from a different DeepSeek V3.1 prompt suite were recovered from an external SSD (17 of 32 prompts, L1-L3 only, v2.2 choice-format prompts). These are longer, more uniform prompts (227-245 tokens) than the main hierarchy suite: structured operational triage prompts with tightly controlled wording and JSON-output instructions. Recomputed from `.npy` files:
 
 | Metric pair | rho | p |
 |-------------|-----|---|

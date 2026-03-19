@@ -1,6 +1,8 @@
-# ds31-v22-32q-1 Partial Raw Recovery
+# Partial Raw Recovery for the v2.2 Forced-Choice Prompt Suite
 
-This is a partial raw recomputation from `/Volumes/ExternalSSD/llama-eeg-tests/ds31-v22-32q-1/output`.
+This file describes a partial raw recomputation from `/Volumes/ExternalSSD/llama-eeg-tests/ds31-v22-32q-1/output`.
+
+This prompt suite is not the main 12-level hierarchy suite discussed elsewhere in the archive. It is a separate DeepSeek V3.1 forced-choice prompt set built around operational triage cases with tightly templated JSON answers.
 
 What was recoverable:
 - complete prompts with raw router capture: `17`
@@ -14,6 +16,11 @@ Coverage:
 - recovered prompt IDs: `L1_A1, L1_A2, L1_B1, L1_B2, L1_C1, L1_C2, L1_D1, L1_D2, L2_A1, L2_A2, L2_B1, L2_B2, L2_C1, L2_C2, L2_D1, L2_D2, L3_A1`
 - broken prompt IDs: `L3_A2`
 - missing prompt IDs: `L3_B1, L3_B2, L3_C1, L3_C2, L3_D1, L3_D2, L4_A1, L4_A2, L4_B1, L4_B2, L4_C1, L4_C2, L4_D1, L4_D2`
+
+Plain-language summary:
+- the surviving subset covers only the first three rule-complexity levels
+- almost all of the recoverable prompts are narrow variants of the same operational triage template
+- this is therefore a recovery note and robustness check, not a standalone headline result
 
 ## Per-Level Summary
 

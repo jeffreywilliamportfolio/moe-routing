@@ -2,6 +2,8 @@
 
 This file is the final evidence summary. It is not the chronology and it is not a file inventory. For the story of how the confound was discovered, read `NARRATIVE.md`. For archive structure, read `MANIFEST.md`.
 
+The run names referenced here are historical labels from the original experiments. The key point is simple: both the original DeepSeek hierarchy suite and the later DeepSeek R1 replication collapsed once the metric was controlled for token position.
+
 ## Summary
 
 The 12-level complexity hierarchy previously reported on DeepSeek V3.1 (rho=0.80) and Qwen 397B (rho=0.62) is **entirely explained by prompt token count** in both models. When the metric is changed from all-token mean to last-token routing entropy -- eliminating the positional confound -- the hierarchy vanishes in both cases.
@@ -133,7 +135,7 @@ Qwen concentrates its last-token RE in a tighter band (~1.4% range) compared to 
 
 ## Implications
 
-1. **All prior hierarchy results are invalidated.** The rho=0.8360 on DeepSeek R1 168q and rho=0.4994-0.7975 on DeepSeek V3.1 14q-rN series were driven by token count, not cognitive complexity.
+1. **All prior hierarchy results are invalidated.** Both the full DeepSeek R1 replication and the earlier DeepSeek V3.1 hierarchy-expansion runs were driven by token count, not cognitive complexity.
 
 2. **Prefill-only mode did NOT eliminate the confound.** CLAUDE.md states "switching to prefill-only removed this entirely" -- this is incorrect. Prefill-only eliminated the generation-length confound but NOT the within-prefill positional confound.
 
@@ -167,17 +169,10 @@ Qwen concentrates its last-token RE in a tighter band (~1.4% range) compared to 
 
 ## Data Files
 
-Source data lives in the parent repo `experiments/` directory:
-- `experiments/ds31-168q-1/results_168q_ds31_prefill.json` -- DeepSeek V3.1 full results
-- `experiments/ds31-168q-1/experiment.log` -- DeepSeek V3.1 raw output (ground truth)
-- `experiments/qwen-168q-1/results_168q_qwen_prefill.json` -- Qwen 397B full results
-- `experiments/qwen-168q-1/experiment.log` -- Qwen 397B raw output (ground truth)
-- `experiments/position-diagnostic/diagnostic_results.json` -- Per-token entropy curves (5 prompts, Qwen)
-
-Recalculated copies within this archive:
-- `data/ds31-168q-1_prefill.*` -- V3.1 168q recalculated summary
-- `data/qwen-168q-1_run1.*`, `data/qwen-168q-1_run2.*` -- Qwen recalculated summaries
-- `data/diagnostic_results.json` -- position diagnostic data
+Within this archive, the relevant recalculated copies are:
+- `data/ds31-168q-1_prefill.*` -- recalculated DeepSeek V3.1 full-suite summary
+- `data/qwen-168q-1_run1.*`, `data/qwen-168q-1_run2.*` -- recalculated Qwen full-suite summaries
+- `data/diagnostic_results.json` -- per-token position diagnostic data
 
 ## Figures
 
