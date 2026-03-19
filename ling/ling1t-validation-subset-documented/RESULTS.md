@@ -2,19 +2,13 @@
 
 Generated 2026-03-19T00:46:20.378299+00:00 from preserved Ling-1T validation artifacts. Machine-readable companion: `results_validation_probes.json`.
 
-This file is the validation-probe report for `/Volumes/ExternalSSD/llama-eeg-tests/ling1t-5cond-validation`.
-
-It is not the result report for the intended full `150`-prompt Ling-1T 5-condition rerun in this folder.
-
-The known completed full `150`-prompt capture currently lives in `experiments/ling1t-5cond-1/`, while this file summarizes the preserved `12` validation probes only.
+This file is the validation-probe report for the analyzed Ling-1T subset from `/Volumes/ExternalSSD/llama-eeg-tests/ling1t-5cond-validation`.
 
 ## Scope
 
 - Artifacts root: `/Volumes/ExternalSSD/llama-eeg-tests/ling1t-5cond-validation`
-- Preserved one-off probes with metadata: `12`
+- Analyzed prompts: `6`
 - Full exact router bundles analyzed: `6`
-- Metadata-only preserved probes: `6`
-- Intended full rerun prompt count for this experiment family: `150`
 - All runs were prefill-only (`n_tokens_generated = 0`).
 - Exact Ling routing metrics use `ffn_moe_weights_norm-*` + `ffn_moe_topk-*`, reconstructed into a sparse 256-expert simplex.
 

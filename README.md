@@ -11,7 +11,7 @@ The repo is not a single uniform framework. It is a bundle-of-bundles: each subf
 - [deepseek/ds31-5cond-1](/Users/jeffreyshorthill/moe-routing/deepseek/ds31-5cond-1): DeepSeek 5-condition self-reference run
 - [gptoss/gptoss-5cond-1](/Users/jeffreyshorthill/moe-routing/gptoss/gptoss-5cond-1): GPT-OSS five-condition self-reference run
 - [gptoss/gptoss-strangeloop-paired-1](/Users/jeffreyshorthill/moe-routing/gptoss/gptoss-strangeloop-paired-1): GPT-OSS strange-loop paired control run
-- [ling/ling1t-validation-subset-documented](/Users/jeffreyshorthill/moe-routing/ling/ling1t-validation-subset-documented): Ling-1T documented validation subset with reports for 12 preserved prompts and expert analysis for the 6 exact-tensor prompts
+- [ling/ling1t-validation-subset-documented](/Users/jeffreyshorthill/moe-routing/ling/ling1t-validation-subset-documented): Ling-1T documented validation subset with analysis for 6 prompts
 - [REPRODUCIBILITY.md](/Users/jeffreyshorthill/moe-routing/REPRODUCIBILITY.md): repo-level reproducibility rubric and status summary
 
 ## What Is In A Run Folder

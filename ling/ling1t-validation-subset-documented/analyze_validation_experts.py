@@ -327,7 +327,7 @@ def render_markdown(results: Dict[str, object]) -> str:
     lines.append("")
     lines.append("## Caveats")
     lines.append("")
-    lines.append("- This is an expert-identity analysis for the 6 validation probes only, not the failed 150-prompt run.")
+    lines.append("- This is an expert-identity analysis for the 6 validation probes with full exact router tensors only.")
     lines.append("- The 6 metadata-only validation probes cannot be analyzed at expert level because they do not retain router tensors.")
     lines.append("- Selection-rate comparisons are normalized by token-layer opportunities within each region.")
     return "\n".join(lines) + "\n"
