@@ -137,7 +137,7 @@ Qwen concentrates its last-token RE in a tighter band (~1.4% range) compared to 
 
 1. **All prior hierarchy results are invalidated.** Both the full DeepSeek R1 replication and the earlier DeepSeek V3.1 hierarchy-expansion runs were driven by token count, not cognitive complexity.
 
-2. **Prefill-only mode did NOT eliminate the confound.** CLAUDE.md states "switching to prefill-only removed this entirely" -- this is incorrect. Prefill-only eliminated the generation-length confound but NOT the within-prefill positional confound.
+2. **Prefill-only mode did NOT eliminate the confound.** An earlier project-root note stated that switching to prefill-only had removed the confound entirely. That was incorrect. Prefill-only eliminated the generation-length confound but NOT the within-prefill positional confound.
 
 3. **Last-token RE should be the primary prefill metric** for any future experiments comparing prompts of different lengths.
 

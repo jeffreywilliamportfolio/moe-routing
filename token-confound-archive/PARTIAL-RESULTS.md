@@ -76,10 +76,10 @@ From the partial raw recomputation:
 
 Subset-only correlations:
 
-- all-token RE vs level: `rho=-0.5789612716571944`, `p=0.014883237910398958`
-- last-token RE vs level: `rho=0.5817116814987962`, `p=0.014303952465020758`
-- all-token RE vs prompt tokens: `rho=-0.6572042169844519`, `p=0.004148429286056417`
-- last-token RE vs prompt tokens: `rho=0.5901172080673245`, `p=0.012643058728660776`
+- all-token RE vs level: `rho=-0.5790`, `p=0.0149`
+- last-token RE vs level: `rho=0.5817`, `p=0.0143`
+- all-token RE vs prompt tokens: `rho=-0.6572`, `p=0.0041`
+- last-token RE vs prompt tokens: `rho=0.5901`, `p=0.0126`
 
 These should not be treated as the result for the full v2.2 run. They are statistics on the recoverable subset only.
 
