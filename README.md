@@ -49,7 +49,7 @@ See [REPRODUCIBILITY.md](/Users/jeffreyshorthill/moe-routing/REPRODUCIBILITY.md)
 
 If you want the strongest bundles first, start with the Qwen folders. Those are the closest to clean rerun packages.
 
-If you want the Ling material, use [ling/ling1t-validation-subset-documented](/Users/jeffreyshorthill/moe-routing/ling/ling1t-validation-subset-documented) as the canonical Ling directory in this repo. It is a documented validation subset, not a full rerun bundle. The removed `ling1t-test-run` copy was a near-duplicate working fork and is not part of the tracked repo contents anymore.
+If you want the Ling material, use [ling/ling1t-validation-subset-documented](/Users/jeffreyshorthill/moe-routing/ling/ling1t-validation-subset-documented) as the canonical Ling directory in this repo. It is a documented validation subset, not a full rerun bundle.
 
 If you want to audit a run quickly:
 
