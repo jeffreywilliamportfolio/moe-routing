@@ -45,6 +45,7 @@ Typical reasons:
 
 | Folder | Status | Notes |
 |---|---|---|
+| `qwen/qwen35b-a3b-vs-hauhaucs-uncensored-run1` | `Reproducible` | Prompt suite, corrected TSV, run and analysis scripts, result JSONs, bundle README/RESULTS/PLAN, and duplicate reproducibility artifacts are all checked in. The corrected base run is explicitly re-proven by an exact duplicate rerun; the retrained comparison run is documented but not separately duplicated. |
 | `qwen/qwen397b-selfref-5cond-q8_0-run1` | `Reproducible` | Strongest checked-in bundle: model/quant documented, wrapper preserved, prompt suite + TSV preserved, run and analysis scripts present, result JSON present, `experiment.log` present, and `reproducibility_manifest.json` checksums core files. |
 | `qwen/qwen397b-strangeloop-5cond-ud_iq3_xxs-run1` | `Reproducible` | Same general standard as the Qwen self-ref run: prompt/TSV/scripts/results/log preserved and checksum manifest present. |
 | `deepseek/ds31-5cond-1` | `Auditable but not reproducible` | Methodology is documented well and logs/results are present, but exact build provenance is not preserved as cleanly as it should be for a no-guess rerun package. |

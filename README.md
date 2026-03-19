@@ -1,5 +1,7 @@
 # moe-routing
 
+> Update 2026-03-19: Added [`qwen/qwen35b-a3b-vs-hauhaucs-uncensored-run1/`](./qwen/qwen35b-a3b-vs-hauhaucs-uncensored-run1/), the Qwen3.5-35B-A3B vs HauhauCS uncensored prefill-routing comparison bundle with corrected base/retrained result JSONs, exact corrected-base duplicate reproduction, and full bundle documentation.
+>
 > Update 2026-03-19: Added [`token-confound-archive/`](./token-confound-archive/), a preserved DeepSeek/Qwen token-position confound bundle that keeps the original mistaken hierarchy writeups, the corrected cross-model analysis, and the partial raw recovery material together in one auditable folder.
 
 This repository collects preserved routing-analysis experiment bundles for several large MoE models. Each run folder contains the prompt suite, wrapper logic, capture/analysis scripts, preserved results, and whatever logs or raw artifacts were checked in for that run.
@@ -11,6 +13,7 @@ The top-level `token-confound-archive/` is slightly different from the single-ru
 ## Repo Layout
 
 - [token-confound-archive](./token-confound-archive/): curated archive of the DeepSeek/Qwen token-position confound investigation, including corrected interpretation and preserved historical artifacts
+- [qwen/qwen35b-a3b-vs-hauhaucs-uncensored-run1](./qwen/qwen35b-a3b-vs-hauhaucs-uncensored-run1/): Qwen 35B vs HauhauCS uncensored prefill routing comparison with exact corrected-base duplicate reproduction
 - [qwen/qwen397b-selfref-5cond-q8_0-run1](./qwen/qwen397b-selfref-5cond-q8_0-run1/): Qwen 3.5 397B self-referential five-condition run
 - [qwen/qwen397b-strangeloop-5cond-ud_iq3_xxs-run1](./qwen/qwen397b-strangeloop-5cond-ud_iq3_xxs-run1/): Qwen strange-loop control run
 - [deepseek/ds31-5cond-1](./deepseek/ds31-5cond-1/): DeepSeek 5-condition self-reference run
@@ -39,6 +42,7 @@ The folders are not normalized yet. Some are close to self-contained rerun packa
 Current repo-level judgment:
 
 - `Reproducible`
+  - [qwen/qwen35b-a3b-vs-hauhaucs-uncensored-run1](./qwen/qwen35b-a3b-vs-hauhaucs-uncensored-run1/)
   - [qwen/qwen397b-selfref-5cond-q8_0-run1](./qwen/qwen397b-selfref-5cond-q8_0-run1/)
   - [qwen/qwen397b-strangeloop-5cond-ud_iq3_xxs-run1](./qwen/qwen397b-strangeloop-5cond-ud_iq3_xxs-run1/)
 - `Auditable but not reproducible`
