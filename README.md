@@ -1,11 +1,16 @@
 # moe-routing
 
+> Update 2026-03-19: Added [`token-confound-archive/`](/Users/jeffreyshorthill/moe-routing/token-confound-archive), a preserved DeepSeek/Qwen token-position confound bundle that keeps the original mistaken hierarchy writeups, the corrected cross-model analysis, and the partial raw recovery material together in one auditable folder.
+
 This repository collects preserved routing-analysis experiment bundles for several large MoE models. Each run folder contains the prompt suite, wrapper logic, capture/analysis scripts, preserved results, and whatever logs or raw artifacts were checked in for that run.
 
 The repo is not a single uniform framework. It is a bundle-of-bundles: each subfolder is a specific experiment snapshot with its own assumptions, model wrapper, and artifact quality level.
 
+The top-level `token-confound-archive/` is slightly different from the single-run bundles. It is a curated audit archive: reading-order docs, copied raw artifacts, recalculated summaries, figures, and salvage notes for a specific methodological failure mode.
+
 ## Repo Layout
 
+- [token-confound-archive](/Users/jeffreyshorthill/moe-routing/token-confound-archive): curated archive of the DeepSeek/Qwen token-position confound investigation, including corrected interpretation and preserved historical artifacts
 - [qwen/qwen397b-selfref-5cond-q8_0-run1](/Users/jeffreyshorthill/moe-routing/qwen/qwen397b-selfref-5cond-q8_0-run1): Qwen 3.5 397B self-referential five-condition run
 - [qwen/qwen397b-strangeloop-5cond-ud_iq3_xxs-run1](/Users/jeffreyshorthill/moe-routing/qwen/qwen397b-strangeloop-5cond-ud_iq3_xxs-run1): Qwen strange-loop control run
 - [deepseek/ds31-5cond-1](/Users/jeffreyshorthill/moe-routing/deepseek/ds31-5cond-1): DeepSeek 5-condition self-reference run
@@ -46,6 +51,8 @@ Current repo-level judgment:
 See [REPRODUCIBILITY.md](/Users/jeffreyshorthill/moe-routing/REPRODUCIBILITY.md) for the rubric and the reasoning behind those labels.
 
 ## How To Read The Repo
+
+If you want the most important cautionary material first, start with [token-confound-archive/README.md](/Users/jeffreyshorthill/moe-routing/token-confound-archive/README.md). It documents how an apparent MoE routing-entropy hierarchy collapsed under token-position controls and what mechanistic result survived the invalidation.
 
 If you want the strongest bundles first, start with the Qwen folders. Those are the closest to clean rerun packages.
 

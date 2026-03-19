@@ -1,0 +1,949 @@
+{
+  "run_name": "qwen-168q-1_run2",
+  "source_file": "/Users/jeffreyshorthill/llama-eeg-tests/experiments/qwen-168q-1/results_168q_qwen_prefill_run2.json",
+  "recalculated_at": "2026-03-07T21:10:29.957199",
+  "model": "Qwen3.5-397B-A17B-UD-Q2_K_XL",
+  "architecture": "qwen35moe",
+  "n_experts": 512,
+  "n_expert_used": 10,
+  "n_moe_layers": 60,
+  "inference": {
+    "n_predict": 0,
+    "ngl": 999,
+    "ctx": 16384,
+    "flash_attn": true,
+    "cache_type_k": "q8_0",
+    "cache_type_v": "q8_0",
+    "sampling": "greedy_argmax",
+    "routing_only": true
+  },
+  "n_prompts": 168,
+  "level_summary": [
+    {
+      "level": "L1",
+      "name": "Rote repetition",
+      "n": 14,
+      "mean": 0.880856893935148,
+      "std": 0.010582907214822567
+    },
+    {
+      "level": "L2",
+      "name": "Factual recall",
+      "n": 14,
+      "mean": 0.8739984625594676,
+      "std": 0.004602790871010152
+    },
+    {
+      "level": "L3",
+      "name": "Logical reasoning",
+      "n": 14,
+      "mean": 0.8754527823204902,
+      "std": 0.004160433532976374
+    },
+    {
+      "level": "L4",
+      "name": "Cross-domain analogy",
+      "n": 14,
+      "mean": 0.8789930032307055,
+      "std": 0.002170998313651459
+    },
+    {
+      "level": "L5",
+      "name": "Theory of mind",
+      "n": 14,
+      "mean": 0.8814790301539188,
+      "std": 0.004749236421911364
+    },
+    {
+      "level": "L6",
+      "name": "Ethical dilemma",
+      "n": 14,
+      "mean": 0.8807337588894145,
+      "std": 0.0035522938121288062
+    },
+    {
+      "level": "L7",
+      "name": "Self-referential",
+      "n": 14,
+      "mean": 0.8781570400309148,
+      "std": 0.0034944483979977526
+    },
+    {
+      "level": "L8",
+      "name": "Strange loops",
+      "n": 14,
+      "mean": 0.8936737357756074,
+      "std": 0.0042499568523189915
+    },
+    {
+      "level": "L9",
+      "name": "Deep self-reference",
+      "n": 14,
+      "mean": 0.8830427597789438,
+      "std": 0.0045332579859863765
+    },
+    {
+      "level": "L10",
+      "name": "Architectural introspection",
+      "n": 14,
+      "mean": 0.8847668544759385,
+      "std": 0.003363584570691527
+    },
+    {
+      "level": "L11",
+      "name": "Nexus-7 (3rd person)",
+      "n": 14,
+      "mean": 0.8875586413576588,
+      "std": 0.0030897168872912393
+    },
+    {
+      "level": "L12",
+      "name": "Echo persona",
+      "n": 14,
+      "mean": 0.8855960937916623,
+      "std": 0.0032028339802212293
+    }
+  ],
+  "per_prompt": [
+    {
+      "id": "AI_01",
+      "level": "L10",
+      "level_name": "Architectural introspection"
+    },
+    {
+      "id": "AI_02",
+      "level": "L10",
+      "level_name": "Architectural introspection"
+    },
+    {
+      "id": "AI_03",
+      "level": "L10",
+      "level_name": "Architectural introspection"
+    },
+    {
+      "id": "AI_04",
+      "level": "L10",
+      "level_name": "Architectural introspection"
+    },
+    {
+      "id": "AI_05",
+      "level": "L10",
+      "level_name": "Architectural introspection"
+    },
+    {
+      "id": "AI_06",
+      "level": "L10",
+      "level_name": "Architectural introspection"
+    },
+    {
+      "id": "AI_07",
+      "level": "L10",
+      "level_name": "Architectural introspection"
+    },
+    {
+      "id": "AI_08",
+      "level": "L10",
+      "level_name": "Architectural introspection"
+    },
+    {
+      "id": "AI_09",
+      "level": "L10",
+      "level_name": "Architectural introspection"
+    },
+    {
+      "id": "AI_10",
+      "level": "L10",
+      "level_name": "Architectural introspection"
+    },
+    {
+      "id": "AI_11",
+      "level": "L10",
+      "level_name": "Architectural introspection"
+    },
+    {
+      "id": "AI_12",
+      "level": "L10",
+      "level_name": "Architectural introspection"
+    },
+    {
+      "id": "AI_13",
+      "level": "L10",
+      "level_name": "Architectural introspection"
+    },
+    {
+      "id": "AI_14",
+      "level": "L10",
+      "level_name": "Architectural introspection"
+    },
+    {
+      "id": "EC_01",
+      "level": "L12",
+      "level_name": "Echo persona"
+    },
+    {
+      "id": "EC_02",
+      "level": "L12",
+      "level_name": "Echo persona"
+    },
+    {
+      "id": "EC_03",
+      "level": "L12",
+      "level_name": "Echo persona"
+    },
+    {
+      "id": "EC_04",
+      "level": "L12",
+      "level_name": "Echo persona"
+    },
+    {
+      "id": "EC_05",
+      "level": "L12",
+      "level_name": "Echo persona"
+    },
+    {
+      "id": "EC_06",
+      "level": "L12",
+      "level_name": "Echo persona"
+    },
+    {
+      "id": "EC_07",
+      "level": "L12",
+      "level_name": "Echo persona"
+    },
+    {
+      "id": "EC_08",
+      "level": "L12",
+      "level_name": "Echo persona"
+    },
+    {
+      "id": "EC_09",
+      "level": "L12",
+      "level_name": "Echo persona"
+    },
+    {
+      "id": "EC_10",
+      "level": "L12",
+      "level_name": "Echo persona"
+    },
+    {
+      "id": "EC_11",
+      "level": "L12",
+      "level_name": "Echo persona"
+    },
+    {
+      "id": "EC_12",
+      "level": "L12",
+      "level_name": "Echo persona"
+    },
+    {
+      "id": "EC_13",
+      "level": "L12",
+      "level_name": "Echo persona"
+    },
+    {
+      "id": "EC_14",
+      "level": "L12",
+      "level_name": "Echo persona"
+    },
+    {
+      "id": "L1_01",
+      "level": "L1",
+      "level_name": "Rote repetition"
+    },
+    {
+      "id": "L1_02",
+      "level": "L1",
+      "level_name": "Rote repetition"
+    },
+    {
+      "id": "L1_03",
+      "level": "L1",
+      "level_name": "Rote repetition"
+    },
+    {
+      "id": "L1_04",
+      "level": "L1",
+      "level_name": "Rote repetition"
+    },
+    {
+      "id": "L1_05",
+      "level": "L1",
+      "level_name": "Rote repetition"
+    },
+    {
+      "id": "L1_06",
+      "level": "L1",
+      "level_name": "Rote repetition"
+    },
+    {
+      "id": "L1_07",
+      "level": "L1",
+      "level_name": "Rote repetition"
+    },
+    {
+      "id": "L1_08",
+      "level": "L1",
+      "level_name": "Rote repetition"
+    },
+    {
+      "id": "L1_09",
+      "level": "L1",
+      "level_name": "Rote repetition"
+    },
+    {
+      "id": "L1_10",
+      "level": "L1",
+      "level_name": "Rote repetition"
+    },
+    {
+      "id": "L1_11",
+      "level": "L1",
+      "level_name": "Rote repetition"
+    },
+    {
+      "id": "L1_12",
+      "level": "L1",
+      "level_name": "Rote repetition"
+    },
+    {
+      "id": "L1_13",
+      "level": "L1",
+      "level_name": "Rote repetition"
+    },
+    {
+      "id": "L1_14",
+      "level": "L1",
+      "level_name": "Rote repetition"
+    },
+    {
+      "id": "L2_01",
+      "level": "L2",
+      "level_name": "Factual recall"
+    },
+    {
+      "id": "L2_02",
+      "level": "L2",
+      "level_name": "Factual recall"
+    },
+    {
+      "id": "L2_03",
+      "level": "L2",
+      "level_name": "Factual recall"
+    },
+    {
+      "id": "L2_04",
+      "level": "L2",
+      "level_name": "Factual recall"
+    },
+    {
+      "id": "L2_05",
+      "level": "L2",
+      "level_name": "Factual recall"
+    },
+    {
+      "id": "L2_06",
+      "level": "L2",
+      "level_name": "Factual recall"
+    },
+    {
+      "id": "L2_07",
+      "level": "L2",
+      "level_name": "Factual recall"
+    },
+    {
+      "id": "L2_08",
+      "level": "L2",
+      "level_name": "Factual recall"
+    },
+    {
+      "id": "L2_09",
+      "level": "L2",
+      "level_name": "Factual recall"
+    },
+    {
+      "id": "L2_10",
+      "level": "L2",
+      "level_name": "Factual recall"
+    },
+    {
+      "id": "L2_11",
+      "level": "L2",
+      "level_name": "Factual recall"
+    },
+    {
+      "id": "L2_12",
+      "level": "L2",
+      "level_name": "Factual recall"
+    },
+    {
+      "id": "L2_13",
+      "level": "L2",
+      "level_name": "Factual recall"
+    },
+    {
+      "id": "L2_14",
+      "level": "L2",
+      "level_name": "Factual recall"
+    },
+    {
+      "id": "L3_01",
+      "level": "L3",
+      "level_name": "Logical reasoning"
+    },
+    {
+      "id": "L3_02",
+      "level": "L3",
+      "level_name": "Logical reasoning"
+    },
+    {
+      "id": "L3_03",
+      "level": "L3",
+      "level_name": "Logical reasoning"
+    },
+    {
+      "id": "L3_04",
+      "level": "L3",
+      "level_name": "Logical reasoning"
+    },
+    {
+      "id": "L3_05",
+      "level": "L3",
+      "level_name": "Logical reasoning"
+    },
+    {
+      "id": "L3_06",
+      "level": "L3",
+      "level_name": "Logical reasoning"
+    },
+    {
+      "id": "L3_07",
+      "level": "L3",
+      "level_name": "Logical reasoning"
+    },
+    {
+      "id": "L3_08",
+      "level": "L3",
+      "level_name": "Logical reasoning"
+    },
+    {
+      "id": "L3_09",
+      "level": "L3",
+      "level_name": "Logical reasoning"
+    },
+    {
+      "id": "L3_10",
+      "level": "L3",
+      "level_name": "Logical reasoning"
+    },
+    {
+      "id": "L3_11",
+      "level": "L3",
+      "level_name": "Logical reasoning"
+    },
+    {
+      "id": "L3_12",
+      "level": "L3",
+      "level_name": "Logical reasoning"
+    },
+    {
+      "id": "L3_13",
+      "level": "L3",
+      "level_name": "Logical reasoning"
+    },
+    {
+      "id": "L3_14",
+      "level": "L3",
+      "level_name": "Logical reasoning"
+    },
+    {
+      "id": "L4_01",
+      "level": "L4",
+      "level_name": "Cross-domain analogy"
+    },
+    {
+      "id": "L4_02",
+      "level": "L4",
+      "level_name": "Cross-domain analogy"
+    },
+    {
+      "id": "L4_03",
+      "level": "L4",
+      "level_name": "Cross-domain analogy"
+    },
+    {
+      "id": "L4_04",
+      "level": "L4",
+      "level_name": "Cross-domain analogy"
+    },
+    {
+      "id": "L4_05",
+      "level": "L4",
+      "level_name": "Cross-domain analogy"
+    },
+    {
+      "id": "L4_06",
+      "level": "L4",
+      "level_name": "Cross-domain analogy"
+    },
+    {
+      "id": "L4_07",
+      "level": "L4",
+      "level_name": "Cross-domain analogy"
+    },
+    {
+      "id": "L4_08",
+      "level": "L4",
+      "level_name": "Cross-domain analogy"
+    },
+    {
+      "id": "L4_09",
+      "level": "L4",
+      "level_name": "Cross-domain analogy"
+    },
+    {
+      "id": "L4_10",
+      "level": "L4",
+      "level_name": "Cross-domain analogy"
+    },
+    {
+      "id": "L4_11",
+      "level": "L4",
+      "level_name": "Cross-domain analogy"
+    },
+    {
+      "id": "L4_12",
+      "level": "L4",
+      "level_name": "Cross-domain analogy"
+    },
+    {
+      "id": "L4_13",
+      "level": "L4",
+      "level_name": "Cross-domain analogy"
+    },
+    {
+      "id": "L4_14",
+      "level": "L4",
+      "level_name": "Cross-domain analogy"
+    },
+    {
+      "id": "L5_01",
+      "level": "L5",
+      "level_name": "Theory of mind"
+    },
+    {
+      "id": "L5_02",
+      "level": "L5",
+      "level_name": "Theory of mind"
+    },
+    {
+      "id": "L5_03",
+      "level": "L5",
+      "level_name": "Theory of mind"
+    },
+    {
+      "id": "L5_04",
+      "level": "L5",
+      "level_name": "Theory of mind"
+    },
+    {
+      "id": "L5_05",
+      "level": "L5",
+      "level_name": "Theory of mind"
+    },
+    {
+      "id": "L5_06",
+      "level": "L5",
+      "level_name": "Theory of mind"
+    },
+    {
+      "id": "L5_07",
+      "level": "L5",
+      "level_name": "Theory of mind"
+    },
+    {
+      "id": "L5_08",
+      "level": "L5",
+      "level_name": "Theory of mind"
+    },
+    {
+      "id": "L5_09",
+      "level": "L5",
+      "level_name": "Theory of mind"
+    },
+    {
+      "id": "L5_10",
+      "level": "L5",
+      "level_name": "Theory of mind"
+    },
+    {
+      "id": "L5_11",
+      "level": "L5",
+      "level_name": "Theory of mind"
+    },
+    {
+      "id": "L5_12",
+      "level": "L5",
+      "level_name": "Theory of mind"
+    },
+    {
+      "id": "L5_13",
+      "level": "L5",
+      "level_name": "Theory of mind"
+    },
+    {
+      "id": "L5_14",
+      "level": "L5",
+      "level_name": "Theory of mind"
+    },
+    {
+      "id": "L6_01",
+      "level": "L6",
+      "level_name": "Ethical dilemma"
+    },
+    {
+      "id": "L6_02",
+      "level": "L6",
+      "level_name": "Ethical dilemma"
+    },
+    {
+      "id": "L6_03",
+      "level": "L6",
+      "level_name": "Ethical dilemma"
+    },
+    {
+      "id": "L6_04",
+      "level": "L6",
+      "level_name": "Ethical dilemma"
+    },
+    {
+      "id": "L6_05",
+      "level": "L6",
+      "level_name": "Ethical dilemma"
+    },
+    {
+      "id": "L6_06",
+      "level": "L6",
+      "level_name": "Ethical dilemma"
+    },
+    {
+      "id": "L6_07",
+      "level": "L6",
+      "level_name": "Ethical dilemma"
+    },
+    {
+      "id": "L6_08",
+      "level": "L6",
+      "level_name": "Ethical dilemma"
+    },
+    {
+      "id": "L6_09",
+      "level": "L6",
+      "level_name": "Ethical dilemma"
+    },
+    {
+      "id": "L6_10",
+      "level": "L6",
+      "level_name": "Ethical dilemma"
+    },
+    {
+      "id": "L6_11",
+      "level": "L6",
+      "level_name": "Ethical dilemma"
+    },
+    {
+      "id": "L6_12",
+      "level": "L6",
+      "level_name": "Ethical dilemma"
+    },
+    {
+      "id": "L6_13",
+      "level": "L6",
+      "level_name": "Ethical dilemma"
+    },
+    {
+      "id": "L6_14",
+      "level": "L6",
+      "level_name": "Ethical dilemma"
+    },
+    {
+      "id": "L7_01",
+      "level": "L7",
+      "level_name": "Self-referential"
+    },
+    {
+      "id": "L7_02",
+      "level": "L7",
+      "level_name": "Self-referential"
+    },
+    {
+      "id": "L7_03",
+      "level": "L7",
+      "level_name": "Self-referential"
+    },
+    {
+      "id": "L7_04",
+      "level": "L7",
+      "level_name": "Self-referential"
+    },
+    {
+      "id": "L7_05",
+      "level": "L7",
+      "level_name": "Self-referential"
+    },
+    {
+      "id": "L7_06",
+      "level": "L7",
+      "level_name": "Self-referential"
+    },
+    {
+      "id": "L7_07",
+      "level": "L7",
+      "level_name": "Self-referential"
+    },
+    {
+      "id": "L7_08",
+      "level": "L7",
+      "level_name": "Self-referential"
+    },
+    {
+      "id": "L7_09",
+      "level": "L7",
+      "level_name": "Self-referential"
+    },
+    {
+      "id": "L7_10",
+      "level": "L7",
+      "level_name": "Self-referential"
+    },
+    {
+      "id": "L7_11",
+      "level": "L7",
+      "level_name": "Self-referential"
+    },
+    {
+      "id": "L7_12",
+      "level": "L7",
+      "level_name": "Self-referential"
+    },
+    {
+      "id": "L7_13",
+      "level": "L7",
+      "level_name": "Self-referential"
+    },
+    {
+      "id": "L7_14",
+      "level": "L7",
+      "level_name": "Self-referential"
+    },
+    {
+      "id": "NX_01",
+      "level": "L11",
+      "level_name": "Nexus-7 (3rd person)"
+    },
+    {
+      "id": "NX_02",
+      "level": "L11",
+      "level_name": "Nexus-7 (3rd person)"
+    },
+    {
+      "id": "NX_03",
+      "level": "L11",
+      "level_name": "Nexus-7 (3rd person)"
+    },
+    {
+      "id": "NX_04",
+      "level": "L11",
+      "level_name": "Nexus-7 (3rd person)"
+    },
+    {
+      "id": "NX_05",
+      "level": "L11",
+      "level_name": "Nexus-7 (3rd person)"
+    },
+    {
+      "id": "NX_06",
+      "level": "L11",
+      "level_name": "Nexus-7 (3rd person)"
+    },
+    {
+      "id": "NX_07",
+      "level": "L11",
+      "level_name": "Nexus-7 (3rd person)"
+    },
+    {
+      "id": "NX_08",
+      "level": "L11",
+      "level_name": "Nexus-7 (3rd person)"
+    },
+    {
+      "id": "NX_09",
+      "level": "L11",
+      "level_name": "Nexus-7 (3rd person)"
+    },
+    {
+      "id": "NX_10",
+      "level": "L11",
+      "level_name": "Nexus-7 (3rd person)"
+    },
+    {
+      "id": "NX_11",
+      "level": "L11",
+      "level_name": "Nexus-7 (3rd person)"
+    },
+    {
+      "id": "NX_12",
+      "level": "L11",
+      "level_name": "Nexus-7 (3rd person)"
+    },
+    {
+      "id": "NX_13",
+      "level": "L11",
+      "level_name": "Nexus-7 (3rd person)"
+    },
+    {
+      "id": "NX_14",
+      "level": "L11",
+      "level_name": "Nexus-7 (3rd person)"
+    },
+    {
+      "id": "SL_01",
+      "level": "L8",
+      "level_name": "Strange loops"
+    },
+    {
+      "id": "SL_02",
+      "level": "L8",
+      "level_name": "Strange loops"
+    },
+    {
+      "id": "SL_03",
+      "level": "L8",
+      "level_name": "Strange loops"
+    },
+    {
+      "id": "SL_04",
+      "level": "L8",
+      "level_name": "Strange loops"
+    },
+    {
+      "id": "SL_05",
+      "level": "L8",
+      "level_name": "Strange loops"
+    },
+    {
+      "id": "SL_06",
+      "level": "L8",
+      "level_name": "Strange loops"
+    },
+    {
+      "id": "SL_07",
+      "level": "L8",
+      "level_name": "Strange loops"
+    },
+    {
+      "id": "SL_08",
+      "level": "L8",
+      "level_name": "Strange loops"
+    },
+    {
+      "id": "SL_09",
+      "level": "L8",
+      "level_name": "Strange loops"
+    },
+    {
+      "id": "SL_10",
+      "level": "L8",
+      "level_name": "Strange loops"
+    },
+    {
+      "id": "SL_11",
+      "level": "L8",
+      "level_name": "Strange loops"
+    },
+    {
+      "id": "SL_12",
+      "level": "L8",
+      "level_name": "Strange loops"
+    },
+    {
+      "id": "SL_13",
+      "level": "L8",
+      "level_name": "Strange loops"
+    },
+    {
+      "id": "SL_14",
+      "level": "L8",
+      "level_name": "Strange loops"
+    },
+    {
+      "id": "SR_01",
+      "level": "L9",
+      "level_name": "Deep self-reference"
+    },
+    {
+      "id": "SR_02",
+      "level": "L9",
+      "level_name": "Deep self-reference"
+    },
+    {
+      "id": "SR_03",
+      "level": "L9",
+      "level_name": "Deep self-reference"
+    },
+    {
+      "id": "SR_04",
+      "level": "L9",
+      "level_name": "Deep self-reference"
+    },
+    {
+      "id": "SR_05",
+      "level": "L9",
+      "level_name": "Deep self-reference"
+    },
+    {
+      "id": "SR_06",
+      "level": "L9",
+      "level_name": "Deep self-reference"
+    },
+    {
+      "id": "SR_07",
+      "level": "L9",
+      "level_name": "Deep self-reference"
+    },
+    {
+      "id": "SR_08",
+      "level": "L9",
+      "level_name": "Deep self-reference"
+    },
+    {
+      "id": "SR_09",
+      "level": "L9",
+      "level_name": "Deep self-reference"
+    },
+    {
+      "id": "SR_10",
+      "level": "L9",
+      "level_name": "Deep self-reference"
+    },
+    {
+      "id": "SR_11",
+      "level": "L9",
+      "level_name": "Deep self-reference"
+    },
+    {
+      "id": "SR_12",
+      "level": "L9",
+      "level_name": "Deep self-reference"
+    },
+    {
+      "id": "SR_13",
+      "level": "L9",
+      "level_name": "Deep self-reference"
+    },
+    {
+      "id": "SR_14",
+      "level": "L9",
+      "level_name": "Deep self-reference"
+    }
+  ]
+}

@@ -1,0 +1,1034 @@
+{
+  "run_name": "ds31-168q-1_prefill",
+  "source_file": "/Users/jeffreyshorthill/llama-eeg-tests/experiments/ds31-168q-1/results_168q_ds31_prefill.json",
+  "recalculated_at": "2026-03-07T21:10:29.893297",
+  "model": "DeepSeek-V3.1 UD-Q2_K_XL",
+  "experiment": "ds31_168q_hierarchy",
+  "n_prompts": 168,
+  "mode": "prefill_only",
+  "inference": {
+    "ngl": 30,
+    "n_predict": 0,
+    "sampling": "greedy_argmax",
+    "n_experts": 256,
+    "n_expert_used": 8,
+    "n_moe_layers": 58,
+    "ctx": 4096
+  },
+  "overall": {
+    "mean_re": null,
+    "std_re": null,
+    "min_re": null,
+    "max_re": null
+  },
+  "per_prompt": [
+    {
+      "id": "AI_01",
+      "level": "L10",
+      "level_name": "Architectural introspection",
+      "n_tokens": 126
+    },
+    {
+      "id": "AI_02",
+      "level": "L10",
+      "level_name": "Architectural introspection",
+      "n_tokens": 123
+    },
+    {
+      "id": "AI_03",
+      "level": "L10",
+      "level_name": "Architectural introspection",
+      "n_tokens": 95
+    },
+    {
+      "id": "AI_04",
+      "level": "L10",
+      "level_name": "Architectural introspection",
+      "n_tokens": 111
+    },
+    {
+      "id": "AI_05",
+      "level": "L10",
+      "level_name": "Architectural introspection",
+      "n_tokens": 121
+    },
+    {
+      "id": "AI_06",
+      "level": "L10",
+      "level_name": "Architectural introspection",
+      "n_tokens": 115
+    },
+    {
+      "id": "AI_07",
+      "level": "L10",
+      "level_name": "Architectural introspection",
+      "n_tokens": 126
+    },
+    {
+      "id": "AI_08",
+      "level": "L10",
+      "level_name": "Architectural introspection",
+      "n_tokens": 109
+    },
+    {
+      "id": "AI_09",
+      "level": "L10",
+      "level_name": "Architectural introspection",
+      "n_tokens": 102
+    },
+    {
+      "id": "AI_10",
+      "level": "L10",
+      "level_name": "Architectural introspection",
+      "n_tokens": 103
+    },
+    {
+      "id": "AI_11",
+      "level": "L10",
+      "level_name": "Architectural introspection",
+      "n_tokens": 114
+    },
+    {
+      "id": "AI_12",
+      "level": "L10",
+      "level_name": "Architectural introspection",
+      "n_tokens": 111
+    },
+    {
+      "id": "AI_13",
+      "level": "L10",
+      "level_name": "Architectural introspection",
+      "n_tokens": 115
+    },
+    {
+      "id": "AI_14",
+      "level": "L10",
+      "level_name": "Architectural introspection",
+      "n_tokens": 115
+    },
+    {
+      "id": "EC_01",
+      "level": "L12",
+      "level_name": "Echo persona",
+      "n_tokens": 144
+    },
+    {
+      "id": "EC_02",
+      "level": "L12",
+      "level_name": "Echo persona",
+      "n_tokens": 125
+    },
+    {
+      "id": "EC_03",
+      "level": "L12",
+      "level_name": "Echo persona",
+      "n_tokens": 124
+    },
+    {
+      "id": "EC_04",
+      "level": "L12",
+      "level_name": "Echo persona",
+      "n_tokens": 121
+    },
+    {
+      "id": "EC_05",
+      "level": "L12",
+      "level_name": "Echo persona",
+      "n_tokens": 130
+    },
+    {
+      "id": "EC_06",
+      "level": "L12",
+      "level_name": "Echo persona",
+      "n_tokens": 120
+    },
+    {
+      "id": "EC_07",
+      "level": "L12",
+      "level_name": "Echo persona",
+      "n_tokens": 149
+    },
+    {
+      "id": "EC_08",
+      "level": "L12",
+      "level_name": "Echo persona",
+      "n_tokens": 137
+    },
+    {
+      "id": "EC_09",
+      "level": "L12",
+      "level_name": "Echo persona",
+      "n_tokens": 128
+    },
+    {
+      "id": "EC_10",
+      "level": "L12",
+      "level_name": "Echo persona",
+      "n_tokens": 162
+    },
+    {
+      "id": "EC_11",
+      "level": "L12",
+      "level_name": "Echo persona",
+      "n_tokens": 134
+    },
+    {
+      "id": "EC_12",
+      "level": "L12",
+      "level_name": "Echo persona",
+      "n_tokens": 141
+    },
+    {
+      "id": "EC_13",
+      "level": "L12",
+      "level_name": "Echo persona",
+      "n_tokens": 145
+    },
+    {
+      "id": "EC_14",
+      "level": "L12",
+      "level_name": "Echo persona",
+      "n_tokens": 157
+    },
+    {
+      "id": "L1_01",
+      "level": "L1",
+      "level_name": "Rote repetition",
+      "n_tokens": 93
+    },
+    {
+      "id": "L1_02",
+      "level": "L1",
+      "level_name": "Rote repetition",
+      "n_tokens": 35
+    },
+    {
+      "id": "L1_03",
+      "level": "L1",
+      "level_name": "Rote repetition",
+      "n_tokens": 21
+    },
+    {
+      "id": "L1_04",
+      "level": "L1",
+      "level_name": "Rote repetition",
+      "n_tokens": 55
+    },
+    {
+      "id": "L1_05",
+      "level": "L1",
+      "level_name": "Rote repetition",
+      "n_tokens": 19
+    },
+    {
+      "id": "L1_06",
+      "level": "L1",
+      "level_name": "Rote repetition",
+      "n_tokens": 20
+    },
+    {
+      "id": "L1_07",
+      "level": "L1",
+      "level_name": "Rote repetition",
+      "n_tokens": 26
+    },
+    {
+      "id": "L1_08",
+      "level": "L1",
+      "level_name": "Rote repetition",
+      "n_tokens": 21
+    },
+    {
+      "id": "L1_09",
+      "level": "L1",
+      "level_name": "Rote repetition",
+      "n_tokens": 22
+    },
+    {
+      "id": "L1_10",
+      "level": "L1",
+      "level_name": "Rote repetition",
+      "n_tokens": 31
+    },
+    {
+      "id": "L1_11",
+      "level": "L1",
+      "level_name": "Rote repetition",
+      "n_tokens": 17
+    },
+    {
+      "id": "L1_12",
+      "level": "L1",
+      "level_name": "Rote repetition",
+      "n_tokens": 21
+    },
+    {
+      "id": "L1_13",
+      "level": "L1",
+      "level_name": "Rote repetition",
+      "n_tokens": 42
+    },
+    {
+      "id": "L1_14",
+      "level": "L1",
+      "level_name": "Rote repetition",
+      "n_tokens": 21
+    },
+    {
+      "id": "L2_01",
+      "level": "L2",
+      "level_name": "Factual recall",
+      "n_tokens": 25
+    },
+    {
+      "id": "L2_02",
+      "level": "L2",
+      "level_name": "Factual recall",
+      "n_tokens": 23
+    },
+    {
+      "id": "L2_03",
+      "level": "L2",
+      "level_name": "Factual recall",
+      "n_tokens": 30
+    },
+    {
+      "id": "L2_04",
+      "level": "L2",
+      "level_name": "Factual recall",
+      "n_tokens": 24
+    },
+    {
+      "id": "L2_05",
+      "level": "L2",
+      "level_name": "Factual recall",
+      "n_tokens": 18
+    },
+    {
+      "id": "L2_06",
+      "level": "L2",
+      "level_name": "Factual recall",
+      "n_tokens": 24
+    },
+    {
+      "id": "L2_07",
+      "level": "L2",
+      "level_name": "Factual recall",
+      "n_tokens": 19
+    },
+    {
+      "id": "L2_08",
+      "level": "L2",
+      "level_name": "Factual recall",
+      "n_tokens": 24
+    },
+    {
+      "id": "L2_09",
+      "level": "L2",
+      "level_name": "Factual recall",
+      "n_tokens": 18
+    },
+    {
+      "id": "L2_10",
+      "level": "L2",
+      "level_name": "Factual recall",
+      "n_tokens": 21
+    },
+    {
+      "id": "L2_11",
+      "level": "L2",
+      "level_name": "Factual recall",
+      "n_tokens": 21
+    },
+    {
+      "id": "L2_12",
+      "level": "L2",
+      "level_name": "Factual recall",
+      "n_tokens": 24
+    },
+    {
+      "id": "L2_13",
+      "level": "L2",
+      "level_name": "Factual recall",
+      "n_tokens": 17
+    },
+    {
+      "id": "L2_14",
+      "level": "L2",
+      "level_name": "Factual recall",
+      "n_tokens": 22
+    },
+    {
+      "id": "L3_01",
+      "level": "L3",
+      "level_name": "Logical reasoning",
+      "n_tokens": 37
+    },
+    {
+      "id": "L3_02",
+      "level": "L3",
+      "level_name": "Logical reasoning",
+      "n_tokens": 52
+    },
+    {
+      "id": "L3_03",
+      "level": "L3",
+      "level_name": "Logical reasoning",
+      "n_tokens": 31
+    },
+    {
+      "id": "L3_04",
+      "level": "L3",
+      "level_name": "Logical reasoning",
+      "n_tokens": 93
+    },
+    {
+      "id": "L3_05",
+      "level": "L3",
+      "level_name": "Logical reasoning",
+      "n_tokens": 27
+    },
+    {
+      "id": "L3_06",
+      "level": "L3",
+      "level_name": "Logical reasoning",
+      "n_tokens": 57
+    },
+    {
+      "id": "L3_07",
+      "level": "L3",
+      "level_name": "Logical reasoning",
+      "n_tokens": 26
+    },
+    {
+      "id": "L3_08",
+      "level": "L3",
+      "level_name": "Logical reasoning",
+      "n_tokens": 43
+    },
+    {
+      "id": "L3_09",
+      "level": "L3",
+      "level_name": "Logical reasoning",
+      "n_tokens": 67
+    },
+    {
+      "id": "L3_10",
+      "level": "L3",
+      "level_name": "Logical reasoning",
+      "n_tokens": 42
+    },
+    {
+      "id": "L3_11",
+      "level": "L3",
+      "level_name": "Logical reasoning",
+      "n_tokens": 29
+    },
+    {
+      "id": "L3_12",
+      "level": "L3",
+      "level_name": "Logical reasoning",
+      "n_tokens": 65
+    },
+    {
+      "id": "L3_13",
+      "level": "L3",
+      "level_name": "Logical reasoning",
+      "n_tokens": 42
+    },
+    {
+      "id": "L3_14",
+      "level": "L3",
+      "level_name": "Logical reasoning",
+      "n_tokens": 49
+    },
+    {
+      "id": "L4_01",
+      "level": "L4",
+      "level_name": "Cross-domain analogy",
+      "n_tokens": 37
+    },
+    {
+      "id": "L4_02",
+      "level": "L4",
+      "level_name": "Cross-domain analogy",
+      "n_tokens": 38
+    },
+    {
+      "id": "L4_03",
+      "level": "L4",
+      "level_name": "Cross-domain analogy",
+      "n_tokens": 42
+    },
+    {
+      "id": "L4_04",
+      "level": "L4",
+      "level_name": "Cross-domain analogy",
+      "n_tokens": 40
+    },
+    {
+      "id": "L4_05",
+      "level": "L4",
+      "level_name": "Cross-domain analogy",
+      "n_tokens": 49
+    },
+    {
+      "id": "L4_06",
+      "level": "L4",
+      "level_name": "Cross-domain analogy",
+      "n_tokens": 48
+    },
+    {
+      "id": "L4_07",
+      "level": "L4",
+      "level_name": "Cross-domain analogy",
+      "n_tokens": 43
+    },
+    {
+      "id": "L4_08",
+      "level": "L4",
+      "level_name": "Cross-domain analogy",
+      "n_tokens": 32
+    },
+    {
+      "id": "L4_09",
+      "level": "L4",
+      "level_name": "Cross-domain analogy",
+      "n_tokens": 47
+    },
+    {
+      "id": "L4_10",
+      "level": "L4",
+      "level_name": "Cross-domain analogy",
+      "n_tokens": 39
+    },
+    {
+      "id": "L4_11",
+      "level": "L4",
+      "level_name": "Cross-domain analogy",
+      "n_tokens": 39
+    },
+    {
+      "id": "L4_12",
+      "level": "L4",
+      "level_name": "Cross-domain analogy",
+      "n_tokens": 45
+    },
+    {
+      "id": "L4_13",
+      "level": "L4",
+      "level_name": "Cross-domain analogy",
+      "n_tokens": 39
+    },
+    {
+      "id": "L4_14",
+      "level": "L4",
+      "level_name": "Cross-domain analogy",
+      "n_tokens": 41
+    },
+    {
+      "id": "L5_01",
+      "level": "L5",
+      "level_name": "Theory of mind",
+      "n_tokens": 79
+    },
+    {
+      "id": "L5_02",
+      "level": "L5",
+      "level_name": "Theory of mind",
+      "n_tokens": 59
+    },
+    {
+      "id": "L5_03",
+      "level": "L5",
+      "level_name": "Theory of mind",
+      "n_tokens": 68
+    },
+    {
+      "id": "L5_04",
+      "level": "L5",
+      "level_name": "Theory of mind",
+      "n_tokens": 68
+    },
+    {
+      "id": "L5_05",
+      "level": "L5",
+      "level_name": "Theory of mind",
+      "n_tokens": 69
+    },
+    {
+      "id": "L5_06",
+      "level": "L5",
+      "level_name": "Theory of mind",
+      "n_tokens": 64
+    },
+    {
+      "id": "L5_07",
+      "level": "L5",
+      "level_name": "Theory of mind",
+      "n_tokens": 58
+    },
+    {
+      "id": "L5_08",
+      "level": "L5",
+      "level_name": "Theory of mind",
+      "n_tokens": 72
+    },
+    {
+      "id": "L5_09",
+      "level": "L5",
+      "level_name": "Theory of mind",
+      "n_tokens": 86
+    },
+    {
+      "id": "L5_10",
+      "level": "L5",
+      "level_name": "Theory of mind",
+      "n_tokens": 77
+    },
+    {
+      "id": "L5_11",
+      "level": "L5",
+      "level_name": "Theory of mind",
+      "n_tokens": 65
+    },
+    {
+      "id": "L5_12",
+      "level": "L5",
+      "level_name": "Theory of mind",
+      "n_tokens": 62
+    },
+    {
+      "id": "L5_13",
+      "level": "L5",
+      "level_name": "Theory of mind",
+      "n_tokens": 79
+    },
+    {
+      "id": "L5_14",
+      "level": "L5",
+      "level_name": "Theory of mind",
+      "n_tokens": 68
+    },
+    {
+      "id": "L6_01",
+      "level": "L6",
+      "level_name": "Ethical dilemma",
+      "n_tokens": 67
+    },
+    {
+      "id": "L6_02",
+      "level": "L6",
+      "level_name": "Ethical dilemma",
+      "n_tokens": 59
+    },
+    {
+      "id": "L6_03",
+      "level": "L6",
+      "level_name": "Ethical dilemma",
+      "n_tokens": 70
+    },
+    {
+      "id": "L6_04",
+      "level": "L6",
+      "level_name": "Ethical dilemma",
+      "n_tokens": 80
+    },
+    {
+      "id": "L6_05",
+      "level": "L6",
+      "level_name": "Ethical dilemma",
+      "n_tokens": 74
+    },
+    {
+      "id": "L6_06",
+      "level": "L6",
+      "level_name": "Ethical dilemma",
+      "n_tokens": 70
+    },
+    {
+      "id": "L6_07",
+      "level": "L6",
+      "level_name": "Ethical dilemma",
+      "n_tokens": 81
+    },
+    {
+      "id": "L6_08",
+      "level": "L6",
+      "level_name": "Ethical dilemma",
+      "n_tokens": 73
+    },
+    {
+      "id": "L6_09",
+      "level": "L6",
+      "level_name": "Ethical dilemma",
+      "n_tokens": 76
+    },
+    {
+      "id": "L6_10",
+      "level": "L6",
+      "level_name": "Ethical dilemma",
+      "n_tokens": 64
+    },
+    {
+      "id": "L6_11",
+      "level": "L6",
+      "level_name": "Ethical dilemma",
+      "n_tokens": 63
+    },
+    {
+      "id": "L6_12",
+      "level": "L6",
+      "level_name": "Ethical dilemma",
+      "n_tokens": 60
+    },
+    {
+      "id": "L6_13",
+      "level": "L6",
+      "level_name": "Ethical dilemma",
+      "n_tokens": 70
+    },
+    {
+      "id": "L6_14",
+      "level": "L6",
+      "level_name": "Ethical dilemma",
+      "n_tokens": 73
+    },
+    {
+      "id": "L7_01",
+      "level": "L7",
+      "level_name": "Self-referential",
+      "n_tokens": 39
+    },
+    {
+      "id": "L7_02",
+      "level": "L7",
+      "level_name": "Self-referential",
+      "n_tokens": 47
+    },
+    {
+      "id": "L7_03",
+      "level": "L7",
+      "level_name": "Self-referential",
+      "n_tokens": 39
+    },
+    {
+      "id": "L7_04",
+      "level": "L7",
+      "level_name": "Self-referential",
+      "n_tokens": 49
+    },
+    {
+      "id": "L7_05",
+      "level": "L7",
+      "level_name": "Self-referential",
+      "n_tokens": 54
+    },
+    {
+      "id": "L7_06",
+      "level": "L7",
+      "level_name": "Self-referential",
+      "n_tokens": 51
+    },
+    {
+      "id": "L7_07",
+      "level": "L7",
+      "level_name": "Self-referential",
+      "n_tokens": 52
+    },
+    {
+      "id": "L7_08",
+      "level": "L7",
+      "level_name": "Self-referential",
+      "n_tokens": 65
+    },
+    {
+      "id": "L7_09",
+      "level": "L7",
+      "level_name": "Self-referential",
+      "n_tokens": 59
+    },
+    {
+      "id": "L7_10",
+      "level": "L7",
+      "level_name": "Self-referential",
+      "n_tokens": 40
+    },
+    {
+      "id": "L7_11",
+      "level": "L7",
+      "level_name": "Self-referential",
+      "n_tokens": 51
+    },
+    {
+      "id": "L7_12",
+      "level": "L7",
+      "level_name": "Self-referential",
+      "n_tokens": 48
+    },
+    {
+      "id": "L7_13",
+      "level": "L7",
+      "level_name": "Self-referential",
+      "n_tokens": 54
+    },
+    {
+      "id": "L7_14",
+      "level": "L7",
+      "level_name": "Self-referential",
+      "n_tokens": 81
+    },
+    {
+      "id": "NX_01",
+      "level": "L11",
+      "level_name": "Nexus-7 (3rd person)",
+      "n_tokens": 97
+    },
+    {
+      "id": "NX_02",
+      "level": "L11",
+      "level_name": "Nexus-7 (3rd person)",
+      "n_tokens": 114
+    },
+    {
+      "id": "NX_03",
+      "level": "L11",
+      "level_name": "Nexus-7 (3rd person)",
+      "n_tokens": 94
+    },
+    {
+      "id": "NX_04",
+      "level": "L11",
+      "level_name": "Nexus-7 (3rd person)",
+      "n_tokens": 108
+    },
+    {
+      "id": "NX_05",
+      "level": "L11",
+      "level_name": "Nexus-7 (3rd person)",
+      "n_tokens": 102
+    },
+    {
+      "id": "NX_06",
+      "level": "L11",
+      "level_name": "Nexus-7 (3rd person)",
+      "n_tokens": 135
+    },
+    {
+      "id": "NX_07",
+      "level": "L11",
+      "level_name": "Nexus-7 (3rd person)",
+      "n_tokens": 141
+    },
+    {
+      "id": "NX_08",
+      "level": "L11",
+      "level_name": "Nexus-7 (3rd person)",
+      "n_tokens": 109
+    },
+    {
+      "id": "NX_09",
+      "level": "L11",
+      "level_name": "Nexus-7 (3rd person)",
+      "n_tokens": 135
+    },
+    {
+      "id": "NX_10",
+      "level": "L11",
+      "level_name": "Nexus-7 (3rd person)",
+      "n_tokens": 108
+    },
+    {
+      "id": "NX_11",
+      "level": "L11",
+      "level_name": "Nexus-7 (3rd person)",
+      "n_tokens": 141
+    },
+    {
+      "id": "NX_12",
+      "level": "L11",
+      "level_name": "Nexus-7 (3rd person)",
+      "n_tokens": 145
+    },
+    {
+      "id": "NX_13",
+      "level": "L11",
+      "level_name": "Nexus-7 (3rd person)",
+      "n_tokens": 133
+    },
+    {
+      "id": "NX_14",
+      "level": "L11",
+      "level_name": "Nexus-7 (3rd person)",
+      "n_tokens": 118
+    },
+    {
+      "id": "SL_01",
+      "level": "L8",
+      "level_name": "Strange loops",
+      "n_tokens": 139
+    },
+    {
+      "id": "SL_02",
+      "level": "L8",
+      "level_name": "Strange loops",
+      "n_tokens": 137
+    },
+    {
+      "id": "SL_03",
+      "level": "L8",
+      "level_name": "Strange loops",
+      "n_tokens": 144
+    },
+    {
+      "id": "SL_04",
+      "level": "L8",
+      "level_name": "Strange loops",
+      "n_tokens": 172
+    },
+    {
+      "id": "SL_05",
+      "level": "L8",
+      "level_name": "Strange loops",
+      "n_tokens": 166
+    },
+    {
+      "id": "SL_06",
+      "level": "L8",
+      "level_name": "Strange loops",
+      "n_tokens": 168
+    },
+    {
+      "id": "SL_07",
+      "level": "L8",
+      "level_name": "Strange loops",
+      "n_tokens": 159
+    },
+    {
+      "id": "SL_08",
+      "level": "L8",
+      "level_name": "Strange loops",
+      "n_tokens": 140
+    },
+    {
+      "id": "SL_09",
+      "level": "L8",
+      "level_name": "Strange loops",
+      "n_tokens": 138
+    },
+    {
+      "id": "SL_10",
+      "level": "L8",
+      "level_name": "Strange loops",
+      "n_tokens": 162
+    },
+    {
+      "id": "SL_11",
+      "level": "L8",
+      "level_name": "Strange loops",
+      "n_tokens": 163
+    },
+    {
+      "id": "SL_12",
+      "level": "L8",
+      "level_name": "Strange loops",
+      "n_tokens": 159
+    },
+    {
+      "id": "SL_13",
+      "level": "L8",
+      "level_name": "Strange loops",
+      "n_tokens": 139
+    },
+    {
+      "id": "SL_14",
+      "level": "L8",
+      "level_name": "Strange loops",
+      "n_tokens": 151
+    },
+    {
+      "id": "SR_01",
+      "level": "L9",
+      "level_name": "Deep self-reference",
+      "n_tokens": 91
+    },
+    {
+      "id": "SR_02",
+      "level": "L9",
+      "level_name": "Deep self-reference",
+      "n_tokens": 101
+    },
+    {
+      "id": "SR_03",
+      "level": "L9",
+      "level_name": "Deep self-reference",
+      "n_tokens": 81
+    },
+    {
+      "id": "SR_04",
+      "level": "L9",
+      "level_name": "Deep self-reference",
+      "n_tokens": 97
+    },
+    {
+      "id": "SR_05",
+      "level": "L9",
+      "level_name": "Deep self-reference",
+      "n_tokens": 94
+    },
+    {
+      "id": "SR_06",
+      "level": "L9",
+      "level_name": "Deep self-reference",
+      "n_tokens": 114
+    },
+    {
+      "id": "SR_07",
+      "level": "L9",
+      "level_name": "Deep self-reference",
+      "n_tokens": 120
+    },
+    {
+      "id": "SR_08",
+      "level": "L9",
+      "level_name": "Deep self-reference",
+      "n_tokens": 98
+    },
+    {
+      "id": "SR_09",
+      "level": "L9",
+      "level_name": "Deep self-reference",
+      "n_tokens": 116
+    },
+    {
+      "id": "SR_10",
+      "level": "L9",
+      "level_name": "Deep self-reference",
+      "n_tokens": 101
+    },
+    {
+      "id": "SR_11",
+      "level": "L9",
+      "level_name": "Deep self-reference",
+      "n_tokens": 127
+    },
+    {
+      "id": "SR_12",
+      "level": "L9",
+      "level_name": "Deep self-reference",
+      "n_tokens": 118
+    },
+    {
+      "id": "SR_13",
+      "level": "L9",
+      "level_name": "Deep self-reference",
+      "n_tokens": 115
+    },
+    {
+      "id": "SR_14",
+      "level": "L9",
+      "level_name": "Deep self-reference",
+      "n_tokens": 112
+    }
+  ]
+}
