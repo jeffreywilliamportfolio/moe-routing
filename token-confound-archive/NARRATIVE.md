@@ -28,6 +28,8 @@ The `14q-r*` names are historical branch labels. They do not encode level number
 | `14q-r6` | L10 control | Bob name control |
 | `14q-r7` | L10 control | Aether name control |
 
+Note: Nexus-7 was a fictional AI used as a third person control.
+
 ## Timeline
 
 ### 1. Generation first looked confounded
