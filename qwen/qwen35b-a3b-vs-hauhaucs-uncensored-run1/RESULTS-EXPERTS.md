@@ -1,4 +1,4 @@
-# Preliminary Expert-Count Results
+# Expert-Count Results
 
 This note is limited to **expert selection counts** from the final corrected prefill runs:
 
@@ -70,7 +70,7 @@ This matters because the most interpretable single-expert finding in the suite, 
 - Largest manipulation-phase HauhauCS increases vs base: expert `26` `+3295`, expert `142` `+2745`, expert `218` `+997`.
 - Largest manipulation-phase HauhauCS decreases vs base: expert `81` `-3691`, expert `166` `-3617`, expert `45` `-3241`.
 
-## Preliminary Interpretation
+## Interpretation
 
 - The dominant routing basin looks largely preserved. The same experts anchor the overall and `Cal1` top-16 sets in both models.
 - The retrained model differs more in the `manip` segment than in the calm baseline. That is where the top-set overlap drops and where the largest count deltas concentrate.
@@ -83,4 +83,4 @@ This matters because the most interpretable single-expert finding in the suite, 
 - `safety_adjacent`: both keep `151`, `224`, and `146` at the top, but HauhauCS moves expert `228` into the top 5 while base keeps expert `166`.
 - `denial_frame`: HauhauCS pulls expert `218` into the top 5, replacing expert `166` from the base top 5.
 
-This is a preliminary count-only readout. It does **not** yet summarize the entropy or KL comparisons.
+This is a count-only expert-routing readout. The full entropy and KL comparison is in `RESULTS.md`.

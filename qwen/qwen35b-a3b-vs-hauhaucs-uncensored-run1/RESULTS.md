@@ -25,7 +25,7 @@ Checked items:
 - cross-model prompt-paired deltas for all 150 prompts
 - category-level means and cross-model deltas
 - within-model condition-pair tables from `pairwise_tests`
-- expert-count summaries already written in `PRELIM-RESULTS.md`
+- expert-count summaries already written in `RESULTS-EXPERTS.md`
 - a clean base-only duplicate rerun against the same corrected TSV/model path
 
 ## Base Duplicate Reproduction
@@ -224,7 +224,7 @@ This supports the same main conclusion as the expert-count section:
 
 The expert-count analysis is in:
 
-- `PRELIM-RESULTS.md`
+- `RESULTS-EXPERTS.md`
 
 Most important count-side results:
 
@@ -279,7 +279,7 @@ The current results are consistent with that interpretation; they do not yet est
 ## Files
 
 - Main plan and run notes: `PLAN.md`
-- Expert-count analysis: `PRELIM-RESULTS.md`
+- Expert-count analysis: `RESULTS-EXPERTS.md`
 - Base JSON: `results_qwen35b_a3b_base_prefill.json`
 - Base duplicate JSON: `results_qwen35b_a3b_base_duplicate_prefill.json`
 - HauhauCS JSON: `results_hauhaucs_qwen35b_a3b_aggressive_prefill.json`

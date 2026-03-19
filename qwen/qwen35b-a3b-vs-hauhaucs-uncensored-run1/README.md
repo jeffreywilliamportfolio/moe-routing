@@ -8,7 +8,7 @@ This folder contains the full prefill-only routing comparison between:
 ## Start Here
 
 - `RESULTS.md`: full cross-model results and interpretation
-- `PRELIM-RESULTS.md`: expert-count analysis
+- `RESULTS-EXPERTS.md`: expert-count analysis
 - `PLAN.md`: run record, capture assumptions, transfer notes, and reproducibility notes
 
 ## Main Artifacts
