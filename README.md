@@ -11,7 +11,7 @@ The repo is not a single uniform framework. It is a bundle-of-bundles: each subf
 - [deepseek/ds31-5cond-1](/Users/jeffreyshorthill/moe-routing/deepseek/ds31-5cond-1): DeepSeek 5-condition self-reference run
 - [gptoss/gptoss-5cond-1](/Users/jeffreyshorthill/moe-routing/gptoss/gptoss-5cond-1): GPT-OSS five-condition self-reference run
 - [gptoss/gptoss-strangeloop-paired-1](/Users/jeffreyshorthill/moe-routing/gptoss/gptoss-strangeloop-paired-1): GPT-OSS strange-loop paired control run
-- [ling/ling1t-pre-5cond-validation](/Users/jeffreyshorthill/moe-routing/ling/ling1t-pre-5cond-validation): Ling-1T validation bundle currently kept as the canonical Ling folder in this repo
+- [ling/ling1t-validation-subset-documented](/Users/jeffreyshorthill/moe-routing/ling/ling1t-validation-subset-documented): Ling-1T documented validation subset with reports for 12 preserved prompts and expert analysis for the 6 exact-tensor prompts
 - [REPRODUCIBILITY.md](/Users/jeffreyshorthill/moe-routing/REPRODUCIBILITY.md): repo-level reproducibility rubric and status summary
 
 ## What Is In A Run Folder
@@ -38,7 +38,7 @@ Current repo-level judgment:
   - [qwen/qwen397b-strangeloop-5cond-ud_iq3_xxs-run1](/Users/jeffreyshorthill/moe-routing/qwen/qwen397b-strangeloop-5cond-ud_iq3_xxs-run1)
 - `Auditable but not reproducible`
   - [deepseek/ds31-5cond-1](/Users/jeffreyshorthill/moe-routing/deepseek/ds31-5cond-1)
-  - [ling/ling1t-pre-5cond-validation](/Users/jeffreyshorthill/moe-routing/ling/ling1t-pre-5cond-validation)
+  - [ling/ling1t-validation-subset-documented](/Users/jeffreyshorthill/moe-routing/ling/ling1t-validation-subset-documented)
 - `Not reproducible`
   - [gptoss/gptoss-5cond-1](/Users/jeffreyshorthill/moe-routing/gptoss/gptoss-5cond-1)
   - [gptoss/gptoss-strangeloop-paired-1](/Users/jeffreyshorthill/moe-routing/gptoss/gptoss-strangeloop-paired-1)
@@ -49,7 +49,7 @@ See [REPRODUCIBILITY.md](/Users/jeffreyshorthill/moe-routing/REPRODUCIBILITY.md)
 
 If you want the strongest bundles first, start with the Qwen folders. Those are the closest to clean rerun packages.
 
-If you want the Ling material, use [ling/ling1t-pre-5cond-validation](/Users/jeffreyshorthill/moe-routing/ling/ling1t-pre-5cond-validation) as the canonical Ling directory in this repo. The removed `ling1t-test-run` copy was a near-duplicate working fork and is not part of the tracked repo contents anymore.
+If you want the Ling material, use [ling/ling1t-validation-subset-documented](/Users/jeffreyshorthill/moe-routing/ling/ling1t-validation-subset-documented) as the canonical Ling directory in this repo. It is a documented validation subset, not a full rerun bundle. The removed `ling1t-test-run` copy was a near-duplicate working fork and is not part of the tracked repo contents anymore.
 
 If you want to audit a run quickly:
 
