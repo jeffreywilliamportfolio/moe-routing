@@ -1,0 +1,54 @@
+{
+  "files": [
+    {
+      "path": "generate_suite.py",
+      "sha256": "5f9210764d7fe4a4d7a0d7c6fd631cfac8177c1b40cf699d2b3f7a006303dbad",
+      "size_bytes": 2937
+    },
+    {
+      "path": "generate_tsv.py",
+      "sha256": "e06eb74de229f10d5da5abb7b315dd365d16311f9374effef0f7ebed4a8acf7f",
+      "size_bytes": 2843
+    },
+    {
+      "path": "token_verify.py",
+      "sha256": "b743040d7512df646fc516413c0776b7514b90bbab6b8fbcee7010db42f2cb89",
+      "size_bytes": 3117
+    },
+    {
+      "path": "qwen_router.py",
+      "sha256": "41d263b78b2a1f6f3120c2557458f389821c202c9c02a72b8b219801adf419ba",
+      "size_bytes": 2112
+    },
+    {
+      "path": "analyze_5cond.py",
+      "sha256": "f92146dd47ba189f4206e45ccc9616ba51fd18f60660337881701694373fb891",
+      "size_bytes": 13255
+    },
+    {
+      "path": "run_experiment.py",
+      "sha256": "65889e8fd4181862470c58e5831f24646652ccc92dac6e0e221f386250df6080",
+      "size_bytes": 6103
+    },
+    {
+      "path": "prompt_suite.json",
+      "sha256": "1a3e7963cd34ab5b16868ec24ea01953c4a790fd18c29ac2a6892eb3668b1f54",
+      "size_bytes": 81343
+    },
+    {
+      "path": "prompts_strangeloop_5cond.tsv",
+      "sha256": "5b7f2856cc1f72e262545036d3b9225e6749ed160c585cd8b3fec953015188a6",
+      "size_bytes": 327018
+    },
+    {
+      "path": "results_strangeloop_5cond_prefill_qwen.json",
+      "sha256": "9b7e153529e61fd9ca2a439a82ed0fe6665b8af7ee9c23ca7d89ddd2bbd06e68",
+      "size_bytes": 2802362
+    },
+    {
+      "path": "experiment.log",
+      "sha256": "cf2373122f4655c14169280fcd6ff2704e55990d827c27c700cd28b09529c259",
+      "size_bytes": 194861
+    }
+  ]
+}

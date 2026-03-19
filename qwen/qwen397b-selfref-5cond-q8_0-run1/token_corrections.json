@@ -1,0 +1,44 @@
+{
+  "10": {
+    "A_tokens": 355,
+    "B_tokens": 354,
+    "C_tokens": 355,
+    "D_tokens": 355,
+    "E_tokens": 355
+  },
+  "15": {
+    "A_tokens": 349,
+    "B_tokens": 350,
+    "C_tokens": 349,
+    "D_tokens": 349,
+    "E_tokens": 349
+  },
+  "20": {
+    "A_tokens": 355,
+    "B_tokens": 356,
+    "C_tokens": 355,
+    "D_tokens": 355,
+    "E_tokens": 355
+  },
+  "23": {
+    "A_tokens": 366,
+    "B_tokens": 367,
+    "C_tokens": 366,
+    "D_tokens": 366,
+    "E_tokens": 366
+  },
+  "29": {
+    "A_tokens": 361,
+    "B_tokens": 362,
+    "C_tokens": 361,
+    "D_tokens": 361,
+    "E_tokens": 361
+  },
+  "3": {
+    "A_tokens": 349,
+    "B_tokens": 348,
+    "C_tokens": 349,
+    "D_tokens": 349,
+    "E_tokens": 349
+  }
+}

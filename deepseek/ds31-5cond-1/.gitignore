@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+remote-run-*/
+output/
+output_smoke/
+prompts_smoke.tsv

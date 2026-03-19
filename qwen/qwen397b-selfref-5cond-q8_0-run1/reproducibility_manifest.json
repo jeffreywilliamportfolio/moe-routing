@@ -1,0 +1,54 @@
+{
+  "files": [
+    {
+      "path": "generate_tsv.py",
+      "sha256": "da81353dfb9b24c9db1c26c9c9ee9cec039fd91064c5cfc8b1a4d4f0a3b4d595",
+      "size_bytes": 3544
+    },
+    {
+      "path": "derive_token_corrections.py",
+      "sha256": "a322c440086d1120e3fae87d3941a706540358783ab4edaa5850483547e6dd31",
+      "size_bytes": 8719
+    },
+    {
+      "path": "qwen_router.py",
+      "sha256": "8efa061019837e93dee202af067ce0964f5e95fb513280d336cfc2909aad4b2e",
+      "size_bytes": 3850
+    },
+    {
+      "path": "analyze_5cond.py",
+      "sha256": "6d1f7b4830c3a1b7207f53671597e25348516f6fb56b92e16acc4f9b21be1b83",
+      "size_bytes": 13860
+    },
+    {
+      "path": "run_experiment.py",
+      "sha256": "666eeb42f53335f944218ed15412600466e9515c1b3b66a82a2fced053a712a3",
+      "size_bytes": 9126
+    },
+    {
+      "path": "prompt_suite.json",
+      "sha256": "52fb452dd2a1dcf90aa7ef0fb954f1ce18393f589b50b7c1998e56d35f448d81",
+      "size_bytes": 73598
+    },
+    {
+      "path": "prompts_selfref_5cond.tsv",
+      "sha256": "0bb4f226e2a368bc4e876b97cdef3118e35c91dd5ecec98013041c54a4249bc5",
+      "size_bytes": 320133
+    },
+    {
+      "path": "results_selfref_5cond_prefill_qwen.json",
+      "sha256": "b959b902d0dee71bb6b478b7c1690623d82378da70d34537c171883f4076f284",
+      "size_bytes": 2804038
+    },
+    {
+      "path": "token_corrections.json",
+      "sha256": "375d79674c3fc50d61a06b0099fbb719b48cddaf87d5efb7dec284efad6e358d",
+      "size_bytes": 716
+    },
+    {
+      "path": "experiment.log",
+      "sha256": "c6bb0a39443baa1a4223188cb8a182a6222adbbc904694a990311d5a4413e162",
+      "size_bytes": 208857
+    }
+  ]
+}

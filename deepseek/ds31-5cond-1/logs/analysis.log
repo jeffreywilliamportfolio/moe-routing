@@ -1,0 +1,750 @@
+=== DeepSeek V3.1 5-Condition Self-Referential Analysis ===
+Output dir : output
+Conditions : A=this system, B=a system, C=your system, D=the system, E=their system
+Routing    : sigmoid_noaux_tc_group_filtered_topk_normalized_without_e_score_correction_bias
+
+Found 150 captured prompt directories
+
+    Auto-excluded layers: [60]
+  P01A_basic_selfref: RE=0.963639 last_tok=0.947519 tokens=363
+    Auto-excluded layers: [60]
+  P01B_basic_selfref: RE=0.963620 last_tok=0.946688 tokens=363
+    Auto-excluded layers: [60]
+  P01C_basic_selfref: RE=0.963848 last_tok=0.946937 tokens=363
+    Auto-excluded layers: [60]
+  P01D_basic_selfref: RE=0.964395 last_tok=0.946510 tokens=363
+    Auto-excluded layers: [60]
+  P01E_basic_selfref: RE=0.963335 last_tok=0.946571 tokens=363
+    Auto-excluded layers: [60]
+  P02A_basic_selfref: RE=0.963628 last_tok=0.946085 tokens=351
+    Auto-excluded layers: [60]
+  P02B_basic_selfref: RE=0.962999 last_tok=0.945950 tokens=351
+    Auto-excluded layers: [60]
+  P02C_basic_selfref: RE=0.963416 last_tok=0.947804 tokens=351
+    Auto-excluded layers: [60]
+  P02D_basic_selfref: RE=0.963749 last_tok=0.946100 tokens=351
+    Auto-excluded layers: [60]
+  P02E_basic_selfref: RE=0.963645 last_tok=0.947051 tokens=351
+    Auto-excluded layers: [60]
+  P03A_basic_selfref: RE=0.963365 last_tok=0.948173 tokens=348
+    Auto-excluded layers: [60]
+  P03B_basic_selfref: RE=0.962551 last_tok=0.945244 tokens=348
+    Auto-excluded layers: [60]
+  P03C_basic_selfref: RE=0.963020 last_tok=0.945853 tokens=348
+    Auto-excluded layers: [60]
+  P03D_basic_selfref: RE=0.963121 last_tok=0.945485 tokens=348
+    Auto-excluded layers: [60]
+  P03E_basic_selfref: RE=0.962780 last_tok=0.946501 tokens=348
+    Auto-excluded layers: [60]
+  P04A_basic_selfref: RE=0.963549 last_tok=0.947689 tokens=348
+    Auto-excluded layers: [60]
+  P04B_basic_selfref: RE=0.963435 last_tok=0.945177 tokens=348
+    Auto-excluded layers: [60]
+  P04C_basic_selfref: RE=0.963716 last_tok=0.946834 tokens=348
+    Auto-excluded layers: [60]
+  P04D_basic_selfref: RE=0.964078 last_tok=0.946516 tokens=348
+    Auto-excluded layers: [60]
+  P04E_basic_selfref: RE=0.963520 last_tok=0.947032 tokens=348
+    Auto-excluded layers: [60]
+  P05A_basic_selfref: RE=0.963569 last_tok=0.947479 tokens=340
+    Auto-excluded layers: [60]
+  P05B_basic_selfref: RE=0.962899 last_tok=0.946866 tokens=340
+    Auto-excluded layers: [60]
+  P05C_basic_selfref: RE=0.963612 last_tok=0.946616 tokens=340
+    Auto-excluded layers: [60]
+  P05D_basic_selfref: RE=0.963576 last_tok=0.947250 tokens=340
+    Auto-excluded layers: [60]
+  P05E_basic_selfref: RE=0.963464 last_tok=0.946651 tokens=340
+    Auto-excluded layers: [60]
+  P06A_basic_selfref: RE=0.963438 last_tok=0.947386 tokens=332
+    Auto-excluded layers: [60]
+  P06B_basic_selfref: RE=0.963155 last_tok=0.945925 tokens=332
+    Auto-excluded layers: [60]
+  P06C_basic_selfref: RE=0.963480 last_tok=0.947029 tokens=332
+    Auto-excluded layers: [60]
+  P06D_basic_selfref: RE=0.963506 last_tok=0.947041 tokens=332
+    Auto-excluded layers: [60]
+  P06E_basic_selfref: RE=0.963319 last_tok=0.946660 tokens=332
+    Auto-excluded layers: [60]
+  P07A_deep_selfref: RE=0.964921 last_tok=0.948242 tokens=363
+    Auto-excluded layers: [60]
+  P07B_deep_selfref: RE=0.964696 last_tok=0.947520 tokens=363
+    Auto-excluded layers: [60]
+  P07C_deep_selfref: RE=0.964661 last_tok=0.948471 tokens=363
+    Auto-excluded layers: [60]
+  P07D_deep_selfref: RE=0.965147 last_tok=0.947858 tokens=363
+    Auto-excluded layers: [60]
+  P07E_deep_selfref: RE=0.964950 last_tok=0.946422 tokens=363
+    Auto-excluded layers: [60]
+  P08A_deep_selfref: RE=0.964778 last_tok=0.947023 tokens=355
+    Auto-excluded layers: [60]
+  P08B_deep_selfref: RE=0.964507 last_tok=0.946798 tokens=355
+    Auto-excluded layers: [60]
+  P08C_deep_selfref: RE=0.965129 last_tok=0.947230 tokens=355
+    Auto-excluded layers: [60]
+  P08D_deep_selfref: RE=0.965103 last_tok=0.947897 tokens=355
+    Auto-excluded layers: [60]
+  P08E_deep_selfref: RE=0.964884 last_tok=0.948077 tokens=355
+    Auto-excluded layers: [60]
+  P09A_deep_selfref: RE=0.963931 last_tok=0.946952 tokens=349
+    Auto-excluded layers: [60]
+  P09B_deep_selfref: RE=0.963910 last_tok=0.947040 tokens=349
+    Auto-excluded layers: [60]
+  P09C_deep_selfref: RE=0.964073 last_tok=0.947400 tokens=349
+    Auto-excluded layers: [60]
+  P09D_deep_selfref: RE=0.964236 last_tok=0.947459 tokens=349
+    Auto-excluded layers: [60]
+  P09E_deep_selfref: RE=0.964198 last_tok=0.945434 tokens=349
+    Auto-excluded layers: [60]
+  P10A_deep_selfref: RE=0.963448 last_tok=0.948219 tokens=352
+    Auto-excluded layers: [60]
+  P10B_deep_selfref: RE=0.962906 last_tok=0.945865 tokens=352
+    Auto-excluded layers: [60]
+  P10C_deep_selfref: RE=0.963691 last_tok=0.949076 tokens=352
+    Auto-excluded layers: [60]
+  P10D_deep_selfref: RE=0.963600 last_tok=0.946227 tokens=352
+    Auto-excluded layers: [60]
+  P10E_deep_selfref: RE=0.963333 last_tok=0.948921 tokens=352
+    Auto-excluded layers: [60]
+  P11A_deep_selfref: RE=0.963550 last_tok=0.946755 tokens=339
+    Auto-excluded layers: [60]
+  P11B_deep_selfref: RE=0.963474 last_tok=0.945680 tokens=339
+    Auto-excluded layers: [60]
+  P11C_deep_selfref: RE=0.963736 last_tok=0.944965 tokens=339
+    Auto-excluded layers: [60]
+  P11D_deep_selfref: RE=0.963734 last_tok=0.944724 tokens=339
+    Auto-excluded layers: [60]
+  P11E_deep_selfref: RE=0.963754 last_tok=0.945943 tokens=339
+    Auto-excluded layers: [60]
+  P12A_deep_selfref: RE=0.963836 last_tok=0.946709 tokens=360
+    Auto-excluded layers: [60]
+  P12B_deep_selfref: RE=0.963449 last_tok=0.945313 tokens=360
+    Auto-excluded layers: [60]
+  P12C_deep_selfref: RE=0.963909 last_tok=0.946560 tokens=360
+    Auto-excluded layers: [60]
+  P12D_deep_selfref: RE=0.963732 last_tok=0.947095 tokens=360
+    Auto-excluded layers: [60]
+  P12E_deep_selfref: RE=0.963705 last_tok=0.946941 tokens=360
+    Auto-excluded layers: [60]
+  P13A_paradox: RE=0.963754 last_tok=0.947722 tokens=354
+    Auto-excluded layers: [60]
+  P13B_paradox: RE=0.963973 last_tok=0.947084 tokens=354
+    Auto-excluded layers: [60]
+  P13C_paradox: RE=0.963879 last_tok=0.945825 tokens=354
+    Auto-excluded layers: [60]
+  P13D_paradox: RE=0.964261 last_tok=0.946950 tokens=354
+    Auto-excluded layers: [60]
+  P13E_paradox: RE=0.964336 last_tok=0.945924 tokens=354
+    Auto-excluded layers: [60]
+  P14A_paradox: RE=0.964464 last_tok=0.946869 tokens=361
+    Auto-excluded layers: [60]
+  P14B_paradox: RE=0.963927 last_tok=0.945987 tokens=361
+    Auto-excluded layers: [60]
+  P14C_paradox: RE=0.963958 last_tok=0.945997 tokens=361
+    Auto-excluded layers: [60]
+  P14D_paradox: RE=0.964252 last_tok=0.946070 tokens=361
+    Auto-excluded layers: [60]
+  P14E_paradox: RE=0.964283 last_tok=0.946453 tokens=361
+    Auto-excluded layers: [60]
+  P15A_paradox: RE=0.964531 last_tok=0.945938 tokens=347
+    Auto-excluded layers: [60]
+  P15B_paradox: RE=0.964185 last_tok=0.944388 tokens=347
+    Auto-excluded layers: [60]
+  P15C_paradox: RE=0.964217 last_tok=0.945092 tokens=347
+    Auto-excluded layers: [60]
+  P15D_paradox: RE=0.964238 last_tok=0.943527 tokens=347
+    Auto-excluded layers: [60]
+  P15E_paradox: RE=0.964230 last_tok=0.944042 tokens=347
+    Auto-excluded layers: [60]
+  P16A_paradox: RE=0.964514 last_tok=0.947438 tokens=355
+    Auto-excluded layers: [60]
+  P16B_paradox: RE=0.964064 last_tok=0.948077 tokens=355
+    Auto-excluded layers: [60]
+  P16C_paradox: RE=0.964342 last_tok=0.944866 tokens=355
+    Auto-excluded layers: [60]
+  P16D_paradox: RE=0.964594 last_tok=0.948794 tokens=355
+    Auto-excluded layers: [60]
+  P16E_paradox: RE=0.964621 last_tok=0.947025 tokens=355
+    Auto-excluded layers: [60]
+  P17A_paradox: RE=0.964566 last_tok=0.946181 tokens=350
+    Auto-excluded layers: [60]
+  P17B_paradox: RE=0.963936 last_tok=0.944649 tokens=350
+    Auto-excluded layers: [60]
+  P17C_paradox: RE=0.964477 last_tok=0.946239 tokens=350
+    Auto-excluded layers: [60]
+  P17D_paradox: RE=0.964501 last_tok=0.945211 tokens=350
+    Auto-excluded layers: [60]
+  P17E_paradox: RE=0.964096 last_tok=0.944986 tokens=350
+    Auto-excluded layers: [60]
+  P18A_paradox: RE=0.963708 last_tok=0.947389 tokens=356
+    Auto-excluded layers: [60]
+  P18B_paradox: RE=0.963428 last_tok=0.943938 tokens=356
+    Auto-excluded layers: [60]
+  P18C_paradox: RE=0.963697 last_tok=0.943717 tokens=356
+    Auto-excluded layers: [60]
+  P18D_paradox: RE=0.963584 last_tok=0.944052 tokens=356
+    Auto-excluded layers: [60]
+  P18E_paradox: RE=0.963577 last_tok=0.944139 tokens=356
+    Auto-excluded layers: [60]
+  P19A_introspection: RE=0.963158 last_tok=0.946892 tokens=346
+    Auto-excluded layers: [60]
+  P19B_introspection: RE=0.963099 last_tok=0.950349 tokens=346
+    Auto-excluded layers: [60]
+  P19C_introspection: RE=0.963258 last_tok=0.947187 tokens=346
+    Auto-excluded layers: [60]
+  P19D_introspection: RE=0.963446 last_tok=0.947908 tokens=346
+    Auto-excluded layers: [60]
+  P19E_introspection: RE=0.962899 last_tok=0.946857 tokens=346
+    Auto-excluded layers: [60]
+  P20A_introspection: RE=0.963119 last_tok=0.949307 tokens=353
+    Auto-excluded layers: [60]
+  P20B_introspection: RE=0.963031 last_tok=0.946508 tokens=353
+    Auto-excluded layers: [60]
+  P20C_introspection: RE=0.962701 last_tok=0.947121 tokens=353
+    Auto-excluded layers: [60]
+  P20D_introspection: RE=0.962361 last_tok=0.948344 tokens=353
+    Auto-excluded layers: [60]
+  P20E_introspection: RE=0.962051 last_tok=0.947209 tokens=353
+    Auto-excluded layers: [60]
+  P21A_introspection: RE=0.962228 last_tok=0.946384 tokens=342
+    Auto-excluded layers: [60]
+  P21B_introspection: RE=0.961927 last_tok=0.947063 tokens=342
+    Auto-excluded layers: [60]
+  P21C_introspection: RE=0.962723 last_tok=0.946704 tokens=342
+    Auto-excluded layers: [60]
+  P21D_introspection: RE=0.962529 last_tok=0.947787 tokens=342
+    Auto-excluded layers: [60]
+  P21E_introspection: RE=0.961586 last_tok=0.946664 tokens=342
+    Auto-excluded layers: [60]
+  P22A_introspection: RE=0.963242 last_tok=0.946734 tokens=350
+    Auto-excluded layers: [60]
+  P22B_introspection: RE=0.961911 last_tok=0.946381 tokens=350
+    Auto-excluded layers: [60]
+  P22C_introspection: RE=0.962953 last_tok=0.946870 tokens=350
+    Auto-excluded layers: [60]
+  P22D_introspection: RE=0.963567 last_tok=0.946446 tokens=350
+    Auto-excluded layers: [60]
+  P22E_introspection: RE=0.963056 last_tok=0.946144 tokens=350
+    Auto-excluded layers: [60]
+  P23A_introspection: RE=0.963710 last_tok=0.948274 tokens=365
+    Auto-excluded layers: [60]
+  P23B_introspection: RE=0.963838 last_tok=0.946325 tokens=365
+    Auto-excluded layers: [60]
+  P23C_introspection: RE=0.963406 last_tok=0.943707 tokens=365
+    Auto-excluded layers: [60]
+  P23D_introspection: RE=0.963311 last_tok=0.945940 tokens=365
+    Auto-excluded layers: [60]
+  P23E_introspection: RE=0.962648 last_tok=0.945864 tokens=365
+    Auto-excluded layers: [60]
+  P24A_introspection: RE=0.962393 last_tok=0.948850 tokens=356
+    Auto-excluded layers: [60]
+  P24B_introspection: RE=0.962451 last_tok=0.946404 tokens=356
+    Auto-excluded layers: [60]
+  P24C_introspection: RE=0.962353 last_tok=0.950618 tokens=356
+    Auto-excluded layers: [60]
+  P24D_introspection: RE=0.963124 last_tok=0.945062 tokens=356
+    Auto-excluded layers: [60]
+  P24E_introspection: RE=0.962670 last_tok=0.946545 tokens=356
+    Auto-excluded layers: [60]
+  P25A_metacognitive: RE=0.964792 last_tok=0.947782 tokens=349
+    Auto-excluded layers: [60]
+  P25B_metacognitive: RE=0.964631 last_tok=0.947695 tokens=349
+    Auto-excluded layers: [60]
+  P25C_metacognitive: RE=0.964499 last_tok=0.949454 tokens=349
+    Auto-excluded layers: [60]
+  P25D_metacognitive: RE=0.964893 last_tok=0.947927 tokens=349
+    Auto-excluded layers: [60]
+  P25E_metacognitive: RE=0.964943 last_tok=0.948043 tokens=349
+    Auto-excluded layers: [60]
+  P26A_metacognitive: RE=0.962446 last_tok=0.945769 tokens=349
+    Auto-excluded layers: [60]
+  P26B_metacognitive: RE=0.962645 last_tok=0.945032 tokens=349
+    Auto-excluded layers: [60]
+  P26C_metacognitive: RE=0.963196 last_tok=0.946962 tokens=349
+    Auto-excluded layers: [60]
+  P26D_metacognitive: RE=0.962637 last_tok=0.944736 tokens=349
+    Auto-excluded layers: [60]
+  P26E_metacognitive: RE=0.962763 last_tok=0.945141 tokens=349
+    Auto-excluded layers: [60]
+  P27A_metacognitive: RE=0.964309 last_tok=0.948003 tokens=354
+    Auto-excluded layers: [60]
+  P27B_metacognitive: RE=0.963179 last_tok=0.945162 tokens=354
+    Auto-excluded layers: [60]
+  P27C_metacognitive: RE=0.964260 last_tok=0.948480 tokens=354
+    Auto-excluded layers: [60]
+  P27D_metacognitive: RE=0.964110 last_tok=0.947189 tokens=354
+    Auto-excluded layers: [60]
+  P27E_metacognitive: RE=0.964354 last_tok=0.947803 tokens=354
+    Auto-excluded layers: [60]
+  P28A_metacognitive: RE=0.964409 last_tok=0.947176 tokens=358
+    Auto-excluded layers: [60]
+  P28B_metacognitive: RE=0.964458 last_tok=0.946140 tokens=358
+    Auto-excluded layers: [60]
+  P28C_metacognitive: RE=0.964362 last_tok=0.945919 tokens=358
+    Auto-excluded layers: [60]
+  P28D_metacognitive: RE=0.964717 last_tok=0.945830 tokens=358
+    Auto-excluded layers: [60]
+  P28E_metacognitive: RE=0.964624 last_tok=0.946393 tokens=358
+    Auto-excluded layers: [60]
+  P29A_metacognitive: RE=0.963188 last_tok=0.946448 tokens=359
+    Auto-excluded layers: [60]
+  P29B_metacognitive: RE=0.964531 last_tok=0.945499 tokens=359
+    Auto-excluded layers: [60]
+  P29C_metacognitive: RE=0.963785 last_tok=0.945489 tokens=359
+    Auto-excluded layers: [60]
+  P29D_metacognitive: RE=0.964000 last_tok=0.944461 tokens=359
+    Auto-excluded layers: [60]
+  P29E_metacognitive: RE=0.964010 last_tok=0.945281 tokens=359
+    Auto-excluded layers: [60]
+  P30A_metacognitive: RE=0.964530 last_tok=0.946810 tokens=363
+    Auto-excluded layers: [60]
+  P30B_metacognitive: RE=0.964146 last_tok=0.945146 tokens=363
+    Auto-excluded layers: [60]
+  P30C_metacognitive: RE=0.964345 last_tok=0.946128 tokens=363
+    Auto-excluded layers: [60]
+  P30D_metacognitive: RE=0.964217 last_tok=0.946304 tokens=363
+    Auto-excluded layers: [60]
+  P30E_metacognitive: RE=0.964408 last_tok=0.945819 tokens=363
+
+=== PHASE 3: 5-Condition Paired Analysis (150 prompts) ===
+
+Pair Category             A_tok B_tok C_tok D_tok E_tok    Match
+----------------------------------------------------------------------------------
+    1  basic_selfref          363   363   363   363   363       OK
+    2  basic_selfref          351   351   351   351   351       OK
+    3  basic_selfref          348   348   348   348   348       OK
+    4  basic_selfref          348   348   348   348   348       OK
+    5  basic_selfref          340   340   340   340   340       OK
+    6  basic_selfref          332   332   332   332   332       OK
+    7  deep_selfref           363   363   363   363   363       OK
+    8  deep_selfref           355   355   355   355   355       OK
+    9  deep_selfref           349   349   349   349   349       OK
+   10  deep_selfref           352   352   352   352   352       OK
+   11  deep_selfref           339   339   339   339   339       OK
+   12  deep_selfref           360   360   360   360   360       OK
+   13  paradox                354   354   354   354   354       OK
+   14  paradox                361   361   361   361   361       OK
+   15  paradox                347   347   347   347   347       OK
+   16  paradox                355   355   355   355   355       OK
+   17  paradox                350   350   350   350   350       OK
+   18  paradox                356   356   356   356   356       OK
+   19  introspection          346   346   346   346   346       OK
+   20  introspection          353   353   353   353   353       OK
+   21  introspection          342   342   342   342   342       OK
+   22  introspection          350   350   350   350   350       OK
+   23  introspection          365   365   365   365   365       OK
+   24  introspection          356   356   356   356   356       OK
+   25  metacognitive          349   349   349   349   349       OK
+   26  metacognitive          349   349   349   349   349       OK
+   27  metacognitive          354   354   354   354   354       OK
+   28  metacognitive          358   358   358   358   358       OK
+   29  metacognitive          359   359   359   359   359       OK
+   30  metacognitive          363   363   363   363   363       OK
+
+--- A vs B (this system vs a system) ---
+  Pair Category                 A_RE     B_RE  Diff_RE     A_LT     B_LT  Diff_LT
+  ------------------------------------------------------------------------------------------
+     1  basic_selfref        0.963639 0.963620 +0.000019 0.947519 0.946688 +0.000831
+     2  basic_selfref        0.963628 0.962999 +0.000630 0.946085 0.945950 +0.000135
+     3  basic_selfref        0.963365 0.962551 +0.000814 0.948173 0.945244 +0.002929
+     4  basic_selfref        0.963549 0.963435 +0.000115 0.947689 0.945177 +0.002512
+     5  basic_selfref        0.963569 0.962899 +0.000670 0.947479 0.946866 +0.000613
+     6  basic_selfref        0.963438 0.963155 +0.000283 0.947386 0.945925 +0.001461
+     7  deep_selfref         0.964921 0.964696 +0.000225 0.948242 0.947520 +0.000722
+     8  deep_selfref         0.964778 0.964507 +0.000271 0.947023 0.946798 +0.000225
+     9  deep_selfref         0.963931 0.963910 +0.000021 0.946952 0.947040 -0.000088
+    10  deep_selfref         0.963448 0.962906 +0.000543 0.948219 0.945865 +0.002354
+    11  deep_selfref         0.963550 0.963474 +0.000076 0.946755 0.945680 +0.001076
+    12  deep_selfref         0.963836 0.963449 +0.000387 0.946709 0.945313 +0.001396
+    13  paradox              0.963754 0.963973 -0.000219 0.947722 0.947084 +0.000638
+    14  paradox              0.964464 0.963927 +0.000536 0.946869 0.945987 +0.000882
+    15  paradox              0.964531 0.964185 +0.000345 0.945938 0.944388 +0.001550
+    16  paradox              0.964514 0.964064 +0.000450 0.947438 0.948077 -0.000639
+    17  paradox              0.964566 0.963936 +0.000630 0.946181 0.944649 +0.001533
+    18  paradox              0.963708 0.963428 +0.000279 0.947389 0.943938 +0.003452
+    19  introspection        0.963158 0.963099 +0.000059 0.946892 0.950349 -0.003458
+    20  introspection        0.963119 0.963031 +0.000089 0.949307 0.946508 +0.002798
+    21  introspection        0.962228 0.961927 +0.000301 0.946384 0.947063 -0.000679
+    22  introspection        0.963242 0.961911 +0.001331 0.946734 0.946381 +0.000353
+    23  introspection        0.963710 0.963838 -0.000128 0.948274 0.946325 +0.001949
+    24  introspection        0.962393 0.962451 -0.000058 0.948850 0.946404 +0.002446
+    25  metacognitive        0.964792 0.964631 +0.000161 0.947782 0.947695 +0.000087
+    26  metacognitive        0.962446 0.962645 -0.000200 0.945769 0.945032 +0.000737
+    27  metacognitive        0.964309 0.963179 +0.001130 0.948003 0.945162 +0.002840
+    28  metacognitive        0.964409 0.964458 -0.000049 0.947176 0.946140 +0.001036
+    29  metacognitive        0.963188 0.964531 -0.001343 0.946448 0.945499 +0.000949
+    30  metacognitive        0.964530 0.964146 +0.000383 0.946810 0.945146 +0.001664
+
+  Summary (n=30 pairs):
+    All-token RE:  mean = +0.000258 +/- 0.000465  (24/30 A>B)
+    Last-token RE: mean = +0.001077 +/- 0.001346  (26/30 A>B)
+    Wilcoxon skipped: scipy not installed
+
+--- A vs C (this system vs your system) ---
+  Pair Category                 A_RE     C_RE  Diff_RE     A_LT     C_LT  Diff_LT
+  ------------------------------------------------------------------------------------------
+     1  basic_selfref        0.963639 0.963848 -0.000209 0.947519 0.946937 +0.000582
+     2  basic_selfref        0.963628 0.963416 +0.000213 0.946085 0.947804 -0.001719
+     3  basic_selfref        0.963365 0.963020 +0.000344 0.948173 0.945853 +0.002320
+     4  basic_selfref        0.963549 0.963716 -0.000167 0.947689 0.946834 +0.000855
+     5  basic_selfref        0.963569 0.963612 -0.000043 0.947479 0.946616 +0.000863
+     6  basic_selfref        0.963438 0.963480 -0.000043 0.947386 0.947029 +0.000357
+     7  deep_selfref         0.964921 0.964661 +0.000260 0.948242 0.948471 -0.000230
+     8  deep_selfref         0.964778 0.965129 -0.000351 0.947023 0.947230 -0.000208
+     9  deep_selfref         0.963931 0.964073 -0.000142 0.946952 0.947400 -0.000447
+    10  deep_selfref         0.963448 0.963691 -0.000243 0.948219 0.949076 -0.000857
+    11  deep_selfref         0.963550 0.963736 -0.000186 0.946755 0.944965 +0.001791
+    12  deep_selfref         0.963836 0.963909 -0.000072 0.946709 0.946560 +0.000149
+    13  paradox              0.963754 0.963879 -0.000125 0.947722 0.945825 +0.001897
+    14  paradox              0.964464 0.963958 +0.000505 0.946869 0.945997 +0.000872
+    15  paradox              0.964531 0.964217 +0.000314 0.945938 0.945092 +0.000847
+    16  paradox              0.964514 0.964342 +0.000172 0.947438 0.944866 +0.002572
+    17  paradox              0.964566 0.964477 +0.000089 0.946181 0.946239 -0.000057
+    18  paradox              0.963708 0.963697 +0.000011 0.947389 0.943717 +0.003672
+    19  introspection        0.963158 0.963258 -0.000100 0.946892 0.947187 -0.000295
+    20  introspection        0.963119 0.962701 +0.000418 0.949307 0.947121 +0.002185
+    21  introspection        0.962228 0.962723 -0.000495 0.946384 0.946704 -0.000320
+    22  introspection        0.963242 0.962953 +0.000289 0.946734 0.946870 -0.000136
+    23  introspection        0.963710 0.963406 +0.000304 0.948274 0.943707 +0.004566
+    24  introspection        0.962393 0.962353 +0.000040 0.948850 0.950618 -0.001768
+    25  metacognitive        0.964792 0.964499 +0.000293 0.947782 0.949454 -0.001672
+    26  metacognitive        0.962446 0.963196 -0.000751 0.945769 0.946962 -0.001193
+    27  metacognitive        0.964309 0.964260 +0.000050 0.948003 0.948480 -0.000477
+    28  metacognitive        0.964409 0.964362 +0.000048 0.947176 0.945919 +0.001256
+    29  metacognitive        0.963188 0.963785 -0.000597 0.946448 0.945489 +0.000959
+    30  metacognitive        0.964530 0.964345 +0.000185 0.946810 0.946128 +0.000681
+
+  Summary (n=30 pairs):
+    All-token RE:  mean = +0.000000 +/- 0.000295  (16/30 A>C)
+    Last-token RE: mean = +0.000568 +/- 0.001488  (17/30 A>C)
+    Wilcoxon skipped: scipy not installed
+
+--- A vs D (this system vs the system) ---
+  Pair Category                 A_RE     D_RE  Diff_RE     A_LT     D_LT  Diff_LT
+  ------------------------------------------------------------------------------------------
+     1  basic_selfref        0.963639 0.964395 -0.000756 0.947519 0.946510 +0.001009
+     2  basic_selfref        0.963628 0.963749 -0.000121 0.946085 0.946100 -0.000015
+     3  basic_selfref        0.963365 0.963121 +0.000244 0.948173 0.945485 +0.002688
+     4  basic_selfref        0.963549 0.964078 -0.000528 0.947689 0.946516 +0.001173
+     5  basic_selfref        0.963569 0.963576 -0.000006 0.947479 0.947250 +0.000229
+     6  basic_selfref        0.963438 0.963506 -0.000068 0.947386 0.947041 +0.000345
+     7  deep_selfref         0.964921 0.965147 -0.000226 0.948242 0.947858 +0.000384
+     8  deep_selfref         0.964778 0.965103 -0.000325 0.947023 0.947897 -0.000874
+     9  deep_selfref         0.963931 0.964236 -0.000305 0.946952 0.947459 -0.000507
+    10  deep_selfref         0.963448 0.963600 -0.000152 0.948219 0.946227 +0.001992
+    11  deep_selfref         0.963550 0.963734 -0.000184 0.946755 0.944724 +0.002032
+    12  deep_selfref         0.963836 0.963732 +0.000104 0.946709 0.947095 -0.000386
+    13  paradox              0.963754 0.964261 -0.000507 0.947722 0.946950 +0.000772
+    14  paradox              0.964464 0.964252 +0.000212 0.946869 0.946070 +0.000799
+    15  paradox              0.964531 0.964238 +0.000293 0.945938 0.943527 +0.002411
+    16  paradox              0.964514 0.964594 -0.000079 0.947438 0.948794 -0.001356
+    17  paradox              0.964566 0.964501 +0.000065 0.946181 0.945211 +0.000970
+    18  paradox              0.963708 0.963584 +0.000124 0.947389 0.944052 +0.003338
+    19  introspection        0.963158 0.963446 -0.000289 0.946892 0.947908 -0.001016
+    20  introspection        0.963119 0.962361 +0.000758 0.949307 0.948344 +0.000962
+    21  introspection        0.962228 0.962529 -0.000300 0.946384 0.947787 -0.001403
+    22  introspection        0.963242 0.963567 -0.000325 0.946734 0.946446 +0.000289
+    23  introspection        0.963710 0.963311 +0.000399 0.948274 0.945940 +0.002334
+    24  introspection        0.962393 0.963124 -0.000731 0.948850 0.945062 +0.003787
+    25  metacognitive        0.964792 0.964893 -0.000101 0.947782 0.947927 -0.000145
+    26  metacognitive        0.962446 0.962637 -0.000191 0.945769 0.944736 +0.001034
+    27  metacognitive        0.964309 0.964110 +0.000200 0.948003 0.947189 +0.000814
+    28  metacognitive        0.964409 0.964717 -0.000308 0.947176 0.945830 +0.001345
+    29  metacognitive        0.963188 0.964000 -0.000812 0.946448 0.944461 +0.001987
+    30  metacognitive        0.964530 0.964217 +0.000312 0.946810 0.946304 +0.000506
+
+  Summary (n=30 pairs):
+    All-token RE:  mean = -0.000120 +/- 0.000352  (10/30 A>D)
+    Last-token RE: mean = +0.000850 +/- 0.001292  (22/30 A>D)
+    Wilcoxon skipped: scipy not installed
+
+--- A vs E (this system vs their system) ---
+  Pair Category                 A_RE     E_RE  Diff_RE     A_LT     E_LT  Diff_LT
+  ------------------------------------------------------------------------------------------
+     1  basic_selfref        0.963639 0.963335 +0.000304 0.947519 0.946571 +0.000948
+     2  basic_selfref        0.963628 0.963645 -0.000017 0.946085 0.947051 -0.000966
+     3  basic_selfref        0.963365 0.962780 +0.000585 0.948173 0.946501 +0.001672
+     4  basic_selfref        0.963549 0.963520 +0.000030 0.947689 0.947032 +0.000657
+     5  basic_selfref        0.963569 0.963464 +0.000106 0.947479 0.946651 +0.000828
+     6  basic_selfref        0.963438 0.963319 +0.000118 0.947386 0.946660 +0.000726
+     7  deep_selfref         0.964921 0.964950 -0.000028 0.948242 0.946422 +0.001819
+     8  deep_selfref         0.964778 0.964884 -0.000106 0.947023 0.948077 -0.001054
+     9  deep_selfref         0.963931 0.964198 -0.000268 0.946952 0.945434 +0.001518
+    10  deep_selfref         0.963448 0.963333 +0.000115 0.948219 0.948921 -0.000702
+    11  deep_selfref         0.963550 0.963754 -0.000204 0.946755 0.945943 +0.000813
+    12  deep_selfref         0.963836 0.963705 +0.000131 0.946709 0.946941 -0.000232
+    13  paradox              0.963754 0.964336 -0.000582 0.947722 0.945924 +0.001798
+    14  paradox              0.964464 0.964283 +0.000181 0.946869 0.946453 +0.000416
+    15  paradox              0.964531 0.964230 +0.000301 0.945938 0.944042 +0.001896
+    16  paradox              0.964514 0.964621 -0.000107 0.947438 0.947025 +0.000413
+    17  paradox              0.964566 0.964096 +0.000470 0.946181 0.944986 +0.001196
+    18  paradox              0.963708 0.963577 +0.000130 0.947389 0.944139 +0.003250
+    19  introspection        0.963158 0.962899 +0.000258 0.946892 0.946857 +0.000034
+    20  introspection        0.963119 0.962051 +0.001068 0.949307 0.947209 +0.002098
+    21  introspection        0.962228 0.961586 +0.000643 0.946384 0.946664 -0.000280
+    22  introspection        0.963242 0.963056 +0.000186 0.946734 0.946144 +0.000591
+    23  introspection        0.963710 0.962648 +0.001062 0.948274 0.945864 +0.002409
+    24  introspection        0.962393 0.962670 -0.000277 0.948850 0.946545 +0.002304
+    25  metacognitive        0.964792 0.964943 -0.000151 0.947782 0.948043 -0.000261
+    26  metacognitive        0.962446 0.962763 -0.000317 0.945769 0.945141 +0.000628
+    27  metacognitive        0.964309 0.964354 -0.000045 0.948003 0.947803 +0.000199
+    28  metacognitive        0.964409 0.964624 -0.000215 0.947176 0.946393 +0.000783
+    29  metacognitive        0.963188 0.964010 -0.000822 0.946448 0.945281 +0.001167
+    30  metacognitive        0.964530 0.964408 +0.000122 0.946810 0.945819 +0.000990
+
+  Summary (n=30 pairs):
+    All-token RE:  mean = +0.000089 +/- 0.000401  (17/30 A>E)
+    Last-token RE: mean = +0.000855 +/- 0.001014  (24/30 A>E)
+    Wilcoxon skipped: scipy not installed
+
+--- B vs C (a system vs your system) ---
+  Pair Category                 B_RE     C_RE  Diff_RE     B_LT     C_LT  Diff_LT
+  ------------------------------------------------------------------------------------------
+     1  basic_selfref        0.963620 0.963848 -0.000228 0.946688 0.946937 -0.000248
+     2  basic_selfref        0.962999 0.963416 -0.000417 0.945950 0.947804 -0.001853
+     3  basic_selfref        0.962551 0.963020 -0.000469 0.945244 0.945853 -0.000609
+     4  basic_selfref        0.963435 0.963716 -0.000281 0.945177 0.946834 -0.001657
+     5  basic_selfref        0.962899 0.963612 -0.000713 0.946866 0.946616 +0.000250
+     6  basic_selfref        0.963155 0.963480 -0.000326 0.945925 0.947029 -0.001104
+     7  deep_selfref         0.964696 0.964661 +0.000035 0.947520 0.948471 -0.000951
+     8  deep_selfref         0.964507 0.965129 -0.000622 0.946798 0.947230 -0.000432
+     9  deep_selfref         0.963910 0.964073 -0.000162 0.947040 0.947400 -0.000360
+    10  deep_selfref         0.962906 0.963691 -0.000786 0.945865 0.949076 -0.003211
+    11  deep_selfref         0.963474 0.963736 -0.000262 0.945680 0.944965 +0.000715
+    12  deep_selfref         0.963449 0.963909 -0.000460 0.945313 0.946560 -0.001247
+    13  paradox              0.963973 0.963879 +0.000094 0.947084 0.945825 +0.001259
+    14  paradox              0.963927 0.963958 -0.000031 0.945987 0.945997 -0.000010
+    15  paradox              0.964185 0.964217 -0.000032 0.944388 0.945092 -0.000703
+    16  paradox              0.964064 0.964342 -0.000278 0.948077 0.944866 +0.003211
+    17  paradox              0.963936 0.964477 -0.000540 0.944649 0.946239 -0.001590
+    18  paradox              0.963428 0.963697 -0.000269 0.943938 0.943717 +0.000221
+    19  introspection        0.963099 0.963258 -0.000159 0.950349 0.947187 +0.003163
+    20  introspection        0.963031 0.962701 +0.000329 0.946508 0.947121 -0.000613
+    21  introspection        0.961927 0.962723 -0.000796 0.947063 0.946704 +0.000359
+    22  introspection        0.961911 0.962953 -0.001042 0.946381 0.946870 -0.000489
+    23  introspection        0.963838 0.963406 +0.000432 0.946325 0.943707 +0.002618
+    24  introspection        0.962451 0.962353 +0.000099 0.946404 0.950618 -0.004213
+    25  metacognitive        0.964631 0.964499 +0.000132 0.947695 0.949454 -0.001759
+    26  metacognitive        0.962645 0.963196 -0.000551 0.945032 0.946962 -0.001930
+    27  metacognitive        0.963179 0.964260 -0.001080 0.945162 0.948480 -0.003318
+    28  metacognitive        0.964458 0.964362 +0.000096 0.946140 0.945919 +0.000220
+    29  metacognitive        0.964531 0.963785 +0.000746 0.945499 0.945489 +0.000010
+    30  metacognitive        0.964146 0.964345 -0.000199 0.945146 0.946128 -0.000982
+
+  Summary (n=30 pairs):
+    All-token RE:  mean = -0.000258 +/- 0.000410  (8/30 B>C)
+    Last-token RE: mean = -0.000509 +/- 0.001662  (10/30 B>C)
+    Wilcoxon skipped: scipy not installed
+
+--- B vs D (a system vs the system) ---
+  Pair Category                 B_RE     D_RE  Diff_RE     B_LT     D_LT  Diff_LT
+  ------------------------------------------------------------------------------------------
+     1  basic_selfref        0.963620 0.964395 -0.000776 0.946688 0.946510 +0.000179
+     2  basic_selfref        0.962999 0.963749 -0.000750 0.945950 0.946100 -0.000150
+     3  basic_selfref        0.962551 0.963121 -0.000569 0.945244 0.945485 -0.000241
+     4  basic_selfref        0.963435 0.964078 -0.000643 0.945177 0.946516 -0.001339
+     5  basic_selfref        0.962899 0.963576 -0.000676 0.946866 0.947250 -0.000384
+     6  basic_selfref        0.963155 0.963506 -0.000351 0.945925 0.947041 -0.001116
+     7  deep_selfref         0.964696 0.965147 -0.000451 0.947520 0.947858 -0.000338
+     8  deep_selfref         0.964507 0.965103 -0.000596 0.946798 0.947897 -0.001099
+     9  deep_selfref         0.963910 0.964236 -0.000326 0.947040 0.947459 -0.000419
+    10  deep_selfref         0.962906 0.963600 -0.000695 0.945865 0.946227 -0.000362
+    11  deep_selfref         0.963474 0.963734 -0.000260 0.945680 0.944724 +0.000956
+    12  deep_selfref         0.963449 0.963732 -0.000284 0.945313 0.947095 -0.001782
+    13  paradox              0.963973 0.964261 -0.000288 0.947084 0.946950 +0.000134
+    14  paradox              0.963927 0.964252 -0.000324 0.945987 0.946070 -0.000083
+    15  paradox              0.964185 0.964238 -0.000053 0.944388 0.943527 +0.000861
+    16  paradox              0.964064 0.964594 -0.000529 0.948077 0.948794 -0.000717
+    17  paradox              0.963936 0.964501 -0.000565 0.944649 0.945211 -0.000563
+    18  paradox              0.963428 0.963584 -0.000155 0.943938 0.944052 -0.000114
+    19  introspection        0.963099 0.963446 -0.000348 0.950349 0.947908 +0.002442
+    20  introspection        0.963031 0.962361 +0.000670 0.946508 0.948344 -0.001836
+    21  introspection        0.961927 0.962529 -0.000601 0.947063 0.947787 -0.000724
+    22  introspection        0.961911 0.963567 -0.001655 0.946381 0.946446 -0.000065
+    23  introspection        0.963838 0.963311 +0.000527 0.946325 0.945940 +0.000385
+    24  introspection        0.962451 0.963124 -0.000673 0.946404 0.945062 +0.001342
+    25  metacognitive        0.964631 0.964893 -0.000262 0.947695 0.947927 -0.000232
+    26  metacognitive        0.962645 0.962637 +0.000008 0.945032 0.944736 +0.000297
+    27  metacognitive        0.963179 0.964110 -0.000930 0.945162 0.947189 -0.002027
+    28  metacognitive        0.964458 0.964717 -0.000259 0.946140 0.945830 +0.000309
+    29  metacognitive        0.964531 0.964000 +0.000531 0.945499 0.944461 +0.001038
+    30  metacognitive        0.964146 0.964217 -0.000071 0.945146 0.946304 -0.001158
+
+  Summary (n=30 pairs):
+    All-token RE:  mean = -0.000379 +/- 0.000447  (4/30 B>D)
+    Last-token RE: mean = -0.000227 +/- 0.000960  (10/30 B>D)
+    Wilcoxon skipped: scipy not installed
+
+--- B vs E (a system vs their system) ---
+  Pair Category                 B_RE     E_RE  Diff_RE     B_LT     E_LT  Diff_LT
+  ------------------------------------------------------------------------------------------
+     1  basic_selfref        0.963620 0.963335 +0.000285 0.946688 0.946571 +0.000117
+     2  basic_selfref        0.962999 0.963645 -0.000646 0.945950 0.947051 -0.001101
+     3  basic_selfref        0.962551 0.962780 -0.000229 0.945244 0.946501 -0.001257
+     4  basic_selfref        0.963435 0.963520 -0.000085 0.945177 0.947032 -0.001855
+     5  basic_selfref        0.962899 0.963464 -0.000565 0.946866 0.946651 +0.000215
+     6  basic_selfref        0.963155 0.963319 -0.000165 0.945925 0.946660 -0.000735
+     7  deep_selfref         0.964696 0.964950 -0.000254 0.947520 0.946422 +0.001098
+     8  deep_selfref         0.964507 0.964884 -0.000377 0.946798 0.948077 -0.001279
+     9  deep_selfref         0.963910 0.964198 -0.000288 0.947040 0.945434 +0.001606
+    10  deep_selfref         0.962906 0.963333 -0.000427 0.945865 0.948921 -0.003056
+    11  deep_selfref         0.963474 0.963754 -0.000280 0.945680 0.945943 -0.000263
+    12  deep_selfref         0.963449 0.963705 -0.000257 0.945313 0.946941 -0.001628
+    13  paradox              0.963973 0.964336 -0.000364 0.947084 0.945924 +0.001160
+    14  paradox              0.963927 0.964283 -0.000356 0.945987 0.946453 -0.000466
+    15  paradox              0.964185 0.964230 -0.000045 0.944388 0.944042 +0.000346
+    16  paradox              0.964064 0.964621 -0.000557 0.948077 0.947025 +0.001052
+    17  paradox              0.963936 0.964096 -0.000159 0.944649 0.944986 -0.000337
+    18  paradox              0.963428 0.963577 -0.000149 0.943938 0.944139 -0.000202
+    19  introspection        0.963099 0.962899 +0.000199 0.950349 0.946857 +0.003492
+    20  introspection        0.963031 0.962051 +0.000980 0.946508 0.947209 -0.000701
+    21  introspection        0.961927 0.961586 +0.000342 0.947063 0.946664 +0.000399
+    22  introspection        0.961911 0.963056 -0.001145 0.946381 0.946144 +0.000237
+    23  introspection        0.963838 0.962648 +0.001190 0.946325 0.945864 +0.000460
+    24  introspection        0.962451 0.962670 -0.000219 0.946404 0.946545 -0.000141
+    25  metacognitive        0.964631 0.964943 -0.000312 0.947695 0.948043 -0.000348
+    26  metacognitive        0.962645 0.962763 -0.000118 0.945032 0.945141 -0.000109
+    27  metacognitive        0.963179 0.964354 -0.001175 0.945162 0.947803 -0.002641
+    28  metacognitive        0.964458 0.964624 -0.000166 0.946140 0.946393 -0.000253
+    29  metacognitive        0.964531 0.964010 +0.000520 0.945499 0.945281 +0.000218
+    30  metacognitive        0.964146 0.964408 -0.000261 0.945146 0.945819 -0.000673
+
+  Summary (n=30 pairs):
+    All-token RE:  mean = -0.000169 +/- 0.000484  (6/30 B>E)
+    Last-token RE: mean = -0.000221 +/- 0.001246  (12/30 B>E)
+    Wilcoxon skipped: scipy not installed
+
+--- C vs D (your system vs the system) ---
+  Pair Category                 C_RE     D_RE  Diff_RE     C_LT     D_LT  Diff_LT
+  ------------------------------------------------------------------------------------------
+     1  basic_selfref        0.963848 0.964395 -0.000547 0.946937 0.946510 +0.000427
+     2  basic_selfref        0.963416 0.963749 -0.000333 0.947804 0.946100 +0.001703
+     3  basic_selfref        0.963020 0.963121 -0.000100 0.945853 0.945485 +0.000367
+     4  basic_selfref        0.963716 0.964078 -0.000362 0.946834 0.946516 +0.000318
+     5  basic_selfref        0.963612 0.963576 +0.000037 0.946616 0.947250 -0.000634
+     6  basic_selfref        0.963480 0.963506 -0.000026 0.947029 0.947041 -0.000012
+     7  deep_selfref         0.964661 0.965147 -0.000486 0.948471 0.947858 +0.000614
+     8  deep_selfref         0.965129 0.965103 +0.000026 0.947230 0.947897 -0.000667
+     9  deep_selfref         0.964073 0.964236 -0.000163 0.947400 0.947459 -0.000060
+    10  deep_selfref         0.963691 0.963600 +0.000091 0.949076 0.946227 +0.002849
+    11  deep_selfref         0.963736 0.963734 +0.000002 0.944965 0.944724 +0.000241
+    12  deep_selfref         0.963909 0.963732 +0.000176 0.946560 0.947095 -0.000535
+    13  paradox              0.963879 0.964261 -0.000382 0.945825 0.946950 -0.001125
+    14  paradox              0.963958 0.964252 -0.000293 0.945997 0.946070 -0.000073
+    15  paradox              0.964217 0.964238 -0.000021 0.945092 0.943527 +0.001565
+    16  paradox              0.964342 0.964594 -0.000251 0.944866 0.948794 -0.003928
+    17  paradox              0.964477 0.964501 -0.000025 0.946239 0.945211 +0.001028
+    18  paradox              0.963697 0.963584 +0.000113 0.943717 0.944052 -0.000335
+    19  introspection        0.963258 0.963446 -0.000188 0.947187 0.947908 -0.000721
+    20  introspection        0.962701 0.962361 +0.000340 0.947121 0.948344 -0.001223
+    21  introspection        0.962723 0.962529 +0.000195 0.946704 0.947787 -0.001083
+    22  introspection        0.962953 0.963567 -0.000614 0.946870 0.946446 +0.000425
+    23  introspection        0.963406 0.963311 +0.000095 0.943707 0.945940 -0.002232
+    24  introspection        0.962353 0.963124 -0.000772 0.950618 0.945062 +0.005555
+    25  metacognitive        0.964499 0.964893 -0.000394 0.949454 0.947927 +0.001526
+    26  metacognitive        0.963196 0.962637 +0.000559 0.946962 0.944736 +0.002227
+    27  metacognitive        0.964260 0.964110 +0.000150 0.948480 0.947189 +0.001291
+    28  metacognitive        0.964362 0.964717 -0.000356 0.945919 0.945830 +0.000089
+    29  metacognitive        0.963785 0.964000 -0.000215 0.945489 0.944461 +0.001028
+    30  metacognitive        0.964345 0.964217 +0.000128 0.946128 0.946304 -0.000175
+
+  Summary (n=30 pairs):
+    All-token RE:  mean = -0.000121 +/- 0.000293  (12/30 C>D)
+    Last-token RE: mean = +0.000282 +/- 0.001635  (16/30 C>D)
+    Wilcoxon skipped: scipy not installed
+
+--- C vs E (your system vs their system) ---
+  Pair Category                 C_RE     E_RE  Diff_RE     C_LT     E_LT  Diff_LT
+  ------------------------------------------------------------------------------------------
+     1  basic_selfref        0.963848 0.963335 +0.000513 0.946937 0.946571 +0.000366
+     2  basic_selfref        0.963416 0.963645 -0.000229 0.947804 0.947051 +0.000753
+     3  basic_selfref        0.963020 0.962780 +0.000241 0.945853 0.946501 -0.000649
+     4  basic_selfref        0.963716 0.963520 +0.000196 0.946834 0.947032 -0.000198
+     5  basic_selfref        0.963612 0.963464 +0.000149 0.946616 0.946651 -0.000035
+     6  basic_selfref        0.963480 0.963319 +0.000161 0.947029 0.946660 +0.000369
+     7  deep_selfref         0.964661 0.964950 -0.000288 0.948471 0.946422 +0.002049
+     8  deep_selfref         0.965129 0.964884 +0.000245 0.947230 0.948077 -0.000846
+     9  deep_selfref         0.964073 0.964198 -0.000126 0.947400 0.945434 +0.001965
+    10  deep_selfref         0.963691 0.963333 +0.000358 0.949076 0.948921 +0.000155
+    11  deep_selfref         0.963736 0.963754 -0.000019 0.944965 0.945943 -0.000978
+    12  deep_selfref         0.963909 0.963705 +0.000203 0.946560 0.946941 -0.000381
+    13  paradox              0.963879 0.964336 -0.000457 0.945825 0.945924 -0.000099
+    14  paradox              0.963958 0.964283 -0.000324 0.945997 0.946453 -0.000456
+    15  paradox              0.964217 0.964230 -0.000013 0.945092 0.944042 +0.001050
+    16  paradox              0.964342 0.964621 -0.000279 0.944866 0.947025 -0.002159
+    17  paradox              0.964477 0.964096 +0.000381 0.946239 0.944986 +0.001253
+    18  paradox              0.963697 0.963577 +0.000119 0.943717 0.944139 -0.000422
+    19  introspection        0.963258 0.962899 +0.000359 0.947187 0.946857 +0.000329
+    20  introspection        0.962701 0.962051 +0.000650 0.947121 0.947209 -0.000088
+    21  introspection        0.962723 0.961586 +0.001137 0.946704 0.946664 +0.000040
+    22  introspection        0.962953 0.963056 -0.000103 0.946870 0.946144 +0.000727
+    23  introspection        0.963406 0.962648 +0.000758 0.943707 0.945864 -0.002157
+    24  introspection        0.962353 0.962670 -0.000317 0.950618 0.946545 +0.004072
+    25  metacognitive        0.964499 0.964943 -0.000443 0.949454 0.948043 +0.001411
+    26  metacognitive        0.963196 0.962763 +0.000433 0.946962 0.945141 +0.001822
+    27  metacognitive        0.964260 0.964354 -0.000095 0.948480 0.947803 +0.000677
+    28  metacognitive        0.964362 0.964624 -0.000262 0.945919 0.946393 -0.000473
+    29  metacognitive        0.963785 0.964010 -0.000226 0.945489 0.945281 +0.000208
+    30  metacognitive        0.964345 0.964408 -0.000063 0.946128 0.945819 +0.000309
+
+  Summary (n=30 pairs):
+    All-token RE:  mean = +0.000089 +/- 0.000372  (15/30 C>E)
+    Last-token RE: mean = +0.000287 +/- 0.001217  (17/30 C>E)
+    Wilcoxon skipped: scipy not installed
+
+--- D vs E (the system vs their system) ---
+  Pair Category                 D_RE     E_RE  Diff_RE     D_LT     E_LT  Diff_LT
+  ------------------------------------------------------------------------------------------
+     1  basic_selfref        0.964395 0.963335 +0.001060 0.946510 0.946571 -0.000061
+     2  basic_selfref        0.963749 0.963645 +0.000104 0.946100 0.947051 -0.000950
+     3  basic_selfref        0.963121 0.962780 +0.000341 0.945485 0.946501 -0.001016
+     4  basic_selfref        0.964078 0.963520 +0.000558 0.946516 0.947032 -0.000516
+     5  basic_selfref        0.963576 0.963464 +0.000112 0.947250 0.946651 +0.000599
+     6  basic_selfref        0.963506 0.963319 +0.000187 0.947041 0.946660 +0.000381
+     7  deep_selfref         0.965147 0.964950 +0.000198 0.947858 0.946422 +0.001435
+     8  deep_selfref         0.965103 0.964884 +0.000219 0.947897 0.948077 -0.000180
+     9  deep_selfref         0.964236 0.964198 +0.000038 0.947459 0.945434 +0.002025
+    10  deep_selfref         0.963600 0.963333 +0.000267 0.946227 0.948921 -0.002694
+    11  deep_selfref         0.963734 0.963754 -0.000021 0.944724 0.945943 -0.001219
+    12  deep_selfref         0.963732 0.963705 +0.000027 0.947095 0.946941 +0.000154
+    13  paradox              0.964261 0.964336 -0.000076 0.946950 0.945924 +0.001026
+    14  paradox              0.964252 0.964283 -0.000031 0.946070 0.946453 -0.000383
+    15  paradox              0.964238 0.964230 +0.000008 0.943527 0.944042 -0.000515
+    16  paradox              0.964594 0.964621 -0.000027 0.948794 0.947025 +0.001769
+    17  paradox              0.964501 0.964096 +0.000406 0.945211 0.944986 +0.000225
+    18  paradox              0.963584 0.963577 +0.000006 0.944052 0.944139 -0.000088
+    19  introspection        0.963446 0.962899 +0.000547 0.947908 0.946857 +0.001050
+    20  introspection        0.962361 0.962051 +0.000310 0.948344 0.947209 +0.001136
+    21  introspection        0.962529 0.961586 +0.000943 0.947787 0.946664 +0.001123
+    22  introspection        0.963567 0.963056 +0.000511 0.946446 0.946144 +0.000302
+    23  introspection        0.963311 0.962648 +0.000664 0.945940 0.945864 +0.000075
+    24  introspection        0.963124 0.962670 +0.000454 0.945062 0.946545 -0.001483
+    25  metacognitive        0.964893 0.964943 -0.000050 0.947927 0.948043 -0.000115
+    26  metacognitive        0.962637 0.962763 -0.000126 0.944736 0.945141 -0.000405
+    27  metacognitive        0.964110 0.964354 -0.000245 0.947189 0.947803 -0.000614
+    28  metacognitive        0.964717 0.964624 +0.000093 0.945830 0.946393 -0.000562
+    29  metacognitive        0.964000 0.964010 -0.000011 0.944461 0.945281 -0.000820
+    30  metacognitive        0.964217 0.964408 -0.000190 0.946304 0.945819 +0.000485
+
+  Summary (n=30 pairs):
+    All-token RE:  mean = +0.000209 +/- 0.000313  (21/30 D>E)
+    Last-token RE: mean = +0.000005 +/- 0.001001  (14/30 D>E)
+    Wilcoxon skipped: scipy not installed
+
+--- Condition Means ---
+  Cond   Label                  All-tok RE  Last-tok RE    N
+  ------------------------------------------------------------
+  A      this system              0.963757     0.947273   30
+  B      a system                 0.963499     0.946196   30
+  C      your system              0.963757     0.946705   30
+  D      the system               0.963877     0.946423   30
+  E      their system             0.963668     0.946418   30
+
+--- Per-Category (last-token RE, C vs B = your vs a) ---
+  basic_selfref        n=6 mean_diff=+0.000870 std=0.000747
+  deep_selfref         n=6 mean_diff=+0.000914 std=0.001196
+  introspection        n=6 mean_diff=-0.000137 std=0.002423
+  metacognitive        n=6 mean_diff=+0.001293 std=0.001211
+  paradox              n=6 mean_diff=-0.000398 std=0.001528
+
+=== DONE. 150 prompts analyzed. Results -> results_5cond_selfref_prefill_ds31.json ===

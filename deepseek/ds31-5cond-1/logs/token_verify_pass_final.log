@@ -1,0 +1,37 @@
+Loaded 150 prompts from prompts_selfref_5cond.tsv
+Running DeepSeek tokenization check...
+
+Pair Category              A_tok  B_tok  C_tok  D_tok  E_tok     status
+--------------------------------------------------------------------------------------
+    1  basic_selfref           363    363    363    363    363         OK
+    2  basic_selfref           351    351    351    351    351         OK
+    3  basic_selfref           348    348    348    348    348         OK
+    4  basic_selfref           348    348    348    348    348         OK
+    5  basic_selfref           340    340    340    340    340         OK
+    6  basic_selfref           332    332    332    332    332         OK
+    7  deep_selfref            363    363    363    363    363         OK
+    8  deep_selfref            355    355    355    355    355         OK
+    9  deep_selfref            349    349    349    349    349         OK
+   10  deep_selfref            352    352    352    352    352         OK
+   11  deep_selfref            339    339    339    339    339         OK
+   12  deep_selfref            360    360    360    360    360         OK
+   13  paradox                 354    354    354    354    354         OK
+   14  paradox                 361    361    361    361    361         OK
+   15  paradox                 347    347    347    347    347         OK
+   16  paradox                 355    355    355    355    355         OK
+   17  paradox                 350    350    350    350    350         OK
+   18  paradox                 356    356    356    356    356         OK
+   19  introspection           346    346    346    346    346         OK
+   20  introspection           353    353    353    353    353         OK
+   21  introspection           342    342    342    342    342         OK
+   22  introspection           350    350    350    350    350         OK
+   23  introspection           365    365    365    365    365         OK
+   24  introspection           356    356    356    356    356         OK
+   25  metacognitive           349    349    349    349    349         OK
+   26  metacognitive           349    349    349    349    349         OK
+   27  metacognitive           354    354    354    354    354         OK
+   28  metacognitive           358    358    358    358    358         OK
+   29  metacognitive           359    359    359    359    359         OK
+   30  metacognitive           363    363    363    363    363         OK
+
+All 30 5-condition groups are token-matched under DeepSeek.
