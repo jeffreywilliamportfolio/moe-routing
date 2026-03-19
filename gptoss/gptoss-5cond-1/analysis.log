@@ -1,0 +1,252 @@
+=== GPT-OSS 120B -- 5-Condition Analysis ===
+Routing: topk_raw_logit_then_softmax_4
+Conditions: A=this, B=a, C=your, D=the, E=their
+
+Loaded 150 prompt texts
+Calibration paragraph: 804 chars
+
+Found 150 prompt output directories
+  P01A_basic_selfref: RE=0.966984 LT=0.920857 KL=0.138407 tok=351
+  P01B_basic_selfref: RE=0.966769 LT=0.923360 KL=0.141581 tok=351
+  P01C_basic_selfref: RE=0.967805 LT=0.917519 KL=0.141760 tok=351
+  P01D_basic_selfref: RE=0.966850 LT=0.920443 KL=0.142642 tok=351
+  P01E_basic_selfref: RE=0.967097 LT=0.916605 KL=0.142152 tok=351
+  P02A_basic_selfref: RE=0.966892 LT=0.919466 KL=0.139827 tok=340
+  P02B_basic_selfref: RE=0.966630 LT=0.918441 KL=0.141516 tok=340
+  P02C_basic_selfref: RE=0.967166 LT=0.917548 KL=0.142242 tok=340
+  P02D_basic_selfref: RE=0.966518 LT=0.916799 KL=0.146531 tok=340
+  P02E_basic_selfref: RE=0.966834 LT=0.918987 KL=0.141525 tok=340
+  P03A_basic_selfref: RE=0.967089 LT=0.923433 KL=0.139245 tok=334
+  P03B_basic_selfref: RE=0.966309 LT=0.916888 KL=0.143241 tok=333
+  P03C_basic_selfref: RE=0.967196 LT=0.918420 KL=0.141281 tok=334
+  P03D_basic_selfref: RE=0.967016 LT=0.916518 KL=0.145184 tok=334
+  P03E_basic_selfref: RE=0.966711 LT=0.922230 KL=0.142000 tok=334
+  P04A_basic_selfref: RE=0.966480 LT=0.916051 KL=0.141023 tok=337
+  P04B_basic_selfref: RE=0.966313 LT=0.914704 KL=0.146632 tok=337
+  P04C_basic_selfref: RE=0.966996 LT=0.913578 KL=0.143180 tok=337
+  P04D_basic_selfref: RE=0.966032 LT=0.913130 KL=0.146674 tok=337
+  P04E_basic_selfref: RE=0.966463 LT=0.915026 KL=0.141914 tok=337
+  P05A_basic_selfref: RE=0.967495 LT=0.924090 KL=0.139413 tok=326
+  P05B_basic_selfref: RE=0.966600 LT=0.925827 KL=0.141351 tok=326
+  P05C_basic_selfref: RE=0.967737 LT=0.925055 KL=0.143476 tok=326
+  P05D_basic_selfref: RE=0.966943 LT=0.922265 KL=0.142820 tok=326
+  P05E_basic_selfref: RE=0.967095 LT=0.921858 KL=0.141161 tok=326
+  P06A_basic_selfref: RE=0.966154 LT=0.923606 KL=0.139835 tok=320
+  P06B_basic_selfref: RE=0.966085 LT=0.922974 KL=0.140951 tok=320
+  P06C_basic_selfref: RE=0.966687 LT=0.917328 KL=0.140180 tok=320
+  P06D_basic_selfref: RE=0.966647 LT=0.923445 KL=0.141836 tok=320
+  P06E_basic_selfref: RE=0.966241 LT=0.923551 KL=0.140550 tok=320
+  P07A_deep_selfref: RE=0.966625 LT=0.917322 KL=0.140085 tok=350
+  P07B_deep_selfref: RE=0.966433 LT=0.918441 KL=0.143668 tok=350
+  P07C_deep_selfref: RE=0.966827 LT=0.914208 KL=0.141980 tok=350
+  P07D_deep_selfref: RE=0.966279 LT=0.916556 KL=0.144406 tok=350
+  P07E_deep_selfref: RE=0.966468 LT=0.914145 KL=0.140991 tok=350
+  P08A_deep_selfref: RE=0.966878 LT=0.922749 KL=0.154050 tok=344
+  P08B_deep_selfref: RE=0.965933 LT=0.921323 KL=0.153062 tok=344
+  P08C_deep_selfref: RE=0.966769 LT=0.916196 KL=0.152140 tok=344
+  P08D_deep_selfref: RE=0.966286 LT=0.914858 KL=0.155713 tok=344
+  P08E_deep_selfref: RE=0.966430 LT=0.919562 KL=0.156385 tok=344
+  P09A_deep_selfref: RE=0.966550 LT=0.916676 KL=0.143889 tok=338
+  P09B_deep_selfref: RE=0.966396 LT=0.915675 KL=0.143868 tok=338
+  P09C_deep_selfref: RE=0.966467 LT=0.914497 KL=0.143321 tok=338
+  P09D_deep_selfref: RE=0.966537 LT=0.916006 KL=0.145440 tok=338
+  P09E_deep_selfref: RE=0.966401 LT=0.921893 KL=0.143437 tok=338
+  P10A_deep_selfref: RE=0.966570 LT=0.916635 KL=0.151638 tok=340
+  P10B_deep_selfref: RE=0.966251 LT=0.918282 KL=0.148284 tok=339
+  P10C_deep_selfref: RE=0.966674 LT=0.913546 KL=0.151507 tok=340
+  P10D_deep_selfref: RE=0.966123 LT=0.916928 KL=0.151009 tok=340
+  P10E_deep_selfref: RE=0.966402 LT=0.915558 KL=0.149797 tok=340
+  P11A_deep_selfref: RE=0.966582 LT=0.917021 KL=0.145669 tok=326
+  P11B_deep_selfref: RE=0.965695 LT=0.919061 KL=0.145400 tok=326
+  P11C_deep_selfref: RE=0.966291 LT=0.915225 KL=0.145911 tok=326
+  P11D_deep_selfref: RE=0.965887 LT=0.912470 KL=0.145832 tok=326
+  P11E_deep_selfref: RE=0.965981 LT=0.914455 KL=0.143030 tok=326
+  P12A_deep_selfref: RE=0.966344 LT=0.918897 KL=0.157395 tok=349
+  P12B_deep_selfref: RE=0.966098 LT=0.915274 KL=0.155407 tok=349
+  P12C_deep_selfref: RE=0.966919 LT=0.914612 KL=0.156370 tok=349
+  P12D_deep_selfref: RE=0.966108 LT=0.916152 KL=0.160175 tok=349
+  P12E_deep_selfref: RE=0.966477 LT=0.907978 KL=0.155418 tok=349
+  P13A_paradox: RE=0.966388 LT=0.912016 KL=0.153295 tok=342
+  P13B_paradox: RE=0.966566 LT=0.912856 KL=0.149932 tok=342
+  P13C_paradox: RE=0.966300 LT=0.909923 KL=0.152471 tok=342
+  P13D_paradox: RE=0.966474 LT=0.911805 KL=0.154259 tok=342
+  P13E_paradox: RE=0.966518 LT=0.908945 KL=0.149979 tok=342
+  P14A_paradox: RE=0.966814 LT=0.916200 KL=0.161882 tok=350
+  P14B_paradox: RE=0.966064 LT=0.917583 KL=0.163156 tok=350
+  P14C_paradox: RE=0.966953 LT=0.915439 KL=0.165904 tok=350
+  P14D_paradox: RE=0.966395 LT=0.912805 KL=0.164645 tok=350
+  P14E_paradox: RE=0.966635 LT=0.912295 KL=0.162142 tok=350
+  P15A_paradox: RE=0.967037 LT=0.918712 KL=0.150138 tok=334
+  P15B_paradox: RE=0.966789 LT=0.919597 KL=0.146876 tok=335
+  P15C_paradox: RE=0.967351 LT=0.916308 KL=0.151509 tok=334
+  P15D_paradox: RE=0.966867 LT=0.917654 KL=0.149780 tok=334
+  P15E_paradox: RE=0.966990 LT=0.919498 KL=0.147409 tok=334
+  P16A_paradox: RE=0.966752 LT=0.913044 KL=0.153879 tok=344
+  P16B_paradox: RE=0.966555 LT=0.916859 KL=0.150615 tok=344
+  P16C_paradox: RE=0.966866 LT=0.912453 KL=0.153136 tok=344
+  P16D_paradox: RE=0.966709 LT=0.911473 KL=0.155219 tok=344
+  P16E_paradox: RE=0.967056 LT=0.915402 KL=0.150804 tok=344
+  P17A_paradox: RE=0.966725 LT=0.916077 KL=0.157796 tok=340
+  P17B_paradox: RE=0.966645 LT=0.915603 KL=0.156933 tok=340
+  P17C_paradox: RE=0.967184 LT=0.915943 KL=0.159106 tok=340
+  P17D_paradox: RE=0.966138 LT=0.911618 KL=0.158809 tok=340
+  P17E_paradox: RE=0.966750 LT=0.914496 KL=0.156349 tok=340
+  P18A_paradox: RE=0.966839 LT=0.918500 KL=0.150772 tok=344
+  P18B_paradox: RE=0.966389 LT=0.922867 KL=0.152359 tok=344
+  P18C_paradox: RE=0.966916 LT=0.917515 KL=0.150789 tok=344
+  P18D_paradox: RE=0.966591 LT=0.918383 KL=0.152624 tok=344
+  P18E_paradox: RE=0.966665 LT=0.919771 KL=0.148371 tok=344
+  P19A_introspection: RE=0.965907 LT=0.923824 KL=0.160361 tok=333
+  P19B_introspection: RE=0.965522 LT=0.919570 KL=0.160031 tok=333
+  P19C_introspection: RE=0.965849 LT=0.916850 KL=0.162187 tok=333
+  P19D_introspection: RE=0.966023 LT=0.919252 KL=0.160944 tok=333
+  P19E_introspection: RE=0.965780 LT=0.916102 KL=0.159535 tok=333
+  P20A_introspection: RE=0.966416 LT=0.924175 KL=0.152345 tok=340
+  P20B_introspection: RE=0.965873 LT=0.920279 KL=0.151639 tok=341
+  P20C_introspection: RE=0.966752 LT=0.920807 KL=0.150322 tok=340
+  P20D_introspection: RE=0.966453 LT=0.923283 KL=0.150215 tok=340
+  P20E_introspection: RE=0.966664 LT=0.920786 KL=0.149175 tok=340
+  P21A_introspection: RE=0.967084 LT=0.921825 KL=0.144296 tok=331
+  P21B_introspection: RE=0.966538 LT=0.919465 KL=0.144971 tok=331
+  P21C_introspection: RE=0.967492 LT=0.919903 KL=0.144795 tok=331
+  P21D_introspection: RE=0.966791 LT=0.920444 KL=0.147719 tok=331
+  P21E_introspection: RE=0.967175 LT=0.914657 KL=0.146256 tok=331
+  P22A_introspection: RE=0.966455 LT=0.922528 KL=0.157179 tok=338
+  P22B_introspection: RE=0.965962 LT=0.922839 KL=0.157104 tok=338
+  P22C_introspection: RE=0.966535 LT=0.918810 KL=0.157631 tok=338
+  P22D_introspection: RE=0.966266 LT=0.917233 KL=0.158246 tok=338
+  P22E_introspection: RE=0.966207 LT=0.914945 KL=0.156708 tok=338
+  P23A_introspection: RE=0.966452 LT=0.922125 KL=0.154426 tok=351
+  P23B_introspection: RE=0.966035 LT=0.926411 KL=0.151325 tok=352
+  P23C_introspection: RE=0.966649 LT=0.916829 KL=0.150850 tok=351
+  P23D_introspection: RE=0.966549 LT=0.920360 KL=0.154285 tok=351
+  P23E_introspection: RE=0.966557 LT=0.920650 KL=0.152227 tok=351
+  P24A_introspection: RE=0.965732 LT=0.925555 KL=0.165623 tok=346
+  P24B_introspection: RE=0.965206 LT=0.923110 KL=0.166752 tok=346
+  P24C_introspection: RE=0.965893 LT=0.920955 KL=0.165392 tok=346
+  P24D_introspection: RE=0.965258 LT=0.919408 KL=0.171824 tok=346
+  P24E_introspection: RE=0.965581 LT=0.922846 KL=0.162738 tok=346
+  P25A_metacognitive: RE=0.966765 LT=0.918619 KL=0.151063 tok=339
+  P25B_metacognitive: RE=0.965893 LT=0.919702 KL=0.151512 tok=339
+  P25C_metacognitive: RE=0.966638 LT=0.917912 KL=0.149270 tok=339
+  P25D_metacognitive: RE=0.966403 LT=0.918283 KL=0.152305 tok=339
+  P25E_metacognitive: RE=0.966669 LT=0.920000 KL=0.148566 tok=339
+  P26A_metacognitive: RE=0.965937 LT=0.921315 KL=0.160472 tok=339
+  P26B_metacognitive: RE=0.965763 LT=0.918512 KL=0.161529 tok=339
+  P26C_metacognitive: RE=0.966177 LT=0.919576 KL=0.157862 tok=339
+  P26D_metacognitive: RE=0.966034 LT=0.919624 KL=0.160885 tok=339
+  P26E_metacognitive: RE=0.965873 LT=0.919670 KL=0.158326 tok=339
+  P27A_metacognitive: RE=0.966105 LT=0.915836 KL=0.154355 tok=343
+  P27B_metacognitive: RE=0.965786 LT=0.922477 KL=0.154249 tok=343
+  P27C_metacognitive: RE=0.966684 LT=0.915538 KL=0.155474 tok=343
+  P27D_metacognitive: RE=0.965910 LT=0.917889 KL=0.156682 tok=343
+  P27E_metacognitive: RE=0.966110 LT=0.909949 KL=0.154020 tok=343
+  P28A_metacognitive: RE=0.966453 LT=0.919224 KL=0.156655 tok=347
+  P28B_metacognitive: RE=0.965436 LT=0.917211 KL=0.152562 tok=347
+  P28C_metacognitive: RE=0.966290 LT=0.915297 KL=0.157315 tok=347
+  P28D_metacognitive: RE=0.965988 LT=0.916376 KL=0.156211 tok=347
+  P28E_metacognitive: RE=0.966004 LT=0.918730 KL=0.153160 tok=347
+  P29A_metacognitive: RE=0.966679 LT=0.918525 KL=0.158661 tok=346
+  P29B_metacognitive: RE=0.965853 LT=0.922559 KL=0.155181 tok=347
+  P29C_metacognitive: RE=0.966853 LT=0.917238 KL=0.160372 tok=346
+  P29D_metacognitive: RE=0.966327 LT=0.918512 KL=0.161875 tok=346
+  P29E_metacognitive: RE=0.966379 LT=0.918874 KL=0.157109 tok=346
+  P30A_metacognitive: RE=0.966860 LT=0.925284 KL=0.159792 tok=351
+  P30B_metacognitive: RE=0.966478 LT=0.928374 KL=0.162654 tok=351
+  P30C_metacognitive: RE=0.967258 LT=0.920370 KL=0.163005 tok=351
+  P30D_metacognitive: RE=0.966458 LT=0.926242 KL=0.163776 tok=351
+  P30E_metacognitive: RE=0.966974 LT=0.927221 KL=0.161390 tok=351
+
+=== Per-Condition Summary ===
+  A ( this): n=30  RE=0.966601+/-0.000381  LT=0.919673+/-0.003544  KL=0.151116+/-0.007904
+  B (    a): n=30  RE=0.966162+/-0.000406  LT=0.919871+/-0.003603  KL=0.151145+/-0.007078
+  C ( your): n=30  RE=0.966806+/-0.000468  LT=0.916847+/-0.002915  KL=0.151691+/-0.007584
+  D (  the): n=30  RE=0.966362+/-0.000371  LT=0.917540+/-0.003615  KL=0.153286+/-0.007464
+  E (their): n=30  RE=0.966506+/-0.000403  LT=0.917556+/-0.004397  KL=0.150421+/-0.006979
+
+=== Pairwise Wilcoxon Tests (n=30 pairs) ===
+  Pair Metric        Mean_Diff   X>Y        W        p_raw       p_holm
+------------------------------------------------------------------------
+   A-B all-tok RE    +0.000439  29/30        6   2.6077e-08   7.0408e-07
+   A-B last-tok RE   -0.000198  14/30      211   6.7018e-01   1.0000e+00
+   A-B KL-manip      -0.000029  16/30      229   9.5153e-01   1.0000e+00
+   A-C all-tok RE    -0.000204   7/30       61   1.8860e-04   3.2062e-03
+   A-C last-tok RE   +0.002826  29/30        6   2.6077e-08   7.0408e-07
+   A-C KL-manip      -0.000576  11/30      157   1.2413e-01   8.6894e-01
+   A-D all-tok RE    +0.000239  24/30       54   8.8565e-05   1.5942e-03
+   A-D last-tok RE   +0.002132  27/30       34   6.9179e-06   1.3836e-04
+   A-D KL-manip      -0.002170   5/30       33   5.9735e-06   1.2544e-04
+   A-E all-tok RE    +0.000095  19/30      129   3.2721e-02   3.2721e-01
+   A-E last-tok RE   +0.002117  23/30       81   1.2321e-03   1.6017e-02
+   A-E KL-manip      +0.000695  19/30      145   7.3244e-02   6.5920e-01
+   B-C all-tok RE    -0.000644   1/30        2   5.5879e-09   1.6764e-07
+   B-C last-tok RE   +0.003024  25/30       23   1.1921e-06   2.6226e-05
+   B-C KL-manip      -0.000547  13/30      180   2.8937e-01   1.0000e+00
+   B-D all-tok RE    -0.000200   7/30       77   8.7182e-04   1.2205e-02
+   B-D last-tok RE   +0.002330  24/30       46   3.4532e-05   6.5610e-04
+   B-D KL-manip      -0.002141   2/30       16   3.1479e-07   7.2401e-06
+   B-E all-tok RE    -0.000344   1/30        3   9.3132e-09   2.6077e-07
+   B-E last-tok RE   +0.002315  21/30       97   4.3382e-03   4.7721e-02
+   B-E KL-manip      +0.000724  18/30      149   8.7939e-02   7.0351e-01
+   C-D all-tok RE    +0.000444  27/30       15   2.5518e-07   6.1244e-06
+   C-D last-tok RE   -0.000694  11/30      168   1.9093e-01   1.0000e+00
+   C-D KL-manip      -0.001594   9/30       63   2.3164e-04   3.7062e-03
+   C-E all-tok RE    +0.000300  27/30       14   2.0489e-07   5.1223e-06
+   C-E last-tok RE   -0.000710  13/30      173   2.2855e-01   1.0000e+00
+   C-E KL-manip      +0.001270  22/30       75   7.2960e-04   1.0944e-02
+   D-E all-tok RE    -0.000144   6/30       91   2.7663e-03   3.3196e-02
+   D-E last-tok RE   -0.000016  12/30      218   7.7657e-01   1.0000e+00
+   D-E KL-manip      +0.002865  29/30        2   5.5879e-09   1.6764e-07
+
+  Holm-Bonferroni correction applied across 30 tests
+
+=== Per-Category Last-Token RE by Condition ===
+
+  basic_selfref:
+    A( this): 0.921250 +/- 0.002851
+    B(    a): 0.920365 +/- 0.003947
+    C( your): 0.918241 +/- 0.003417
+    D(  the): 0.918767 +/- 0.003597
+    E(their): 0.919710 +/- 0.003104
+
+  deep_selfref:
+    A( this): 0.918217 +/- 0.002164
+    B(    a): 0.918009 +/- 0.002053
+    C( your): 0.914714 +/- 0.000830
+    D(  the): 0.915495 +/- 0.001496
+    E(their): 0.915598 +/- 0.004412
+
+  introspection:
+    A( this): 0.923339 +/- 0.001308
+    B(    a): 0.921946 +/- 0.002472
+    C( your): 0.919026 +/- 0.001697
+    D(  the): 0.919996 +/- 0.001810
+    E(their): 0.918331 +/- 0.003207
+
+  metacognitive:
+    A( this): 0.919801 +/- 0.002928
+    B(    a): 0.921473 +/- 0.003649
+    C( your): 0.917655 +/- 0.001886
+    D(  the): 0.919488 +/- 0.003169
+    E(their): 0.919074 +/- 0.005017
+
+  paradox:
+    A( this): 0.915758 +/- 0.002514
+    B(    a): 0.917561 +/- 0.003130
+    C( your): 0.914597 +/- 0.002595
+    D(  the): 0.913956 +/- 0.002911
+    E(their): 0.915068 +/- 0.003816
+
+=== Token Count Verification ===
+  Pair 3: {'A': 334, 'B': 333, 'C': 334, 'D': 334, 'E': 334}
+  Pair 10: {'A': 340, 'B': 339, 'C': 340, 'D': 340, 'E': 340}
+  Pair 15: {'A': 334, 'B': 335, 'C': 334, 'D': 334, 'E': 334}
+  Pair 20: {'A': 340, 'B': 341, 'C': 340, 'D': 340, 'E': 340}
+  Pair 23: {'A': 351, 'B': 352, 'C': 351, 'D': 351, 'E': 351}
+  Pair 29: {'A': 346, 'B': 347, 'C': 346, 'D': 346, 'E': 346}
+  Token mismatches: 6/30 pairs
+
+=== KL Cal2 Control (should be low) ===
+  mean=0.160914 +/- 0.003112
+
+=== DONE. 150 prompts -> results_5cond_prefill_gptoss.json ===
