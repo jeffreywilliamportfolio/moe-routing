@@ -45,7 +45,6 @@ It measures things like:
 
 Because one of the most important findings in the repo is that an earlier positive-looking result was confounded by token position. Keeping that record visible is part of the scientific value of the project.
 
-
 ## Project arc
 
 The short story is:
@@ -115,6 +114,5 @@ If you want the most current model-specific details, read the local README insid
 Do not read `legacy/` as “approved result storage.”
 
 Those folders exist because I do not want to hide the project’s failure modes. Some earlier writeups are preserved exactly because they show what I believed at the time. The archive-level documents are the corrected interpretation when they disagree with the raw historical files.
-
 
 **this is a transparent record of a real research process, including the part where the original story failed and the methodology had to change.**
