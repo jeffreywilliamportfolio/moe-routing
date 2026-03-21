@@ -63,41 +63,13 @@ It measures things like:
 - how routing changed between matched prompt conditions
 - whether those changes reproduce across reruns
 
-### Why is this not a load-balancing repo?
-
-Because the question here is not “are experts evenly used across the fleet?” The question is “does the model internally redirect computation when the prompt meaning changes?”
-
 ### Why are there archives of wrong or failed work?
 
 Because one of the most important findings in the repo is that an earlier positive-looking result was confounded by token position. Keeping that record visible is part of the scientific value of the project.
 
-## Important clarification: this is not “load balancing”
-
-One common reaction is: “isn’t routing entropy just load balancing?”
-
-The answer is: **not in the way this repo uses it**.
-
-In production MoE systems, people care about load balancing because they do not want a few experts overloaded while others sit idle. That is a training or serving concern.
-
-Here, I am using router outputs as an **internal model signal**:
-
-- which experts got selected
-- how concentrated or diffuse the selected routing weights were
-- whether a prompt manipulation redirected routing relative to a matched baseline
+### Definition
 
 Routing entropy in this repo means: “how spread out is the routed distribution for this token or region?” It does **not** mean “is the model globally load balanced?” After the confound discovery, routing entropy is treated as a **descriptive companion metric**, not the sole target.
-
-## Why the repo is named `llama-eeg-tests`
-
-The name is historical.
-
-The project started from an EEG / IIT-inspired question: can a model-internal signal play the role of a consciousness-relevant or complexity-relevant marker?
-
-That original framing produced the first wave of experiments. The repo kept the original name even after the work became more concrete and mechanistic.
-
-The current repo is better understood as:
-
-**MoE routing measurement under controlled prompt manipulations, plus an archive of the token-position confound that killed the first headline result.**
 
 ## Project arc
 
@@ -113,8 +85,6 @@ So the repo contains both:
 
 - **exploratory pre-confound work**
 - **post-confound methodology and cleaner runs**
-
-That split matters. They should not be read as equally strong evidence.
 
 ## The confound, plainly
 
@@ -209,16 +179,6 @@ That means:
 - some old artifacts are wrong in their conclusions
 - they are still useful as evidence
 - the archive preserves both the mistaken claim and the later explanation
-
-## What I would want a new reader to know
-
-If you only remember five things, they should be:
-
-- This repo studies **router behavior**, not just outputs.
-- It is **not** a systems load-balancing project.
-- The first big positive-looking result was later invalidated by a token-position confound.
-- That invalidation is preserved on purpose because it is scientifically useful.
-- The stronger work in the repo is the post-March-5, token-controlled, reproducibility-focused work.
 
 ## Current experiment examples
 
