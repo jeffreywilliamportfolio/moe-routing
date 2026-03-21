@@ -1,4 +1,4 @@
-# llama-eeg-tests
+# Learning How MoE Models Route Self Referential Content vs Baseline
 
 Local folder name is historical. The public GitHub repository is `moe-routing`.
 
