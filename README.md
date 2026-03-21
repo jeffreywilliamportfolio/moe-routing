@@ -4,7 +4,7 @@
 
 This repo asks a simple question:
 
-**When you change the wording of a prompt, does a Mixture-of-Experts language model send the token through different experts inside the model?**
+**Under token-matched, position-controlled conditions, do prompt manipulations cause reproducible MoE routing redirection?**
 
 In plain language, I am not mainly studying what the model says. I am studying **which internal expert modules it uses while producing or reading the prompt**.
 
@@ -15,16 +15,6 @@ The basic workflow in this repo is:
 3. Measure which experts were selected and how concentrated or diffuse the routing was.
 4. Compare those internal patterns across prompt conditions.
 
-If you want the one-sentence version:
-
-**This is a repository of experiments about how MoE LLMs internally route tokens across experts when prompt wording changes, plus an archive of a confound that invalidated the first main result.**
-
-The simplest accurate description is:
-
-- I capture router tensors during inference.
-- I reconstruct or summarize the per-token expert distribution.
-- I compare how routing changes when prompt content changes in controlled ways.
-
 This repository is **not** primarily about output quality, benchmark scores, or production MoE load balancing.
 
 It also preserves an important failure: an earlier “routing entropy hierarchy” result later collapsed under token-position controls. That failure is part of the point of the repo now, because it exposed a real measurement confound.
@@ -34,31 +24,19 @@ It also preserves an important failure: an earlier “routing entropy hierarchy�
 - A research notebook plus reproducible experiment-bundle repository for MoE routing analysis.
 - A place where I pin model artifacts, capture code, prompt suites, logs, and analysis together so a run can be inspected later.
 - A record of my first few weeks doing end-to-end ML and mechanistic-interpretability-style work, including the wrong turns.
-- A measurement project about **router behavior during inference**, especially prompt prefill.
+- A measurement project about **router behavior during inference**, during prompt prefill.
 
 ## What this repo is not
 
 - Not a polished paper with one clean headline claim.
 - Not a general benchmark of model quality.
-- Not a neuroscience result and not evidence of consciousness.
 - Not a production-systems study of MoE serving efficiency.
-- Not a claim that “routing entropy” by itself is a valid master metric.
-
-## Zero-context FAQ
-
-### What is an MoE model in this repo?
-
-An MoE model is a model that has many candidate expert sub-networks, but only some of them are used for a given token. The router decides which experts get used.
-
-### What does “routing” mean here?
-
-It means the model's internal choice of which experts a token is sent to. This is an internal computation signal, not a serving-system queue or hardware scheduler.
 
 ### What is the repo actually measuring?
 
 It measures things like:
 
-- which experts were selected
+- which experts were selected (if applicable)
 - how concentrated the routing weights were
 - how routing changed between matched prompt conditions
 - whether those changes reproduce across reruns
@@ -67,9 +45,6 @@ It measures things like:
 
 Because one of the most important findings in the repo is that an earlier positive-looking result was confounded by token position. Keeping that record visible is part of the scientific value of the project.
 
-### Definition
-
-Routing entropy in this repo means: “how spread out is the routed distribution for this token or region?” It does **not** mean “is the model globally load balanced?” After the confound discovery, routing entropy is treated as a **descriptive companion metric**, not the sole target.
 
 ## Project arc
 
@@ -106,39 +81,6 @@ What survived:
 
 Anything before **March 5, 2026** should be treated as exploratory unless a later document explicitly revalidates it under the safer protocol.
 
-## Current purpose of the repo
-
-The current purpose is narrower and more defensible than the original ambition.
-
-The main question now is:
-
-**Under token-matched, position-controlled conditions, do prompt manipulations cause reproducible MoE routing redirection?**
-
-Examples of the kinds of things this repo now tries to support:
-
-- paired self-reference versus matched third-person controls
-- wrong-answer versus right-answer commitment-token comparisons
-- base model versus retrained model routing comparisons
-- cross-model comparisons of the same failure mode or effect
-
-## What counts as a stronger claim here
-
-Post-confound, the default standard is:
-
-- prefill-only by default
-- token-matched prompt pairs
-- exact tokenizer verification before running
-- last-token or boundary-controlled measurements
-- pinned model and capture-binary provenance
-- machine-readable results plus execution logs
-
-Routing entropy is still reported, but not as the only thing that matters. The repo now also emphasizes:
-
-- divergence from baseline routing
-- expert overlap
-- cross-layer agreement or disagreement
-- reproducibility under fixed settings
-
 ## How to read the repo without getting lost
 
 Start with these files:
@@ -174,37 +116,5 @@ Do not read `legacy/` as “approved result storage.”
 
 Those folders exist because I do not want to hide the project’s failure modes. Some earlier writeups are preserved exactly because they show what I believed at the time. The archive-level documents are the corrected interpretation when they disagree with the raw historical files.
 
-That means:
-
-- some old artifacts are wrong in their conclusions
-- they are still useful as evidence
-- the archive preserves both the mistaken claim and the later explanation
-
-## Current experiment examples
-
-Representative bundles on the current branch include:
-
-- [`experiments/deepseek/ds31-5cond-1`](./experiments/deepseek/ds31-5cond-1)
-  - DeepSeek V3.1 five-condition routing bundle
-- [`experiments/gptoss/gptoss-selfref-paired-2`](./experiments/gptoss/gptoss-selfref-paired-2)
-  - GPT-OSS paired self-reference routing bundle
-- [`experiments/Qwen3.5-35B-A3B-vs-HauhauCS-Qwen3.5-uncensored`](./experiments/Qwen3.5-35B-A3B-vs-HauhauCS-Qwen3.5-uncensored)
-  - Base-versus-retrain Qwen routing comparison
-- [`experiments/token-confound-archive`](./experiments/token-confound-archive)
-  - outsider-readable archive of the confound story
-- [`experiments/token-confound-archive-mechinterp`](./experiments/token-confound-archive-mechinterp)
-  - same confound story packaged more for a mech-interp audience
-
-## Practical status
-
-This repo contains:
-
-- current experiment bundles
-- historical bundles
-- corrected methodology
-- narrative context
-- preserved mistakes
-
-That mix is intentional. The right way to read it is not “everything here is equally validated,” but:
 
 **this is a transparent record of a real research process, including the part where the original story failed and the methodology had to change.**
