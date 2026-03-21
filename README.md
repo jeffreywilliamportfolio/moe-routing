@@ -19,10 +19,6 @@ If you want the one-sentence version:
 
 **This is a repository of experiments about how MoE LLMs internally route tokens across experts when prompt wording changes, plus an archive of a confound that invalidated the first main result.**
 
-## Short version
-
-This repository studies **Mixture-of-Experts routing behavior inside open-weight LLMs** under tightly controlled prompt changes.
-
 The simplest accurate description is:
 
 - I capture router tensors during inference.
