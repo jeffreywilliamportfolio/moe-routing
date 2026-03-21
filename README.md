@@ -15,10 +15,6 @@ The basic workflow in this repo is:
 3. Measure which experts were selected and how concentrated or diffuse the routing was.
 4. Compare those internal patterns across prompt conditions.
 
-This repository is **not** primarily about output quality, benchmark scores, or production MoE load balancing.
-
-It also preserves an important failure: an earlier “routing entropy hierarchy” result later collapsed under token-position controls. That failure is part of the point of the repo now, because it exposed a real measurement confound.
-
 ## What this repo is
 
 - A research notebook plus reproducible experiment-bundle repository for MoE routing analysis.
@@ -41,10 +37,6 @@ It measures things like:
 - how routing changed between matched prompt conditions
 - whether those changes reproduce across reruns
 
-### Why are there archives of wrong or failed work?
-
-Because one of the most important findings in the repo is that an earlier positive-looking result was confounded by token position. Keeping that record visible is part of the scientific value of the project.
-
 ## Project arc
 
 The short story is:
@@ -60,7 +52,7 @@ So the repo contains both:
 - **exploratory pre-confound work**
 - **post-confound methodology and cleaner runs**
 
-## The confound, plainly
+## The Confound
 
 The most important negative result in this repository is:
 
@@ -114,5 +106,6 @@ If you want the most current model-specific details, read the local README insid
 Do not read `legacy/` as “approved result storage.”
 
 Those folders exist because I do not want to hide the project’s failure modes. Some earlier writeups are preserved exactly because they show what I believed at the time. The archive-level documents are the corrected interpretation when they disagree with the raw historical files.
+
 
 **this is a transparent record of a real research process, including the part where the original story failed and the methodology had to change.**
