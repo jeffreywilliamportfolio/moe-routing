@@ -6,7 +6,7 @@ This repo asks a simple question:
 
 **Under token-matched, position-controlled conditions, do prompt manipulations cause reproducible MoE routing redirection?**
 
-In plain language, I am not mainly studying what the model says. I am studying **which internal expert modules it uses while producing or reading the prompt**.
+I am not mainly studying what the model says. I am studying **which internal expert modules it uses while producing or reading the prompt**.
 
 The basic workflow in this repo is:
 
