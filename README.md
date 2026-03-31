@@ -17,7 +17,11 @@ git lfs pull
 
 ## Main Results
 
-5cond result summaries:
+Unified report:
+
+- [`RESULTS.md`](./RESULTS.md)
+
+5cond run-level summaries:
 
 - [`RESULTS-baseline.md`](./experiments/qwen3.5-35b-a3b-hauhauCS-Agressive/runs/nothink-5cond-boost-1024-20260323/RESULTS-baseline.md)
 - [`RESULTS-expert_114_soft_bias_0.25.md`](./experiments/qwen3.5-35b-a3b-hauhauCS-Agressive/runs/nothink-5cond-boost-1024-20260323/RESULTS-expert_114_soft_bias_0.25.md)
