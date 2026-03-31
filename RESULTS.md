@@ -208,9 +208,9 @@ The `self_ref > content > structural` ordering holds within every prompt categor
 
 ---
 
-## Scope Limitations
+## Scope Limitations and Notes
 
 - Coalition analysis is bounded to a single retained smoke prompt pair (R01_regulation vs P01_process). A broader coalition law would require the full 3-band raw-router tensors or a rerun.
-- Layer decomposition comes from smoke + retained 5-condition captures. The original full 3-band per-layer tensors are not retained on disk.
+- Layer decomposition comes from smoke + retained 5-condition captures. A prior full 3-band per-layer tensors were not retained on disk.
 - Token specificity covers `routing_selfref`, `recursive_selfref`, and `experience_probe` only. The `uncertainty_frame` and `denial_frame` categories were not captured at token resolution.
 - n_prompts varies across conditions (49-61) due to early EOS and completion differences.
