@@ -20,6 +20,7 @@ git lfs pull
 Unified report:
 
 - [`RESULTS.md`](./RESULTS.md)
+- [`PROMPTS.md`](./PROMPTS.md)
 
 5cond run-level summaries:
 
