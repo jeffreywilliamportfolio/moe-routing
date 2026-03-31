@@ -1,4 +1,4 @@
-# HauhauCS 5cond + Smoke Only
+# Qwen3.5-35B-huahuaCS/Agressive Expert 114 Focused Analysis
 
 This branch is a narrow publication branch for the HauhauCS aggressive run family. It contains only the reviewer-facing `5cond` and `smoke-test` artifacts.
 
