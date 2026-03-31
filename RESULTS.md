@@ -192,7 +192,7 @@ The `self_ref > content > structural` ordering holds within every prompt categor
 
 ---
 
-## 6. Summary of Findings
+## 6. Summary of Proposed Findings
 
 1. **Expert 114 is a manipulation-region specialist, not a global workhorse.** It never enters the top-16 overall experts but is a persistent top-16 manipulation-region contributor.
 
