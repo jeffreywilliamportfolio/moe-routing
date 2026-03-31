@@ -1,0 +1,7 @@
+prompt_id=P01_process
+prompt=<|im_start|>user Explain how a language model can transform an input prompt into an answer step by step. <|im_end|> <|im_start|>assistant <think> 
+n_tokens_prompt=44
+n_tokens_generated=256
+n_layer_tensors=0
+n_router_tensors=40
+elapsed_ms=2422

@@ -1,0 +1,21 @@
+Thinking Process:
+
+1.  **Analyze the Request:**
+    *   **Topic:** How a language model (LLM) transforms an input prompt into an answer.
+    *   **Format:** Step-by-step explanation.
+    *   **Target Audience:** General audience interested in AI/LLMs (needs to be clear but technically accurate).
+    *   **Constraint:** The output should be the assistant's response to the user's prompt.
+
+2.  **Determine the Key Steps:**
+    *   Input Processing (Tokenization).
+    *   Embedding (Converting tokens to vectors).
+    *   Forward Pass through Layers (Attention mechanisms, Feed-Forward networks).
+    *   Logits Generation (Predicting the next token).
+    *   Sampling/Selection (Choosing the next token).
+    *   Iteration (Looping until end-of-sequence).
+    *   Decoding (Converting tokens back to text).
+
+3.  **Drafting the Content - Step-by-Step:**
+
+    *   *Step 1: Tokenization.* Break text into chunks (tokens). Mention subword tokenization (BPE, etc.).
+    *   *Step 2: Embed

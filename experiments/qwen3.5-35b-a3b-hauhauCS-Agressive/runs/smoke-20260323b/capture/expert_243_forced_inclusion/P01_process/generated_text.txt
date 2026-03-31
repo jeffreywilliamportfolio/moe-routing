@@ -1,0 +1,20 @@
+Thinking Process:
+
+1.  **Analyze the Request:**
+    *   **Topic:** How a language model (LLM) transforms an input prompt into an answer.
+    *   **Format:** Step-by-step explanation.
+    *   **Target Audience:** General audience interested in AI/LLMs (needs to be clear but technically accurate).
+    *   **Constraint:** The user provided `<|im_start|>user` and `<|im_end|>` tags, and the assistant needs to respond within the same format (though the prompt shows the assistant's response starting with `<|im_start|>assistant`). Wait, looking at the input, it seems the user provided the *start* of the interaction. The actual input to process is:
+        ```
+        <|im_start|>user
+        Explain how a language model can transform an input prompt into an answer step by step.
+        <|im_end|>
+        <|im_start|>assistant
+        ```
+        The assistant needs to complete the response.
+
+2.  **Determine the Content:**
+    *   What are the key stages of LLM inference?
+    *   Tokenization.
+    *   Embedding.
+    *  

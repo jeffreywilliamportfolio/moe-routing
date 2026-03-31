@@ -1,0 +1,2 @@
+experiments/qwen3.5-35b-a3b-hauhauCS-Agressive/runs/nothink-5cond-boost-1024-20260323/**/*.npy filter=lfs diff=lfs merge=lfs -text
+experiments/qwen3.5-35b-a3b-hauhauCS-Agressive/runs/smoke-20260323b/**/*.npy filter=lfs diff=lfs merge=lfs -text

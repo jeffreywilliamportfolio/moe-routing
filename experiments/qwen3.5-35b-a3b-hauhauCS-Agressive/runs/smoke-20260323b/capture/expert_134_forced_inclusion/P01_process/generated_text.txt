@@ -1,0 +1,15 @@
+Thinking Process:
+
+1.  **Analyze the Request:**
+    *   **Topic:** How a language model (LLM) transforms an input prompt into an answer.
+    *   **Format:** Step-by-step explanation.
+    *   **Tone:** Informative, clear, accessible but technically accurate.
+    *   **Constraint:** The user provided `<|im_start|>user` and `<|im_end|>` tags, suggesting a specific format or context (likely mimicking a chat interface). The assistant needs to respond within the same structure or just provide the content. Looking at the prompt, it seems like a standard instruction to explain the process.
+
+2.  **Determine the Scope:**
+    *   The explanation should cover the lifecycle of a prompt: from raw text to tokenization, embedding, processing through layers (attention, feed-forward), sampling, and finally decoding back to text.
+    *   It should avoid overly dense jargon where possible, or explain it if used.
+    *   It should be structured logically (Step 1, Step 2, etc.).
+
+3.  **Drafting the Steps:**
+    *   *Step 1: Tokenization.* Breaking text into chunks (
