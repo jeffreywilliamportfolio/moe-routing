@@ -2,7 +2,7 @@
 
 **Period**: February 27 – March 31, 2026
 **Author**: Jeffrey Shorthill
-**Repository**: `llama-eeg-tests`
+**Repository**: `moe-routing' (local)
 **Arc**: EEG complexity metrics on dense transformers (flat) → MoE routing entropy gradient (beautiful, spurious) → position confound invalidates everything → methodology rebuild around KL-to-baseline → paired self-reference effect replicates across 6 models → Expert 114 causal steering on fine-tuned Qwen 35B
 
 ---
