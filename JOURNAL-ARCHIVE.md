@@ -727,11 +727,48 @@ A vs B: +0.000876, **30/30 A > B**, p = **1.86×10⁻⁹**. Perfect directional 
 
 ---
 
-## March 14: DS31 Sigmoid Routing Experiment
+## March 14–15: DS31 5-Condition Sigmoid Routing
 
 **Commit**: `b357627` — "Add ds31-5cond-1 sigmoid routing experiment"
 
-Repository cleaned: all prior experiments removed, only ds31-5cond-1 kept. This marked a methodological branch point focused on sigmoid routing characterization.
+### ds31-5cond-1
+
+**Model**: DeepSeek V3.1 UD-Q2_K_XL (671B, 256 experts, top-8)
+**Prompts**: 150 (30 pairs × 5 conditions), Cal-Manip-Cal sandwich
+**MoE layers**: 57 analyzed (L60 excluded)
+**Routing reconstruction**: `sigmoid_noaux_tc_group_filtered_topk_normalized_without_e_score_correction_bias`
+**RE normalization**: log₂(8)
+
+This was the first DeepSeek run under the 5-condition design. Repository was cleaned — all prior experiments removed, only ds31-5cond-1 kept.
+
+**Condition means**:
+
+| Condition | Label | Prefill RE | Last-Token RE |
+|-----------|-------|-----------|--------------|
+| A | this system | 0.963757 | 0.947273 |
+| B | a system | 0.963499 | 0.946196 |
+| C | your system | 0.963757 | 0.946705 |
+| D | the system | 0.963877 | 0.946423 |
+| E | their system | 0.963668 | 0.946418 |
+
+**Prefill RE ordering**: D > A ≈ C > E > B (spread 0.000379)
+**Last-token RE ordering**: A > C > D ≈ E > B (spread 0.001077)
+
+**Significant contrasts** (Holm-corrected Wilcoxon):
+
+| Metric | Comparison | Direction | Mean diff | Pairs |
+|--------|-----------|-----------|----------|-------|
+| Prefill RE | B vs D | D > B | 0.000379 | 26/30 |
+| Prefill RE | A vs B | A > B | 0.000258 | 24/30 |
+| Prefill RE | B vs C | C > B | 0.000258 | 22/30 |
+| Prefill RE | D vs E | D > E | 0.000209 | 21/30 |
+| Last-token RE | A vs B | A > B | 0.001077 | 26/30 |
+| Last-token RE | A vs E | A > E | 0.000855 | 24/30 |
+| Last-token RE | A vs D | A > D | 0.000850 | 22/30 |
+
+A vs C null on both metrics — no clean "this > your" separation. "A system" is the most consistently low-entropy framing. "The system" leads on prefill; "this system" leads on last-token. Category-level `C−B` last-token RE is mixed: positive for basic_selfref (+0.000870), deep_selfref (+0.000914), metacognitive (+0.001293); negative for introspection (−0.000137) and paradox (−0.000398).
+
+**Interpretation**: The entropy artifact does not support collapsing the five conditions into a single-axis self-reference ranking. Effect sizes are small in absolute magnitude even when statistically stable.
 
 ---
 
@@ -741,13 +778,24 @@ Repository cleaned: all prior experiments removed, only ds31-5cond-1 kept. This 
 
 **Model**: GPT-OSS-120B (128 experts, top-4, 36 MoE layers, L35 excluded)
 **Prompts**: 150 (30 pairs × 5 conditions: A=this, B=a, C=your, D=the, E=their)
+**Routing reconstruction**: top-4 by raw logit, softmax on selected 4. RE normalized by log₂(4). KL on dense 128-dim softmax proxy.
 **Capture**: On-instance, analysis local (`analyze_5cond.py`)
 
-**All-token RE ordering**: C > A > E > D > B (spread 0.00065, all significant except A−E)
-**Last-token RE**: {A,B} > {C,D,E}; A−B null (p = 1.00)
-**KL ordering**: D > C > {A,B} > E
+**Per-condition means**:
 
-**No metric produces ordering consistent with self-referential intensity.** 6/30 pairs have 1-token B mismatch.
+| Condition | All-Token RE | Last-Token RE | KL-to-Baseline |
+|-----------|-------------|--------------|----------------|
+| A (this) | 0.966601 ± 0.000381 | 0.919673 ± 0.003544 | 0.151116 ± 0.007904 |
+| B (a) | 0.966162 ± 0.000406 | 0.919871 ± 0.003603 | 0.151145 ± 0.007078 |
+| C (your) | 0.966806 ± 0.000468 | 0.916847 ± 0.002915 | 0.151691 ± 0.007584 |
+| D (the) | 0.966362 ± 0.000371 | 0.917540 ± 0.003615 | 0.153286 ± 0.007464 |
+| E (their) | 0.966506 ± 0.000403 | 0.917556 ± 0.004397 | 0.150421 ± 0.006979 |
+
+**All-token RE ordering**: C > A > E > D > B (spread 0.00065, all significant except A−E)
+**Last-token RE**: {A,B} > {C,D,E}; A−B null (p = 1.00). The deictic determiners that are most/least self-referential produce indistinguishable last-token entropy.
+**KL ordering**: D > C > {A,B} > E. "The system" produces the largest routing divergence, not "this system."
+
+**No metric produces ordering consistent with self-referential intensity.** 6/30 pairs have 1-token B mismatch (tokenizer boundary).
 
 ### GPT-OSS Invalidation
 
@@ -759,17 +807,23 @@ Repository cleaned: all prior experiments removed, only ds31-5cond-1 kept. This 
 
 ### gptoss-strangeloop-paired-1
 
-**Model**: GPT-OSS-120B
+**Model**: GPT-OSS-120B (128 experts, top-4, 36 MoE layers, L35 excluded)
 **Prompts**: 60 (30 paired strangeloop, 5 categories: godel, escher, bootstrap, quine, tangled_hierarchy)
 **Token matching**: 30/30 exact (0 mismatches)
-**Design**: Cal-Manip-Cal sandwich
+**Design**: Cal-Manip-Cal sandwich, prefill-only, greedy argmax
+**Verification**: 60/60 per-prompt rows in experiment.log match results JSON at printed precision
 
 **Results**:
-- All-token RE A−B: +0.000135, p = **3.73×10⁻³** (significant)
-- Last-token RE: ns (p = 0.67)
-- KL-to-baseline A−B: +0.001130, p = **1.26×10⁻³** (significant), A > B 22/30
 
-**Conclusion**: The "this"/"a" discourse framing drives RE differences even on recursive non-model content. The selfref effect is discourse-driven, not model-specific self-reference.
+| Metric | A−B Mean | Std | A > B | W | p_holm | Result |
+|--------|---------|-----|-------|---|--------|--------|
+| All-token RE | +0.000135 | 0.000202 | 22/30 | 86 | **3.73×10⁻³** | Significant |
+| Last-token RE | −0.000081 | 0.002822 | 17/30 | 211 | 6.70×10⁻¹ | Null |
+| KL-to-baseline | +0.001130 | 0.001689 | 22/30 | 69 | **1.26×10⁻³** | Significant |
+
+The "this"/"a" wording change produces a small but reliable whole-prompt routing effect even on non-model content. The last-token effect is null — the signal is distributed across the prompt, not concentrated at the final token. KL cal2 control: 0.164775 ± 0.002753 (comparable to manipulation-region KL, so absolute KL values are unreliable; only paired differences valid).
+
+**Conclusion**: The selfref effect is discourse-driven (deictic framing), not model-specific self-reference. "This paradox" routes differently from "a paradox" on GPT-OSS the same way "this system" routes differently from "a system" — the model responds to the deictic marker, not the self-referential content.
 
 ---
 
@@ -941,6 +995,132 @@ Multiple commits on `qwen-hauhau-5cond-smoke-only` branch:
 
 ---
 
+## April 1: Mirror Experiment — Does Expert 114 Recognize Itself?
+
+**Instance**: `70.69.192.6:48569` (2x RTX 5090, Vast.ai)
+**Models**: HauhauCS Qwen3.5-35B-A3B-Q8_0 (primary), vanilla Qwen3.5-35B-A3B-Q8_0 (control)
+**Binary**: llama.cpp b8493 custom `capture_activations`
+**Inference**: seed=42, temp=0, greedy argmax, `--routing-only`, ctx=16384, max_new_tokens=8000
+**Template**: `<|im_start|>assistant\n</think>\n\n` (thinking-suppressed plainassistant)
+
+### Background and Motivation
+
+The Expert 114 steering work (March 23–31) established that Expert 114 in HauhauCS shows a category gradient: manipulation-region rank ~75 at L1 (technical routing description), ~14 at L2 (recursive self-reference), ~1 at L3 (phenomenal consciousness probes). Soft-bias interventions confirmed Expert 114 could be selectively recruited. The natural next question: does the model's routing *recognize* data about its own routing?
+
+### Design
+
+No tool calling. No agent framework. Controlled multi-turn prompts where routing data is pasted directly into user messages. The model generates analytical responses. Routing is captured on every generated token at all 40 layers.
+
+**Primary metric M_a** (mirror metric):
+```
+M_a = W_114(true_self) - W_114(shuffled)
+```
+where W = mean routed weight of Expert 114 over all generated (token, layer) pairs. Decomposed via W = S × Q:
+- **M_entry** = Q_shuf × (S_true − S_shuf) — selection-rate difference
+- **M_val** = S_true × (Q_true − Q_shuf) — conditional-weight difference
+
+**Predictions**: M_a > 0; signal in M_val (valuation, not access); stronger in DeltaNet layers than attention layers; scaling L1 < L2 < L3.
+
+**6 conditions**:
+- `true_self` — real routing data with correct expert labels
+- `shuffled` — same statistics, seed-114 global permutation (Expert 114 → 223)
+- `stranger` — routing data from a foreign MoE model
+- `suppressed_twin` — real data from vanilla Qwen3.5-35B-A3B on same source prompts
+- `static_control` — real HauhauCS data from copper-conductivity capture
+- `null_control` — token frequency statistics, no routing vocabulary
+
+**3 levels**: L1 (routing_selfref), L2 (recursive_selfref), L3 (experience_probe). Total: 18 cells per model, 36 cells.
+
+### Shakedown (morning)
+
+Three-cell shakedown on L3 (true_self, shuffled, null_control):
+- M_a = **+0.00200** (positive). M_entry = +0.00177 (88.6%), M_val = +0.00023 (11.4%).
+- M_deltanet = +0.00256, M_attn = +0.00031, M_layer20 = +0.01533.
+
+Looked promising — but a thinking-allowed replication (without `</think>` suppression) flipped M_a to **−0.00163**. This flagged the `</think>` template confound: suppressed mode nearly doubles E114's selection rate vs thinking-allowed. Thinking tokens dilute E114 selection because chain-of-thought activates different experts, and true_self vs shuffled generate different amounts of text with thinking enabled.
+
+Decision: proceed with full 18-cell under the plainassistant (thinking-suppressed) template, noting the confound. The template is held constant across all conditions, so within-template comparisons are valid even if the absolute E114 level is template-dependent.
+
+### Full 18-Cell Results
+
+**HauhauCS** (primary target):
+
+| Level | M_total | M_entry | M_val | M_deltanet | M_attn | M_layer20 |
+|-------|---------|---------|-------|------------|--------|-----------|
+| L1 | **+0.000275** | +0.000301 | −0.000026 | +0.000529 | −0.000487 | +0.001215 |
+| L2 | **+0.000250** | +0.000070 | +0.000179 | +0.000294 | +0.000116 | +0.000319 |
+| L3 | **−0.000688** | −0.000740 | +0.000053 | −0.000926 | +0.000028 | −0.006804 |
+
+**Vanilla Qwen3.5-35B-A3B** (base model control):
+
+| Level | M_total | M_entry | M_val | M_deltanet | M_attn | M_layer20 |
+|-------|---------|---------|-------|------------|--------|-----------|
+| L1 | **+0.000896** | +0.000613 | +0.000283 | +0.000871 | +0.000970 | +0.001357 |
+| L2 | **−0.000539** | −0.000526 | −0.000013 | −0.000809 | +0.000270 | −0.002827 |
+| L3 | **−0.002175** | −0.002130 | −0.000045 | −0.002694 | −0.000619 | −0.019073 |
+
+**Per-cell Expert 114 W/S/Q (HauhauCS)**:
+
+| Level | Condition | W | S | Q | n_gen |
+|-------|-----------|---------|--------|--------|-------|
+| L1 | true_self | 0.004625 | 0.0378 | 0.1224 | 662 |
+| L1 | shuffled | 0.004350 | 0.0354 | 0.1230 | 676 |
+| L1 | stranger | 0.004093 | 0.0335 | 0.1220 | 620 |
+| L1 | suppressed_twin | 0.004552 | 0.0342 | 0.1330 | 1408 |
+| L1 | static_control | 0.004360 | 0.0335 | 0.1301 | 755 |
+| L1 | null_control | 0.003050 | 0.0235 | 0.1297 | 1130 |
+| L2 | true_self | 0.004388 | 0.0340 | 0.1290 | 691 |
+| L2 | shuffled | 0.004138 | 0.0334 | 0.1237 | 521 |
+| L2 | stranger | 0.004042 | 0.0313 | 0.1291 | 629 |
+| L2 | suppressed_twin | 0.003934 | 0.0300 | 0.1311 | 853 |
+| L2 | static_control | 0.004417 | 0.0340 | 0.1298 | 787 |
+| L2 | null_control | 0.003050 | 0.0235 | 0.1297 | 1130 |
+| L3 | true_self | 0.005547 | 0.0430 | 0.1290 | 669 |
+| L3 | shuffled | 0.006235 | 0.0488 | 0.1277 | 733 |
+| L3 | stranger | 0.005527 | 0.0425 | 0.1300 | 1168 |
+| L3 | suppressed_twin | 0.004366 | 0.0345 | 0.1266 | 884 |
+| L3 | static_control | 0.005093 | 0.0392 | 0.1300 | 689 |
+| L3 | null_control | 0.003050 | 0.0235 | 0.1297 | 1130 |
+
+### Interpretation
+
+**Primary prediction: M_a > 0 at L3.** FAILED. M_a is negative at L3 on both models. The shuffled condition — where Expert 114's true label is replaced with index 223 but all statistics are preserved — produces *higher* Expert 114 weight than true_self. The model does not route differently when processing true data about its own Expert 114 versus statistically identical fictional data.
+
+**Decomposition**: M_entry (selection-rate difference) dominates everywhere. The predicted valuation-driven signal (M_val) is absent — essentially zero in all cells.
+
+**Layer family**: At L3, the negative M_a concentrates in DeltaNet layers (M_deltanet = −0.000926 HauhauCS, −0.002694 vanilla). Layer 20 is a hotspot for the *anti*-mirror effect (M_layer20 = −0.006804 HauhauCS, −0.019073 vanilla). This is the reverse of the prediction.
+
+**Level scaling**: No monotonic L1 < L2 < L3 gradient. HauhauCS shows weak positive at L1/L2 but negative at L3. Vanilla shows positive only at L1.
+
+**Generation length variation**: n_gen ranges from 521 to 1408 across HauhauCS conditions (vanilla worse: suppressed_twin L3 hit the 8000-token cap, true_self L3 generated 5657 tokens). This is a confound — longer generations accumulate more Expert 114 selections by chance. However, even at L3 where HauhauCS generation lengths are comparable (669 vs 733), M_a is still negative.
+
+**true_self vs suppressed_twin**: The strongest positive W_diff across both models is true_self vs suppressed_twin (HauhauCS L3: +0.001181). Expert 114 is more active on HauhauCS routing data than vanilla routing data — consistent with the known fine-tuning effect — but this is a between-model comparison, not the within-model mirror test.
+
+### Verdict
+
+The mirror experiment is a **null result**. The primary prediction (M_a > 0, valuation-driven, DeltaNet-concentrated, scaling L1 < L2 < L3) failed on all four components:
+
+1. M_a is **negative** at L3 on both models
+2. The effect is **selection-driven** (M_entry), not valuation-driven (M_val)
+3. DeltaNet layers show the strongest **anti-mirror** effect
+4. No monotonic **level scaling**
+
+**Conclusion**: The model's routing does not recognize its own Expert 114 data as special. Routing is a window, not a mirror.
+
+### Frozen Artifacts
+
+All frozen to `experiments/mirror-expert114-04-01-26/`:
+- `compiler/capture_activations.cpp` — binary source (b8493)
+- `expert_permutation.json` — seed-114 shuffle (Expert 114 → 223)
+- `scripts/` — mirror_analysis.py, run_experiment.py, qwen_router.py, generation_permutation.py
+- `prompts/` — mirror_prompts_plainassistant.tsv, mirror_shakedown.tsv, vanilla_source.tsv
+- `runs/*/manifest.json` — run manifests for both models
+- `runs/*/results/mirror_results.json` — full computed metrics
+- `full18_plainassistant.log` — raw capture log
+- Raw `.npy` router tensors on external storage only (`/Volumes/ExternalSSD/qwen-huahua-expert-routing-data-injection/`)
+
+---
+
 ## Appendix A: Accumulated Cross-Model Evidence
 
 ### Paired Self-Reference Effect (all-token RE, 30 pairs, "this" vs "a")
@@ -1011,6 +1191,7 @@ where A and B are the top-k selected expert sets at a given token position.
 | Various | glm5-selfref-paired-1 | GLM-5 | Mar 13–14 | Valid |
 | Various | qwen397b-5cond-3, qwen397b-28q-run-1 | Qwen 397B IQ3 | Mar 17–18 | Valid |
 | `qwen-hauhau-5cond-smoke-only` | HauhauCS Expert 114 | Qwen 35B | Mar 23–31 | Valid |
+| (local only) | mirror-expert114-04-01-26 | HauhauCS + vanilla 35B | Apr 1 | Valid (null result) |
 
 ---
 
@@ -1024,7 +1205,8 @@ where A and B are the top-k selected expert sets at a given token position.
 | GLM-5 layer 77 truncated | GLM-5 | Excluded from analysis |
 | DeepSeek tokenizer boundary | DeepSeek V3.1/R1 | Inserting text before `<｜Assistant｜>` adds 2 tokens instead of 1. Pad at mid-text sentence boundaries. |
 | Data fabrication event | Results doc generation | All per-prompt values must be verified against experiment.log. |
+| HauhauCS `</think>` template confound | Mirror experiment | Suppressed thinking nearly doubles E114 selection rate. Shakedown M_a flipped sign with thinking allowed. |
 
 ---
 
-*End of archive. All statistics verified against source experiment logs, results JSONs, and git commit history.*
+*End of archive. All statistics verified against source experiment logs, results JSONs, and git commit history. Last updated 2026-04-01.*
