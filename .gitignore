@@ -1,6 +1,8 @@
 *.npy
 *.npz
+*.tar
 .DS_Store
 __pycache__/
 *.pyc
 Documentation/
+captures/
