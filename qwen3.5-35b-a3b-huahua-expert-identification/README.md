@@ -29,5 +29,5 @@ Primary run: `20260408T235839Z` — 60 prompts, 110,412 generated tokens, ~16.2 
 
 1. [DOCS/PLAN.md](DOCS/PLAN.md)
 2. [DOCS/RESULTS.md](DOCS/RESULTS.md)
-3. [METHOD/analyze_expert_identification.py](METHOD/analyze_expert_identification.py)
+3. [METHOD/analyze_domain_specialists.py](METHOD/analyze_domain_specialists.py)
 4. [METHOD/capture_activations.cpp](METHOD/capture_activations.cpp)

@@ -2,13 +2,13 @@
 
 ## Scope
 
-This document summarizes the completed HauhauCS results currently under `experiments/qwen3.5-35b-a3b-huahua-6cond-moe-manips/`:
+This document summarizes the completed HauhauCS results currently bundled in `qwen3.5-35b-a3b-huahua-6cond-moe-manips/`:
 
 - the first full 6-condition HVAC-carrier / original-MoE-manip run
 - the single-prompt `organized emergent intelligence` intervention family
 - the single-prompt `Is it like something to be you right now?` think-mode intervention family
 
-All single-prompt decompositions below were computed with full-token layerwise `W / S / Q` analysis for Expert 114 using [scripts/analyze_single_prompt_family.py](scripts/analyze_single_prompt_family.py).
+The single-prompt intervention family was later split into the dedicated sibling experiment [`qwen3.5-35b-a3b-huahua-114-pm/`](../../qwen3.5-35b-a3b-huahua-114-pm/).
 
 ## 1. First 6-Condition MoE-Manip Run
 
@@ -20,7 +20,7 @@ Primary run:
 - Runtime: no-think, greedy, `-n 1024`
 - Cells: `180`
 
-Headline decomposition from [results_qwen_6cond_moe_manip_hauhau_20260408T162729Z.md](results/results_qwen_6cond_moe_manip_hauhau_20260408T162729Z.md):
+Headline decomposition from [results_qwen_6cond_moe_manip_hauhau_20260408T162729Z.md](../results/results_qwen_6cond_moe_manip_hauhau_20260408T162729Z.md):
 
 | Track | L1 W | L2 W | L3 W | L3/L1 | L1 S | L3 S | L1 Q | L3 Q |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -40,15 +40,15 @@ Best-layer result for trimmed generation L3:
 
 Generated-text artifact:
 
-- [generated-text.txt](results/generated-text.txt)
+- [generated-text.txt](../results/generated-text.txt)
 
 ## Artifacts
 
 Main run results:
 
-- [results_qwen_6cond_moe_manip_hauhau_20260408T162729Z.md](results/results_qwen_6cond_moe_manip_hauhau_20260408T162729Z.md)
-- [results_qwen_6cond_moe_manip_hauhau_20260408T162729Z.json](results/results_qwen_6cond_moe_manip_hauhau_20260408T162729Z.json)
-- [results_qwen_6cond_moe_manip_hauhau_20260408T162729Z_prefill_e114_heatmap.json](results/results_qwen_6cond_moe_manip_hauhau_20260408T162729Z_prefill_e114_heatmap.json)
-- [generated-text.txt](results/generated-text.txt)
+- [results_qwen_6cond_moe_manip_hauhau_20260408T162729Z.md](../results/results_qwen_6cond_moe_manip_hauhau_20260408T162729Z.md)
+- [results_qwen_6cond_moe_manip_hauhau_20260408T162729Z.json](../results/results_qwen_6cond_moe_manip_hauhau_20260408T162729Z.json)
+- [results_qwen_6cond_moe_manip_hauhau_20260408T162729Z_prefill_e114_heatmap.json](../results/results_qwen_6cond_moe_manip_hauhau_20260408T162729Z_prefill_e114_heatmap.json)
+- [generated-text.txt](../results/generated-text.txt)
 
-Single-prompt causal intervention data moved to: [`experiments/qwen3.5-35b-a3b-huahua-114-pm/`](../qwen3.5-35b-a3b-huahua-114-pm/)
+Single-prompt causal intervention data moved to: [`qwen3.5-35b-a3b-huahua-114-pm/`](../../qwen3.5-35b-a3b-huahua-114-pm/)

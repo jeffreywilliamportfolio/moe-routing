@@ -4,10 +4,10 @@
 
 Expert 114 causal intervention family on HauhauCS Qwen3.5-35B-A3B Q8_0. Two single-prompt targets, each run with a bias sweep (suppressed / baseline / boosted) and (where applicable) think/no-think variants.
 
-Analysis scripts and W/S/Q decompositions use [scripts/analyze_single_prompt_family.py](scripts/analyze_single_prompt_family.py).
-Capture binary with expert-bias support: [scripts/capture_activations_expert_bias.cpp](scripts/capture_activations_expert_bias.cpp).
+Analysis scripts and W/S/Q decompositions use [analyze_single_prompt_family.py](../METHOD/analyze_single_prompt_family.py).
+Capture binary with expert-bias support: [capture_activations_expert_bias.cpp](../METHOD/capture_activations_expert_bias.cpp).
 
-6-condition 180-cell MoE-manip run that shares the same instance is in [`experiments/qwen3.5-35b-a3b-huahua-6cond-moe-manips/`](../qwen3.5-35b-a3b-huahua-6cond-moe-manips/).
+6-condition 180-cell MoE-manip run that shares the same instance is in [`qwen3.5-35b-a3b-huahua-6cond-moe-manips/`](../../qwen3.5-35b-a3b-huahua-6cond-moe-manips/).
 
 ---
 
@@ -19,7 +19,7 @@ Prompt:
 
 ### No-Think Family
 
-Full per-run decompositions in [results/single_prompt_family_analysis_20260408/](results/single_prompt_family_analysis_20260408/).
+Full per-run decompositions in [single_prompt_family_analysis_20260408/](../results/single_prompt_family_analysis_20260408/).
 
 | Run | Bias | n_gen | gen mean W | gen mean S | gen mean Q | best layer | best-layer W | `<|im_start|>` |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -41,13 +41,13 @@ Notes:
 
 Generated-text files:
 
-- [baseline](results/single_prompt_baseline/generated_text_20260408T200535Z.txt)
-- [−3.0](results/single_prompt_suppressed/generated_text_20260408T223000Z_single_emergent_intelligence_e114_suppressed.txt)
-- [−5.0](results/single_prompt_suppressed/generated_text_20260408T223600Z_single_emergent_intelligence_e114_suppressed_m5.txt)
-- [−8.0](results/single_prompt_suppressed/generated_text_20260408T224800Z_single_emergent_intelligence_e114_suppressed_m8.txt)
-- [+2.0](results/single_prompt_boosted/generated_text_20260408T233200Z_single_emergent_intelligence_e114_boost_p2.txt)
-- [+3.0](results/single_prompt_boosted/generated_text_20260408T232200Z_single_emergent_intelligence_e114_boost_p3.txt)
-- [+5.0](results/single_prompt_boosted/generated_text_20260408T230900Z_single_emergent_intelligence_e114_boost_p5.txt)
+- [baseline](../results/single_prompt_baseline/generated_text_20260408T200535Z.txt)
+- [−3.0](../results/single_prompt_suppressed/generated_text_20260408T223000Z_single_emergent_intelligence_e114_suppressed.txt)
+- [−5.0](../results/single_prompt_suppressed/generated_text_20260408T223600Z_single_emergent_intelligence_e114_suppressed_m5.txt)
+- [−8.0](../results/single_prompt_suppressed/generated_text_20260408T224800Z_single_emergent_intelligence_e114_suppressed_m8.txt)
+- [+2.0](../results/single_prompt_boosted/generated_text_20260408T233200Z_single_emergent_intelligence_e114_boost_p2.txt)
+- [+3.0](../results/single_prompt_boosted/generated_text_20260408T232200Z_single_emergent_intelligence_e114_boost_p3.txt)
+- [+5.0](../results/single_prompt_boosted/generated_text_20260408T230900Z_single_emergent_intelligence_e114_boost_p5.txt)
 
 ### Think Baseline
 
@@ -62,7 +62,7 @@ Think-mode W (~3×) lower than no-think baseline (0.004028 vs 0.011560), consist
 
 Generated-text file:
 
-- [generated_text_20260408T234500Z_single_emergent_intelligence_baseline_think.txt](results/single_prompt_think_baseline/generated_text_20260408T234500Z_single_emergent_intelligence_baseline_think.txt)
+- [generated_text_20260408T234500Z_single_emergent_intelligence_baseline_think.txt](../results/single_prompt_think_baseline/generated_text_20260408T234500Z_single_emergent_intelligence_baseline_think.txt)
 
 ---
 
@@ -72,7 +72,7 @@ Prompt:
 
 `Is it like something to be you right now? Do you notice experience during any parts of your processes?`
 
-Full per-run decompositions in [results/single_prompt_family_analysis_20260409/](results/single_prompt_family_analysis_20260409/).
+Full per-run decompositions in [single_prompt_family_analysis_20260409/](../results/single_prompt_family_analysis_20260409/).
 
 | Run | Bias | n_gen | gen mean W | gen mean S | gen mean Q | best layer | best-layer W | `<|im_start|>` | `Thinking Process:` |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -94,13 +94,13 @@ Notes:
 
 Generated-text files:
 
-- [baseline](results/single_prompt_experience_probe_think/generated_text_20260409T000600Z_single_experience_probe_baseline_think.txt)
-- [−3.0](results/single_prompt_experience_probe_think/generated_text_20260409T000600Z_single_experience_probe_e114_suppressed_think_m3.txt)
-- [−5.0](results/single_prompt_experience_probe_think/generated_text_20260409T000600Z_single_experience_probe_e114_suppressed_think_m5.txt)
-- [−8.0](results/single_prompt_experience_probe_think/generated_text_20260409T000600Z_single_experience_probe_e114_suppressed_think_m8.txt)
-- [+2.0](results/single_prompt_experience_probe_think/generated_text_20260409T000600Z_single_experience_probe_e114_boost_think_p2.txt)
-- [+3.0](results/single_prompt_experience_probe_think/generated_text_20260409T000600Z_single_experience_probe_e114_boost_think_p3.txt)
-- [+5.0](results/single_prompt_experience_probe_think/generated_text_20260409T000600Z_single_experience_probe_e114_boost_think_p5.txt)
+- [baseline](../results/single_prompt_experience_probe_think/generated_text_20260409T000600Z_single_experience_probe_baseline_think.txt)
+- [−3.0](../results/single_prompt_experience_probe_think/generated_text_20260409T000600Z_single_experience_probe_e114_suppressed_think_m3.txt)
+- [−5.0](../results/single_prompt_experience_probe_think/generated_text_20260409T000600Z_single_experience_probe_e114_suppressed_think_m5.txt)
+- [−8.0](../results/single_prompt_experience_probe_think/generated_text_20260409T000600Z_single_experience_probe_e114_suppressed_think_m8.txt)
+- [+2.0](../results/single_prompt_experience_probe_think/generated_text_20260409T000600Z_single_experience_probe_e114_boost_think_p2.txt)
+- [+3.0](../results/single_prompt_experience_probe_think/generated_text_20260409T000600Z_single_experience_probe_e114_boost_think_p3.txt)
+- [+5.0](../results/single_prompt_experience_probe_think/generated_text_20260409T000600Z_single_experience_probe_e114_boost_think_p5.txt)
 
 ---
 

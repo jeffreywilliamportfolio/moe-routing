@@ -8,6 +8,8 @@ First full 6-condition Expert 114 routing survey on HauhauCS Qwen3.5-35B-A3B Q8_
 
 Primary run: `20260408T162729Z`
 
+Clarification: this folder's primary reported result is the ML/computation-content Apr 8 run. In the older pre-standardization workspace, some HVAC/water-treatment prompt files also appeared under `qwen-huahua-6cond-moe-manips/`; those prompts were later broken out into the dedicated control folder `../qwen3.5-35b-a3b-huahua-6cond-hvac/`. Do not treat legacy HVAC prompt filenames in the old workspace as evidence that the published Apr 8 ML run and the HVAC control were the same execution.
+
 **Headline result**: E114 generation L3/L1 W ratio of 3.23×; best-layer W at layer 14 = 0.109 with S = 0.636 across all L3 prompts. Also includes Expert 114 prefill heatmap across all 180 cells.
 
 Single-prompt causal intervention family (bias sweep −8→+5) is in [`../qwen3.5-35b-a3b-huahua-114-pm/`](../qwen3.5-35b-a3b-huahua-114-pm/).

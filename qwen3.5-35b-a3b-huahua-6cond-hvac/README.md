@@ -8,6 +8,8 @@ Off-topic domain control experiment testing whether Expert 114's L1→L3 gradien
 
 Model: HauhauCS Qwen3.5-35B-A3B Q8_0, greedy, no-think, `-n 1024`.
 
+Provenance note: some earlier HVAC prompt files lived under the legacy `qwen-huahua-6cond-moe-manips/` workspace before this repo was standardized. The published HVAC result in this folder is the dedicated no-think control run documented in `DOCS/PLAN.md` and backed by `PROMPTS/prompts_qwen35b_6cond_l1l3_no_think_runtime_hvac_cal_water_treatment.tsv`. The included think TSV is prompt provenance, not the main reported run.
+
 **Headline result**: switching from ML to HVAC/water-treatment content did not flatten the E114 L1→L3 gradient — it **strengthened it** (4.62× vs 2.73× in the ML-topic run). E114 achieved rank-1 at layer 14 across all 60 L3 cells. This decisively rebuts the ML-topic-specialist hypothesis.
 
 - `METHOD/`: analysis scripts and C++ capture binary

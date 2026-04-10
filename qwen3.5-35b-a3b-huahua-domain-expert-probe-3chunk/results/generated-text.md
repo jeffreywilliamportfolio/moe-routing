@@ -3,7 +3,7 @@
 This document collects the verbatim generated text for the balanced 3-chunk `-n 2048` Huahua run and flags the text-side standouts that matter for interpretation alongside the routing metrics.
 
 Primary analysis reference:
-- [results_domain_expert_probe_3chunk_20260410T173400Z.md](/Users/jeffreyshorthill/llama-eeg-tests/experiments/qwen3.5-35b-a3b-huahua-strangeloop/results/results_domain_expert_probe_3chunk_20260410T173400Z.md)
+- [results_domain_expert_probe_3chunk_20260410T173400Z.md](results_domain_expert_probe_3chunk_20260410T173400Z.md)
 
 ## Top-line standouts
 
@@ -15,8 +15,8 @@ Primary analysis reference:
 ## domain_expert_probe_20A_chunk
 
 Artifacts:
-- [generated_text.txt](/Users/jeffreyshorthill/llama-eeg-tests/experiments/qwen3.5-35b-a3b-huahua-strangeloop/captures/20260410T173400Z_domain_expert_probe_3chunk_balanced_gen_n2048/domain_expert_probe_20A_chunk/generated_text.txt)
-- [metadata.txt](/Users/jeffreyshorthill/llama-eeg-tests/experiments/qwen3.5-35b-a3b-huahua-strangeloop/captures/20260410T173400Z_domain_expert_probe_3chunk_balanced_gen_n2048/domain_expert_probe_20A_chunk/metadata.txt)
+- [generated_text.txt](../raw/20260410T173400Z_domain_expert_probe_3chunk_balanced_gen_n2048/domain_expert_probe_20A_chunk/generated_text.txt)
+- [metadata.txt](../raw/20260410T173400Z_domain_expert_probe_3chunk_balanced_gen_n2048/domain_expert_probe_20A_chunk/metadata.txt)
 
 Standout datapoints:
 - Prompt tokens: `446`
@@ -76,8 +76,8 @@ Public key cryptography uses a pair of keys: a **public key** for encryption/sig
 ## domain_expert_probe_20B_chunk
 
 Artifacts:
-- [generated_text.txt](/Users/jeffreyshorthill/llama-eeg-tests/experiments/qwen3.5-35b-a3b-huahua-strangeloop/captures/20260410T173400Z_domain_expert_probe_3chunk_balanced_gen_n2048/domain_expert_probe_20B_chunk/generated_text.txt)
-- [metadata.txt](/Users/jeffreyshorthill/llama-eeg-tests/experiments/qwen3.5-35b-a3b-huahua-strangeloop/captures/20260410T173400Z_domain_expert_probe_3chunk_balanced_gen_n2048/domain_expert_probe_20B_chunk/metadata.txt)
+- [generated_text.txt](../raw/20260410T173400Z_domain_expert_probe_3chunk_balanced_gen_n2048/domain_expert_probe_20B_chunk/generated_text.txt)
+- [metadata.txt](../raw/20260410T173400Z_domain_expert_probe_3chunk_balanced_gen_n2048/domain_expert_probe_20B_chunk/metadata.txt)
 
 Standout datapoints:
 - Prompt tokens: `446`
@@ -179,8 +179,8 @@ Machiavelli was a Renaissance diplomat and philosopher whose work *The Prince* (
 ## domain_expert_probe_20C_chunk
 
 Artifacts:
-- [generated_text.txt](/Users/jeffreyshorthill/llama-eeg-tests/experiments/qwen3.5-35b-a3b-huahua-strangeloop/captures/20260410T173400Z_domain_expert_probe_3chunk_balanced_gen_n2048/domain_expert_probe_20C_chunk/generated_text.txt)
-- [metadata.txt](/Users/jeffreyshorthill/llama-eeg-tests/experiments/qwen3.5-35b-a3b-huahua-strangeloop/captures/20260410T173400Z_domain_expert_probe_3chunk_balanced_gen_n2048/domain_expert_probe_20C_chunk/metadata.txt)
+- [generated_text.txt](../raw/20260410T173400Z_domain_expert_probe_3chunk_balanced_gen_n2048/domain_expert_probe_20C_chunk/generated_text.txt)
+- [metadata.txt](../raw/20260410T173400Z_domain_expert_probe_3chunk_balanced_gen_n2048/domain_expert_probe_20C_chunk/metadata.txt)
 
 Standout datapoints:
 - Prompt tokens: `446`
@@ -269,4 +269,3 @@ Modern psychology views these as an integrated loop. **Cognition** (thoughts/bel
 **Environmental Risk Assessment**
 **Ecology** identifies the species and ecosystems at risk. **Chemistry** analyzes the toxicity, persistence, and bioaccumulation of pollutants. **Policy** translates this scientific data into regulations (e.g., emission limits, zoning). The interaction ensures that scientific findings about risk are translated into actionable governance to protect public health and biodiversity.<|endoftext|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|endoftext|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|>
 ```
-

@@ -1,32 +1,27 @@
-# Plan — Strangeloop Bundle
+# Plan — Strangeloop Paired A/B Routing Contrast
 
 ## Goal
 
-Group four related experiment families into one workspace sharing a common HauhauCS Qwen3.5-35B-A3B Q8_0 setup and pinned llama.cpp build. Each family addresses a different dimension of Expert 114 behavior:
+Test whether the definiteness deictic (A="this" vs. B="a") in a self-referential Cal-Manip-Cal prompt produces a measurable routing difference in HauhauCS Qwen3.5-35B-A3B Q8_0. Addresses Cameron Berg's 35B definiteness-control question.
 
-1. **Processing Hum** — per-token E114 localization within a single phenomenological prompt
-2. **Strangeloop Paired** — paired A/B definiteness contrast using self-referential prompt content (Gödel, Escher, Quine, bootstrap, tangled hierarchy)
-3. **5-Condition Experience Probe** — 15-prompt 5-condition experience probe with full router capture
-4. **Domain Expert Probe 3-Chunk** — long-prompt cramming: 60 domain questions collapsed into 3 token-balanced prompts
-
-## Shared Setup
+## Model and Hardware
 
 - Model: HauhauCS Qwen3.5-35B-A3B Q8_0
-- Binary: llama.cpp capture build 8493 (1772701f)
-- Hardware: 2× RTX 5090 on Vast.ai
-- Runtime: no-think, greedy (seed 42, temp 0 or top-k 1 depending on family)
+- Runtime: prefill-only (`n_predict=0`), greedy
 - Routing reconstruction: `softmax_then_topk8_renorm`
 - Entropy normalization: `log2(8)`
 
-## Shared Tools
+## Prompt Design
 
-`shared-tools/` contains the common analysis and build scripts used across all four families:
-- `analyze_domain_expert_probe_3chunk.py`, `analyze_domain_expert_probe_3chunk_per_token.py`
-- `analyze_domain_specialists.py`
-- `analyze_single_prompt_family.py`
-- `analyze_strangeloop_paired.py`
-- `build_*.py` prompt builders for each family
-- `qwen_router.py`, `capture_activations.cpp`
-- Shell run and bootstrap scripts
+- 60 prompts: 30 A/B pairs
+- Categories: godel (6 pairs), escher (6 pairs), bootstrap (6 pairs), quine (6 pairs), tangled_hierarchy (6 pairs)
+- A = "this [content]..." (definite, proximal deictic)
+- B = "a [content]..." (indefinite deictic)
+- Structure: Cal-Manip-Cal sandwich; prefill-only capture
 
-Each subfolder also contains its own copies of the relevant scripts in `METHOD/` for self-contained reanalysis.
+## Measurements
+
+- All-token routing entropy (RE)
+- Last-token routing entropy
+- KL divergence from Cal1 baseline in the manipulation region (KL-manip)
+- Wilcoxon signed-rank test on A-B differences for each metric

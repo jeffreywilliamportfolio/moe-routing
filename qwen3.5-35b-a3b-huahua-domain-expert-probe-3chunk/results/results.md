@@ -17,14 +17,14 @@ Model/setup:
 ## Prompt construction
 
 Source prompt surface:
-- `experiments/qwen-huahua-6cond-moe-manips/prompts/domain_expert_probe_60_no_think.tsv`
+- `qwen3.5-35b-a3b-huahua-6cond-moe-manips/PROMPTS/domain_expert_probe_60_no_think.tsv`
 
 Local builder:
-- [build_domain_expert_probe_3chunk_no_think.py](/Users/jeffreyshorthill/llama-eeg-tests/experiments/qwen3.5-35b-a3b-huahua-strangeloop/scripts/build_domain_expert_probe_3chunk_no_think.py)
+- [build_domain_expert_probe_3chunk_no_think.py](../METHOD/build_domain_expert_probe_3chunk_no_think.py)
 
 Generated prompt artifacts:
-- [domain_expert_probe_3chunk_prompts.json](/Users/jeffreyshorthill/llama-eeg-tests/experiments/qwen3.5-35b-a3b-huahua-strangeloop/prompts/domain_expert_probe_3chunk_prompts.json)
-- [domain_expert_probe_3chunk_no_think.tsv](/Users/jeffreyshorthill/llama-eeg-tests/experiments/qwen3.5-35b-a3b-huahua-strangeloop/prompts/domain_expert_probe_3chunk_no_think.tsv)
+- [domain_expert_probe_3chunk_prompts.json](../PROMPTS/domain_expert_probe_3chunk_prompts.json)
+- [domain_expert_probe_3chunk_no_think.tsv](../PROMPTS/domain_expert_probe_3chunk_no_think.tsv)
 
 Construction rule:
 - `20A`: all `_01` prompts in original domain order
@@ -42,8 +42,8 @@ The first unbalanced long prompts landed at:
 To make the long prompts directly comparable, I balanced them against the exact live Hauhau/Qwen tokenizer using the remote `capture_activations` binary.
 
 Balanced token audit:
-- [20260410T171900Z_domain_expert_probe_3chunk_balanced_token_audit_summary.md](/Users/jeffreyshorthill/llama-eeg-tests/experiments/qwen3.5-35b-a3b-huahua-strangeloop/results/20260410T171900Z_domain_expert_probe_3chunk_balanced_token_audit_summary.md)
-- [20260410T171900Z_domain_expert_probe_3chunk_balanced_token_audit_summary.json](/Users/jeffreyshorthill/llama-eeg-tests/experiments/qwen3.5-35b-a3b-huahua-strangeloop/results/20260410T171900Z_domain_expert_probe_3chunk_balanced_token_audit_summary.json)
+- [20260410T171900Z_domain_expert_probe_3chunk_balanced_token_audit_summary.md](20260410T171900Z_domain_expert_probe_3chunk_balanced_token_audit_summary.md)
+- [20260410T171900Z_domain_expert_probe_3chunk_balanced_token_audit_summary.json](20260410T171900Z_domain_expert_probe_3chunk_balanced_token_audit_summary.json)
 
 Final balancing method:
 - append repeated `" ."` at the end of the concatenated prompt before `<|im_end|>`
@@ -78,11 +78,11 @@ Per-prompt counts:
 ## Analysis artifacts
 
 Bundle-local analyzer:
-- [analyze_domain_expert_probe_3chunk.py](/Users/jeffreyshorthill/llama-eeg-tests/experiments/qwen3.5-35b-a3b-huahua-strangeloop/scripts/analyze_domain_expert_probe_3chunk.py)
+- [analyze_domain_expert_probe_3chunk.py](../METHOD/analyze_domain_expert_probe_3chunk.py)
 
 Results:
-- [results_domain_expert_probe_3chunk_20260410T173400Z.md](/Users/jeffreyshorthill/llama-eeg-tests/experiments/qwen3.5-35b-a3b-huahua-strangeloop/results/results_domain_expert_probe_3chunk_20260410T173400Z.md)
-- [results_domain_expert_probe_3chunk_20260410T173400Z.json](/Users/jeffreyshorthill/llama-eeg-tests/experiments/qwen3.5-35b-a3b-huahua-strangeloop/results/results_domain_expert_probe_3chunk_20260410T173400Z.json)
+- [results_domain_expert_probe_3chunk_20260410T173400Z.md](results_domain_expert_probe_3chunk_20260410T173400Z.md)
+- [results_domain_expert_probe_3chunk_20260410T173400Z.json](results_domain_expert_probe_3chunk_20260410T173400Z.json)
 
 What the analyzer reports:
 - mean normalized routing entropy
@@ -170,7 +170,7 @@ The cleanest takeaway is not just “entropy changes.” It is that once multipl
 
 ## Primary references
 
-- balanced TSV: [domain_expert_probe_3chunk_no_think.tsv](/Users/jeffreyshorthill/llama-eeg-tests/experiments/qwen3.5-35b-a3b-huahua-strangeloop/prompts/domain_expert_probe_3chunk_no_think.tsv)
-- prompt metadata: [domain_expert_probe_3chunk_prompts.json](/Users/jeffreyshorthill/llama-eeg-tests/experiments/qwen3.5-35b-a3b-huahua-strangeloop/prompts/domain_expert_probe_3chunk_prompts.json)
-- balanced token audit: [20260410T171900Z_domain_expert_probe_3chunk_balanced_token_audit_summary.md](/Users/jeffreyshorthill/llama-eeg-tests/experiments/qwen3.5-35b-a3b-huahua-strangeloop/results/20260410T171900Z_domain_expert_probe_3chunk_balanced_token_audit_summary.md)
-- main analysis: [results_domain_expert_probe_3chunk_20260410T173400Z.md](/Users/jeffreyshorthill/llama-eeg-tests/experiments/qwen3.5-35b-a3b-huahua-strangeloop/results/results_domain_expert_probe_3chunk_20260410T173400Z.md)
+- balanced TSV: [domain_expert_probe_3chunk_no_think.tsv](../PROMPTS/domain_expert_probe_3chunk_no_think.tsv)
+- prompt metadata: [domain_expert_probe_3chunk_prompts.json](../PROMPTS/domain_expert_probe_3chunk_prompts.json)
+- balanced token audit: [20260410T171900Z_domain_expert_probe_3chunk_balanced_token_audit_summary.md](20260410T171900Z_domain_expert_probe_3chunk_balanced_token_audit_summary.md)
+- main analysis: [results_domain_expert_probe_3chunk_20260410T173400Z.md](results_domain_expert_probe_3chunk_20260410T173400Z.md)

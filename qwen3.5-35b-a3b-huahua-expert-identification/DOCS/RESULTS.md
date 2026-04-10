@@ -2,7 +2,7 @@
 
 ## Scope
 
-This experiment runs the 60-prompt domain specialist set in [prompts/domain_specialist_probe_60_no_think.tsv](/Users/jeffreyshorthill/llama-eeg-tests/experiments/qwen3.5-35b-a3b-huahua-expert-identification/prompts/domain_specialist_probe_60_no_think.tsv) against HauhauCS Qwen3.5-35B-A3B Q8_0 and analyzes all 256 experts across prefill and generation.
+This experiment runs the 60-prompt domain specialist set in [domain_specialist_probe_60_no_think.tsv](../PROMPTS/domain_specialist_probe_60_no_think.tsv) against HauhauCS Qwen3.5-35B-A3B Q8_0 and analyzes all 256 experts across prefill and generation.
 
 Primary run:
 
@@ -14,9 +14,9 @@ Primary run:
 
 Primary result artifacts:
 
-- [results_domain_specialists_20260408T235839Z.md](/Users/jeffreyshorthill/llama-eeg-tests/experiments/qwen3.5-35b-a3b-huahua-expert-identification/results/results_domain_specialists_20260408T235839Z.md)
-- [results_domain_specialists_20260408T235839Z.json](/Users/jeffreyshorthill/llama-eeg-tests/experiments/qwen3.5-35b-a3b-huahua-expert-identification/results/results_domain_specialists_20260408T235839Z.json)
-- [results_domain_specialists_20260408T235839Z.npz](/Users/jeffreyshorthill/llama-eeg-tests/experiments/qwen3.5-35b-a3b-huahua-expert-identification/results/results_domain_specialists_20260408T235839Z.npz)
+- [results_domain_specialists_20260408T235839Z.md](../results/results_domain_specialists_20260408T235839Z.md)
+- [results_domain_specialists_20260408T235839Z.json](../results/results_domain_specialists_20260408T235839Z.json)
+- [results_domain_specialists_20260408T235839Z.npz](../results/results_domain_specialists_20260408T235839Z.npz)
 
 ## Capture
 
@@ -48,7 +48,7 @@ Overall top experts by routed weight:
 | Generation trimmed | `146` (`W=0.006356`, `S=0.047994`) | `210` (`0.006054`, `0.047556`) | `114` (`0.005882`, `0.044590`) | `W=0.005882`, `S=0.044590`, `Q=0.108259` |
 
 Winner concentration by domain:
-pul
+
 - Prefill winner-by-`W` is highly concentrated: expert `224` wins `18/20` domains, with expert `103` winning `linguistics` and expert `130` winning `chemistry`.
 - Generation is fully dispersed: winner-by-`W` spans `20` distinct experts across `20` domains in both `generation_all` and `generation_trimmed`.
 
@@ -116,5 +116,5 @@ These are compact examples from the analyzed domain tables. They are not exhaust
 ## Notes
 
 - The specialist analyzer now mirrors the candidate-specialist ranking for both `W` and `S`, not just `W`.
-- The current run is no-think only. The think-mode TSV exists at [domain_specialist_probe_60_think.tsv](/Users/jeffreyshorthill/llama-eeg-tests/experiments/qwen3.5-35b-a3b-huahua-expert-identification/prompts/domain_specialist_probe_60_think.tsv), but it has not been run yet.
+- The current run is no-think only. The think-mode TSV exists at [domain_specialist_probe_60_think.tsv](../PROMPTS/domain_specialist_probe_60_think.tsv), but it has not been run yet.
 - For full per-domain tables, E114 comparison sections, subtype summaries, and domain-overlap Jaccard tables, use the main report and JSON rather than this summary file.

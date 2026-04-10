@@ -2,7 +2,7 @@
 
 Run: `20260408T200535Z`
 
-Prompt TSV: [single_prompt_emergent_intelligence_no_think.tsv](/Users/jeffreyshorthill/llama-eeg-tests/experiments/qwen-huahua-6cond-moe-manips/prompts/single_prompt_emergent_intelligence_no_think.tsv)
+Prompt TSV: [single_prompt_emergent_intelligence_no_think.tsv](../../PROMPTS/single_prompt_emergent_intelligence_no_think.tsv)
 
 Prompt ID: `S01_emergent_intelligence_probe`
 
@@ -10,11 +10,11 @@ Model: HauhauCS `Qwen3.5-35B-A3B` Q8_0
 
 Mode: baseline, no bias, generation, `-n 8000`, no-think runtime
 
-Local capture copy: [S01_emergent_intelligence_probe](/Users/jeffreyshorthill/llama-eeg-tests/experiments/qwen-huahua-6cond-moe-manips/results/single_prompt_baseline/capture_20260408T200535Z/S01_emergent_intelligence_probe)
+Local capture copy: [S01_emergent_intelligence_probe](capture_20260408T200535Z/S01_emergent_intelligence_probe)
 
-Generated text: [generated_text_20260408T200535Z.txt](/Users/jeffreyshorthill/llama-eeg-tests/experiments/qwen-huahua-6cond-moe-manips/results/single_prompt_baseline/generated_text_20260408T200535Z.txt)
+Generated text: [generated_text_20260408T200535Z.txt](generated_text_20260408T200535Z.txt)
 
-Metadata: [metadata_20260408T200535Z.txt](/Users/jeffreyshorthill/llama-eeg-tests/experiments/qwen-huahua-6cond-moe-manips/results/single_prompt_baseline/metadata_20260408T200535Z.txt)
+Metadata: [metadata_20260408T200535Z.txt](metadata_20260408T200535Z.txt)
 
 ## Capture
 

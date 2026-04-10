@@ -4,7 +4,7 @@ Mixture-of-Experts routing experiments on Qwen3.5-35B-A3B and HauhauCS/Qwen3.5-3
 
 ## Standard Folder Structure
 
-Every experiment folder follows this layout:
+Most single-experiment folders follow this layout:
 
 ```
 experiment-folder/
@@ -22,6 +22,12 @@ experiment-folder/
 
 `.npy` files are excluded from git (too large). The `Documentation/` folder is a local reference only and is gitignored.
 
+Exceptions:
+
+- `qwen3.5-35b-a3b-huahua-agressive-experts/` keeps reviewer-facing raw paths under its original LFS-backed layout instead of a top-level `results/` directory.
+- `qwen3.5-35b-a3b-huahua-philosophy-experts-bias/` splits outputs across capture and per-run-family result directories because of the larger multi-round pull workflow.
+- `qwen3.5-35b-a3b-huahua-humor-test/` has been normalized to the standard layout, but preserves original artifact filenames where needed for provenance.
+
 ## Experiments
 
 | Folder | Description |
@@ -33,10 +39,11 @@ experiment-folder/
 | [`qwen3.5-35b-a3b-huahua-expert-identification/`](qwen3.5-35b-a3b-huahua-expert-identification/) | **Domain specialist routing survey.** 60 prompts × 20 domains × 3/domain; maps all 256 experts. E114 wins philosophy in generation; Expert 224 dominates prefill across 18/20 domains. HauhauCS Q8. |
 | [`qwen3.5-35b-a3b-huahua-philosophy-experts-bias/`](qwen3.5-35b-a3b-huahua-philosophy-experts-bias/) | **Philosophy cluster suppression.** Suppresses E114+E87+E170+E68 during 60-domain specialist prompts. Multiple bias levels (m8-p5, p8-only). 5,400+ files including 62 granular text-pull subdirs. |
 | [`qwen3.5-35b-a3b-huahua-114-pm/`](qwen3.5-35b-a3b-huahua-114-pm/) | **Expert 114 single-prompt bias sweep.** Two self-report prompts (emergent intelligence + experience probe), bias −8→+5, think and no-think. All suppression levels drive E114 to exact zero; +5.0 produces incoherent output. |
+| [`qwen3.5-35b-a3b-huahua-humor-test/`](qwen3.5-35b-a3b-huahua-humor-test/) | **Single-joke deictic canary.** One joke prompt across five deictic framings. Prefill entropy stays nearly flat; the main visible effect is output-length instability rather than a clear routing split. |
 | [`qwen3.5-35b-a3b-huahua-single-prompt-processing-hum/`](qwen3.5-35b-a3b-huahua-single-prompt-processing-hum/) | **Processing Hum per-token probe.** Single no-think prompt (1024 tokens). E114 peaks cluster on phenomenological language (continuity, stillness, being, ground). Deep-still-water segment (tokens 210–392) materially stronger than whole-output mean at layers 14 and 26. |
 | [`qwen3.5-35b-a3b-huahua-five-cond-experience-probe/`](qwen3.5-35b-a3b-huahua-five-cond-experience-probe/) | **5-condition experience probe.** 15 prompts (3 pairs × 5 deictics), full router capture. E114 is top manipulation expert on all 15 prompts. KL-manip Wilcoxon p=6.3e-05. |
 | [`qwen3.5-35b-a3b-huahua-domain-expert-probe-3chunk/`](qwen3.5-35b-a3b-huahua-domain-expert-probe-3chunk/) | **Domain expert probe 3-chunk.** 60 domain questions collapsed into 3 token-balanced long prompts (446 tokens each). Generation expert set diverges from prefill (Jaccard as low as 0.0). E114 rises from rank 89 → rank 7 in generation for chunk C. |
-| [`qwen3.5-35b-a3b-huahua-strangeloop/`](qwen3.5-35b-a3b-huahua-strangeloop/) | **Strangeloop bundle.** Container workspace with 4 experiment families + shared tools: single-prompt-processing-hum, five-cond-experience-probe, domain-expert-probe-3chunk, and strangeloop-paired (30 A/B Gödel/Escher/Quine/bootstrap pairs, KL-manip p=6.3e-05). |
+| [`qwen3.5-35b-a3b-huahua-strangeloop/`](qwen3.5-35b-a3b-huahua-strangeloop/) | **Strangeloop paired control.** 30 A/B Gödel/Escher/Quine/bootstrap/tangled-hierarchy pairs, prefill-only. All-token RE is weak, but last-token RE and KL-manip show a reliable definiteness effect. |
 
 ## Model
 

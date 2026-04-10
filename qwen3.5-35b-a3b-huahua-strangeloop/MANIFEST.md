@@ -1,19 +1,19 @@
 # Manifest
 
-Included:
+## Included
 
-- `single-prompt-processing-hum/`: per-token TSV breakdowns, summary JSON, raw capture dir (`.npy` excluded)
-- `strangeloop-paired/`: prefill-only results JSON and markdown (30 A/B pairs); raw capture empty
-- `five-cond-experience-probe/`: branch-analysis JSON (752 KB), per-prompt router `.npy` in `raw/` (excluded from git)
-- `domain-expert-probe-3chunk/`: results JSON, per-token NPZ/TSV, token audit summaries, generated text; raw capture dir (`.npy` excluded)
-- `shared-tools/`: all analysis scripts shared across subfamilies (`analyze_*.py`, `build_*.py`, `qwen_router.py`, `capture_activations.cpp`, shell scripts)
+- `DOCS/PLAN.md`
+- `DOCS/RESULTS.md`
+- `METHOD/*.py`, `METHOD/*.sh`, `METHOD/capture_activations.cpp`, `METHOD/qwen_router.py`
+- `PROMPTS/qwen_strangeloop_paired_1_no_think.tsv`
+- `PROMPTS/qwen_strangeloop_paired_1_prompts.json`
+- `PROMPTS/prompt_suite.json`
+- `results/results_strangeloop_paired_20260410T000413Z.{md,json}`
 
-Raw data:
+## Excluded
 
-- `.npy` router tensors: excluded from git across all subfolders
-- Capture dirs are present locally but tensors must be pulled separately
+- Raw router `.npy` tensors are not committed.
 
-Reproducibility:
+## Provenance
 
-- Yes: reanalysis of included JSON and TSV result files
-- No: end-to-end rerun (requires model artifact, instance, llama.cpp build 8493 / 1772701f)
+This folder was previously organized as a bundle workspace. It has been flattened so that `qwen3.5-35b-a3b-huahua-strangeloop/` now refers only to the paired strange-loop control run.

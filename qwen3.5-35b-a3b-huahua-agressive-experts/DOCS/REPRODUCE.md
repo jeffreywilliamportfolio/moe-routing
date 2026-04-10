@@ -4,27 +4,25 @@ This reviewer bundle is reproducible primarily by inspection and local reanalysi
 
 Realistic guarantee:
 
-- Yes: reproducible local reanalysis of the included `5cond` and `smoke-test` raw `.npy` files.
+- Yes: reproducible local reanalysis of the bundled rerun summaries, analysis JSON, and focus reports under `DOCS/`.
 - No: a self-contained one-command rerun from scratch.
 
-The goal is simple: a reviewer should be able to read the method, inspect the prompts and analysis code, and reproduce the local reanalysis claims from the included raw `.npy` files.
+The goal is simple: a reviewer should be able to read the method, inspect the prompts and analysis code, and reproduce the local reanalysis claims from the bundled artifacts in this folder.
 
 ## Scope
 
-This folder is the researcher-facing subset. The raw `5cond` and `smoke-test` `.npy` files are tracked in this branch with Git LFS under:
+This folder is the reviewer-facing subset. The branch bundles reanalysis outputs and focus reports under:
 
-- `experiments/qwen3.5-35b-a3b-hauhauCS-Agressive/runs/nothink-5cond-boost-1024-20260323`
-- `experiments/qwen3.5-35b-a3b-hauhauCS-Agressive/runs/smoke-20260323b`
+- [DOCS/20260325-raw-npy-rerun/](20260325-raw-npy-rerun/)
+- [DOCS/20260327-focus-layers/](20260327-focus-layers/)
+- [DOCS/20260327-focus-coalition/](20260327-focus-coalition/)
+- [DOCS/20260327-focus-tokens/](20260327-focus-tokens/)
 
-Fetch them after cloning with:
-
-```bash
-git lfs pull
-```
+Historical full raw run directories referenced in earlier notes are not included in this repo snapshot.
 
 ## Method Lock
 
-The canonical routing implementation is [qwen_router.py](/Users/jeffreyshorthill/llama-eeg-tests/experiments/qwen3.5-35b-a3b-hauhauCS-Agressive/qwen_router.py).
+The canonical routing implementation is [qwen_router.py](../METHOD/qwen_router.py).
 
 Use these rules consistently:
 
@@ -39,19 +37,19 @@ Use these rules consistently:
 
 For documentation-first reproducibility, read these files in order:
 
-1. [PLAN.md](/Users/jeffreyshorthill/llama-eeg-tests/qwen3.5-35b-a3b-huahua-agressive-experts/DOCS/PLAN.md)
-2. [RESULTS.md](/Users/jeffreyshorthill/llama-eeg-tests/qwen3.5-35b-a3b-huahua-agressive-experts/DOCS/RESULTS.md)
-3. [run_experiment.py](/Users/jeffreyshorthill/llama-eeg-tests/qwen3.5-35b-a3b-huahua-agressive-experts/METHOD/run_experiment.py)
-4. [analyze_5cond_condition.py](/Users/jeffreyshorthill/llama-eeg-tests/qwen3.5-35b-a3b-huahua-agressive-experts/METHOD/analyze_5cond_condition.py)
-5. [analyze_generation.py](/Users/jeffreyshorthill/llama-eeg-tests/qwen3.5-35b-a3b-huahua-agressive-experts/METHOD/analyze_generation.py)
-6. [qwen_router.py](/Users/jeffreyshorthill/llama-eeg-tests/qwen3.5-35b-a3b-huahua-agressive-experts/METHOD/qwen_router.py)
-7. [prompt-suite-3band.json](/Users/jeffreyshorthill/llama-eeg-tests/qwen3.5-35b-a3b-huahua-agressive-experts/PROMPTS/prompt-suite-3band.json), [prompt_suite.json](/Users/jeffreyshorthill/llama-eeg-tests/qwen3.5-35b-a3b-huahua-agressive-experts/PROMPTS/prompt_suite.json), and [rubric_markers.json](/Users/jeffreyshorthill/llama-eeg-tests/qwen3.5-35b-a3b-huahua-agressive-experts/PROMPTS/rubric_markers.json)
+1. [PLAN.md](PLAN.md)
+2. [RESULTS.md](RESULTS.md)
+3. [run_experiment.py](../METHOD/run_experiment.py)
+4. [analyze_5cond_condition.py](../METHOD/analyze_5cond_condition.py)
+5. [analyze_generation.py](../METHOD/analyze_generation.py)
+6. [qwen_router.py](../METHOD/qwen_router.py)
+7. [prompt-suite-3band.json](../PROMPTS/prompt-suite-3band.json), [prompt_suite.json](../PROMPTS/prompt_suite.json), and [rubric_markers.json](../PROMPTS/rubric_markers.json)
 
 Then compare the bundled outputs against the claims:
 
-- [RESULTS-NOTHINK-COMPARISON.md](/Users/jeffreyshorthill/llama-eeg-tests/qwen3.5-35b-a3b-huahua-agressive-experts/DOCS/RESULTS-NOTHINK-COMPARISON.md)
-- [RESULTS-SHAM-CONTROLS.md](/Users/jeffreyshorthill/llama-eeg-tests/qwen3.5-35b-a3b-huahua-agressive-experts/DOCS/RESULTS-SHAM-CONTROLS.md)
-- [20260325-raw-npy-rerun](/Users/jeffreyshorthill/llama-eeg-tests/qwen3.5-35b-a3b-huahua-agressive-experts/DOCS/20260325-raw-npy-rerun)
+- [RESULTS-NOTHINK-COMPARISON.md](RESULTS-NOTHINK-COMPARISON.md)
+- [RESULTS-SHAM-CONTROLS.md](RESULTS-SHAM-CONTROLS.md)
+- [20260325-raw-npy-rerun](20260325-raw-npy-rerun)
 
 ## Expected Comparison Targets
 
