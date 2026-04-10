@@ -1,0 +1,49 @@
+Hypothesis testing is a statistical method used to make decisions about a population based on sample data. It allows researchers to determine if observed effects are likely due to chance or if they represent a real phenomenon.
+
+Here is a step-by-step breakdown of how it works, focusing on the core components you requested.
+
+### 1. The Core Framework: Null vs. Alternative
+Before calculating anything, you must define two competing hypotheses about the population parameter (e.g., the mean, proportion, or variance).
+
+*   **The Null Hypothesis ($H_0$):** This represents the "status quo" or the assumption of "no effect." It states that any observed difference in the sample data is due to random chance.
+    *   *Example:* "The new drug has no effect on blood pressure compared to the placebo."
+*   **The Alternative Hypothesis ($H_1$ or $H_a$):** This represents the researcher's claim or the effect they are testing for. It states that there is a real difference or relationship.
+    *   *Example:* "The new drug lowers blood pressure compared to the placebo."
+
+### 2. The Null Model
+The **null model** is the theoretical probability distribution that describes what the data would look like if the Null Hypothesis ($H_0$) were true.
+
+*   **Purpose:** It serves as the baseline for comparison.
+*   **How it works:** If $H_0$ is true, we can calculate the probability of observing a specific sample result. For example, if we assume a coin is fair ($H_0$), the null model tells us that getting 10 heads in a row is extremely unlikely (probability $\approx 0.001$).
+*   **Distribution:** Depending on the data type, the null model might follow a Normal distribution, a t-distribution, a Chi-square distribution, etc.
+
+### 3. The Test Statistic
+The **test statistic** is a single number calculated from your sample data that summarizes how far your observed data deviates from what the null model predicts.
+
+*   **Calculation:** It is usually a standardized score (like a $z$-score or $t$-score).
+    *   Formula concept: $\text{Test Statistic} = \frac{\text{Observed Value} - \text{Expected Value (under } H_0)}{\text{Standard Error}}$
+*   **Interpretation:**
+    *   A test statistic close to 0 suggests the data fits the null model well.
+    *   A test statistic far from 0 (in the "tails" of the distribution) suggests the data is unusual under the null model.
+*   **Example:** If testing a mean, a $t$-statistic of 3.5 means your sample mean is 3.5 standard errors away from the hypothesized population mean.
+
+### 4. The P-Value
+Once you have the test statistic, you calculate the **p-value**.
+
+*   **Definition:** The probability of obtaining a test statistic at least as extreme as the one observed, assuming the null hypothesis is true.
+*   **Decision Rule:** You compare the p-value to a pre-determined threshold called the **Significance Level ($\alpha$)**, usually set at 0.05 (5%).
+    *   **If $p < \alpha$:** The result is "statistically significant." You reject $H_0$. The data provides strong evidence against the null model.
+    *   **If $p \geq \alpha$:** The result is not significant. You fail to reject $H_0$. The data is consistent with random chance.
+
+### 5. Error Rates: Type I and Type II Errors
+Because hypothesis testing relies on probability, there is always a chance you make a mistake. There are two types of errors:
+
+| Error Type | Definition | Real-World Analogy | Probability |
+| :--- | :--- | :--- | :--- |
+| **Type I Error** ($\alpha$) | Rejecting $H_0$ when it is actually true. (False Positive) | A fire alarm goes off when there is no fire. | Set by the researcher (usually 0.05). |
+| **Type II Error** ($\beta$) | Failing to reject $H_0$ when $H_1$ is actually true. (False Negative) | A fire alarm stays silent when there is a fire. | Depends on sample size and effect size. |
+
+*   **Power ($1 - \beta$):** The probability of correctly rejecting $H_0$ when it is false. High power means the test is good at detecting a real effect.
+
+### Summary Workflow
+1.  **State Hypotheses:** Define $H_0$ and $H

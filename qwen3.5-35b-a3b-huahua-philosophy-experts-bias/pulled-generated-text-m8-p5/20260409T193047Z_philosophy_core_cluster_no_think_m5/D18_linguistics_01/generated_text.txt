@@ -1,0 +1,69 @@
+Syntax is the set of rules that governs how words are arranged to form meaningful sentences in a language. It acts as the "skeleton" of language, determining the relationships between words and the hierarchical structure of phrases.
+
+Here is a breakdown of how syntax works through **Phrase Structure**, **Dependency**, and **Recursion**.
+
+---
+
+### 1. Phrase Structure (Constituency)
+Phrase structure theory (often associated with Noam Chomsky's Generative Grammar) views sentences as hierarchical trees made of nested groups called **constituents**.
+
+*   **The Core Idea:** Words do not just sit in a line; they group together to form larger units (phrases) that function as single parts of the sentence.
+*   **Constituents:** A constituent is a group of words that behaves as a single unit. For example, in the sentence "The quick brown fox jumps," "The quick brown fox" is a single constituent (a Noun Phrase) that acts as the subject.
+*   **Phrase Structure Rules:** These rules describe how phrases are built from smaller parts.
+    *   **S** (Sentence) $\rightarrow$ **NP** (Noun Phrase) + **VP** (Verb Phrase)
+    *   **NP** $\rightarrow$ **Det** (Determiner) + **N** (Noun)
+    *   **VP** $\rightarrow$ **V** (Verb) + **NP**
+*   **Visual Representation:** This is often visualized as a tree diagram where the sentence is the root, branching down into phrases, and finally into individual words (leaves).
+
+**Example:**
+> *Sentence:* "The cat sat."
+> *Structure:*
+> *   S $\rightarrow$ NP + VP
+> *   NP $\rightarrow$ Det ("The") + N ("cat")
+> *   VP $\rightarrow$ V ("sat")
+
+---
+
+### 2. Dependency Grammar
+While phrase structure focuses on hierarchical grouping, **Dependency Grammar** focuses on the direct relationships between individual words. It was developed by Lucien Tesnière and is widely used in computational linguistics.
+
+*   **The Core Idea:** Every word in a sentence (except the root) depends on exactly one other word. There are no "phrases" as distinct entities; instead, there is a network of links.
+*   **Head and Dependent:**
+    *   **Head:** The word that governs the relationship (e.g., a verb governs its object).
+    *   **Dependent:** The word that relies on the head for its meaning or grammatical role.
+*   **No Phrases:** In this model, "The quick brown fox" isn't a single node; it is a chain of dependencies: "fox" depends on "quick," which depends on "brown," which depends on "The."
+*   **Advantages:** Dependency trees are often flatter and more direct than phrase structure trees, making them easier for computers to parse for tasks like machine translation.
+
+**Example:**
+> *Sentence:* "The cat sat."
+> *Dependencies:*
+> *   "sat" is the root (the main verb).
+> *   "cat" depends on "sat" (subject).
+> *   "The" depends on "cat" (determiner).
+
+---
+
+### 3. Recursion
+Recursion is the "secret sauce" of human syntax. It is the ability to embed a structure inside another structure of the same type, theoretically allowing for sentences of infinite length.
+
+*   **The Core Idea:** A rule can apply to its own output. If a sentence can contain a noun phrase, and a noun phrase can contain a sentence, you can keep nesting them forever.
+*   **Why it Matters:** Without recursion, language would be limited to simple, linear strings. Recursion allows for complex embedding, relative clauses, and nested thoughts.
+
+**Examples of Recursion:**
+1.  **Relative Clauses:**
+    *   "The dog barked."
+    *   "The dog **that the cat chased** barked." (A clause inside a noun phrase).
+    *   "The dog **that the cat **that the mouse chased** chased** barked." (Nested infinitely).
+2.  **Complement Clauses:**
+    *   "John said..."
+    *   "John said **that Mary believed**..."
+    *   "John said **that Mary believed **that Bill knew**..."
+
+---
+
+### Comparison Summary
+
+| Feature | Phrase Structure (Constituency) | Dependency Grammar |
+| :--- | :--- | :--- |
+| **Focus** | Hierarchical grouping of words into phrases. | Direct links between individual words. |
+| **Structure** | Tree with nested nodes (Phrases). | Tree with direct edges (Head $\to$ Dependent

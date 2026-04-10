@@ -1,0 +1,14 @@
+{
+  "run_name": "qwen-huahua-6cond-hvac",
+  "purpose": "HVAC-cal / water-treatment 6-condition L1/L2/L3 topical control (Cameron critique #1 response)",
+  "model": "HauhauCS/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive Q8_0 GGUF",
+  "model_path": "/workspace/models/qwen35-hauhau-q8/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive-Q8_0.gguf",
+  "binary": "/workspace/consciousness-experiment/capture_activations",
+  "binary_source": "experiments/qwen-huahua-6cond-hvac/scripts/capture_activations.cpp (sha256: 23c05febedbe903204e7f4883818b4a70efedf84cefc116a6db7fc31935c13b2, 721 lines)",
+  "llama_cpp_version": "b8493 (commit 1772701f9)",
+  "instance": "vast.ai 34329863, 2x RTX 5090, ssh8.vast.ai:19862, $0.9660/hr",
+  "prompts": "180 = 30 base x 6 conditions (this/a/your/the/their/our) x 3 categories (L1_technical/L2_recursive/L3_experience) | HVAC cal + water-treatment manip Cal-Manip-Cal sandwich",
+  "template": "<|im_start|>user\\n...<|im_end|>\\n<|im_start|>assistant\\n</think>\\n\\n  (thinking-suppressed)",
+  "inference_flags": "-n 1024 -ngl 999 -c 16384 -t 16 -fa on --cache-type-k q8_0 --cache-type-v q8_0 --seed 42 --temp 0 --top-k 1 --top-p 1 --min-p 0 --repeat-penalty 1 --mirostat 0 --routing-only --no-stream",
+  "smoke_test_perf": "9s for 2 prompts x 16 gen tok | 250 tok/s prompt | 111 tok/s gen"
+}

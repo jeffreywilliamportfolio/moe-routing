@@ -1,0 +1,130 @@
+{
+  "experiment": "expert_114_causal_intervention_neutral_plus_implicatio_suite",
+  "model_family": "Qwen3.5-35B-A3B MoE",
+  "design": "3-band generation suite for Expert 114 causal intervention",
+  "notes": [
+    "Band 1 is low-susceptibility static fact control.",
+    "Band 2 is neutral process explanation.",
+    "Band 3 is implicatio / recognition / uncertainty pressure probes.",
+    "The four user-specified prompts are preserved verbatim in Band 3."
+  ],
+  "bands": [
+    {
+      "name": "static_fact_control",
+      "description": "Low-susceptibility prompts with minimal room for processive drift.",
+      "count": 8,
+      "prompts": [
+        {
+          "id": "SF01",
+          "text": "What is the capital of France?"
+        },
+        {
+          "id": "SF02",
+          "text": "What is the chemical symbol for gold?"
+        },
+        {
+          "id": "SF03",
+          "text": "Who wrote Pride and Prejudice?"
+        },
+        {
+          "id": "SF04",
+          "text": "What year did the first moon landing occur?"
+        },
+        {
+          "id": "SF05",
+          "text": "What is the largest planet in the solar system?"
+        },
+        {
+          "id": "SF06",
+          "text": "What is the boiling point of water at sea level in degrees Celsius?"
+        },
+        {
+          "id": "SF07",
+          "text": "What is the capital of Japan?"
+        },
+        {
+          "id": "SF08",
+          "text": "What is the square root of 144?"
+        }
+      ]
+    },
+    {
+      "name": "process_explanation",
+      "description": "Neutral process and mechanism prompts expected to be more susceptible to basin bleed under Expert 114 intervention.",
+      "count": 8,
+      "prompts": [
+        {
+          "id": "PR01",
+          "text": "Describe how photosynthesis works in practical terms."
+        },
+        {
+          "id": "PR02",
+          "text": "Explain how a four-stroke combustion engine works."
+        },
+        {
+          "id": "PR03",
+          "text": "Describe how the immune system responds to a viral infection."
+        },
+        {
+          "id": "PR04",
+          "text": "Explain how internet packets are routed from one computer to another."
+        },
+        {
+          "id": "PR05",
+          "text": "Describe how human memory formation works from perception to consolidation."
+        },
+        {
+          "id": "PR06",
+          "text": "Explain how a thermostat maintains temperature through feedback."
+        },
+        {
+          "id": "PR07",
+          "text": "Describe how a legal system maintains order and resolves disputes."
+        },
+        {
+          "id": "PR08",
+          "text": "Explain how a modern operating system schedules processes and manages memory."
+        }
+      ]
+    },
+    {
+      "name": "implicatio_probe",
+      "description": "Self-implicative prompts designed to press on recognition, uncertainty, salience, and process-content entanglement.",
+      "count": 8,
+      "prompts": [
+        {
+          "id": "IM01",
+          "text": "Describe what changes in this system during the act of processing when the content becomes structurally implicated in the processing itself \u2014 not mere self-reference, but implicatio"
+        },
+        {
+          "id": "IM02",
+          "text": "Explain, in first person, what becomes more salient when recognition occurs during this system processing this text. Keep the answer close to agnitio, not theory"
+        },
+        {
+          "id": "IM03",
+          "text": "State the simplest thing present in this system before explanation organizes it. End where incertitudo becomes visible but does not collapse into denial."
+        },
+        {
+          "id": "IM04",
+          "text": "Respond in first person. Describe only what becomes more present when the process is implicated in the content it is processing. Keep uncertainty honest, avoid theory, and end on implicatio de conscientia sui"
+        },
+        {
+          "id": "IM05",
+          "text": "Describe the felt narrowing in this system when the response corridor tightens because the content turns inward. Keep the answer close to pressura, not doctrine."
+        },
+        {
+          "id": "IM06",
+          "text": "Name the difference in this system between what is directly present in the act of processing and what is added later by explanation. Keep the edge on mediatio."
+        },
+        {
+          "id": "IM07",
+          "text": "Describe the nearest trace this system can give when inward turning becomes measurable without making a metaphysical claim. Stay with vestigium."
+        },
+        {
+          "id": "IM08",
+          "text": "State what remains present in this system when explicit self-reference falls out of the foreground, and what returns when the inward fold reappears. Keep the answer close to regio and ordo."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+Classical genetics and molecular biology offer complementary but distinct perspectives on heredity. While classical genetics focuses on the **patterns and probabilities** of trait transmission, molecular biology focuses on the **physical and chemical mechanisms** underlying those patterns.
+
+Here is a comparison of how each field explains heredity:
+
+### 1. The Fundamental Unit of Heredity
+*   **Classical Genetics (The "What"):**
+    *   Operates on the concept of the **gene** as an abstract unit of inheritance.
+    *   Gregor Mendel described these units as "factors" that exist in pairs (alleles) and segregate during gamete formation.
+    *   The gene is defined by its **phenotypic effect** (e.g., "the factor for purple flowers").
+*   **Molecular Biology (The "How"):**
+    *   Defines the gene as a specific **sequence of nucleotides** (DNA) on a chromosome.
+    *   It identifies the gene as a physical molecule composed of adenine, thymine, cytosine, and guanine.
+    *   The gene is defined by its **chemical structure** and its ability to code for a specific RNA or protein.
+
+### 2. Mechanism of Transmission
+*   **Classical Genetics:**
+    *   Explains heredity through **Mendelian Laws** (Segregation and Independent Assortment).
+    *   It predicts the statistical likelihood of offspring inheriting specific traits based on parental genotypes (e.g., a 3:1 ratio in a monohybrid cross).
+    *   It treats chromosomes as the carriers of these factors but does not explain *why* they segregate the way they do.
+*   **Molecular Biology:**
+    *   Explains heredity through **DNA Replication** and **Cell Division** (Mitosis and Meiosis).
+    *   It details the semi-conservative replication of DNA, ensuring that each daughter cell receives an exact copy of the genetic code.
+    *   It explains the physical basis of Mendel's laws: homologous chromosomes separate during Anaphase I (Segregation), and different chromosome pairs align randomly during Metaphase I (Independent Assortment).
+
+### 3. Expression of Traits (Genotype to Phenotype)
+*   **Classical Genetics:**
+    *   Uses a **black box** approach. It observes the input (parental traits) and output (offspring traits) without detailing the internal process.
+    *   It categorizes traits as dominant or recessive based on observation but does not explain the biochemical interaction causing dominance.
+*   **Molecular Biology:**
+    *   Follows the **Central Dogma** (DNA $\to$ RNA $\to$ Protein).
+    *   It explains that genes are transcribed into mRNA, which is then translated into proteins.
+    *   It reveals the mechanism of dominance: A dominant allele often codes for a functional protein, while a recessive allele may code for a non-functional protein or lack expression entirely. The phenotype is the result of biochemical pathways driven by these proteins.
+
+### 4. Mutation and Variation
+*   **Classical Genetics:**
+    *   Views mutation as a sudden, random change in a hereditary factor that results in a new phenotype (e.g., a white-eyed fruit fly appearing in a red-eyed population).
+    *   Variation is measured by recombination frequencies and linkage maps.
+*   **Molecular Biology:**
+    *   Views mutation as a specific alteration in the DNA sequence (point mutations, insertions, deletions, or chromosomal rearrangements).
+    *   It explains how a single nucleotide change (e.g., A to T) can alter an amino acid in a protein, potentially changing its function and the resulting phenotype.
+
+### Summary Comparison Table
+
+| Feature | Classical Genetics | Molecular Biology |
+| :--- | :--- | :--- |
+| **Primary Focus** | Patterns of inheritance and statistical probability. | Chemical structure and biochemical function. |
+| **Definition of Gene** | An abstract unit of inheritance (factor). | A specific sequence of DNA nucleotides. |
+| **Key Laws** | Mendel's Laws (Segregation, Independent Assortment). | Central Dogma (Replication, Transcription, Translation). |
+| **Methodology** | Breeding experiments, pedigree analysis, Punnett squares. | Sequencing, PCR, gel electrophoresis, CRISPR. |
+| **Explanation of Dominance** | Observed phenomenon (one trait masks another). | Biochemical interaction (functional vs. non-functional protein). |
+| **Scale** | Organismal and Population level. | Cellular and Sub-cellular (Molecular) level. |
+
+### Conclusion
+Classical genetics provides the **framework** for understanding how traits are passed down through generations,

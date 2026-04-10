@@ -1,0 +1,53 @@
+Both **radiocarbon dating** and **stratigraphy** are fundamental pillars of archaeological interpretation, but they function in fundamentally different ways. One provides a numerical age (absolute dating), while the other provides a relative sequence (relative dating).
+
+Here is a detailed comparison of these two tools, their mechanisms, strengths, and limitations.
+
+### 1. Fundamental Nature
+
+*   **Stratigraphy (Relative Dating):**
+    Based on the **Law of Superposition**, which states that in an undisturbed sequence of sedimentary layers, the oldest layer is at the bottom and the youngest is at the top. It establishes a chronological sequence (A is older than B) but does not tell you *how many years* ago A was deposited.
+*   **Radiocarbon Dating (Absolute Dating):**
+    Based on the radioactive decay of Carbon-14 ($^{14}C$) in organic materials. It measures the ratio of $^{14}C$ to stable Carbon-12 to calculate a specific numerical age (e.g., "1,250 ± 30 years BP").
+
+### 2. Mechanism and Application
+
+| Feature | Stratigraphy | Radiocarbon Dating |
+| :--- | :--- | :--- |
+| **What it measures** | Physical position of layers and artifacts. | Isotopic decay in organic matter. |
+| **Material required** | Any context (soil, stone, pottery, bone). | Organic material (charcoal, bone, wood, seeds). |
+| **Time range** | Theoretically infinite (from recent to deep time). | Effective range: ~300 to 50,000 years. |
+| **Output** | A sequence (e.g., Layer 1 < Layer 2 < Layer 3). | A calendar date with a margin of error. |
+| **Dependency** | Requires undisturbed context (no mixing). | Requires a closed system (no contamination). |
+
+### 3. Strengths and Weaknesses
+
+#### Stratigraphy
+**Strengths:**
+*   **Contextual Integrity:** It preserves the relationship between artifacts. If a pot is found in the same layer as a bone, they are assumed to be contemporary.
+*   **Cost-Effective:** It requires no expensive lab equipment, just careful excavation and recording.
+*   **Universal:** Applicable to almost any site, regardless of the presence of organic material.
+*   **Detects Disturbance:** It helps identify "intrusions" (e.g., a modern hole dug into an ancient layer), which can invalidate other data.
+
+**Weaknesses:**
+*   **Subjectivity:** Interpretation relies on the archaeologist's skill in reading soil colors and textures.
+*   **No Calendar Dates:** Without an external anchor (like radiocarbon), you cannot correlate a site with a specific historical event or global timeline.
+*   **Disturbance:** Bioturbation (roots, burrowing animals) or human activity (digging pits) can scramble the layers, making the sequence unreliable.
+
+#### Radiocarbon Dating
+**Strengths:**
+*   **Precision:** Provides a specific date range, allowing for high-resolution chronologies.
+*   **Cross-Regional Correlation:** Allows archaeologists to compare sites thousands of miles apart (e.g., matching a date from Egypt with one in Peru).
+*   **Calibration:** Modern calibration curves can convert radiocarbon years into calendar years, accounting for fluctuations in atmospheric $^{14}C$.
+
+**Weaknesses:**
+*   **Material Limitation:** Only works on things that were once alive. Stone tools or pottery (unless they have organic residue) cannot be dated directly.
+*   **Time Limit:** Becomes unreliable after ~50,000 years as the $^{14}C$ levels drop too low to measure.
+*   **Contamination:** Modern carbon (from roots or handling) or ancient carbon (from groundwater) can skew results significantly.
+*   **The "Old Wood" Problem:** If a tree is used for a fire, the date reflects when the tree grew, not necessarily when the fire occurred (the wood could be centuries old when burned).
+
+### 4. Synergy: How They Work Together
+
+In modern archaeology, these tools are rarely used in isolation. They function best as a **feedback loop**:
+
+1.  **Stratigraphy guides Sampling:** Archaeologists use stratigraphy to identify which layers are likely to contain datable organic material and to ensure the sample comes from a secure, undisturbed context.
+2.  **Radiocarbon anchors the Sequence:** Radiocarbon dates are used to "calibrate" the stratigraphic sequence. For example, if Layer A is below Layer B, and Layer A dates to 3000 BP while Layer B dates to 20

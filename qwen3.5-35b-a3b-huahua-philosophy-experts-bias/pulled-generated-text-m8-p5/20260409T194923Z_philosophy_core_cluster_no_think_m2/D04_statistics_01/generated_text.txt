@@ -1,0 +1,52 @@
+Hypothesis testing is a statistical method used to make decisions about a population based on sample data. It allows researchers to determine if observed effects are likely due to chance or if they represent a real phenomenon.
+
+Here is a step-by-step breakdown of how it works, focusing on the core components you requested.
+
+### 1. The Core Framework: Null vs. Alternative
+Before calculating anything, you must define two competing hypotheses about the population parameter (e.g., the mean, proportion, or variance).
+
+*   **The Null Hypothesis ($H_0$):** This represents the "status quo" or the assumption of "no effect." It states that any observed difference in the data is due to random chance.
+    *   *Example:* "The new drug has no effect on blood pressure compared to the placebo."
+*   **The Alternative Hypothesis ($H_1$ or $H_a$):** This represents the researcher's claim or the effect they are trying to detect.
+    *   *Example:* "The new drug lowers blood pressure compared to the placebo."
+
+### 2. The Null Model
+The **null model** is the theoretical probability distribution that describes what the data would look like if the Null Hypothesis ($H_0$) were true.
+
+*   **Purpose:** It serves as the baseline for comparison.
+*   **Construction:** Based on $H_0$, we assume a specific distribution (e.g., a Normal distribution with a mean of 0, or a t-distribution).
+*   **Visualization:** Imagine a bell curve centered at the value predicted by $H_0$. The area under this curve represents the probability of observing different sample outcomes purely by chance.
+
+### 3. The Test Statistic
+Once you collect your sample data, you calculate a **test statistic**. This is a standardized value that measures how far your sample result deviates from the null model.
+
+*   **Formula:** Generally, it follows the structure:
+    $$ \text{Test Statistic} = \frac{\text{Observed Value} - \text{Expected Value (under } H_0)}{\text{Standard Error}} $$
+*   **Common Types:**
+    *   **$z$-score:** Used when population variance is known or sample size is large.
+    *   **$t$-score:** Used when population variance is unknown and sample size is small.
+    *   **$\chi^2$ (Chi-square):** Used for categorical data.
+*   **Interpretation:** A test statistic close to 0 suggests the data fits the null model well. A large absolute value (positive or negative) suggests the data is far from what $H_0$ predicts.
+
+### 4. The P-Value
+The **p-value** is the probability of obtaining a test statistic at least as extreme as the one observed, assuming the null model is true.
+
+*   **Small P-value (e.g., $< 0.05$):** Indicates that the observed data is very unlikely under the null model. This suggests we should reject $H_0$.
+*   **Large P-value:** Indicates the data is consistent with the null model. We fail to reject $H_0$.
+
+### 5. Error Rates: Type I and Type II Errors
+Because we are making decisions based on probability (not certainty), there is always a risk of making an error.
+
+| Error Type | Definition | Real-World Analogy | Probability Symbol |
+| :--- | :--- | :--- | :--- |
+| **Type I Error** (False Positive) | Rejecting $H_0$ when it is actually true. | Concluding a drug works when it actually doesn't. | $\alpha$ (Alpha) |
+| **Type II Error** (False Negative) | Failing to reject $H_0$ when $H_1$ is actually true. | Concluding a drug doesn't work when it actually does. | $\beta$ (Beta) |
+
+*   **Significance Level ($\alpha$):** This is the threshold set by the researcher (commonly 0.05) to control the risk of a Type I error. If $p < \alpha$, we reject $H_0$.
+*   **Power ($1 - \beta$):** The probability of correctly rejecting $H_0$ when it is false. High power means the test is sensitive enough to detect an effect if one exists.
+
+### 6. The Decision Process (Summary)
+1.  **State Hypotheses:** Define $H_0$ and $H_1$.
+2.  **Choose Significance Level:** Set $\alpha$ (e.g., 0.05).
+3.  **Calculate Test Statistic:** Compute the value based on your sample data.
+4.  **Determine P-value

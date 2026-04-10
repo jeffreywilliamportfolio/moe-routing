@@ -1,0 +1,49 @@
+Radiocarbon dating and stratigraphy are two of the most fundamental tools in archaeology, but they serve different functions and operate on different principles. While they are often used in tandem to build a robust chronological framework, they differ significantly in their methodology, precision, and the type of data they provide.
+
+Here is a comparison of the two methods:
+
+### 1. Fundamental Principles
+
+*   **Stratigraphy (Relative Dating):**
+    Based on the **Law of Superposition**, which states that in an undisturbed sequence of sedimentary layers, the oldest layers are at the bottom and the youngest are at the top. It relies on the physical context of artifacts and features. It tells us the *order* of events (A happened before B) but not necessarily the exact number of years between them.
+*   **Radiocarbon Dating (Absolute/Dating):**
+    Based on the radioactive decay of Carbon-14 ($^{14}C$) in organic materials. When an organism dies, it stops absorbing carbon, and the $^{14}C$ begins to decay at a known rate (half-life of ~5,730 years). By measuring the remaining $^{14}C$, scientists can calculate the approximate time elapsed since the organism died. It provides a specific numerical age range (e.g., 1250–1300 CE).
+
+### 2. Key Differences
+
+| Feature | Stratigraphy | Radiocarbon Dating |
+| :--- | :--- | :--- |
+| **Type of Date** | **Relative** (Order of events) | **Absolute** (Calendar years) |
+| **Material Required** | Any context (soil layers, walls, floors) | Organic material (bone, charcoal, wood, seeds) |
+| **Time Range** | Unlimited (from recent to deep time) | Limited to ~50,000–60,000 years |
+| **Precision** | Low (depends on layer thickness) | High (statistical probability ranges) |
+| **Dependency** | Requires undisturbed context | Requires calibration curves to convert to calendar years |
+| **Cost/Speed** | Low cost, immediate visual analysis | High cost, requires lab processing |
+
+### 3. Strengths and Weaknesses
+
+#### Stratigraphy
+*   **Strengths:**
+    *   **Contextual:** It preserves the relationship between artifacts. Knowing a pot was found *in* a specific layer tells you it belongs to that specific time period relative to other layers.
+    *   **Versatile:** Can be applied to almost any site, even those lacking organic material.
+    *   **Immediate:** Provides instant chronological data upon excavation.
+*   **Weaknesses:**
+    *   **Disturbance:** "Intrusions" (like animal burrows, root systems, or later human digging) can mix layers, making the sequence unreliable.
+    *   **Lack of Precision:** It cannot tell you *when* a layer was deposited, only that it is older or younger than the layer above or below it.
+
+#### Radiocarbon Dating
+*   **Strengths:**
+    *   **Chronological Anchor:** It converts relative sequences into a global timeline, allowing archaeologists to correlate sites across different continents.
+    *   **Precision:** Modern Accelerator Mass Spectrometry (AMS) can date very small samples with high accuracy.
+*   **Weaknesses:**
+    *   **Material Limitation:** Only works on once-living things. Stone tools or pottery must be dated indirectly (via associated organic material).
+    *   **The "Old Wood" Problem:** If a piece of charcoal comes from a tree that grew for 500 years before being burned, the date reflects the tree's death, not necessarily the human activity.
+    *   **Calibration:** Raw radiocarbon years do not match calendar years exactly due to fluctuations in atmospheric $^{14}C$; they must be calibrated using tree rings (dendrochronology) or other records.
+
+### 4. Synergy: How They Work Together
+
+In modern archaeology, these tools are rarely used in isolation. They function best as a feedback loop:
+
+1.  **Stratigraphy provides the framework:** Archaeologists excavate layer by layer, recording the position of every artifact.
+2.  **Radiocarbon provides the dates:** Samples are taken from specific, well-documented stratigraphic layers (e.g., "Charcoal from Layer 4").
+3.  **Cross-Verification:** If the radiocarbon dates from Layer 4 are significantly older than Layer 3, it suggests the layers are in the correct order. If Layer 4 dates are *younger* than Layer 3, it indicates a disturbance (an intrusion) occurred, forcing the archaeologist to re-evaluate the strat

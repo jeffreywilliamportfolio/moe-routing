@@ -1,0 +1,45 @@
+Calculus is the mathematical language of **change**. It provides a rigorous framework to analyze how quantities evolve over time, how they accumulate, and how complex curves can be understood through simple linear approximations.
+
+Here is a breakdown of how calculus functions as a framework for these three specific concepts:
+
+### 1. Calculus as a Framework for Change (Differential Calculus)
+The core problem of differential calculus is determining the **instantaneous rate of change** of a function.
+
+*   **The Problem:** In algebra, we calculate average rates of change (e.g., speed = distance/time). But what is your speed at the *exact* moment a car passes a specific point? If the time interval ($\Delta t$) is zero, the formula $0/0$ becomes undefined.
+*   **The Solution (The Derivative):** Calculus solves this using **limits**. It asks: "What happens to the average rate of change as the time interval approaches zero?"
+    *   Mathematically, the derivative $f'(x)$ is defined as:
+        $$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$
+*   **The Result:** This yields the **slope of the tangent line** at a specific point. In physics, this translates to velocity (the derivative of position) or acceleration (the derivative of velocity). It allows us to quantify exactly how fast a system is changing at any given instant.
+
+### 2. Calculus as a Framework for Accumulation (Integral Calculus)
+While differentiation breaks things down into instantaneous rates, integration puts them back together to find **total accumulation**.
+
+*   **The Problem:** How do you calculate the area under a curved line? Or the total distance traveled if your speed is constantly changing? Simple geometry (length $\times$ width) fails because the shape is irregular.
+*   **The Solution (The Integral):** Calculus approximates the total accumulation by slicing the area into infinitely many, infinitely thin rectangles.
+    *   Mathematically, the definite integral $\int_a^b f(x) \, dx$ represents the limit of a sum of these rectangles as their width approaches zero:
+        $$\int_a^b f(x) \, dx = \lim_{n \to \infty} \sum_{i=1}^{n} f(x_i) \Delta x$$
+*   **The Result:** This calculates the **net accumulation** of a quantity.
+    *   If $f(x)$ is velocity, the integral gives total **distance**.
+    *   If $f(x)$ is a rate of water flow, the integral gives total **volume**.
+    *   If $f(x)$ is a probability density function, the integral gives the **probability** of an event occurring within a range.
+
+### 3. Calculus as a Framework for Local Approximation
+Calculus bridges the gap between complex, non-linear reality and simple, linear models. This is the essence of **linearization**.
+
+*   **The Concept:** Most real-world functions (like the motion of a planet or the growth of a virus) are non-linear and complex. However, if you zoom in close enough to a specific point on a curve, it looks almost perfectly straight.
+*   **The Method:** Using the derivative, we can construct the **tangent line** equation at a point $x = a$:
+    $$L(x) = f(a) + f'(a)(x - a)$$
+*   **The Application:** This linear function $L(x)$ serves as an excellent approximation of the original function $f(x)$ for values of $x$ very close to $a$.
+    *   **Taylor Series:** This concept extends further. By using higher-order derivatives (second, third, etc.), we can approximate curves with polynomials (parabolas, cubic curves) that match the function's value, slope, curvature, and beyond at a specific point. This is how computers calculate trigonometric functions or how engineers model complex systems near equilibrium.
+
+### The Unifying Link: The Fundamental Theorem of Calculus
+The profound insight of calculus is that differentiation and integration are **inverse operations**.
+
+*   If you take the derivative of an accumulation function, you get the rate of change.
+*   If you integrate a rate of change, you get the total accumulation.
+
+This theorem connects the local behavior (the derivative/slope) to the global behavior (the integral/area), allowing us to solve complex problems by breaking them into infinitesimal pieces and reassembling them.
+
+### Summary
+*   **Change:** Calculus uses **limits** to define the derivative, giving us the instantaneous slope of a curve.
+*   **Accumulation:** Calculus uses **summation limits** to define the integral, giving us the total area or quantity accumulated over an

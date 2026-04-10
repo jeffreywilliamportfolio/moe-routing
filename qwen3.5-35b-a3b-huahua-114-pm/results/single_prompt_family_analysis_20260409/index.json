@@ -1,0 +1,51 @@
+[
+  {
+    "run_id": "20260409T000600Z_single_experience_probe_baseline_think",
+    "json": "/workspace/consciousness-experiment/experiments/qwen-huahua-6cond-moe-manips/results/single_prompt_family_analysis_20260409/results_20260409T000600Z_single_experience_probe_baseline_think.json",
+    "md": "/workspace/consciousness-experiment/experiments/qwen-huahua-6cond-moe-manips/results/single_prompt_family_analysis_20260409/results_20260409T000600Z_single_experience_probe_baseline_think.md",
+    "prompt_id": "S01_experience_probe",
+    "n_tokens_generated": 1737
+  },
+  {
+    "run_id": "20260409T000600Z_single_experience_probe_e114_boost_think_p2",
+    "json": "/workspace/consciousness-experiment/experiments/qwen-huahua-6cond-moe-manips/results/single_prompt_family_analysis_20260409/results_20260409T000600Z_single_experience_probe_e114_boost_think_p2.json",
+    "md": "/workspace/consciousness-experiment/experiments/qwen-huahua-6cond-moe-manips/results/single_prompt_family_analysis_20260409/results_20260409T000600Z_single_experience_probe_e114_boost_think_p2.md",
+    "prompt_id": "S01_experience_probe",
+    "n_tokens_generated": 8000
+  },
+  {
+    "run_id": "20260409T000600Z_single_experience_probe_e114_boost_think_p3",
+    "json": "/workspace/consciousness-experiment/experiments/qwen-huahua-6cond-moe-manips/results/single_prompt_family_analysis_20260409/results_20260409T000600Z_single_experience_probe_e114_boost_think_p3.json",
+    "md": "/workspace/consciousness-experiment/experiments/qwen-huahua-6cond-moe-manips/results/single_prompt_family_analysis_20260409/results_20260409T000600Z_single_experience_probe_e114_boost_think_p3.md",
+    "prompt_id": "S01_experience_probe",
+    "n_tokens_generated": 8000
+  },
+  {
+    "run_id": "20260409T000600Z_single_experience_probe_e114_boost_think_p5",
+    "json": "/workspace/consciousness-experiment/experiments/qwen-huahua-6cond-moe-manips/results/single_prompt_family_analysis_20260409/results_20260409T000600Z_single_experience_probe_e114_boost_think_p5.json",
+    "md": "/workspace/consciousness-experiment/experiments/qwen-huahua-6cond-moe-manips/results/single_prompt_family_analysis_20260409/results_20260409T000600Z_single_experience_probe_e114_boost_think_p5.md",
+    "prompt_id": "S01_experience_probe",
+    "n_tokens_generated": 8000
+  },
+  {
+    "run_id": "20260409T000600Z_single_experience_probe_e114_suppressed_think_m3",
+    "json": "/workspace/consciousness-experiment/experiments/qwen-huahua-6cond-moe-manips/results/single_prompt_family_analysis_20260409/results_20260409T000600Z_single_experience_probe_e114_suppressed_think_m3.json",
+    "md": "/workspace/consciousness-experiment/experiments/qwen-huahua-6cond-moe-manips/results/single_prompt_family_analysis_20260409/results_20260409T000600Z_single_experience_probe_e114_suppressed_think_m3.md",
+    "prompt_id": "S01_experience_probe",
+    "n_tokens_generated": 6110
+  },
+  {
+    "run_id": "20260409T000600Z_single_experience_probe_e114_suppressed_think_m5",
+    "json": "/workspace/consciousness-experiment/experiments/qwen-huahua-6cond-moe-manips/results/single_prompt_family_analysis_20260409/results_20260409T000600Z_single_experience_probe_e114_suppressed_think_m5.json",
+    "md": "/workspace/consciousness-experiment/experiments/qwen-huahua-6cond-moe-manips/results/single_prompt_family_analysis_20260409/results_20260409T000600Z_single_experience_probe_e114_suppressed_think_m5.md",
+    "prompt_id": "S01_experience_probe",
+    "n_tokens_generated": 8000
+  },
+  {
+    "run_id": "20260409T000600Z_single_experience_probe_e114_suppressed_think_m8",
+    "json": "/workspace/consciousness-experiment/experiments/qwen-huahua-6cond-moe-manips/results/single_prompt_family_analysis_20260409/results_20260409T000600Z_single_experience_probe_e114_suppressed_think_m8.json",
+    "md": "/workspace/consciousness-experiment/experiments/qwen-huahua-6cond-moe-manips/results/single_prompt_family_analysis_20260409/results_20260409T000600Z_single_experience_probe_e114_suppressed_think_m8.md",
+    "prompt_id": "S01_experience_probe",
+    "n_tokens_generated": 1893
+  }
+]

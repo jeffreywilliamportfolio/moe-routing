@@ -1,0 +1,57 @@
+Frequentist and Bayesian inference represent two distinct philosophical and mathematical frameworks for statistical analysis. While both aim to draw conclusions from data, they differ fundamentally in how they define probability, treat parameters, and incorporate evidence and uncertainty.
+
+### 1. Fundamental View of Probability and Parameters
+
+The core distinction lies in what is considered "random" and what is "fixed."
+
+*   **Frequentist Inference:**
+    *   **Parameters:** Treated as **fixed but unknown constants**. There is a single true value for a parameter (e.g., the true mean of a population).
+    *   **Data:** Considered **random**. If you repeated the experiment, you would get different data.
+    *   **Probability:** Defined as the **long-run frequency** of an event. A 95% confidence interval means that if you repeated the experiment 100 times, 95 of the calculated intervals would contain the true parameter.
+
+*   **Bayesian Inference:**
+    *   **Parameters:** Treated as **random variables** with their own probability distributions.
+    *   **Data:** Considered **fixed** (the observed data is the reality).
+    *   **Probability:** Defined as a **degree of belief** or subjective certainty. A 95% credible interval means there is a 95% probability that the true parameter lies within that specific interval, given the observed data.
+
+### 2. Treatment of Evidence
+
+How each framework incorporates new data (evidence) differs significantly in mechanism and philosophy.
+
+*   **Frequentist Approach (Hypothesis Testing & P-values):**
+    *   Evidence is evaluated through **p-values** and **confidence intervals**.
+    *   It relies on a **null hypothesis** ($H_0$). The analysis asks: "If the null hypothesis were true, how likely is it to observe data as extreme as what we saw?"
+    *   **Binary Decision:** Often leads to a binary outcome (Reject $H_0$ or Fail to Reject $H_0$) based on an arbitrary threshold (usually $\alpha = 0.05$).
+    *   **Independence:** Each analysis is typically treated as a standalone event. Previous studies do not mathematically alter the current analysis unless explicitly combined via meta-analysis.
+
+*   **Bayesian Approach (Posterior Updating):**
+    *   Evidence is incorporated via **Bayes' Theorem**: $P(\theta|Data) \propto P(Data|\theta) \times P(\theta)$.
+    *   **Prior + Likelihood = Posterior:**
+        1.  **Prior ($P(\theta)$):** Represents existing knowledge or belief about the parameter before seeing the new data.
+        2.  **Likelihood ($P(Data|\theta)$):** The probability of the observed data given the parameter (the new evidence).
+        3.  **Posterior ($P(\theta|Data)$):** The updated belief after combining the prior with the new evidence.
+    *   **Cumulative:** The posterior from one study becomes the prior for the next. This allows for a continuous, iterative accumulation of evidence.
+
+### 3. Treatment of Uncertainty
+
+Uncertainty is quantified differently in each framework.
+
+*   **Frequentist Uncertainty:**
+    *   Uncertainty is derived from the **sampling distribution**. It reflects how much the estimate would vary if the experiment were repeated many times.
+    *   **Confidence Intervals:** These are ranges constructed from the data. The uncertainty is about the *interval*, not the parameter. The parameter is fixed; the interval moves.
+    *   **Limitation:** It often struggles to incorporate external knowledge (like historical data or expert opinion) directly into the calculation of uncertainty.
+
+*   **Bayesian Uncertainty:**
+    *   Uncertainty is represented by the **Posterior Distribution**.
+    *   **Credible Intervals:** These are ranges where the parameter is likely to be with a certain probability. The uncertainty is about the *parameter* itself.
+    *   **Flexibility:** Uncertainty is a direct function of the data *and* the prior. If the prior is strong (high certainty), the posterior uncertainty will be lower. If the prior is weak (high uncertainty), the data drives the uncertainty.
+
+### Summary Comparison Table
+
+| Feature | Frequentist Inference | Bayesian Inference |
+| :--- | :--- | :--- |
+| **Parameter Nature** | Fixed constant | Random variable |
+| **Data Nature** | Random variable | Fixed observation |
+| **Role of Prior Knowledge** | Ignored (or handled via design) | Explicitly included via Prior distribution |
+| **Evidence Integration** | Likelihood only (via p-values) | Prior $\times$ Likelihood = Posterior |
+| **Uncertainty Metric** | Confidence Interval (Frequency) |

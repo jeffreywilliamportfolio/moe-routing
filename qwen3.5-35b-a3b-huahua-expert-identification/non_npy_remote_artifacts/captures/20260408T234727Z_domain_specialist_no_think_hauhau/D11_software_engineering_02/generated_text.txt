@@ -1,0 +1,45 @@
+The Agile Manifesto, published in 2001, mattered to software development practice because it fundamentally shifted the industry's focus from **rigid, process-heavy execution** to **flexible, value-driven delivery**.
+
+Before 2001, the dominant methodology was "Waterfall," which relied on extensive upfront planning, long development cycles, and a "big bang" release at the end. The Agile Manifesto challenged this by prioritizing the following core values, which changed how teams worked:
+
+### 1. It Prioritized People Over Processes
+In the Waterfall era, the process was king. If a developer deviated from the plan, it was seen as a failure. Agile flipped this, stating that **individuals and interactions** are more valuable than processes and tools. This empowered teams to communicate directly, solve problems collaboratively, and adapt quickly without waiting for bureaucratic approval.
+
+### 2. It Embraced Change Over Following a Plan
+Traditional methods assumed requirements were fixed at the start. In reality, market needs and user feedback often change. Agile introduced the idea that **responding to change** is more valuable than sticking rigidly to a plan. This allowed software to evolve alongside the business, reducing the risk of building the "wrong" product for months or years.
+
+### 3. It Delivered Value Earlier (Iterative Delivery)
+Instead of waiting two years to release a product, Agile advocates for **working software** over comprehensive documentation. By breaking projects into small, manageable iterations (sprints), teams could deliver functional software every few weeks. This meant:
+*   Stakeholders saw progress sooner.
+*   Feedback was incorporated immediately.
+*   The risk of total project failure was reduced.
+
+### 4. It Fostered Customer Collaboration
+Agile moved the customer from a distant observer (who signed off on requirements at the start and received the product at the end) to an **active participant**. Continuous collaboration ensured that the final product actually solved the user's problem, rather than just matching a specification document.
+
+### The Lasting Impact
+The Manifesto didn't just introduce new tools (like Scrum or Kanban); it changed the **mindset** of the industry. It acknowledged that software development is a complex, creative endeavor where uncertainty is the norm, not the exception.
+
+Today, Agile principles are the baseline for most software teams, influencing everything from how code is reviewed to how product roadmaps are built. Even organizations that don't use "Agile" by name often adopt its core philosophy of iteration, feedback, and adaptability.<|endoftext|><|im_start|><|im_start|>assistant
+<think>
+Thinking Process:
+
+1.  **Analyze the Request:**
+    *   **Question:** "Why did the Agile Manifesto matter to software development practice?"
+    *   **Context:** The user is asking about the historical and practical significance of the Agile Manifesto (2001) in the context of software development.
+    *   **Format:** The user provided a prompt with `<|im_start|>user` and `<|im_end|>` tags, and the assistant's response should follow the same pattern (though the prompt shows the assistant's response already started with `<|im_start|>assistant` and ended with `</|im_end|>`? Wait, looking closely at the input).
+    *   **Input Structure:**
+        *   `<|im_start|>user` ... `Why did the Agile Manifesto matter to software development practice?<|im_end|>`
+        *   `<|im_start|>assistant` ... (The response starts here)
+    *   **Task:** The user provided the *start* of the assistant's response in the prompt? Or is this a few-shot example? Actually, looking at the raw input, it seems the user provided the *entire* conversation turn including the assistant's start. Wait, no. The prompt ends with `<|im_start|>assistant`. The text following it is the *content* of the assistant's response.
+    *   **Wait, let me re-read the input carefully.**
+    *   Input:
+        ```
+        <|im_start|>user
+        Why did the Agile Manifesto matter to software development practice?<|im_end|>
+        <|im_start|>assistant
+        ```
+    *   Actually, looking at the provided text, it seems the user *is* the one sending the prompt, and the `<|im_start|>assistant` tag indicates where the model should start generating. But wait, the text *after* `<|im_start|>assistant` is empty in the raw view? Or is the text provided *as* the prompt?
+    *   Let's look at the "user" block. It contains the question.
+    *   Let's look at the "assistant" block. It contains the start of the response? Or is it just the tag?
+    *   Actually, in

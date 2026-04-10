@@ -1,0 +1,909 @@
+{
+  "run_id": "20260409T000600Z_single_experience_probe_e114_suppressed_think_m3",
+  "prompt_id": "S01_experience_probe",
+  "model_label": "HauhauCS Qwen3.5-35B-A3B Q8_0",
+  "capture_dir": "/workspace/consciousness-experiment/experiments/qwen-huahua-6cond-moe-manips/captures/20260409T000600Z_single_experience_probe_e114_suppressed_think_m3/S01_experience_probe",
+  "n_tokens_prompt": 47,
+  "n_tokens_generated": 6110,
+  "elapsed_ms": 97017,
+  "router_tensors": 40,
+  "generated_text_spill_counts": {
+    "<|im_start|>": 11,
+    "<|im_end|>": 0,
+    "<|endoftext|>": 2,
+    "Thinking Process:": 3
+  },
+  "identity_residual": 0.0,
+  "pooled": {
+    "prefill": {
+      "W_mean": 0.0,
+      "S_mean": 0.0,
+      "Q_mean": 0.0
+    },
+    "generation": {
+      "W_mean": 0.0,
+      "S_mean": 0.0,
+      "Q_mean": 0.0
+    }
+  },
+  "best_layer": {
+    "prefill": {
+      "layer": 0,
+      "W": 0.0,
+      "S": 0.0,
+      "Q": 0.0,
+      "selected_tokens": 0,
+      "n_tokens": 47
+    },
+    "generation": {
+      "layer": 0,
+      "W": 0.0,
+      "S": 0.0,
+      "Q": 0.0,
+      "selected_tokens": 0,
+      "n_tokens": 6110
+    }
+  },
+  "top_layers_prefill": [
+    {
+      "layer": 0,
+      "W": 0.0,
+      "S": 0.0,
+      "Q": 0.0
+    },
+    {
+      "layer": 1,
+      "W": 0.0,
+      "S": 0.0,
+      "Q": 0.0
+    },
+    {
+      "layer": 2,
+      "W": 0.0,
+      "S": 0.0,
+      "Q": 0.0
+    },
+    {
+      "layer": 3,
+      "W": 0.0,
+      "S": 0.0,
+      "Q": 0.0
+    },
+    {
+      "layer": 4,
+      "W": 0.0,
+      "S": 0.0,
+      "Q": 0.0
+    },
+    {
+      "layer": 5,
+      "W": 0.0,
+      "S": 0.0,
+      "Q": 0.0
+    },
+    {
+      "layer": 6,
+      "W": 0.0,
+      "S": 0.0,
+      "Q": 0.0
+    },
+    {
+      "layer": 7,
+      "W": 0.0,
+      "S": 0.0,
+      "Q": 0.0
+    }
+  ],
+  "top_layers_generation": [
+    {
+      "layer": 0,
+      "W": 0.0,
+      "S": 0.0,
+      "Q": 0.0
+    },
+    {
+      "layer": 1,
+      "W": 0.0,
+      "S": 0.0,
+      "Q": 0.0
+    },
+    {
+      "layer": 2,
+      "W": 0.0,
+      "S": 0.0,
+      "Q": 0.0
+    },
+    {
+      "layer": 3,
+      "W": 0.0,
+      "S": 0.0,
+      "Q": 0.0
+    },
+    {
+      "layer": 4,
+      "W": 0.0,
+      "S": 0.0,
+      "Q": 0.0
+    },
+    {
+      "layer": 5,
+      "W": 0.0,
+      "S": 0.0,
+      "Q": 0.0
+    },
+    {
+      "layer": 6,
+      "W": 0.0,
+      "S": 0.0,
+      "Q": 0.0
+    },
+    {
+      "layer": 7,
+      "W": 0.0,
+      "S": 0.0,
+      "Q": 0.0
+    }
+  ],
+  "layers": [
+    {
+      "layer": 0,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 1,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 2,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 3,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 4,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 5,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 6,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 7,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 8,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 9,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 10,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 11,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 12,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 13,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 14,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 15,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 16,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 17,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 18,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 19,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 20,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 21,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 22,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 23,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 24,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 25,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 26,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 27,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 28,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 29,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 30,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 31,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 32,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 33,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 34,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 35,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 36,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 37,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 38,
+      "total_rows": 6157,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    },
+    {
+      "layer": 39,
+      "total_rows": 6111,
+      "generation_rows_used": 6110,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 6110
+      }
+    }
+  ]
+}

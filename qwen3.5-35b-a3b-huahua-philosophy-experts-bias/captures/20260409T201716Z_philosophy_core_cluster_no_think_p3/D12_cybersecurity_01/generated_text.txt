@@ -1,0 +1,94 @@
+Public key cryptography is a foundational system that enables secure communication, authentication, and trust in digital networks. It operates through a set of mechanisms that include **key exchange**, **signatures**, and **trust**. Let’s explore each of these components.
+
+---
+
+### **1. Key Exchange**
+
+**Key exchange** refers to the process of distributing and agreeing upon cryptographic keys between two parties. In public key cryptography, one party typically holds a **public key** (used for encryption or verification), while the other party holds a **private key** (used for decryption or signing).
+
+- **Public Key**: A key that can be shared with others, used to encrypt messages or verify signatures.
+- **Private Key**: A key that is kept by the sender, used to decrypt messages or create signatures.
+
+**Key exchange** is often done through:
+- **Digital certificates** (e.g., RSA, PEM format)
+- **Key agreement protocols** (e.g., Diffie–Hellman)
+- **Trusting authority** (e.g., trusted third parties like CA, or trusted peers)
+
+This allows parties to communicate securely without needing to physically exchange keys.
+
+---
+
+### **2. Signatures**
+
+**Signatures** are cryptographic proofs that verify the authenticity of a message or document. They are created using the **private key** and verified using the **public key**.
+
+- **Signing**: A sender uses their private key to generate a signature on a message.
+- **Verification**: A receiver uses the sender’s public key to verify the signature.
+
+**Signatures** are used to:
+- **Authenticate identity** (e.g., digital signatures in legal documents)
+- **Verify integrity** (e.g., ensuring a message hasn been tampered)
+- **Establish trust** (e.g., verifying a sender's identity)
+
+---
+
+### **3. Trust**
+
+**Trust** is the foundational belief that a sender is reliable, and that their public key is correctly associated with their identity.
+
+- **Trust is established through**:
+- **Digital certificates** (e.g., trusted CA, or trusted peers)
+- **Key agreement protocols** (e.g., Diffie–Hellman)
+- **Trusting authority** (e.g., trusted third parties like CA, or trusted peers)
+
+**Trust** is often done through:
+- **Digital certificates** (e.g., RSA, PEM format)
+- **Key agreement protocols** (e.g., Diffie–Hellman)
+- **Trusting authority** (e.g., trusted third parties like CA, or trusted peers)
+
+---
+
+### **Summary**
+
+Public key cryptography is a foundational system that enables secure communication, authentication, and trust in digital networks. It operates through a set of mechanisms that include **key exchange**, **signatures**, and **trust**. Let’s explore each of these components.
+
+---
+
+### **1. Key Exchange**
+
+**Key exchange** refers to the process of distributing and agreeing upon cryptographic keys between two parties. In public key cryptography, one party typically holds a **public key** (used for encryption or verification), while the other party holds a **private key** (used for decryption or signing).
+
+- **Public Key**: A key that can be shared with others, used to encrypt messages or verify signatures.
+- **Private Key**: A key that is kept by the sender, used to decrypt messages or create signatures.
+
+**Key exchange** is often done through:
+- **Digital certificates** (e.g., RSA, PEM format)
+- **Key agreement protocols** (e.g., Diffie–Hellman)
+- **Trusting authority** (e.g., trusted third parties like CA, or trusted peers)
+
+This allows parties to communicate securely without needing to physically exchange keys.
+
+---
+
+### **2. Signatures**
+
+**Signatures** are cryptographic proofs that verify the authenticity of a message or document. They are created using the **private key** and verified using the **public key**.
+
+- **Signing**: A sender uses their private key to generate a signature on a message.
+- **Verification**: A receiver uses the sender’s public key to verify the signature.
+
+**Signatures** are used to:
+- **Authenticate identity** (e.g., digital signatures in legal documents)
+- **Verify integrity** (e.g., ensuring a message hasn been tampered)
+- **Establish trust** (e.g., verifying a sender's identity)
+
+---
+
+### **3. Trust**
+
+**Trust** is the foundational belief that a sender is reliable, and that their public key is correctly associated with their identity.
+
+- **Trust is established through**:
+- **Digital certificates** (e.g., trusted CA, or trusted peers)
+- **Key agreement protocols** (e.g., Diffie–Hellman)
+- **Trusting authority** (e.g., trusted third parties like CA,

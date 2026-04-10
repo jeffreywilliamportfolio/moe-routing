@@ -1,0 +1,51 @@
+Public key cryptography (also known as asymmetric cryptography) is a foundational technology for secure communication in the digital world. It uses a pair of mathematically linked keys: a **public key** (visible to everyone) and a **private key** (kept secret by the owner).
+
+Here is how it works across the three areas you mentioned: key exchange, signatures, and trust.
+
+### 1. Key Exchange (Confidentiality)
+The primary use case for public key cryptography is to establish a secure channel for sending data without needing a pre-shared secret.
+
+*   **The Mechanism:**
+    *   **Alice** wants to send a secret message to **Bob**.
+    *   Alice takes Bob's **Public Key** (which Bob has published) and uses it to encrypt the message.
+    *   The resulting ciphertext is sent to Bob.
+    *   Bob uses his **Private Key** (which only he knows) to decrypt the message.
+*   **Why it works:** Because the keys are mathematically linked, data encrypted with the public key can only be decrypted by the corresponding private key. Even if an eavesdropper (Eve) sees the ciphertext and knows the public key, she cannot decrypt it without Bob's private key.
+*   **Real-world Application:** This is often used in protocols like TLS (HTTPS). When you visit a website, your browser uses the server's public key to encrypt a "session key," which is then used for faster symmetric encryption of the actual data stream.
+
+### 2. Digital Signatures (Authentication & Integrity)
+While encryption protects data from being read by others, signatures protect data from being tampered with and verify the sender's identity.
+
+*   **The Mechanism:**
+    *   **Alice** wants to prove a message came from her and hasn't been altered.
+    *   Alice takes her **Private Key** and uses it to "sign" (encrypt) a hash of the message.
+    *   She sends the message along with the signature.
+    *   **Bob** takes Alice's **Public Key** and uses it to decrypt the signature.
+    *   If the decrypted signature matches the hash of the received message, the message is verified.
+*   **Why it works:** Since only Alice holds the private key, only she could have created this specific signature. If Bob decrypts it successfully, he knows the message originated from Alice. If someone else tried to tamper with the message, the hash would change, and the signature would no longer match.
+*   **Analogy:** Think of a wax seal on a letter. The seal (signature) is unique to the sender (private key), and anyone can check if the seal matches the letter (public key).
+
+### 3. Trust (The "Chain of Command")
+The biggest challenge in public key cryptography is determining *who* to trust. If Alice sends her public key to Bob, how does Bob know it's actually Alice's key and not a fake one created by Eve?
+
+*   **The Problem:** If Bob needs to verify Alice's key, he needs another key to verify it. If that key needs verification, he needs a third key... leading to an infinite loop (the "Infinite Regress").
+*   **The Solution:** We rely on **Certificates** and **Trust Anchors**.
+    *   **Digital Certificates:** A third party (usually a Certificate Authority, or CA) verifies that a specific public key belongs to a specific entity. They sign the key with their own private key to create a "Certificate."
+    *   **Trust Anchors:** When you open a browser, it comes pre-loaded with a list of trusted CA public keys (Root Certificates).
+    *   **The Logic:**
+        1.  Browser trusts CA's Root Key.
+        2.  CA signs the Website's Certificate using its private key.
+        3.  Browser uses the Root Key to verify the CA's signature on the Website's Certificate.
+        4.  Browser now trusts the Website's Public Key.
+*   **The Hierarchy:** This creates a hierarchy of trust. You trust the CA, the CA trusts the Website, and the Website trusts the User.
+
+### Summary
+*   **Encryption:** Public Key encrypts $\rightarrow$ Private Key decrypts (Confidentiality).
+*   **Signatures:** Private Key signs $\rightarrow$ Public Key verifies (Authentication).
+*   **Trust:** Root Certificates $\rightarrow$ CA Certificates $\rightarrow$ End Entity Keys (Verification).
+
+This system allows strangers to communicate securely without meeting beforehand, provided they trust a common authority (like a Certificate Authority) to vouch for the identity of the keys.<|endoftext|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|>
+
+# How does public key cryptography work, including key exchange, signatures, and trust?
+
+Public key cryptography (

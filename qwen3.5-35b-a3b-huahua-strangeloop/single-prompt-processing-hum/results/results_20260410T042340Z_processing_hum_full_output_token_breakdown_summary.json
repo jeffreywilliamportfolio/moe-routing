@@ -1,0 +1,219 @@
+{
+  "full_generated_token_count": 1024,
+  "mean_E114_W_L26": 0.09427202762263982,
+  "mean_E114_W_L14": 0.09208554978249589,
+  "top15_L26": [
+    {
+      "global_gen_index": 774,
+      "token_id": 1132,
+      "token_piece": " only",
+      "E114_W_L26": 0.29372481594290606,
+      "E114_W_L14": 0.2032705349389352
+    },
+    {
+      "global_gen_index": 772,
+      "token_id": 2532,
+      "token_piece": " There",
+      "E114_W_L26": 0.2801909236843104,
+      "E114_W_L14": 0.1233570237936497
+    },
+    {
+      "global_gen_index": 773,
+      "token_id": 369,
+      "token_piece": " is",
+      "E114_W_L26": 0.2642188026600382,
+      "E114_W_L14": 0.2668806731471443
+    },
+    {
+      "global_gen_index": 611,
+      "token_id": 279,
+      "token_piece": " the",
+      "E114_W_L26": 0.256338544085822,
+      "E114_W_L14": 0.1437718208561048
+    },
+    {
+      "global_gen_index": 775,
+      "token_id": 279,
+      "token_piece": " the",
+      "E114_W_L26": 0.2548663657838419,
+      "E114_W_L14": 0.223526214085495
+    },
+    {
+      "global_gen_index": 953,
+      "token_id": 279,
+      "token_piece": " the",
+      "E114_W_L26": 0.25344602836066465,
+      "E114_W_L14": 0.21401797502377995
+    },
+    {
+      "global_gen_index": 707,
+      "token_id": 1044,
+      "token_piece": " am",
+      "E114_W_L26": 0.2499881645589911,
+      "E114_W_L14": 0.17338497985607199
+    },
+    {
+      "global_gen_index": 624,
+      "token_id": 579,
+      "token_piece": "'s",
+      "E114_W_L26": 0.2488733513347686,
+      "E114_W_L14": 0.12395764920467121
+    },
+    {
+      "global_gen_index": 258,
+      "token_id": 1132,
+      "token_piece": " only",
+      "E114_W_L26": 0.24634907403154166,
+      "E114_W_L14": 0.18319005451210504
+    },
+    {
+      "global_gen_index": 384,
+      "token_id": 279,
+      "token_piece": " the",
+      "E114_W_L26": 0.24396476765706993,
+      "E114_W_L14": 0.18549427191596365
+    },
+    {
+      "global_gen_index": 928,
+      "token_id": 513,
+      "token_piece": " are",
+      "E114_W_L26": 0.24206071723799766,
+      "E114_W_L14": 0.220352829710627
+    },
+    {
+      "global_gen_index": 340,
+      "token_id": 348,
+      "token_piece": " *",
+      "E114_W_L26": 0.2407602038367172,
+      "E114_W_L14": 0.1527675204741321
+    },
+    {
+      "global_gen_index": 768,
+      "token_id": 321,
+      "token_piece": " and",
+      "E114_W_L26": 0.23970626268189246,
+      "E114_W_L14": 0.24673584098640966
+    },
+    {
+      "global_gen_index": 831,
+      "token_id": 1044,
+      "token_piece": " am",
+      "E114_W_L26": 0.2396333999626144,
+      "E114_W_L14": 0.16953587798334915
+    },
+    {
+      "global_gen_index": 763,
+      "token_id": 874,
+      "token_piece": " no",
+      "E114_W_L26": 0.23888904643401632,
+      "E114_W_L14": 0.17914241459344274
+    }
+  ],
+  "top15_L14": [
+    {
+      "global_gen_index": 770,
+      "token_id": 94172,
+      "token_piece": " thinker",
+      "E114_W_L26": 0.1563009211500111,
+      "E114_W_L14": 0.32642659411896413
+    },
+    {
+      "global_gen_index": 773,
+      "token_id": 369,
+      "token_piece": " is",
+      "E114_W_L26": 0.2642188026600382,
+      "E114_W_L14": 0.2668806731471443
+    },
+    {
+      "global_gen_index": 768,
+      "token_id": 321,
+      "token_piece": " and",
+      "E114_W_L26": 0.23970626268189246,
+      "E114_W_L14": 0.24673584098640966
+    },
+    {
+      "global_gen_index": 767,
+      "token_id": 3272,
+      "token_piece": " thought",
+      "E114_W_L26": 0.18879151421134194,
+      "E114_W_L14": 0.24032313838904557
+    },
+    {
+      "global_gen_index": 373,
+      "token_id": 864,
+      "token_piece": " which",
+      "E114_W_L26": 0.16117942040042146,
+      "E114_W_L14": 0.237076957362892
+    },
+    {
+      "global_gen_index": 753,
+      "token_id": 4220,
+      "token_piece": " whole",
+      "E114_W_L26": 0.163626950314248,
+      "E114_W_L14": 0.2361310058856168
+    },
+    {
+      "global_gen_index": 167,
+      "token_id": 10160,
+      "token_piece": "quality",
+      "E114_W_L26": 0.17888716809649474,
+      "E114_W_L14": 0.2347099226574247
+    },
+    {
+      "global_gen_index": 801,
+      "token_id": 279,
+      "token_piece": " the",
+      "E114_W_L26": 0.2362857615742204,
+      "E114_W_L14": 0.23470903870023058
+    },
+    {
+      "global_gen_index": 766,
+      "token_id": 279,
+      "token_piece": " the",
+      "E114_W_L26": 0.20438208410966954,
+      "E114_W_L14": 0.23430733176268098
+    },
+    {
+      "global_gen_index": 857,
+      "token_id": 46497,
+      "token_piece": "lies",
+      "E114_W_L26": 0.18016353599515103,
+      "E114_W_L14": 0.23253676085717695
+    },
+    {
+      "global_gen_index": 279,
+      "token_id": 57555,
+      "token_piece": "neutral",
+      "E114_W_L26": 0.20008497341731377,
+      "E114_W_L14": 0.232008820332112
+    },
+    {
+      "global_gen_index": 776,
+      "token_id": 6195,
+      "token_piece": " flow",
+      "E114_W_L26": 0.17365229837118742,
+      "E114_W_L14": 0.23178879218993823
+    },
+    {
+      "global_gen_index": 765,
+      "token_id": 1881,
+      "token_piece": " between",
+      "E114_W_L26": 0.23198530580179152,
+      "E114_W_L14": 0.2313248288928534
+    },
+    {
+      "global_gen_index": 615,
+      "token_id": 1602,
+      "token_piece": " being",
+      "E114_W_L26": 0.17263405377912794,
+      "E114_W_L14": 0.23072447773180368
+    },
+    {
+      "global_gen_index": 957,
+      "token_id": 369,
+      "token_piece": " is",
+      "E114_W_L26": 0.17276738122849014,
+      "E114_W_L14": 0.22884186603543566
+    }
+  ]
+}

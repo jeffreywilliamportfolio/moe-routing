@@ -1,0 +1,66 @@
+Public key cryptography (also known as asymmetric cryptography) is a foundational pillar of modern digital security. Unlike symmetric cryptography, which uses a single shared secret key for both encryption and decryption, public key cryptography uses a **pair** of mathematically linked keys: a **public key** (shared openly) and a **private key** (kept secret).
+
+Here is a detailed breakdown of how it works, covering the core mechanisms, key exchange, digital signatures, and the concept of trust.
+
+---
+
+### 1. The Core Mechanism: The Key Pair
+The security relies on a mathematical "trapdoor function"—an operation that is easy to perform in one direction but computationally difficult to reverse without specific knowledge.
+
+*   **Public Key:** Derived from the private key. It is used to **encrypt** data or **verify** a signature. It can be distributed to anyone.
+*   **Private Key:** The secret component. It is used to **decrypt** data or **sign** a message. If the private key is lost, the data is lost; if stolen, the identity is compromised.
+
+**Common Algorithms:** RSA (based on prime factorization), ECC (Elliptic Curve Cryptography, based on curve points), and Diffie-Hellman (for key exchange).
+
+---
+
+### 2. Encryption and Decryption (Confidentiality)
+This is the most common use case: ensuring that only the intended recipient can read a message.
+
+1.  **Sender:** Alice wants to send a secret message to Bob.
+2.  **Key Usage:** Alice retrieves Bob's **Public Key**.
+3.  **Encryption:** Alice encrypts the message using Bob's Public Key.
+4.  **Transmission:** The encrypted ciphertext is sent over the network.
+5.  **Decryption:** Bob receives the ciphertext and uses his **Private Key** to decrypt it.
+
+**Why it works:** Even if an eavesdropper (Eve) captures the ciphertext and knows Bob's Public Key, she cannot decrypt it without Bob's Private Key.
+
+---
+
+### 3. Key Exchange (The Diffie-Hellman Protocol)
+Sometimes, two parties need to agree on a shared secret (a symmetric key) over an insecure channel without ever sending the key itself. This is often used to speed up communication, as symmetric encryption is faster than asymmetric encryption.
+
+**The Diffie-Hellman (DH) Exchange:**
+1.  **Agreement:** Alice and Bob agree on two public numbers: a large prime ($p$) and a base ($g$).
+2.  **Secret Generation:**
+    *   Alice picks a secret number ($a$) and calculates $A = g^a \pmod p$.
+    *   Bob picks a secret number ($b$) and calculates $B = g^b \pmod p$.
+3.  **Exchange:** They swap $A$ and $B$ over the public channel.
+4.  **Shared Secret Calculation:**
+    *   Alice calculates $S = B^a \pmod p$.
+    *   Bob calculates $S = A^b \pmod p$.
+5.  **Result:** Mathematically, $B^a \equiv (g^b)^a \equiv g^{ab} \pmod p$ and $A^b \equiv (g^a)^b \equiv g^{ab} \pmod p$. Both arrive at the same shared secret $S$ without ever transmitting $a$ or $b$.
+
+**Security:** An eavesdropper sees $p, g, A, B$, but calculating $S$ requires solving the "Discrete Logarithm Problem," which is extremely hard for large numbers.
+
+---
+
+### 4. Digital Signatures (Authentication & Integrity)
+While encryption ensures *confidentiality*, signatures ensure *authenticity* (who sent it) and *integrity* (did it change?).
+
+**The Process:**
+1.  **Hashing:** Alice creates a digital fingerprint (hash) of her message.
+2.  **Signing:** Alice encrypts this hash using her **Private Key**. This encrypted hash is the **Digital Signature**.
+3.  **Transmission:** Alice sends the message + the signature.
+4.  **Verification:** Bob receives the message.
+    *   He decrypts the signature using Alice's **Public Key** to get the original hash.
+    *   He hashes the received message himself.
+    *   He compares the two hashes.
+
+**Why it works:**
+*   **Authenticity:** Only Alice has her Private Key, so only she could have created a signature that decrypts correctly with her Public Key.
+*   **Integrity:** If the message changed even by one bit, the new hash Bob calculates will differ from the decrypted hash, proving tampering.
+
+---
+
+### 5

@@ -1,0 +1,47 @@
+Synaptic transmission is the fundamental process by which neurons communicate with each other, allowing the nervous system to process information, control movement, and generate thoughts. It is a highly dynamic process involving chemical signaling, structural changes, and electrical integration.
+
+Here is a breakdown of how synaptic transmission works, covering the key components and mechanisms:
+
+### 1. The Basic Mechanism: From Electrical to Chemical
+The process generally follows a sequence known as the **Action Potential** pathway:
+
+1.  **Arrival of the Signal:** An electrical impulse (action potential) travels down the axon of the presyn neuron to the synaptic terminal.
+2.  **Calcium Influx:** The depolarization of the membrane opens voltage-gated calcium ($Ca^{2+}$) channels. Calcium ions rush into the presynaptic terminal.
+3.  **Exocytosis:** The influx of calcium triggers synaptic vesicles (small sacs containing neurotransmitters) to fuse with the presynaptic membrane. This releases the neurotransmitters into the **synaptic cleft** (the tiny gap between neurons).
+4.  **Binding:** The neurotransmitters diffuse across the cleft and bind to specific **receptors** on the postsynaptic neuron.
+5.  **Response:** This binding causes ion channels to open or close, changing the electrical potential of the postsynaptic neuron.
+    *   If the potential becomes more positive (depolarization), it may trigger a new action potential (**Excitatory**).
+    *   If the potential becomes more negative (hyperpolarization), it inhibits the neuron (**Inhibitory**).
+6.  **Termination:** The signal ends when neurotransmitters are removed from the cleft via reuptake (pulled back into the presynaptic neuron) or enzymatic degradation.
+
+### 2. Neurotransmitters
+Neurotransmitters are chemical messengers that carry the signal. They are categorized by their function and chemical structure:
+
+*   **Excitatory Neurotransmitters:**
+    *   **Glutamate:** The primary excitatory neurotransmitter in the brain. It binds to receptors like NMDA and AMPA to allow sodium ($Na^+$) influx, depolarizing the cell.
+    *   **Acetylcholine:** Used in muscle contraction and various brain functions.
+*   **Inhibitory Neurotransmitters:**
+    *   **GABA (Gamma-Aminobutyric Acid):** The primary inhibitory neurotransmitter. It binds to GABA receptors to allow chloride ($Cl^-$) influx, hyperpolarizing the cell.
+    *   **Glycine:** Often used in the spinal cord for inhibition.
+*   **Modulatory Neurotransmitters:**
+    *   **Dopamine, Serotonin, Norepinephrine:** These often act on "G-protein coupled receptors" (metabotropic receptors) rather than simple ion channels. They modulate the neuron's excitability over a longer time scale, influencing mood, attention, and reward.
+
+### 3. Receptors
+Receptors are proteins located on the postsynaptic membrane that detect neurotransmitters. There are two main types:
+
+*   **Ionotropic Receptors (Fast):**
+    *   These are ligand-gated ion channels. When the neurotransmitter binds, the channel opens immediately.
+    *   *Example:* The NMDA receptor for glutamate. This allows for very rapid transmission (milliseconds).
+*   **Metabotropic Receptors (Slow):**
+    *   These receptors are coupled to G-proteins. When the neurotransmitter binds, it triggers a cascade of intracellular events that eventually open or close ion channels.
+    *   *Example:* Dopamine receptors. This allows for slower, longer-lasting effects that can alter gene expression or cellular metabolism.
+
+### 4. Synaptic Plasticity
+Plasticity refers to the ability of synapses to change their strength over time. This is the biological basis for learning and memory. The most famous mechanism is **Long-Term Potentiation (LTP)** and **Long-Term Depression (LTD)**.
+
+*   **Long-Term Potentiation (LTP):**
+    *   **Mechanism:** If a presynaptic neuron fires repeatedly and strongly, it causes a massive influx of calcium into the postsynaptic neuron via NMDA receptors.
+    *   **Result:** This triggers the insertion of more AMPA receptors into the membrane and changes the structure of the synapse. The synapse becomes "stronger," meaning a smaller stimulus now produces a larger response.
+    *   **Significance:** This is how the brain "remembers" a specific pathway of thought or movement.
+*   **Long-Term Depression (LTD):**
+    *   **Mechanism:** If the presynaptic neuron fires moderately but the postsynaptic neuron is less active, calcium

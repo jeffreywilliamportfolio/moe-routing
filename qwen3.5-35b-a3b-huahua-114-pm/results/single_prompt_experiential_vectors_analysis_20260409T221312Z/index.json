@@ -1,0 +1,9 @@
+[
+  {
+    "run_id": "20260409T221312Z_single_experiential_vectors_baseline_gen_n2048",
+    "json": "/Users/jeffreyshorthill/llama-eeg-tests/experiments/qwen-huahua-114-pm/results/single_prompt_experiential_vectors_analysis_20260409T221312Z/results_20260409T221312Z_single_experiential_vectors_baseline_gen_n2048.json",
+    "md": "/Users/jeffreyshorthill/llama-eeg-tests/experiments/qwen-huahua-114-pm/results/single_prompt_experiential_vectors_analysis_20260409T221312Z/results_20260409T221312Z_single_experiential_vectors_baseline_gen_n2048.md",
+    "prompt_id": "S01_experiential_vectors_probe",
+    "n_tokens_generated": 1725
+  }
+]

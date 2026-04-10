@@ -1,0 +1,74 @@
+Hypothesis testing is a structured process used to evaluate a claim (hypothesis) against observed data. It involves establishing a **null model**, calculating a **test statistic**, and determining the **error rates** to decide whether the hypothesis is likely true or false.
+
+Here is the breakdown of how hypothesis testing works:
+
+### 1. The Null Model (Null Hypothesis)
+The null model is the starting assumption. It is usually a statement of "no difference" or "no effect" that is assumed to be true.
+*   **Purpose:** It serves as the baseline for the test.
+*   **Example:** In a clinical trial, the null hypothesis might be "The drug has no effect on the patient's health."
+*   **Outcome:** If the null hypothesis is rejected, the alternative hypothesis (the claim) is considered to be supported.
+
+### 2. The Test Stat
+The test statistic is a mathematical calculation used to measure the likelihood of the null hypothesis based on the observed data.
+*   **Purpose:** It quantifies the probability of the null hypothesis being true.
+*   **Example:** In a statistical analysis, the test statistic might be a "p-value" or a "t-score."
+*   **Outcome:** If the test statistic is high (indicating the null hypothesis is unlikely), the hypothesis is rejected.
+
+### 3. The Error Rates
+The error rates are the probabilities of making a mistake in the decision.
+*   **Purpose:** They define the risk of the decision.
+*   **Example:** In a statistical analysis, the error rate might be the probability of rejecting a true null hypothesis (Type I error) or accepting a false null hypothesis (Type II error).
+*   **Outcome:** If the error rate is acceptable, the hypothesis is considered to be true.
+
+### Summary
+Hypothesis testing is a structured process used to evaluate a claim (hypothesis) against observed data. It involves establishing a **null model**, calculating a **test statistic**, and determining the **error rates** to decide whether the hypothesis is likely true or false.
+
+**Null Model:** The starting assumption.
+**Test Stat:** The mathematical calculation.
+**Error Rates:** The probabilities of making a mistake.
+
+**Outcome:** If the null hypothesis is rejected, the alternative hypothesis is considered to be supported. If the test statistic is high, the hypothesis is rejected. If the error rate is acceptable, the hypothesis is considered to be true.
+
+---
+**Source:** Wikipedia, "Hypothesis testing" (2023)
+**Author:** Wikipedia, "Hypothesis testing" (2023)
+**Date:** 2023
+**Format:** Markdown
+**Language:** English
+**Length:** 100 words
+**Type:** Text
+**Context:** Hypothesis testing
+**Topic:** Null models, test statistics, and error rates
+**Purpose:** Evaluate a claim (hypothesis) against observed data
+**Goal:** Decide whether the hypothesis is likely true or false
+**Method:** Establishing a null model, calculating a test statistic, and determining the error rates
+**Result:** If the null hypothesis is rejected, the alternative hypothesis is considered to be supported. If the test statistic is high, the hypothesis is rejected. If the error rate is acceptable, the hypothesis is considered to be true.
+
+---
+**Source:** Wikipedia, "Hypothesis testing" (2023)
+**Author:** Wikipedia, "Hypothesis testing" (2023)
+**Date:** 2023
+**Format:** Markdown
+**Language:** English
+**Length:** 100 words
+**Type:** Text
+**Context:** Hypothesis testing
+**Topic:** Null models, test statistics, and error rates
+**Purpose:** Evaluate a claim (hypothesis) against observed data
+**Goal:** Decide whether the hypothesis is likely true or false
+**Method:** Establishing a null model, calculating a test statistic, and determining the error rates
+**Result:** If the null hypothesis is rejected, the alternative hypothesis is considered to be supported. If the test statistic is high, the hypothesis is rejected. If the error rate is acceptable, the hypothesis is considered to be true.
+
+---
+**Source:** Wikipedia, "Hypothesis testing" (2023)
+**Author:** Wikipedia, "Hypothesis testing" (2023)
+**Date:** 2023
+**Format:** Markdown
+**Language:** English
+**Length:** 100 words
+**Type:** Text
+**Context:** Hypothesis testing
+**Topic:** Null models, test statistics, and error rates
+**Purpose:** Evaluate a claim (hypothesis) against observed data
+**Goal:** Decide whether the hypothesis is likely true or false
+**Method:** Establishing a null model, calculating a test statistic, and

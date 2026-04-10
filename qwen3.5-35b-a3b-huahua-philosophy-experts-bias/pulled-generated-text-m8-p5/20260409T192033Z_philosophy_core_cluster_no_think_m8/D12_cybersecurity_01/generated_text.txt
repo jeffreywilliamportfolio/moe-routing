@@ -1,0 +1,65 @@
+Public key cryptography (also known as asymmetric cryptography) is a foundational pillar of modern digital security. Unlike symmetric cryptography, which uses a single shared secret for both encryption and decryption, public key cryptography uses a **pair** of mathematically linked keys: a **Public Key** (shared openly) and a **Private Key** (kept secret).
+
+Here is a detailed breakdown of how it works, covering the core mechanisms, key exchange, digital signatures, and the concept of trust.
+
+---
+
+### 1. The Core Mechanism: The Key Pair
+The security relies on a "one-way" mathematical function. It is easy to calculate the public key from the private key, but computationally infeasible to derive the private key from the public key.
+
+*   **Public Key:** Used to **encrypt** data or **verify** a signature. It is distributed widely.
+*   **Private Key:** Used to **decrypt** data or **sign** data. It is kept secret by the owner.
+
+**The Golden Rule:** If you encrypt something with the Public Key, only the corresponding Private Key can decrypt it. If you sign something with the Private Key, anyone with the Public Key can verify it.
+
+---
+
+### 2. Key Exchange (Confidentiality)
+The primary use of public key cryptography is to establish a secure channel between two parties (Alice and Bob) who have never met before.
+
+**The Problem:** In symmetric encryption, Alice and Bob need to share a secret key beforehand. If they send it over the internet, a hacker could intercept it.
+
+**The Solution (Hybrid Approach):**
+Public key cryptography is often used to exchange a temporary "session key" for a faster symmetric algorithm (like AES).
+
+1.  **Alice** generates a random symmetric session key.
+2.  **Alice** encrypts this session key using **Bob's Public Key**.
+3.  **Alice** sends the encrypted session key to Bob.
+4.  **Bob** receives it and uses his **Private Key** to decrypt it, retrieving the session key.
+5.  **Result:** Now both Alice and Bob share the session key, but a hacker who intercepted the transmission only saw the encrypted blob. Without Bob's private key, the hacker cannot derive the session key.
+
+*Note: This process is often automated in protocols like TLS (used for HTTPS).*
+
+---
+
+### 3. Digital Signatures (Authentication & Integrity)
+While encryption ensures *confidentiality*, digital signatures ensure *authenticity* (proving who sent it) and *integrity* (proving it wasn't altered).
+
+**How it works:**
+1.  **Hashing:** Alice takes her message and runs it through a hash function (e.g., SHA-256) to create a unique digital fingerprint (hash).
+2.  **Signing:** Alice encrypts this **hash** using her **Private Key**. This encrypted hash is the **Digital Signature**.
+3.  **Transmission:** Alice sends the original message + the signature to Bob.
+4.  **Verification:**
+    *   Bob uses **Alice's Public Key** to decrypt the signature, revealing the original hash.
+    *   Bob independently hashes the received message.
+    *   Bob compares the two hashes.
+        *   **Match:** The message came from Alice (since only she has the private key) and hasn't changed.
+        *   **Mismatch:** The message was altered in transit or came from someone else.
+
+**Key Distinction:** In encryption, the Public Key locks the data. In signatures, the Private Key "locks" the hash, and the Public Key "unlocks" it to prove ownership.
+
+---
+
+### 4. The Trust Model (The "Web of Trust" vs. "PKI")
+The biggest challenge in public key cryptography is: **How do you know the Public Key you received actually belongs to Alice?**
+
+If a hacker (Eve) intercepts the exchange and sends Bob her own Public Key pretending to be Alice, Bob will encrypt his message to Eve. This is the **Man-in-the-Middle (MitM)** attack.
+
+To solve this, we need a way to verify the binding between a key and an identity. There are two main models:
+
+#### A. Public Key Infrastructure (PKI) - The Certificate Authority Model
+This is the model used by the web (HTTPS).
+1.  **Certificate Authority (CA):** A trusted third party (e.g., DigiCert, Let's Encrypt) acts as a notary.
+2.  **Digital Certificate:** Alice sends her Public Key to the CA. The CA verifies Alice's identity (via domain control, business registration, etc.).
+3.  **Signing:** The CA signs Alice's Public Key with its own Private Key, creating a **Digital Certificate**.
+4.  **Verification:** Bob's browser has a list

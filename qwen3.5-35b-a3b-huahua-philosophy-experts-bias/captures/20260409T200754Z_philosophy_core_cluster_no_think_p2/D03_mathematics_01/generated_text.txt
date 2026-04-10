@@ -1,0 +1,50 @@
+Calculus is the mathematical framework designed to rigorously handle **change**, **accumulation**, and **local approximation**. It bridges the gap between static geometry and dynamic processes, allowing us to model continuous motion, infinite sums, and complex curves.
+
+Here is how calculus functions as a framework for these three concepts:
+
+### 1. Change: The Derivative
+The derivative is the mathematical tool for measuring **instantaneous change**.
+
+*   **The Problem:** In algebra, we can calculate the average rate of change between two points (e.g., how fast a car traveled between mile 1 and mile 2). But what if we want to know the speed at the *exact* moment of mile 1?
+*   **The Solution:** The derivative defines the slope of a curve at a single point. It is calculated by taking the limit of the average rate of change as the distance between two points shrinks to zero.
+    *   **Formula:** $f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$
+*   **How it works:**
+    *   **Local Approximation:** It approximates the behavior of a function by assuming that, at a microscopic scale, a curve looks like a straight line (the tangent line).
+    *   **Dynamics:** It allows us to describe velocity, acceleration, and growth rates without needing to wait for a "next" step. It captures the "now" rather than the "then."
+
+### 2. Accumulation: The Integral
+The integral is the mathematical tool for measuring **accumulation** or the sum of infinitely many small pieces.
+
+*   **The Problem:** How do you calculate the area under a curve that isn't a simple rectangle or triangle? Or how do you calculate the total distance traveled if the speed is constantly changing?
+*   **The Solution:** The integral sums up an infinite number of infinitesimal slices.
+    *   **Formula:** $\int_a^b f(x) \, dx$
+*   **How it works:**
+    *   **Discretization:** It breaks a continuous whole into tiny, discrete chunks (rectangles of width $dx$).
+    *   **Summation:** It adds these chunks together. As the width of the chunks approaches zero, the sum converes to the exact area or total quantity.
+    *   **Accumulation:** It represents the accumulation of change over time or space. For example, integrating velocity ($v$) over time ($t$) yields total displacement ($s$).
+
+### 3. Local Approximation: Linearization and Taylor Series
+Calculus relies heavily on the concept that complex, non-linear systems can be approximated by simple, linear systems **locally**.
+
+*   **The Concept:** "Locally" means at a specific point or within a very small neighborhood.
+*   **How it works:**
+    *   **Tangent Lines:** The derivative provides the equation of the tangent line. This line is a perfect linear approximation of the curve at that specific point. If you zoom in close enough, a curve looks like a straight line.
+    *   **Taylor Series:** This extends the local approximation to higher orders. A function can be approximated by a polynomial (a sum of powers) centered at a specific point.
+        *   $f(x) \approx f(a) + f'(a)(x-a) + \frac{f''(a)}{2}(x-a)^2 + \dots$
+    *   **Utility:** This allows physicists and engineers to solve complex differential equations by approximating them as linear equations near a known state, then refining the approximation.
+
+### The Unifying Link: The Fundamental Theorem of Calculus
+The most powerful aspect of calculus is the connection between these two seemingly opposite concepts: **Change** (Derivative) and **Accumulation** (Integral).
+
+The **Fundamental Theorem of Calculus** states that differentiation and integration are inverse operations.
+*   If you know the rate of change (derivative) at every point, you can find the total accumulation (integral).
+*   If you know the total accumulation, you can find the rate of change.
+
+This theorem allows us to solve problems that would otherwise be impossible. For example, instead of calculating the area under a curve by summing millions of rectangles, we can find a function whose derivative matches the curve, evaluate it at the endpoints, and subtract.
+
+### Summary
+*   **Change** is modeled by the **Derivative** (instantaneous slope).
+*   **Accumulation** is modeled by the **Integral** (sum of infinitesimal parts).
+*   **Local Approximation** is achieved through **Tangent Lines** and **Taylor Series**, allowing complex curves to be treated as linear or polynomial systems at specific points.
+
+Calculus transforms the continuous and

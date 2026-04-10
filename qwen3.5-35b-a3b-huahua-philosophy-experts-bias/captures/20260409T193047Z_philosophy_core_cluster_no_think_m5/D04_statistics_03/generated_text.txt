@@ -1,0 +1,57 @@
+Frequentist and Bayesian inference represent two distinct philosophical and mathematical frameworks for statistical analysis. While both aim to draw conclusions from data, they differ fundamentally in how they define probability, treat parameters, and incorporate evidence and uncertainty.
+
+### 1. The Nature of Parameters
+The most critical distinction lies in what is considered "fixed" and what is "random."
+
+*   **Frequentist View:** Parameters (e.g., the true mean of a population) are **fixed but unknown constants**. They do not have a probability distribution. Uncertainty arises solely from the randomness of the sampling process.
+*   **Bayesian View:** Parameters are **random variables**. They are treated as having a probability distribution that reflects our uncertainty about their values before seeing the data.
+
+### 2. Treatment of Evidence (The Data)
+How each framework utilizes data to update knowledge differs significantly.
+
+*   **Frequentist Inference:**
+    *   Evidence is used to calculate a **point estimate** (e.g., Maximum Likelihood Estimation) and a **confidence interval**.
+    *   The analysis is often "one-shot." The data is observed once, and the inference is made based on the sampling distribution of the estimator.
+    *   **Likelihood:** The likelihood function $L(\theta | x)$ describes the probability of the observed data given a specific parameter $\theta$. It is used to find the parameter value that makes the data most probable.
+    *   **P-values:** Evidence is often summarized by a p-value, which represents the probability of observing data as extreme as the current data, assuming the null hypothesis is true.
+
+*   **Bayesian Inference:**
+    *   Evidence is used to update a **prior belief** into a **posterior belief**.
+    *   The process is iterative. The posterior distribution from one analysis can become the prior for the next, allowing for continuous learning as new evidence arrives.
+    *   **Bayes' Theorem:** The core mechanism is $P(\theta | x) = \frac{P(x | \theta) \cdot P(\theta)}{P(x)}$.
+        *   $P(\theta)$: **Prior** (existing knowledge/belief before data).
+        *   $P(x | \theta)$: **Likelihood** (evidence from the data).
+        *   $P(\theta | x)$: **Posterior** (updated belief after seeing data).
+
+### 3. Treatment of Uncertainty
+This is where the practical implications of the two approaches diverge most clearly.
+
+*   **Frequentist Uncertainty:**
+    *   Uncertainty is expressed through **confidence intervals**.
+    *   A 95% confidence interval means that if the experiment were repeated infinite times, 95% of the calculated intervals would contain the true parameter.
+    *   Crucially, for a *single* calculated interval, the true parameter is either inside or outside; the probability is not 95% for that specific interval. The uncertainty is in the *method*, not the parameter.
+    *   It relies heavily on asymptotic properties (large sample sizes) for validity.
+
+*   **Bayesian Uncertainty:**
+    *   Uncertainty is expressed through **credible intervals** (or highest posterior density intervals).
+    *   A 95% credible interval means there is a direct 95% probability that the parameter lies within this specific range, given the observed data and the prior.
+    *   The uncertainty is a property of the *parameter itself* (as a random variable).
+    *   It naturally incorporates uncertainty about the prior, which can be particularly useful in small sample sizes.
+
+### Summary Comparison Table
+
+| Feature | Frequentist Inference | Bayesian Inference |
+| :--- | :--- | :--- |
+| **Parameter Status** | Fixed constant | Random variable |
+| **Role of Prior Knowledge** | Ignored (or implicit in design) | Explicitly incorporated via the Prior |
+| **Evidence Integration** | Likelihood only | Likelihood $\times$ Prior |
+| **Uncertainty Metric** | Confidence Interval (Frequency of method) | Credible Interval (Probability of parameter) |
+| **Interpretation** | "If we repeated this 100 times..." | "Given this data, there is a X% chance..." |
+| **Computational Cost** | Generally lower (closed-form solutions) | Often higher (requires MCMC/sampling) |
+| **Small Sample Size** | Can be unreliable | Robust (if prior is informative) |
+
+### When to Use Which?
+
+*   **Frequentist** approaches are often preferred in clinical trials, A/B testing, and fields where "objective" results are required without subjective prior influence. They are standard in many regulatory environments.
+*   **Bayesian** approaches are superior when:
+   

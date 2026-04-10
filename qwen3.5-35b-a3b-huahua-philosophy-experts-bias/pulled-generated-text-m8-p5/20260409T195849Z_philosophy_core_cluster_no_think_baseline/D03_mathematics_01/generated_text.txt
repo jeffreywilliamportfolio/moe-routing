@@ -1,0 +1,45 @@
+Calculus is the mathematical study of **continuous change**. It provides a rigorous framework to analyze how quantities evolve, how they accumulate over time or space, and how complex curves can be understood through simple linear approximations.
+
+Here is how calculus functions as a framework for these three specific concepts:
+
+### 1. Change: The Derivative (Differential Calculus)
+Calculus quantifies **instantaneous rate of change**. While algebra can calculate average rates (e.g., "the car traveled 60 miles in 1 hour"), calculus allows us to know the speed at a *specific* instant (e.g., "the car was traveling exactly 62.4 mph at 2:00:00 PM").
+
+*   **The Concept:** The derivative measures how a function $f(x)$ changes as its input $x$ changes by an infinitesimally small amount.
+*   **The Mechanism:** It uses the concept of a **limit**. We look at the slope of a secant line connecting two points on a curve and shrink the distance between those points until they are virtually touching.
+    $$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$
+*   **Real-World Application:**
+    *   **Physics:** Velocity is the derivative of position; acceleration is the derivative of velocity.
+    *   **Economics:** Marginal cost is the derivative of the total cost function.
+    *   **Biology:** The rate of population growth at a specific moment.
+
+### 2. Accumulation: The Integral (Integral Calculus)
+If the derivative breaks things down into instantaneous rates, the integral puts them back together to find **total accumulation**. It answers the question: "If we know the rate of change at every moment, what is the total effect?"
+
+*   **The Concept:** The definite integral calculates the area under a curve. Geometrically, this represents the sum of infinitely many infinitely thin rectangles.
+*   **The Mechanism:** It relies on **Riemann Sums**. We divide the area under a curve into $n$ strips, calculate the area of each strip (height $\times$ width), and sum them up. As the width of the strips approaches zero ($n \to \infty$), the sum converges to the exact area.
+    $$\int_{a}^{b} f(x) \, dx = \lim_{n \to \infty} \sum_{i=1}^{n} f(x_i^*) \Delta x$$
+*   **The Fundamental Theorem of Calculus:** This theorem bridges the two concepts, stating that differentiation and integration are inverse operations. It allows us to calculate accumulation by finding the antiderivative rather than summing infinite rectangles.
+*   **Real-World Application:**
+    *   **Physics:** Distance traveled is the integral of velocity over time.
+    *   **Engineering:** Calculating the total work done by a variable force.
+    *   **Probability:** Finding the probability that a random variable falls within a certain range.
+
+### 3. Local Approximation: Linearization and Taylor Series
+Calculus allows us to approximate complex, non-linear functions using simple linear or polynomial functions near a specific point. This is crucial for solving problems where exact solutions are difficult or impossible to find.
+
+*   **The Concept:** If you zoom in closely enough on a smooth curve, it looks like a straight line. Calculus formalizes this intuition.
+*   **The Mechanism:**
+    *   **Linear Approximation:** Using the tangent line at a point $x=a$ to estimate values near $a$.
+        $$L(x) = f(a) + f'(a)(x-a)$$
+    *   **Taylor Series:** Extending this idea to use higher-order derivatives (curvature, concavity, etc.) to create polynomial approximations that are accurate over a wider range.
+        $$f(x) \approx f(a) + f'(a)(x-a) + \frac{f''(a)}{2!}(x-a)^2 + \dots$$
+*   **Real-World Application:**
+    *   **Computer Science:** Algorithms use Taylor series to calculate trigonometric functions (sin, cos) or exponentials in processors.
+    *   **Optimization:** Newton's Method uses local linear approximations to iteratively find roots of equations.
+    *   **Physics:** Small-angle approximations (e.g., $\sin \theta \approx \theta$) simplify the equations of motion for pendulums.
+
+### Summary
+Calculus unifies these three ideas into a single coherent system:
+1.  **Derivatives** tell us the **slope** (rate of change) at a point.
+2.  **Integrals** tell us the **

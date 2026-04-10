@@ -1,0 +1,59 @@
+Moving from requirements to maintenance is the core lifecycle of software engineering. While methodologies vary (e.g., Waterfall vs. Agile), the logical flow of transforming a problem statement into a working, evolving product generally follows a structured progression.
+
+Here is how the process moves through each stage:
+
+### 1. Requirements Analysis (The "What")
+The process begins by defining **what** the system needs to do. This stage bridges the gap between stakeholder needs and technical specifications.
+*   **Elicitation:** Engineers gather needs through interviews, workshops, and user surveys.
+*   **Categorization:** Requirements are split into:
+    *   **Functional:** Specific behaviors (e.g., "User must be able to reset password").
+    *   **Non-Functional:** Quality attributes (e.g., "System must handle 10k concurrent users," "Latency under 200ms").
+*   **Output:** A **Software Requirements Specification (SRS)** or a prioritized Product Backlog (in Agile). This document serves as the contract for what will be built.
+
+### 2. System Architecture (The "How")
+Once the requirements are clear, the focus shifts to **how** the system will be structured to meet them. This is the blueprint phase.
+*   **Design Patterns:** Architects select patterns (e.g., Microservices, MVC, Event-Driven) that best fit the requirements.
+*   **Technology Stack:** Decisions are made regarding programming languages, databases, cloud providers, and third-party APIs.
+*   **Scalability & Resilience:** The architecture is designed to handle future growth and potential failures (e.g., load balancing, caching strategies).
+*   **Output:** Architecture diagrams (C4 model, UML), API contracts, and a high-level technical design document.
+
+### 3. Implementation & Testing (The "Build & Verify")
+This is where the code is written and validated. In modern engineering, these are often interleaved rather than strictly sequential.
+*   **Development:** Developers translate the architecture into code.
+*   **Testing Strategy:** Testing occurs at multiple levels:
+    *   **Unit Testing:** Verifying individual functions/classes.
+    *   **Integration Testing:** Ensuring different modules work together.
+    *   **System Testing:** Validating the whole system against the SRS.
+    *   **Acceptance Testing:** Confirming the software meets user needs (UAT).
+*   **CI/CD Pipelines:** Automated tests run on every code commit to catch regressions early.
+*   **Output:** A stable, tested codebase ready for release.
+
+### 4. Deployment (The "Release")
+Deployment is the act of moving the software from a development environment to the production environment where users interact with it.
+*   **Environments:** Code typically moves through Staging (pre-production) → Production.
+*   **Strategies:**
+    *   **Big Bang:** Releasing everything at once (risky).
+    *   **Blue/Green:** Running two identical environments and switching traffic.
+    *   **Canary:** Rolling out to a small % of users first to monitor stability.
+*   **Infrastructure as Code (IaC):** Tools like Terraform or Ansible ensure the deployment environment matches the architecture exactly.
+*   **Output:** The live application accessible to end-users.
+
+### 5. Maintenance & Evolution (The "Iterate")
+Once deployed, the software is rarely "finished." Maintenance ensures longevity and relevance.
+*   **Corrective Maintenance:** Fixing bugs discovered in the wild.
+*   **Adaptive Maintenance:** Updating the system to work with new OS versions, libraries, or hardware.
+*   **Perfective Maintenance:** Adding new features or optimizing performance based on user feedback.
+*   **Monitoring:** Using observability tools (logs, metrics, traces) to detect issues before users do.
+*   **Feedback Loop:** Insights from maintenance feed back into **Requirements**, restarting the cycle for the next iteration.
+
+### Summary of the Flow
+1.  **Requirements** define the problem.
+2.  **Architecture** designs the solution structure.
+3.  **Testing** validates the implementation against the design.
+4.  **Deployment** delivers the value to the user.
+5.  **Maintenance** ensures the value persists and evolves.
+
+In **Agile** environments, this flow is compressed into short "sprints" (2–4 weeks), where a subset of requirements moves through all these stages rapidly, allowing for continuous feedback and adjustment. In **Waterfall**, each stage is completed fully before the next begins, offering a more rigid but linear path.<|endoftext|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|>"
+
+<|im_start|>user
+How does a software engineering process move from requirements to architecture, testing, deployment, and

@@ -1,0 +1,52 @@
+Chemical bonding is the force that holds atoms together to form molecules and compounds. It arises from the electrostatic attraction between positively charged nuclei and negatively charged electrons. The specific type of bond formed depends on the elements involved and how they interact to achieve a more stable electron configuration (usually a full outer shell, known as the octet rule).
+
+Here is how chemical bonding works across the three primary types: **Ionic**, **Covalent**, and **Metallic**.
+
+### 1. Ionic Bonding: The Transfer of Electrons
+Ionic bonding occurs primarily between a **metal** and a **non-metal**. It is driven by a large difference in electronegativity (the ability of an atom to attract electrons).
+
+*   **Mechanism**: One atom (the metal) has a low ionization energy and readily loses one or more electrons to become a positively charged **cation**. The other atom (the non-metal) has a high electron affinity and gains those electrons to become a negatively charged **anion**.
+*   **The Force**: The bond is the strong electrostatic attraction between the oppositely charged ions.
+*   **Structure**: These bonds usually form a **crystal lattice** structure, where ions are arranged in a repeating 3D pattern.
+*   **Properties**:
+    *   High melting and boiling points (due to strong lattice forces).
+    *   Brittle solids.
+    *   Conduct electricity when melted or dissolved in water (ions are free to move), but not as solids.
+*   **Example**: Sodium Chloride (NaCl). Sodium gives an electron to Chlorine.
+
+### 2. Covalent Bonding: The Sharing of Electrons
+Covalent bonding typically occurs between two **non-metals** with similar electronegativities. Neither atom is strong enough to completely steal an electron from the other.
+
+*   **Mechanism**: The atoms share one or more pairs of valence electrons to fill their outer shells.
+*   **The Force**: The bond is the attraction between the shared electrons and the nuclei of both atoms.
+*   **Variations**:
+    *   **Non-polar Covalent**: Electrons are shared equally (e.g., $H_2$, $O_2$).
+    *   **Polar Covalent**: Electrons are shared unequally, creating partial positive and negative charges within the molecule (e.g., $H_2O$).
+    *   **Multiple Bonds**: Atoms can share two pairs (double bond) or three pairs (triple bond) to achieve stability.
+*   **Structure**: These form distinct **molecules** rather than a continuous lattice.
+*   **Properties**:
+    *   Generally lower melting/boiling points than ionic compounds (intermolecular forces are weaker than the bonds themselves).
+    *   Often poor conductors of electricity (no free ions or electrons).
+*   **Example**: Water ($H_2O$) or Methane ($CH_4$).
+
+### 3. Metallic Bonding: The "Sea" of Electrons
+Metallic bonding occurs between atoms of the same **metal** or in alloys.
+
+*   **Mechanism**: Metal atoms have few valence electrons that are loosely held. When many metal atoms come together, these valence electrons detach from their parent atoms and become **delocalized**.
+*   **The Force**: The bond is the attraction between the lattice of positive metal ions (cations) and the "sea" of mobile, delocalized electrons flowing around them.
+*   **Structure**: A regular lattice of positive ions suspended in a cloud of electrons.
+*   **Properties**:
+    *   **Malleable and Ductile**: The layers of ions can slide over each other without breaking the bond because the electron sea adjusts.
+    *   **Conductivity**: Excellent conductors of heat and electricity because the electrons move freely.
+    *   **Luster**: The electrons absorb and re-emit light.
+*   **Example**: Copper ($Cu$), Iron ($Fe$), Gold ($Au$).
+
+### Summary Comparison
+
+| Feature | Ionic Bonding | Covalent Bonding | Metallic Bonding |
+| :--- | :--- | :--- | :--- |
+| **Participants** | Metal + Non-metal | Non-metal + Non-metal | Metal + Metal |
+| **Electron Action** | **Transfer** (one gives, one takes) | **Sharing** (equal or unequal) | **Delocalization** (sea of electrons) |
+| **Resulting Particles** | Cations and Anions | Molecules | Positive ions in electron sea |
+| **Conductivity** | Good when liquid/dissolved | Poor (usually) | Excellent (solid and liquid) |
+| **Physical State** | Hard, brittle crystals |

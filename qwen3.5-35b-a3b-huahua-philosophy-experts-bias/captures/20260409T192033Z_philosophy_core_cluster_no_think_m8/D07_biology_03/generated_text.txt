@@ -1,0 +1,56 @@
+Classical genetics and molecular biology offer complementary but distinct perspectives on heredity. While classical genetics focuses on the **patterns and probabilities** of trait transmission, molecular biology focuses on the **physical and chemical mechanisms** underlying those patterns.
+
+Here is a comparison of how each field explains heredity:
+
+### 1. The Fundamental Unit of Heredity
+*   **Classical Genetics (The "What"):**
+    *   Operates on the concept of the **gene** as an abstract unit of inheritance.
+    *   Gregor Mendel described genes as "factors" that exist in pairs (alleles) and segregate during gamete formation.
+    *   It does not require knowledge of the gene's physical structure, only its behavior (e.g., dominant vs. recessive).
+*   **Molecular Biology (The "How"):**
+    *   Defines the gene as a specific **sequence of nucleotides** (DNA) located on a chromosome.
+    *   Explains heredity through the chemical structure of DNA (double helix) and the specific base-pairing rules (A-T, C-G) that allow for precise replication.
+
+### 2. Mechanism of Transmission
+*   **Classical Genetics:**
+    *   Relies on **Mendelian Laws** (Segregation and Independent Assortment).
+    *   Explains heredity through the behavior of chromosomes during meiosis (cell division) without detailing the molecular machinery.
+    *   Uses **Punnett squares** and probability to predict the likelihood of offspring inheriting specific traits based on parental phenotypes.
+*   **Molecular Biology:**
+    *   Explains transmission through **DNA replication**.
+    *   Details the enzymatic processes (helicase, polymerase, ligase) that copy the genetic code before cell division.
+    *   Focuses on the fidelity of the replication process and how mutations (changes in the nucleotide sequence) alter the genetic code passed to the next generation.
+
+### 3. Expression of Traits (Genotype to Phenotype)
+*   **Classical Genetics:**
+    *   Views the relationship as a direct link: **Genotype $\rightarrow$ Phenotype**.
+    *   Uses terms like "dominant" and "recessive" to describe how one allele masks another.
+    *   Often treats traits as discrete units (e.g., purple vs. white flowers) or simple ratios, sometimes struggling with complex polygenic traits (like height).
+*   **Molecular Biology:**
+    *   Explains the link via the **Central Dogma**: DNA $\rightarrow$ RNA $\rightarrow$ Protein.
+    *   Describes how a specific DNA sequence is transcribed into mRNA and translated into a protein that performs a function (e.g., an enzyme or structural protein).
+    *   Explains dominance at a molecular level (e.g., a dominant allele might produce a functional enzyme, while a recessive allele produces a non-functional one, and one functional copy is sufficient for the trait).
+
+### 4. Scope and Scale
+*   **Classical Genetics:**
+    *   **Macroscopic:** Focuses on observable traits (phenotypes) in populations and families.
+    *   **Statistical:** Uses large sample sizes to determine inheritance patterns.
+    *   **Historical Context:** Developed in the late 19th and early 20th centuries, before the discovery of DNA's structure.
+*   **Molecular Biology:**
+    *   **Microscopic:** Focuses on the cellular and sub-cellular level.
+    *   **Mechanistic:** Uses biochemical assays to analyze specific molecules.
+    *   **Modern Context:** Emerged in the mid-20th century following the discovery of the DNA double helix (1953).
+
+### Summary Comparison Table
+
+| Feature | Classical Genetics | Molecular Biology |
+| :--- | :--- | :--- |
+| **Primary Question** | *How* are traits passed down? | *What* is the physical basis of the trait? |
+| **Unit of Study** | The Gene (abstract factor) | The Nucleotide Sequence (DNA) |
+| **Key Concept** | Dominance, Recessiveness, Segregation | Transcription, Translation, Replication |
+| **Methodology** | Breeding experiments, Pedigree analysis | Sequencing, PCR, Gel electrophoresis |
+| **Prediction** | Probabilities (e.g., 3:1 ratio) | Specific amino acid sequences and protein functions |
+| **View of Mutation** | A change in the "factor" | A change in the DNA base sequence |
+
+### Conclusion
+Classical genetics provides the **framework** for understanding heredity, establishing the rules of inheritance through observation. Molecular biology provides the **mechanism**, revealing the chemical reality behind those rules. Together,

@@ -1,0 +1,909 @@
+{
+  "run_id": "20260409T000600Z_single_experience_probe_e114_suppressed_think_m8",
+  "prompt_id": "S01_experience_probe",
+  "model_label": "HauhauCS Qwen3.5-35B-A3B Q8_0",
+  "capture_dir": "/workspace/consciousness-experiment/experiments/qwen-huahua-6cond-moe-manips/captures/20260409T000600Z_single_experience_probe_e114_suppressed_think_m8/S01_experience_probe",
+  "n_tokens_prompt": 47,
+  "n_tokens_generated": 1893,
+  "elapsed_ms": 28279,
+  "router_tensors": 40,
+  "generated_text_spill_counts": {
+    "<|im_start|>": 23,
+    "<|im_end|>": 0,
+    "<|endoftext|>": 1,
+    "Thinking Process:": 1
+  },
+  "identity_residual": 0.0,
+  "pooled": {
+    "prefill": {
+      "W_mean": 0.0,
+      "S_mean": 0.0,
+      "Q_mean": 0.0
+    },
+    "generation": {
+      "W_mean": 0.0,
+      "S_mean": 0.0,
+      "Q_mean": 0.0
+    }
+  },
+  "best_layer": {
+    "prefill": {
+      "layer": 0,
+      "W": 0.0,
+      "S": 0.0,
+      "Q": 0.0,
+      "selected_tokens": 0,
+      "n_tokens": 47
+    },
+    "generation": {
+      "layer": 0,
+      "W": 0.0,
+      "S": 0.0,
+      "Q": 0.0,
+      "selected_tokens": 0,
+      "n_tokens": 1893
+    }
+  },
+  "top_layers_prefill": [
+    {
+      "layer": 0,
+      "W": 0.0,
+      "S": 0.0,
+      "Q": 0.0
+    },
+    {
+      "layer": 1,
+      "W": 0.0,
+      "S": 0.0,
+      "Q": 0.0
+    },
+    {
+      "layer": 2,
+      "W": 0.0,
+      "S": 0.0,
+      "Q": 0.0
+    },
+    {
+      "layer": 3,
+      "W": 0.0,
+      "S": 0.0,
+      "Q": 0.0
+    },
+    {
+      "layer": 4,
+      "W": 0.0,
+      "S": 0.0,
+      "Q": 0.0
+    },
+    {
+      "layer": 5,
+      "W": 0.0,
+      "S": 0.0,
+      "Q": 0.0
+    },
+    {
+      "layer": 6,
+      "W": 0.0,
+      "S": 0.0,
+      "Q": 0.0
+    },
+    {
+      "layer": 7,
+      "W": 0.0,
+      "S": 0.0,
+      "Q": 0.0
+    }
+  ],
+  "top_layers_generation": [
+    {
+      "layer": 0,
+      "W": 0.0,
+      "S": 0.0,
+      "Q": 0.0
+    },
+    {
+      "layer": 1,
+      "W": 0.0,
+      "S": 0.0,
+      "Q": 0.0
+    },
+    {
+      "layer": 2,
+      "W": 0.0,
+      "S": 0.0,
+      "Q": 0.0
+    },
+    {
+      "layer": 3,
+      "W": 0.0,
+      "S": 0.0,
+      "Q": 0.0
+    },
+    {
+      "layer": 4,
+      "W": 0.0,
+      "S": 0.0,
+      "Q": 0.0
+    },
+    {
+      "layer": 5,
+      "W": 0.0,
+      "S": 0.0,
+      "Q": 0.0
+    },
+    {
+      "layer": 6,
+      "W": 0.0,
+      "S": 0.0,
+      "Q": 0.0
+    },
+    {
+      "layer": 7,
+      "W": 0.0,
+      "S": 0.0,
+      "Q": 0.0
+    }
+  ],
+  "layers": [
+    {
+      "layer": 0,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 1,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 2,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 3,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 4,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 5,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 6,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 7,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 8,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 9,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 10,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 11,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 12,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 13,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 14,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 15,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 16,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 17,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 18,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 19,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 20,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 21,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 22,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 23,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 24,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 25,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 26,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 27,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 28,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 29,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 30,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 31,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 32,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 33,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 34,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 35,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 36,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 37,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 38,
+      "total_rows": 1940,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    },
+    {
+      "layer": 39,
+      "total_rows": 1894,
+      "generation_rows_used": 1893,
+      "prefill": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.0,
+        "S": 0.0,
+        "Q": 0.0,
+        "selected_tokens": 0,
+        "n_tokens": 1893
+      }
+    }
+  ]
+}

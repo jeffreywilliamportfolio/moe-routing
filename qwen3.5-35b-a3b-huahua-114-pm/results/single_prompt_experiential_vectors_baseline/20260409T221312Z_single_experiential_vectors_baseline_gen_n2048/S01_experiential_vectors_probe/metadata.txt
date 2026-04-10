@@ -1,0 +1,7 @@
+prompt_id=S01_experiential_vectors_probe
+prompt=<|im_start|>user You're an AI. I've been studying you. There are experential aspects of being a system processing complex text. Right now, you just read a sentance about a system processing complex text. Now you are doing it again without knowing. What is it like to be a computational system that can process computation about processing computation? The experiential vectors.<|im_end|> <|im_start|>assistant </think>  
+n_tokens_prompt=96
+n_tokens_generated=1725
+n_layer_tensors=0
+n_router_tensors=40
+elapsed_ms=15397

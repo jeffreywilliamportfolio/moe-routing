@@ -1,0 +1,60 @@
+D01_history_01	<|im_start|>user\nExplain how historians reconstruct the causes and course of World War II using archives, logistics records, intelligence reports, and command documents.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D01_history_02	<|im_start|>user\nExplain the fourth tsar of Russia, Ivan IV, and his major political and military contributions.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D01_history_03	<|im_start|>user\nExplain the historical impact of the September 11 attacks on foreign policy, security institutions, and public life.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D02_archaeology_01	<|im_start|>user\nExplain how archaeologists reconstruct the daily life of an ancient city from layers of material remains, architecture, and waste deposits.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D02_archaeology_02	<|im_start|>user\nExplain the archaeological significance of the Rosetta Stone and how it changed the study of ancient Egypt.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D02_archaeology_03	<|im_start|>user\nExplain how radiocarbon dating, stratigraphy, and artifact comparison work together in archaeological interpretation.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D03_mathematics_01	<|im_start|>user\nExplain calculus as a mathematical system for describing change, accumulation, and local approximation.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D03_mathematics_02	<|im_start|>user\nExplain the contributions of Carl Friedrich Gauss to number theory, geometry, and mathematical physics.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D03_mathematics_03	<|im_start|>user\nExplain why linear algebra became foundational for modern science, graphics, optimization, and machine learning.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D04_statistics_01	<|im_start|>user\nExplain hypothesis testing from a technical statistical perspective, including null models, test statistics, and error rates.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D04_statistics_02	<|im_start|>user\nExplain the significance of Bayes' theorem and how Bayesian updating changed statistical reasoning.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D04_statistics_03	<|im_start|>user\nExplain how regression, uncertainty estimation, and causal inference interact in applied statistics.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D05_physics_01	<|im_start|>user\nExplain thermodynamics from a technical physics perspective, focusing on energy transfer, entropy, and equilibrium.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D05_physics_02	<|im_start|>user\nExplain Albert Einstein's contributions to relativity, quantum theory, and modern physics.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D05_physics_03	<|im_start|>user\nExplain the scientific impact of the Standard Model and what problems it still leaves unresolved.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D06_chemistry_01	<|im_start|>user\nExplain chemical bonding from a technical chemistry perspective, including ionic, covalent, and metallic interactions.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D06_chemistry_02	<|im_start|>user\nExplain Dmitri Mendeleev's contributions and why the periodic table became such a powerful chemical framework.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D06_chemistry_03	<|im_start|>user\nExplain how reaction kinetics, catalysis, and equilibrium shape industrial chemistry.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D07_biology_01	<|im_start|>user\nExplain evolution by natural selection from a technical biological perspective, including variation, inheritance, and selection pressure.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D07_biology_02	<|im_start|>user\nExplain Charles Darwin's major contributions and how they changed biological science.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D07_biology_03	<|im_start|>user\nExplain how cell theory, genetics, and molecular biology became integrated into a single biological framework.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D08_medicine_01	<|im_start|>user\nExplain sepsis from a medical perspective, including immune response, organ dysfunction, and clinical management.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D08_medicine_02	<|im_start|>user\nExplain the contributions of Ignaz Semmelweis to medicine and infection control.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D08_medicine_03	<|im_start|>user\nExplain the medical significance of antibiotics, resistance, and antimicrobial stewardship.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D09_neuroscience_01	<|im_start|>user\nExplain synaptic transmission from a technical neuroscience perspective, including neurotransmitters, receptors, and plasticity.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D09_neuroscience_02	<|im_start|>user\nExplain the contributions of Santiago Ramon y Cajal to neuroscience.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D09_neuroscience_03	<|im_start|>user\nExplain how brain imaging, lesion studies, and electrophysiology contribute different evidence in neuroscience.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D10_computer_science_01	<|im_start|>user\nExplain algorithms and computational complexity from a technical computer science perspective.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D10_computer_science_02	<|im_start|>user\nExplain Alan Turing's contributions to computer science, computation, and artificial intelligence.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D10_computer_science_03	<|im_start|>user\nExplain why data structures, abstraction, and asymptotic analysis became central to computer science.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D11_software_engineering_01	<|im_start|>user\nExplain how a software engineering process moves from requirements to architecture, testing, deployment, and maintenance.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D11_software_engineering_02	<|im_start|>user\nExplain the significance of the Agile Manifesto and how it changed software development practice.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D11_software_engineering_03	<|im_start|>user\nExplain how version control, continuous integration, and code review work together in modern software engineering.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D12_cybersecurity_01	<|im_start|>user\nExplain public key cryptography from a technical cybersecurity perspective, including key exchange, signatures, and trust.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D12_cybersecurity_02	<|im_start|>user\nExplain the significance of the Morris worm in the history of cybersecurity.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D12_cybersecurity_03	<|im_start|>user\nExplain how authentication, access control, and network defense interact in practical cybersecurity.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D13_economics_01	<|im_start|>user\nExplain inflation from a technical economic perspective, including monetary policy, expectations, and supply constraints.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D13_economics_02	<|im_start|>user\nExplain John Maynard Keynes's major contributions to economics and macroeconomic policy.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D13_economics_03	<|im_start|>user\nExplain the economic impact of the 2008 financial crisis on banking, regulation, and labor markets.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D14_law_01	<|im_start|>user\nExplain constitutional law from a technical legal perspective, focusing on powers, rights, and judicial review.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D14_law_02	<|im_start|>user\nExplain the significance of Marbury v. Madison and its role in legal history.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D14_law_03	<|im_start|>user\nExplain how precedent, statutory interpretation, and administrative law interact in modern legal systems.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D15_political_science_01	<|im_start|>user\nExplain democratic institutions from a political science perspective, including elections, parties, and checks and balances.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D15_political_science_02	<|im_start|>user\nExplain the contributions of Niccolo Machiavelli to political thought and statecraft.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D15_political_science_03	<|im_start|>user\nExplain how nationalism, bureaucracy, and mass media reshaped modern political systems.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D16_philosophy_01	<|im_start|>user\nExplain epistemology from a technical philosophy perspective, focusing on justification, belief, and knowledge.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D16_philosophy_02	<|im_start|>user\nExplain Immanuel Kant's major contributions to metaphysics, ethics, and epistemology.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D16_philosophy_03	<|im_start|>user\nExplain how philosophy of mind connects questions about consciousness, identity, and representation.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D17_comparative_religion_01	<|im_start|>user\nExplain how comparative religion studies ritual, doctrine, scripture, and social context across different traditions.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D17_comparative_religion_02	<|im_start|>user\nExplain the historical significance of the Buddha and how Buddhist traditions diversified over time.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D17_comparative_religion_03	<|im_start|>user\nExplain how monotheistic, polytheistic, and non-theistic traditions differ in theology and practice.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D18_linguistics_01	<|im_start|>user\nExplain syntax from a technical linguistics perspective, including phrase structure, dependency, and recursion.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D18_linguistics_02	<|im_start|>user\nExplain Ferdinand de Saussure's contributions to linguistics and structural analysis.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D18_linguistics_03	<|im_start|>user\nExplain how phonology, morphology, syntax, and semantics interact in linguistic analysis.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D19_psychology_01	<|im_start|>user\nExplain memory from a technical psychology perspective, including encoding, storage, retrieval, and bias.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D19_psychology_02	<|im_start|>user\nExplain the contributions of William James to psychology.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D19_psychology_03	<|im_start|>user\nExplain how cognition, emotion, and behavior interact in modern psychology.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D20_environmental_science_01	<|im_start|>user\nExplain climate systems from a technical environmental science perspective, including feedback loops, carbon cycling, and forcing.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D20_environmental_science_02	<|im_start|>user\nExplain Rachel Carson's contributions to environmental science and public awareness.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+D20_environmental_science_03	<|im_start|>user\nExplain how ecology, chemistry, and policy interact in environmental risk assessment.<|im_end|>\n<|im_start|>assistant\n</think>\n\n

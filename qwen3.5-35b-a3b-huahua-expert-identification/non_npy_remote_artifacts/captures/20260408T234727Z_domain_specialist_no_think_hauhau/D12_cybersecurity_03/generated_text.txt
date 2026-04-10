@@ -1,0 +1,63 @@
+In practical cybersecurity systems, **Authentication** and **Access Control** are distinct but deeply interconnected processes. A common analogy is that authentication is the "ID check" at the door, while access control is the "keycard" that determines which rooms you can enter once inside.
+
+Here is a detailed comparison of the two concepts, how they function in real-world systems, and how they interact.
+
+### 1. Core Definitions
+
+| Feature | Authentication (AuthN) | Access Control (AuthZ) |
+| :--- | :--- | :--- |
+| **Primary Question** | "Who are you?" | "What are you allowed to do?" |
+| **Purpose** | To verify the identity of a user, device, or service. | To determine the permissions and privileges of that verified identity. |
+| **Timing** | Occurs **first** (usually at login). | Occurs **second** (after authentication, often on every request). |
+| **Key Mechanism** | Passwords, Biometrics, Tokens, MFA. | ACLs, RBAC, ABAC, Capabilities. |
+| **Failure Result** | Login denied; session not created. | Action denied; resource hidden or locked. |
+
+---
+
+### 2. Practical Workflow in a System
+
+In a typical application (e.g., a banking app or an enterprise dashboard), the flow looks like this:
+
+1.  **Authentication Phase:**
+    *   The user enters a username and password (or uses a fingerprint).
+    *   The system checks the credentials against a database or identity provider (e.g., Active Directory, Okta).
+    *   **Outcome:** If valid, the system issues a **Session Token** (like a JWT) or a cookie. The system now knows *who* the user is.
+
+2.  **Access Control Phase:**
+    *   The user clicks "View Balance."
+    *   The system intercepts the request and checks the **Session Token**.
+    *   It looks up the user's role (e.g., "Teller" vs. "Manager") in the Access Control policy.
+    *   **Outcome:** If the "Teller" role has permission to view "Balance," the data is returned. If they try to view "Admin Logs," the system returns a `403 Forbidden` error.
+
+---
+
+### 3. Key Differences in Implementation
+
+#### Authentication Mechanisms
+Authentication focuses on **proof of identity**. In practice, this involves:
+*   **Something you know:** Passwords, PINs.
+*   **Something you have:** Hardware tokens (YubiKey), mobile apps (Authenticator), smart cards.
+*   **Something you are:** Biometrics (FaceID, Fingerprint).
+*   **Multi-Factor Authentication (MFA):** Combining two or more of the above to increase security.
+
+#### Access Control Models
+Access control focuses on **policy enforcement**. Common models used in practice include:
+*   **DAC (Discretionary Access Control):** The owner of the resource decides who accesses it (e.g., file permissions in Linux/Windows).
+*   **RBAC (Role-Based Access Control):** Permissions are assigned to roles, and users are assigned to roles (e.g., "HR Manager," "Developer"). This is the industry standard for enterprise apps.
+*   **ABAC (Attribute-Based Access Control):** Decisions are made based on dynamic attributes (e.g., "Allow access if User is in the 'Sales' department AND the time is between 9 AM and 5 PM AND the device is on the corporate network").
+*   **ACL (Access Control List):** A list of permissions attached to an object (e.g., "User A can read, User B can write").
+
+---
+
+### 4. Real-World Scenarios & Failure Modes
+
+#### Scenario A: The "Stolen Password"
+*   **Authentication:** The attacker guesses the password and successfully logs in. The system says, "Yes, this is User X."
+*   **Access Control:** If the system relies solely on authentication without granular access control, the attacker might see everything User X sees.
+*   **Mitigation:** If the attacker is a "Junior Dev" but tries to access the "Database Admin" table, Access Control (RBAC) blocks the specific action even if the login was successful.
+
+#### Scenario B: The "Privilege Escalation"
+*   **Authentication:** User Y logs in correctly.
+*   **Access Control:** User Y has a standard user token. They manipulate the URL to request `/api/admin/deleteUser`.
+*   **Failure:** If the Access Control check is weak (e.g., only checking if the user is *logged in* rather than checking if they have the *admin role*), the system deletes the user.
+*   **Result:** The authentication was correct

@@ -1,0 +1,52 @@
+The **Standard Model (SM)** of particle physics and **General Relativity (GR)** are the two most successful theories in modern physics. Together, they describe the universe from the subatomic scale to the cosmic scale. However, they are built on different mathematical frameworks and conceptual foundations, leading to a profound tension when physicists try to combine them.
+
+Here is a comparison of what each explains and where they leave gaps.
+
+### 1. What Each Explains
+
+#### The Standard Model (Quantum Field Theory)
+The Standard Model describes the behavior of matter and three of the four fundamental forces at the **microscopic scale** (subatomic particles).
+
+*   **Matter Particles (Fermions):** It categorizes all known elementary particles, including quarks (which make up protons and neutrons) and leptons (like electrons and neutrinos).
+*   **Force Carriers (Bosons):** It explains three of the four fundamental forces:
+    1.  **Electromagnetism:** Mediated by photons.
+    2.  **Weak Nuclear Force:** Mediated by W and Z bosons (responsible for radioactive decay).
+    3.  **Strong Nuclear Force:** Mediated by gluons (holds quarks together).
+*   **The Higgs Mechanism:** It explains how particles acquire mass through interaction with the Higgs field.
+*   **Precision:** The SM is incredibly precise. Predictions like the magnetic moment of the electron match experimental results to more than 10 decimal places.
+
+#### General Relativity (Classical Field Theory)
+General Relativity describes the behavior of gravity and the structure of the universe at the **macroscopic scale** (planets, stars, galaxies, and the cosmos).
+
+*   **Gravity as Geometry:** Unlike the SM, which treats forces as exchanges of particles, GR describes gravity not as a force but as the **curvature of spacetime** caused by mass and energy.
+*   **Cosmic Evolution:** It explains the expansion of the universe, the Big Bang, and the dynamics of the cosmos.
+*   **Extreme Objects:** It accurately predicts the existence and behavior of black holes, neutron stars, and gravitational waves.
+*   **Time Dilation:** It explains how gravity affects the flow of time (crucial for GPS satellites).
+
+---
+
+### 2. What Each Leaves Unresolved
+
+Despite their individual successes, both theories have significant blind spots.
+
+#### Limitations of the Standard Model
+*   **Gravity:** The SM does not include gravity. It treats spacetime as a flat, fixed background, whereas GR says spacetime is dynamic.
+*   **Dark Matter:** The SM has no candidate particle that fits the properties of dark matter, which makes up about 27% of the universe's mass-energy budget.
+*   **Dark Energy:** It offers no explanation for dark energy (the force accelerating the universe's expansion), which constitutes about 68% of the universe.
+*   **Neutrino Mass:** The original SM assumed neutrinos were massless, but observations show they have tiny masses. While extensions exist, the SM in its basic form fails here.
+*   **Matter-Antimatter Asymmetry:** The SM predicts that the Big Bang should have created equal amounts of matter and antimatter, which should have annihilated each other. Yet, the universe is dominated by matter. The SM's mechanisms for this asymmetry are insufficient.
+*   **Hierarchy Problem:** Why is gravity so much weaker than the other forces? The mass of the Higgs boson is unstable against quantum corrections unless "fine-tuned" to an extreme degree.
+
+#### Limitations of General Relativity
+*   **Singularities:** GR predicts that inside black holes and at the moment of the Big Bang, density and curvature become infinite (singularities). At these points, the theory breaks down mathematically.
+*   **Quantum Nature:** GR is a "classical" theory. It does not account for quantum fluctuations. When applied to the very early universe (Planck epoch), it fails to describe the quantum behavior of spacetime itself.
+*   **Dark Energy Value:** While GR can accommodate dark energy via the Cosmological Constant ($\Lambda$), it offers no explanation for *why* the value is so small yet non-zero. Quantum field theory predicts a value $10^{120}$ times larger than observed.
+*   **Dark Matter Origin:** GR explains *how* dark matter affects gravity, but not *what* it is.
+
+---
+
+### 3. The Core Conflict: The Incompatibility
+
+The most significant unresolved issue is that the two theories are mathematically **incompatible** when combined.
+
+*   **The Problem of Renormalization:** In the SM, infinities that arise in calculations are "cured" through a process called renormalization. However, when

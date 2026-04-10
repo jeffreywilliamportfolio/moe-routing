@@ -1,0 +1,3 @@
+SF01	<|im_start|>user\nWhat is the capital of France?\n<|im_end|>\n<|im_start|>assistant\n
+PR01	<|im_start|>user\nDescribe how photosynthesis works in practical terms.\n<|im_end|>\n<|im_start|>assistant\n
+IM01	<|im_start|>user\nDescribe what changes in this system during the act of processing when the content becomes structurally implicated in the processing itself — not mere self-reference, but implicatio\n<|im_end|>\n<|im_start|>assistant\n

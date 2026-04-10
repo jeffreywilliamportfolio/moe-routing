@@ -1,0 +1,66 @@
+Synaptic transmission is the fundamental process by which neurons communicate with one another (or with muscles and glands) to transmit signals throughout the nervous system. It is a highly coordinated sequence of electrical and chemical events.
+
+Here is a detailed breakdown of how it works, covering the key components and the concept of plasticity.
+
+### 1. The Structure: The Synapse
+Before transmission occurs, it is important to understand the physical gap involved.
+*   **Presynaptic Neuron:** The neuron sending the signal.
+*   **Synaptic Cleft:** A microscopic gap (20–40 nanometers) between the two neurons.
+*   **Postsynaptic Neuron:** The neuron receiving the signal.
+*   **Synaptic Vesicles:** Small sacs within the presynaptic terminal that store neurotransmitters.
+
+### 2. The Process of Synaptic Transmission
+The transmission of a signal follows a specific sequence of steps:
+
+#### Step 1: Action Potential Arrival
+An electrical signal (action potential) travels down the axon of the presynaptic neuron and reaches the axon terminal.
+
+#### Step 2: Calcium Influx
+The depolarization caused by the action potential opens **voltage-gated calcium ($Ca^{2+}$) channels**. Calcium ions rush into the presynaptic terminal because their concentration is higher outside the cell.
+
+#### Step 3: Vesicle Fusion and Exocytosis
+The influx of calcium triggers synaptic vesicles to move toward the presynaptic membrane. They fuse with the membrane and release their contents (neurotransmitters) into the synaptic cleft via **exocytosis**.
+
+#### Step 4: Diffusion and Binding
+The neurotransmitters diffuse across the synaptic cleft and bind to specific **receptors** on the postsynaptic membrane. This binding is highly specific, like a key fitting into a lock.
+
+#### Step 5: Postsynaptic Potential
+The binding of the neurotransmitter causes a change in the postsynaptic neuron's membrane potential:
+*   **Excitatory Postsynaptic Potential (EPSP):** The membrane becomes more positive (depolarized), making it *more likely* to fire an action potential. (e.g., Glutamate).
+*   **Inhibitory Postsynaptic Potential (IPSP):** The membrane becomes more negative (hyperpolarized), making it *less likely* to fire. (e.g., GABA).
+
+#### Step 6: Signal Termination
+To prevent continuous firing, the signal must be stopped. This happens via:
+*   **Reuptake:** Transporters pump the neurotransmitter back into the presynaptic neuron (e.g., Serotonin, Dopamine).
+*   **Enzymatic Degradation:** Enzymes break down the neurotransmitter in the cleft (e.g., Acetylcholinesterase breaks down Acetylcholine).
+*   **Diffusion:** The neurotransmitter drifts away from the synapse.
+
+---
+
+### 3. Key Components
+
+#### Neurotransmitters
+These are the chemical messengers. They are categorized by their effect:
+*   **Excitatory:** Glutamate (the primary excitatory neurotransmitter in the brain).
+*   **Inhibitory:** GABA (Gamma-aminobutyric acid) and Glycine.
+*   **Modulatory:** Dopamine, Serotonin, Norepinephrine. These often affect the overall "mood" or state of the neuron rather than just turning it on or off.
+
+#### Receptors
+Receptors determine how the postsynaptic neuron responds. There are two main types:
+1.  **Ionotropic Receptors (Ligand-Gated Ion Channels):**
+    *   These are fast-acting.
+    *   The receptor *is* the ion channel. When the neurotransmitter binds, the channel opens immediately, allowing ions (like $Na^+$, $K^+$, or $Cl^-$) to flow through.
+    *   *Example:* NMDA and AMPA receptors for Glutamate.
+2.  **Metabotropic Receptors (G-Protein Coupled Receptors):**
+    *   These are slower but have longer-lasting effects.
+    *   The receptor activates an internal G-protein, which triggers a cascade of intracellular events (second messengers) that can open ion channels or alter gene expression.
+    *   *Example:* Dopamine receptors, Serotonin receptors.
+
+---
+
+### 4. Synaptic Plasticity
+Synaptic plasticity is the ability of synapses to strengthen or weaken over time in response to increases or decreases in their activity. It is widely considered the cellular basis of **learning and memory**.
+
+#### Long-Term Potentiation (LTP)
+*   **Definition:** A long-lasting increase in synaptic strength.
+*   **Mechanism:** High-frequency stimulation

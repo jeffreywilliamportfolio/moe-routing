@@ -1,0 +1,52 @@
+Both **radiocarbon dating** and **stratigraphy** are fundamental pillars of archaeological interpretation, but they serve different functions. One provides a specific numerical age (absolute dating), while the other provides a relative sequence of events.
+
+Here is a detailed comparison of these two tools, their methodologies, strengths, and limitations.
+
+### 1. Fundamental Nature
+
+*   **Stratigraphy (Relative Dating):**
+    Based on the **Law of Superposition**, which states that in an undisturbed sequence of sedimentary layers, the oldest layers are at the bottom and the youngest are at the top. It establishes a chronological sequence (A is older than B) but does not tell you *how many years* ago A occurred.
+*   **Radiocarbon Dating (Absolute Dating):**
+    Based on the radioactive decay of Carbon-14 ($^{14}C$) in organic materials. It measures the remaining isotope to calculate a specific calendar age (e.g., "1,250 ± 30 years BP"). It provides a numerical date rather than a sequence.
+
+### 2. Methodology and Application
+
+| Feature | Stratigraphy | Radiocarbon Dating |
+| :--- | :--- | :--- |
+| **Primary Material** | Soil layers, sediment, ash, stone walls, and the context of artifacts. | Organic materials (charcoal, bone, wood, seeds, shell). |
+| **Process** | Visual and tactile analysis of the excavation profile. Archaeologists map layers (contexts) and record their vertical relationships. | Laboratory analysis using Accelerator Mass Spectrometry (AMS) or Liquid Scintillation Counting to measure isotope ratios. |
+| **Scope** | Can be applied to the entire site immediately upon excavation. | Requires sampling specific organic finds; results take time to return from the lab. |
+| **Output** | A relative timeline (Sequence of events). | A calibrated date range (e.g., 1200–1350 AD). |
+
+### 3. Strengths
+
+**Stratigraphy:**
+*   **Contextual Integrity:** It preserves the relationship between artifacts. Knowing an arrowhead was found *in* a specific layer tells us it belongs to that time period.
+*   **Cost-Effective:** It requires no expensive lab equipment, only careful excavation and recording.
+*   **Site Formation:** It helps archaeologists understand how a site was formed (e.g., was it a natural flood deposit or a human-built floor?).
+*   **Immediate Results:** Provides a chronological framework while the excavation is still ongoing.
+
+**Radiocarbon Dating:**
+*   **Precision:** It converts relative sequences into a calendar timeline, allowing for correlation with global historical events.
+*   **Cross-Regional Comparison:** Allows archaeologists to compare a site in Europe with one in the Americas based on shared dates, regardless of local soil types.
+*   **Verification:** It can test the validity of stratigraphic assumptions (e.g., if a layer is disturbed, radiocarbon dates can reveal the anomaly).
+
+### 4. Limitations and Challenges
+
+**Stratigraphy:**
+*   **Disturbance:** It relies on the assumption that layers are undisturbed. "Bioturbation" (animal burrows), root action, or human activity (digging pits) can mix layers, making the sequence unreliable.
+*   **Subjectivity:** Interpretation of layer boundaries can be subjective; what looks like a clear boundary to one archaeologist might be a gradual transition to another.
+*   **No Calendar Date:** Without an absolute date, a sequence might span 100 years or 1,000 years.
+
+**Radiocarbon Dating:**
+*   **Material Limit:** Only works on once-living organic matter. Stone tools or pottery (unless they contain organic temper) cannot be dated directly.
+*   **Time Range:** Effective only for the last ~50,000 years. Older samples have too little $^{14}C$ left to measure accurately.
+*   **The "Old Wood" Problem:** If a piece of charcoal is dated, it represents the time the tree died, not necessarily when the fire was used. A tree could have been dead for centuries before being burned.
+*   **Calibration:** Raw radiocarbon years differ from calendar years due to fluctuations in atmospheric $^{14}C$. Dates must be calibrated using tree-ring data (dendrochronology), which introduces statistical ranges (e.g., 95% probability).
+
+### 5. Synthesis: How They Work Together
+
+In modern archaeology, these tools are rarely used in isolation. They function best as a **feedback loop**:
+
+1.  **Stratigraphy** provides the initial framework. Archaeologists excavate layer by layer, identifying distinct contexts.
+2.  **Radiocarbon dating** is applied

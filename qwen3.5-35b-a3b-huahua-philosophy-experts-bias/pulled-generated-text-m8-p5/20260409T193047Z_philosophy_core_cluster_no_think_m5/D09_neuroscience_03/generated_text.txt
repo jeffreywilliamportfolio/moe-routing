@@ -1,0 +1,49 @@
+Brain imaging and electrophysiology are the two primary pillars of modern neuroscience, but they offer fundamentally different types of evidence regarding how the brain works. The core distinction lies in the trade-off between **spatial resolution** (where things happen) and **temporal resolution** (when things happen).
+
+Here is a comparison of the evidence each modality provides:
+
+### 1. Temporal Resolution (Timing)
+*   **Electrophysiology (High Precision):**
+    *   **Evidence Provided:** Captures neural activity on the scale of **milliseconds**.
+    *   **Insight:** It reveals the precise timing of neural firing, the sequence of events, and the dynamic flow of information. It can distinguish between the initial sensory input and the subsequent cognitive processing.
+    *   **Example:** It can show that a neuron fires 50ms after a stimulus is presented, allowing researchers to map the exact latency of a neural response.
+*   **Brain Imaging (Slower):**
+    *   **Evidence Provided:** Captures activity on the scale of **seconds** (fMRI) to **minutes** (PET).
+    *   **Insight:** It provides a "blurred" view of time. Because it relies on hemodynamic responses (blood flow changes) or metabolic rates, it lags behind the actual electrical firing of neurons.
+    *   **Limitation:** It is difficult to determine the exact order of events if they occur within a few hundred milliseconds of each other.
+
+### 2. Spatial Resolution (Location)
+*   **Electrophysiology (Variable/Low):**
+    *   **Evidence Provided:** Can range from single-neuron precision (intracellular/microelectrodes) to broad regional activity (EEG).
+    *   **Insight:** While single-unit recordings are incredibly precise, non-invasive methods like EEG often suffer from "spatial smearing," where the signal from a specific area is mixed with signals from surrounding tissue.
+    *   **Limitation:** It is often difficult to pinpoint the exact anatomical location of a signal without invasive surgery or complex source localization algorithms.
+*   **Brain Imaging (High Precision):**
+    *   **Evidence Provided:** Offers excellent spatial localization, often down to **millimeters** (fMRI, PET).
+    *   **Insight:** It provides a clear anatomical map of which brain structures are active during a task. It is superior for identifying *where* in the brain a process occurs (e.g., "The amygdala is active during fear processing").
+    *   **Limitation:** It often averages activity over a large volume of tissue, potentially missing the activity of specific, small neuronal populations.
+
+### 3. Nature of the Signal (Direct vs. Indirect)
+*   **Electrophysiology (Direct):**
+    *   **Evidence Provided:** Measures the **electrical potential** generated directly by the flow of ions across neuronal membranes.
+    *   **Insight:** This is a direct measure of neuronal firing (action potentials) and synaptic potentials (EPSPs/IPSPs). It tells you if a neuron is "on" or "off" and how fast it is firing.
+*   **Brain Imaging (Indirect):**
+    *   **Evidence Provided:** Measures the **metabolic or hemodynamic consequences** of neural activity.
+    *   **Insight:**
+        *   **fMRI:** Measures the Blood Oxygen Level Dependent (BOLD) signal, which is a proxy for blood flow and oxygen consumption.
+        *   **PET:** Measures glucose metabolism or receptor binding.
+    *   **Limitation:** It infers neural activity based on energy demand, meaning it reflects the *cost* of the activity rather than the activity itself.
+
+### Summary Comparison Table
+
+| Feature | Electrophysiology (EEG, MEG, Single-Unit) | Brain Imaging (fMRI, PET) |
+| :--- | :--- | :--- |
+| **Primary Evidence** | Electrical activity (Action potentials, LFPs) | Hemodynamic/Metabolic changes (Blood flow, Oxygen) |
+| **Temporal Resolution** | **Milliseconds** (Very Fast) | **Seconds** (Slow) |
+| **Spatial Resolution** | Variable (mm to cm, or single cell) | **High** (mm) |
+| **Directness** | **Direct** measure of neural firing | **Indirect** measure (proxy for firing) |
+| **Invasiveness** | Often invasive (surgery) or semi-invasive | Usually non-invasive |
+| **Best For** | Timing, sequence, oscillations, causality | Localization, anatomical mapping, network connectivity |
+
+### Conclusion: Complementary Evidence
+Neither method is strictly "better"; they provide complementary evidence.
+*   **Electrophysiology** answers: **"When does it happen and how fast

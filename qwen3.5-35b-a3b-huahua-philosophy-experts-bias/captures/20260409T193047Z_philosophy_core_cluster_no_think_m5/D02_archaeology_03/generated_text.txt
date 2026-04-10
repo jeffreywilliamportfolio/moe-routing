@@ -1,0 +1,46 @@
+Both **radiocarbon dating** and **stratigraphy** are fundamental pillars of archaeological interpretation, but they serve different functions. While stratigraphy provides the relative sequence of events, radiocarbon dating provides absolute numerical ages. Together, they allow archaeologists to reconstruct the timeline of human history with precision.
+
+Here is a detailed comparison of the two methods:
+
+### 1. Fundamental Nature of the Methods
+
+| Feature | Stratigraphy | Radiocarbon Dating ($^{14}$C) |
+| :--- | :--- | :--- |
+| **Type of Dating** | **Relative Dating** | **Absolute (Chronometric) Dating** |
+| **Core Principle** | Based on the **Law of Superposition**: in an undisturbed sequence, lower layers are older than upper layers. | Based on the **decay of radioactive isotopes**: measuring the ratio of Carbon-14 to Carbon-12 in organic material. |
+| **What it measures** | The **sequence** of deposition and human activity. | The **time elapsed** since the death of an organism. |
+| **Primary Output** | A chronological order (e.g., Layer A is older than Layer B). | A specific date range (e.g., 3,500 ± 40 years BP). |
+
+### 2. Strengths and Applications
+
+#### Stratigraphy
+*   **Contextual Integrity:** It is the primary tool for understanding the *relationship* between artifacts. It tells us if a pot was found with a specific tool or buried under a floor.
+*   **Site Formation:** It helps archaeologists understand how a site was formed (e.g., natural flooding vs. human construction) and if layers have been disturbed (bioturbation, root action, or later digging).
+*   **Cost-Effectiveness:** It requires no expensive laboratory equipment, only careful excavation and recording.
+*   **Universal Application:** It can be applied to any site with soil layers, regardless of the material found (stone, pottery, bone, wood).
+
+#### Radiocarbon Dating
+*   **Chronological Precision:** It anchors the relative sequence to a calendar year, allowing for correlation between sites across the globe.
+*   **Cross-Verification:** It can test the validity of stratigraphic assumptions. For example, if a layer is stratigraphically "older" but radiocarbon dates it as "younger," it suggests the layer was disturbed.
+*   **Wide Temporal Range:** Effective for dating organic materials from roughly 500 to 50,000 years ago (the limit of the method's sensitivity).
+
+### 3. Limitations and Challenges
+
+#### Stratigraphy
+*   **Disturbance:** The method relies on the assumption that layers are undisturbed. If a pit was dug into an older layer and refilled, the "younger" material ends up in the "older" layer, confusing the timeline.
+*   **Lack of Specific Dates:** It cannot tell you *when* a layer was deposited, only that it is older or younger than another.
+*   **Subjectivity:** Interpretation of complex soil colors and textures can be subjective and requires significant experience.
+
+#### Radiocarbon Dating
+*   **Material Specificity:** It only works on **organic** materials (wood, charcoal, bone, shell, seeds). Stone or pottery must be dated indirectly via associated organic matter.
+*   **Time Limit:** It becomes unreliable for samples older than ~50,000 years (where $^{14}$C levels are too low to measure accurately).
+*   **Calibration:** Raw radiocarbon years ($^{14}$C years) differ from calendar years due to fluctuations in atmospheric carbon. Samples must be calibrated using tree-ring data (dendrochronology) or other records.
+*   **Contamination:** Modern carbon can contaminate old samples (making them appear younger), or old carbon can contaminate new samples (making them appear older).
+
+### 4. Synergy in Archaeological Interpretation
+
+The true power of archaeology lies in the **integration** of these two methods:
+
+1.  **Stratigraphy guides sampling:** Archaeologists use stratigraphy to identify which layers are most likely to yield datable organic material and to ensure the sample is in a secure context.
+2.  **Radiocarbon validates stratigraphy:** If radiocarbon dates from different layers contradict the expected order (e.g., a lower layer dates to 1000 AD and an upper layer to 800 AD), it signals a disturbance that requires re-evaluation of the site's history.
+3.  **Building a Timeline:** Stratigraphy provides the "skeleton" of the site's history, while radiocarbon dates provide the "flesh" (specific dates), allowing archaeologists to correlate the site with global historical events (e.g., the Bronze

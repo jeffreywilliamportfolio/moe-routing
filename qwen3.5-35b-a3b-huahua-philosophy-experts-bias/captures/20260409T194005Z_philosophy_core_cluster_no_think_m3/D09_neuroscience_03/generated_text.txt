@@ -1,0 +1,52 @@
+Brain imaging and electrophysiology are the two primary pillars of modern neuroscience, but they offer fundamentally different types of evidence regarding how the brain functions. The core distinction lies in the trade-off between **spatial resolution** (where things happen) and **temporal resolution** (when things happen).
+
+Here is a comparison of the evidence each modality provides:
+
+### 1. Temporal Resolution (Timing)
+*   **Electrophysiology (High Precision):**
+    *   **Evidence:** Provides millisecond-level data. It captures the brain's activity in real-time, allowing researchers to see the exact sequence of neural firing.
+    *   **Insight:** This is crucial for understanding the *dynamics* of cognition. For example, it can distinguish whether a specific thought occurs before or after a sensory stimulus, or how neural oscillations (rhythms) coordinate different brain regions.
+    *   **Limitation:** Because it tracks electrical spikes or field potentials, it often requires averaging over many trials to get a clear signal, which can obscure single-event variability.
+
+*   **Brain Imaging (Slower):**
+    *   **Evidence:** Provides data on the scale of seconds (e.g., fMRI) or minutes (e.g., PET scans).
+    *   **Insight:** It captures the *hemodynamic response* (blood flow changes) or metabolic activity that follows neural firing. This provides a "blurred" view of timing, making it difficult to distinguish the precise order of rapid cognitive events.
+    *   **Limitation:** The lag between neural firing and the blood flow response (the hemodynamic lag) makes it hard to pinpoint the exact moment a cognitive process begins.
+
+### 2. Spatial Resolution (Location)
+*   **Brain Imaging (High Precision):**
+    *   **Evidence:** Provides excellent spatial localization, often pinpointing activity to specific millimeter-scale regions or even sub-regions of the brain.
+    *   **Insight:** It answers the question **"Where?"** effectively. It allows researchers to map functional anatomy, identifying which specific cortical areas are active during tasks like memory retrieval, emotional processing, or motor control.
+    *   **Limitation:** It often measures the aggregate activity of thousands of neurons rather than individual cells.
+
+*   **Electrophysiology (Variable):**
+    *   **Evidence:** Ranges from single-cell precision (intracellular recording) to broad regional activity (EEG).
+    *   **Insight:** While EEG offers poor spatial resolution (it is hard to tell exactly *where* in the cortex a signal originated), techniques like single-unit recording provide evidence of **what specific neurons** are doing.
+    *   **Limitation:** Invasive methods (like EEG or single-unit) often sample a very small volume of tissue, making it difficult to generalize findings to the whole brain without complex modeling.
+
+### 3. Nature of the Signal (Direct vs. Indirect)
+*   **Electrophysiology:**
+    *   **Evidence:** Measures **direct** electrical activity. It records the flow of ions across neuronal membranes (action potentials) or the summed electrical fields of local populations.
+    *   **Implication:** This is a direct readout of the brain's computational engine. It tells us about the "spiking" code used by neurons to communicate.
+
+*   **Brain Imaging:**
+    *   **Evidence:** Measures **indirect** metabolic or vascular changes.
+        *   **fMRI:** Measures the BOLD signal (Blood Oxygen Level Dependent), which reflects oxygen consumption.
+        *   **PET:** Measures glucose metabolism or receptor binding.
+    *   **Implication:** These signals are a proxy for neural activity. They tell us about the energy cost of brain activity rather than the electrical firing itself.
+
+### Summary Comparison Table
+
+| Feature | Electrophysiology (EEG, MEG, Single-Unit) | Brain Imaging (fMRI, PET) |
+| :--- | :--- | :--- |
+| **Primary Question** | **When** does it happen? | **Where** does it happen? |
+| **Temporal Resolution** | Milliseconds (ms) | Seconds (s) |
+| **Spatial Resolution** | Low (EEG) to High (Single-unit) | High (mm scale) |
+| **Signal Type** | Direct (Electrical) | Indirect (Metabolic/Vascular) |
+| **Invasiveness** | Often invasive (surgery) or semi-invasive | Usually non-invasive |
+| **Best For** | Neural dynamics, oscillations, causality | Functional mapping, network connectivity |
+
+### Conclusion
+The evidence provided by these methods is complementary rather than competitive.
+*   **Electrophysiology** provides evidence of the **mechanism and timing** of neural computation.
+*   **Brain Imaging** provides evidence of the **anatomical

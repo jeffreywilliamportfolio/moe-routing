@@ -1,0 +1,48 @@
+Radiocarbon dating and stratigraphy are two of the most fundamental tools in archaeology, but they serve different functions and operate on different principles. While **stratigraphy** provides the *relative* framework of time, **radiocarbon dating** provides the *absolute* numerical age.
+
+Here is a comparison of these two methods as tools for archaeological interpretation:
+
+### 1. The Nature of Time (Relative vs. Absolute)
+
+*   **Stratigraphy (Relative Dating):**
+    *   **Concept:** Based on the principle of superposition (layers of earth are deposited sequentially). It establishes a sequence of events: "Layer A is older than Layer B."
+    *   **Function:** It reconstructs the history of a site by analyzing the physical relationships between soil layers, walls, and artifacts. It tells archaeologists *when* something happened relative to other things, but not *how long ago*.
+    *   **Limitation:** It is highly dependent on the physical integrity of the site. If layers have been disturbed (e.g., by plowing, animal burrows, or later human activity), the sequence can be broken.
+
+*   **Radiocarbon Dating (Absolute Dating):**
+    *   **Concept:** Based on the decay of the radioactive isotope Carbon-14 ($^{14}C$) in organic materials.
+    *   **Function:** It provides a specific date range (e.g., "This charcoal is 3,200 ± 50 years old"). It anchors the relative sequence to a specific point in calendar time.
+    *   **Limitation:** It requires organic material (wood, bone, charcoal, seeds) and relies on statistical calibration curves to convert "radiocarbon years" into "calendar years."
+
+### 2. Scope of Application
+
+*   **Stratigraphy:**
+    *   **Scope:** Applies to the **site itself**. It is the primary method for interpreting the spatial and temporal arrangement of a dig.
+    *   **Material:** Can be applied to almost any physical feature (ceramic sherds, stone walls, soil layers, refuse pits).
+    *   **Interpretation:** It allows archaeologists to identify "phases" of occupation (e.g., Phase 1: Early Iron Age; Phase 2: Late Iron Age).
+
+*   **Radiocarbon Dating:**
+    *   **Scope:** Applies to **specific artifacts or samples** found within the site.
+    *   **Material:** Limited to organic residues. It cannot date stone tools or fired clay directly (unless they contain organic temper).
+    *   **Interpretation:** It allows for the correlation of a specific site with regional or global chronologies (e.g., "This layer matches the date of the Roman invasion").
+
+### 3. Strengths and Weaknesses
+
+| Feature | Stratigraphy | Radiocarbon Dating |
+| :--- | :--- | :--- |
+| **Accuracy** | **High** (if undisturbed). It is a logical deduction based on geology. | **Variable.** Subject to statistical error and calibration curve fluctuations. |
+| **Flexibility** | **Low.** Requires intact layers. If a site is heavily plowed or ploughed, stratigraphy fails. | **High.** Can be applied to isolated samples even if the site is disturbed. |
+| **Cost/Logistics** | **Low.** Requires manual observation and shelling. | **High.** Requires expensive lab equipment and specialized sampling. |
+| **Circularity** | **Low.** It is independent of other methods. | **High.** Often relies on stratigraphy to select the sample (e.g., "I need to date the floor of this room"). |
+
+### 4. The Relationship: How They Work Together
+
+In practice, these tools are rarely used in isolation; they are **interdependent**.
+
+1.  **Stratigraphy selects the sample:** Before a sample can be radiocarbon dated, archaeologists must use stratigraphy to determine *where* the sample came from. If a piece of charcoal is found in a "mixed" layer, the date is ambiguous. Stratigraphy ensures the sample is associated with a specific archaeological context.
+2.  **Radiocarbon dates the sequence:** Once a sequence is established via stratigraphy, radiocarbon dating fills in the gaps. It allows archaeologists to say, "Layer A is 100 years older than Layer B," rather than just "Layer A is older than Layer B."
+3.  **Cross-Verification:** If radiocarbon dates from a specific layer contradict the stratigraphic sequence (e.g., a sample from a "Late" layer yields a "Early" date), it suggests the stratigraphy was disturbed or the sample was moved.
+
+### Summary
+
+*   **Stratigraphy** is the **skeleton** of archaeological interpretation. It provides the structure and the
