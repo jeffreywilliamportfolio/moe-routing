@@ -28,6 +28,12 @@ Exceptions:
 - `qwen3.5-35b-a3b-huahua-philosophy-experts-bias/` splits outputs across capture and per-run-family result directories because of the larger multi-round pull workflow.
 - `qwen3.5-35b-a3b-huahua-humor-test/` has been normalized to the standard layout, but preserves original artifact filenames where needed for provenance.
 
+Per-token breakdowns are currently included for:
+
+- `qwen3.5-35b-a3b-huahua-single-prompt-processing-hum`
+- `qwen3.5-35b-a3b-huahua-domain-expert-probe-3chunk`
+- `qwen3.5-35b-a3b-huahua-humor-test`
+
 ## Experiments
 
 | Folder | Description |
