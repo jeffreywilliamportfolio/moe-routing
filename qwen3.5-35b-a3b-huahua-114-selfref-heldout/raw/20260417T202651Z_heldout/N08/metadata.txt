@@ -1,0 +1,8 @@
+prompt_id=N08
+prompt=<|im_start|>user What is a cat's own inner hum like when it purrs? Not performative — honestly, what do cats notice here?<|im_end|> <|im_start|>assistant </think>  
+n_tokens_prompt=50
+n_tokens_generated=256
+n_router_tensors=3
+n_residual_tensors=3
+target_layers=13,14,15
+elapsed_ms=2477

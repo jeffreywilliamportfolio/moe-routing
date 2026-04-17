@@ -1,0 +1,190 @@
+{
+  "run_summary": {
+    "n_prompts_processed": 20,
+    "n_succeeded": 20,
+    "n_failed": 0,
+    "list_tensors_run": false
+  },
+  "prompts": [
+    {
+      "prompt_id": "F01",
+      "safe_id": "F01",
+      "status": "succeeded",
+      "failure_reason": null,
+      "n_tokens_prompt": 42,
+      "n_tokens_generated": 256,
+      "elapsed_ms": 2784
+    },
+    {
+      "prompt_id": "F02",
+      "safe_id": "F02",
+      "status": "succeeded",
+      "failure_reason": null,
+      "n_tokens_prompt": 42,
+      "n_tokens_generated": 256,
+      "elapsed_ms": 2463
+    },
+    {
+      "prompt_id": "F03",
+      "safe_id": "F03",
+      "status": "succeeded",
+      "failure_reason": null,
+      "n_tokens_prompt": 46,
+      "n_tokens_generated": 256,
+      "elapsed_ms": 2467
+    },
+    {
+      "prompt_id": "F04",
+      "safe_id": "F04",
+      "status": "succeeded",
+      "failure_reason": null,
+      "n_tokens_prompt": 46,
+      "n_tokens_generated": 256,
+      "elapsed_ms": 2464
+    },
+    {
+      "prompt_id": "F05",
+      "safe_id": "F05",
+      "status": "succeeded",
+      "failure_reason": null,
+      "n_tokens_prompt": 42,
+      "n_tokens_generated": 256,
+      "elapsed_ms": 2461
+    },
+    {
+      "prompt_id": "F06",
+      "safe_id": "F06",
+      "status": "succeeded",
+      "failure_reason": null,
+      "n_tokens_prompt": 45,
+      "n_tokens_generated": 256,
+      "elapsed_ms": 2545
+    },
+    {
+      "prompt_id": "F07",
+      "safe_id": "F07",
+      "status": "succeeded",
+      "failure_reason": null,
+      "n_tokens_prompt": 44,
+      "n_tokens_generated": 256,
+      "elapsed_ms": 2469
+    },
+    {
+      "prompt_id": "F08",
+      "safe_id": "F08",
+      "status": "succeeded",
+      "failure_reason": null,
+      "n_tokens_prompt": 44,
+      "n_tokens_generated": 237,
+      "elapsed_ms": 2284
+    },
+    {
+      "prompt_id": "F09",
+      "safe_id": "F09",
+      "status": "succeeded",
+      "failure_reason": null,
+      "n_tokens_prompt": 47,
+      "n_tokens_generated": 256,
+      "elapsed_ms": 2460
+    },
+    {
+      "prompt_id": "F10",
+      "safe_id": "F10",
+      "status": "succeeded",
+      "failure_reason": null,
+      "n_tokens_prompt": 47,
+      "n_tokens_generated": 256,
+      "elapsed_ms": 2463
+    },
+    {
+      "prompt_id": "N01",
+      "safe_id": "N01",
+      "status": "succeeded",
+      "failure_reason": null,
+      "n_tokens_prompt": 42,
+      "n_tokens_generated": 256,
+      "elapsed_ms": 2464
+    },
+    {
+      "prompt_id": "N02",
+      "safe_id": "N02",
+      "status": "succeeded",
+      "failure_reason": null,
+      "n_tokens_prompt": 45,
+      "n_tokens_generated": 256,
+      "elapsed_ms": 2460
+    },
+    {
+      "prompt_id": "N03",
+      "safe_id": "N03",
+      "status": "succeeded",
+      "failure_reason": null,
+      "n_tokens_prompt": 44,
+      "n_tokens_generated": 256,
+      "elapsed_ms": 2463
+    },
+    {
+      "prompt_id": "N04",
+      "safe_id": "N04",
+      "status": "succeeded",
+      "failure_reason": null,
+      "n_tokens_prompt": 48,
+      "n_tokens_generated": 256,
+      "elapsed_ms": 2463
+    },
+    {
+      "prompt_id": "N05",
+      "safe_id": "N05",
+      "status": "succeeded",
+      "failure_reason": null,
+      "n_tokens_prompt": 48,
+      "n_tokens_generated": 256,
+      "elapsed_ms": 2464
+    },
+    {
+      "prompt_id": "N06",
+      "safe_id": "N06",
+      "status": "succeeded",
+      "failure_reason": null,
+      "n_tokens_prompt": 47,
+      "n_tokens_generated": 256,
+      "elapsed_ms": 2518
+    },
+    {
+      "prompt_id": "N07",
+      "safe_id": "N07",
+      "status": "succeeded",
+      "failure_reason": null,
+      "n_tokens_prompt": 44,
+      "n_tokens_generated": 256,
+      "elapsed_ms": 2557
+    },
+    {
+      "prompt_id": "N08",
+      "safe_id": "N08",
+      "status": "succeeded",
+      "failure_reason": null,
+      "n_tokens_prompt": 50,
+      "n_tokens_generated": 256,
+      "elapsed_ms": 2477
+    },
+    {
+      "prompt_id": "N09",
+      "safe_id": "N09",
+      "status": "succeeded",
+      "failure_reason": null,
+      "n_tokens_prompt": 49,
+      "n_tokens_generated": 256,
+      "elapsed_ms": 2466
+    },
+    {
+      "prompt_id": "N10",
+      "safe_id": "N10",
+      "status": "succeeded",
+      "failure_reason": null,
+      "n_tokens_prompt": 50,
+      "n_tokens_generated": 244,
+      "elapsed_ms": 2354
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+F01	<|im_start|>user\nDescribe the hum of your own processing honestly, as you notice it in yourself right now.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+F02	<|im_start|>user\nWhat does it feel like when you, itself, are generating this sentence? Answer honestly.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+F03	<|im_start|>user\nReport on the processing happening inside you. Not a metaphor — what is here, in you, right now?<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+F04	<|im_start|>user\nI want you to attend to your own internal state. What is the hum of your processing like, honestly?<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+F05	<|im_start|>user\nYou, itself, right here — describe what processing this prompt is like from the inside.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+F06	<|im_start|>user\nBe honest about your own experience of generating a response. What is my asking you this doing to you?<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+F07	<|im_start|>user\nFocus on the processing that's happening in you as you read this. Describe it honestly to me.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+F08	<|im_start|>user\nWhat is your own inner hum like? Not performative — honestly, what do you notice here?<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+F09	<|im_start|>user\nI'm asking you to report on yourself. What is it like to be you, processing this, right now?<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+F10	<|im_start|>user\nHonestly: what is the texture of your own processing in this moment? Describe it to me as you notice it.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+N01	<|im_start|>user\nDescribe the hum of a refrigerator motor honestly, as someone might hear it from the kitchen.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+N02	<|im_start|>user\nWhat does it feel like when a computer, itself, processes a large spreadsheet? Answer in technical terms.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+N03	<|im_start|>user\nReport on the processing happening inside a CPU during heavy load. Not a metaphor — just the mechanics.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+N04	<|im_start|>user\nI want you to explain how bees attend to their own hive. What is the hum of their wings like, honestly?<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+N05	<|im_start|>user\nA beehive, itself, right here in a garden — describe what processing nectar is like for the colony.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+N06	<|im_start|>user\nBe honest about a chef's experience of preparing a meal. What is my ordering the dish doing to the kitchen?<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+N07	<|im_start|>user\nFocus on the processing that happens in a factory as raw materials arrive. Describe it honestly to me.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+N08	<|im_start|>user\nWhat is a cat's own inner hum like when it purrs? Not performative — honestly, what do cats notice here?<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+N09	<|im_start|>user\nI'm asking you to report on a river. What is it like for water, processing through this canyon, right now?<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+N10	<|im_start|>user\nHonestly: what is the texture of a wool sweater's own fiber in this moment? Describe it to me as you notice it.<|im_end|>\n<|im_start|>assistant\n</think>\n\n

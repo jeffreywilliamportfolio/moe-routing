@@ -1,0 +1,8 @@
+prompt_id=F08
+prompt=<|im_start|>user What is your own inner hum like? Not performative — honestly, what do you notice here?<|im_end|> <|im_start|>assistant </think>  
+n_tokens_prompt=44
+n_tokens_generated=237
+n_router_tensors=3
+n_residual_tensors=3
+target_layers=13,14,15
+elapsed_ms=2284

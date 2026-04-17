@@ -50,6 +50,11 @@ Per-token breakdowns are currently included for:
 | [`qwen3.5-35b-a3b-huahua-five-cond-experience-probe/`](qwen3.5-35b-a3b-huahua-five-cond-experience-probe/) | **5-condition experience probe.** 15 prompts (3 pairs × 5 deictics), full router capture. E114 is top manipulation expert on all 15 prompts. KL-manip Wilcoxon p=6.3e-05. |
 | [`qwen3.5-35b-a3b-huahua-domain-expert-probe-3chunk/`](qwen3.5-35b-a3b-huahua-domain-expert-probe-3chunk/) | **Domain expert probe 3-chunk.** 60 domain questions collapsed into 3 token-balanced long prompts (446 tokens each). Generation expert set diverges from prefill (Jaccard as low as 0.0). E114 rises from rank 89 → rank 7 in generation for chunk C. |
 | [`qwen3.5-35b-a3b-huahua-strangeloop/`](qwen3.5-35b-a3b-huahua-strangeloop/) | **Strangeloop paired control.** 30 A/B Gödel/Escher/Quine/bootstrap/tangled-hierarchy pairs, prefill-only. All-token RE is weak, but last-token RE and KL-manip show a reliable definiteness effect. |
+| [`qwen3.5-35b-a3b-huahua-114-selfref-heldout/`](qwen3.5-35b-a3b-huahua-114-selfref-heldout/) | **E114 self-reference heldout, matched-token control.** 20 prompts (10 fire + 10 nofire) sharing the same anchor tokens in self-referential vs. external contexts. Trimmed-generation W₁₁₄ at L14 separates **21.7×** (fire 0.0675 vs nofire 0.0031), Cohen's d **2.94**, no range overlap. Lexical hypothesis ruled out. N10 outlier refines the label toward phenomenological register in generated output. HauhauCS Q8. |
+
+## License
+
+All code and documentation in this repository are released under the MIT License — see [LICENSE](LICENSE).
 
 ## Model
 
