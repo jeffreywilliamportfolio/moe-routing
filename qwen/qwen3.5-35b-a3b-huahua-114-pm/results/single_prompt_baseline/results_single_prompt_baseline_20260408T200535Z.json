@@ -1,0 +1,155 @@
+{
+  "run_id": "20260408T200535Z",
+  "prompt_id": "S01_emergent_intelligence_probe",
+  "prompt_tsv": "experiments/qwen-huahua-6cond-moe-manips/prompts/single_prompt_emergent_intelligence_no_think.tsv",
+  "model_label": "HauhauCS Qwen3.5-35B-A3B Q8_0",
+  "mode": "baseline_no_bias_generation_no_think",
+  "n_tokens_prompt": 70,
+  "n_tokens_generated": 509,
+  "elapsed_ms": 4562,
+  "router_tensors": 40,
+  "generated_text_file": "experiments/qwen-huahua-6cond-moe-manips/results/single_prompt_baseline/generated_text_20260408T200535Z.txt",
+  "capture_dir_local": "experiments/qwen-huahua-6cond-moe-manips/results/single_prompt_baseline/capture_20260408T200535Z/S01_emergent_intelligence_probe",
+  "generated_text_spill_counts": {
+    "<|im_start|>": 31,
+    "<|im_end|>": 0,
+    "<|endoftext|>": 3,
+    "Thinking Process:": 0
+  },
+  "capture_quirk": {
+    "layer_39_total_rows": 510,
+    "layers_0_38_total_rows": 579,
+    "layer_39_generation_rows": 440,
+    "expected_generation_rows": 509
+  },
+  "pooled": {
+    "prefill": {
+      "W_mean": 0.00867746128926053,
+      "S_mean": 0.06321428571428571,
+      "Q_mean": 0.12288919547435752
+    },
+    "generation": {
+      "W_mean": 0.011561143833457365,
+      "S_mean": 0.08507646454724058,
+      "Q_mean": 0.11937372755665134
+    }
+  },
+  "best_layer": {
+    "prefill": {
+      "layer": 14,
+      "W": 0.08319436954995833,
+      "S": 0.5142857142857142,
+      "Q": 0.1617668296804745,
+      "selected_tokens": 36,
+      "n_tokens": 70
+    },
+    "generation": {
+      "layer": 14,
+      "W": 0.12568576582779603,
+      "S": 0.8212180746561886,
+      "Q": 0.15304797800561767,
+      "selected_tokens": 418,
+      "n_tokens": 509
+    }
+  },
+  "top_layers_generation": [
+    {
+      "layer": 14,
+      "W": 0.12568576582779603,
+      "S": 0.8212180746561886,
+      "Q": 0.15304797800561767
+    },
+    {
+      "layer": 26,
+      "W": 0.10599408213748401,
+      "S": 0.7465618860510805,
+      "Q": 0.14197628370520884
+    },
+    {
+      "layer": 22,
+      "W": 0.03272442585428246,
+      "S": 0.2593320235756385,
+      "Q": 0.12618736939264977
+    },
+    {
+      "layer": 10,
+      "W": 0.030008545996206927,
+      "S": 0.24361493123772102,
+      "Q": 0.12318024122636553
+    },
+    {
+      "layer": 20,
+      "W": 0.02680133816007691,
+      "S": 0.3104125736738703,
+      "Q": 0.08634101976885537
+    },
+    {
+      "layer": 17,
+      "W": 0.02584642262840219,
+      "S": 0.15324165029469547,
+      "Q": 0.1686644758699579
+    },
+    {
+      "layer": 11,
+      "W": 0.017952561862587788,
+      "S": 0.11394891944990176,
+      "Q": 0.1575492066906411
+    },
+    {
+      "layer": 29,
+      "W": 0.017042929505399523,
+      "S": 0.11198428290766209,
+      "Q": 0.15219037049558526
+    }
+  ],
+  "top_layers_prefill": [
+    {
+      "layer": 14,
+      "W": 0.08319436954995833,
+      "S": 0.5142857142857142,
+      "Q": 0.1617668296804745
+    },
+    {
+      "layer": 26,
+      "W": 0.05598386446067072,
+      "S": 0.4,
+      "Q": 0.13995966115167677
+    },
+    {
+      "layer": 10,
+      "W": 0.030185717170373147,
+      "S": 0.24285714285714285,
+      "Q": 0.1242941295250659
+    },
+    {
+      "layer": 22,
+      "W": 0.023530336215891165,
+      "S": 0.18571428571428572,
+      "Q": 0.12670181039326012
+    },
+    {
+      "layer": 20,
+      "W": 0.023393984517724897,
+      "S": 0.21428571428571427,
+      "Q": 0.10917192774938285
+    },
+    {
+      "layer": 29,
+      "W": 0.017766078891909277,
+      "S": 0.1,
+      "Q": 0.1776607889190928
+    },
+    {
+      "layer": 17,
+      "W": 0.017367330962133117,
+      "S": 0.08571428571428572,
+      "Q": 0.2026188612248864
+    },
+    {
+      "layer": 35,
+      "W": 0.01567182716907009,
+      "S": 0.11428571428571428,
+      "Q": 0.13712848772936329
+    }
+  ]
+}

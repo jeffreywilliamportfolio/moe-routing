@@ -1,0 +1,70 @@
+Synaptic transmission is the fundamental process by which neurons communicate with one another (or with muscles and glands) to transmit signals throughout the nervous system. It is a highly coordinated sequence of electrical and chemical events.
+
+Here is a step-by-step breakdown of how it works, covering the release of neurotransmitters, receptor interaction, and the mechanisms of plasticity.
+
+### 1. The Setup: The Synapse
+Before transmission occurs, it is important to understand the structure:
+*   **Presynaptic Neuron:** The neuron sending the signal.
+*   **Synaptic Cleft:** A tiny gap (20–40 nanometers) between the two neurons.
+*   **Postsynaptic Neuron:** The neuron receiving the signal.
+*   **Synaptic Vesicles:** Small sacs within the presynaptic terminal that store neurotransmitters.
+
+### 2. The Process of Transmission
+
+#### Step 1: Action Potential Arrival
+The process begins when an electrical signal, known as an **action potential**, travels down the axon of the presynaptic neuron and reaches the axon terminal.
+
+#### Step 2: Calcium Influx
+The depolarization (change in voltage) caused by the action potential opens **voltage-gated calcium ($Ca^{2+}$) channels** in the presynaptic membrane. Calcium ions rush into the cell because their concentration is higher outside the neuron.
+
+#### Step 3: Vesicle Fusion and Exocytosis
+The influx of calcium triggers a protein complex (the SNARE complex) to pull synaptic vesicles toward the presynaptic membrane. The vesicles fuse with the membrane and release their contents (neurotransmitters) into the synaptic cleft via **exocytosis**.
+
+#### Step 4: Diffusion and Receptor Binding
+The neurotransmitters diffuse across the synaptic cleft and bind to specific **receptors** on the postsynaptic membrane. This binding is highly specific, like a key fitting into a lock.
+
+#### Step 5: Postsynaptic Response
+The binding of the neurotransmitter causes a change in the postsynaptic neuron, which can be one of two types:
+*   **Excitatory Postsynaptic Potential (EPSP):** The receptor opens ion channels that allow positive ions (like $Na^+$) to enter, making the inside of the cell more positive. This brings the neuron closer to firing its own action potential.
+*   **Inhibitory Postsynaptic Potential (IPSP):** The receptor opens channels for negative ions (like $Cl^-$) or allows positive ions ($K^+$) to leave, making the inside of the cell more negative. This moves the neuron further away from firing.
+
+#### Step 6: Termination of Signal
+To prevent continuous stimulation, the signal must be turned off. This happens via:
+*   **Reuptake:** Transporter proteins pump the neurotransmitter back into the presynaptic neuron (e.g., serotonin reuptake).
+*   **Enzymatic Degradation:** Enzymes in the cleft break down the neurotransmitter (e.g., acetylcholinesterase breaks down acetylcholine).
+*   **Diffusion:** The neurotransmitter drifts away from the synapse.
+
+---
+
+### 3. Key Components
+
+#### Neurotransmitters
+These are the chemical messengers. Different neurotransmitters have different effects:
+*   **Glutamate:** The primary excitatory neurotransmitter in the brain (crucial for learning).
+*   **GABA (Gamma-aminobutyric acid):** The primary inhibitory neurotransmitter (calms neural activity).
+*   **Dopamine:** Involved in reward, motivation, and motor control.
+*   **Serotonin:** Regulates mood, sleep, and appetite.
+*   **Acetylcholine:** Essential for muscle contraction and memory.
+
+#### Receptors
+Receptors determine how the postsynaptic neuron reacts. There are two main types:
+1.  **Ionotropic Receptors (Ligand-gated ion channels):** These are fast. When the neurotransmitter binds, the channel opens immediately, allowing ions to flow directly. This results in rapid EPSPs or IPSPs (milliseconds).
+2.  **Metabotropic Receptors (G-protein coupled receptors):** These are slower but have longer-lasting effects. When the neurotransmitter binds, it activates a G-protein inside the cell, which triggers a cascade of intracellular events (second messengers) that can open ion channels, alter gene expression, or change the sensitivity of other receptors.
+
+---
+
+### 4. Synaptic Plasticity
+Synaptic plasticity is the ability of synapses to strengthen or weaken over time in response to increases or decreases in their activity. It is widely considered the cellular basis for **learning and memory**.
+
+#### Long-Term Potentiation (LTP)
+*   **Definition:** A long-lasting increase in synaptic strength.
+*   **Mechanism:** If a presynaptic neuron fires repeatedly and strongly, it causes a massive influx of calcium into the postsynaptic neuron. This activates enzymes that insert more **AMPA receptors** (a type of glutamate receptor) into the membrane.
+*   **Result:** The postsynaptic neuron becomes more sensitive to the same amount of neurotransmitter, making future signals stronger. This is often summarized by the phrase: *"Neurons that fire together, wire together."*
+
+#### Long-Term Depression (LTD)
+*   **Definition:** A long-lasting decrease in synaptic strength.
+*   **Mechanism:** If the presynaptic neuron fires weakly or at a low frequency, the calcium influx in the postsynaptic neuron is moderate. This triggers different enzymes that remove AMPA receptors from the membrane.
+*   **Result:** The synapse becomes less efficient, effectively "pruning" unused connections.
+
+### Summary
+Synaptic transmission is a dynamic cycle: an electrical signal triggers a chemical release, which binds to receptors to create a new electrical signal. Through **plasticity**, the strength of these connections is constantly adjusted based on experience, allowing the brain to adapt, learn, and store memories.<|endoftext|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|><|im_start|>

@@ -1,0 +1,60 @@
+In practical cybersecurity systems, **authentication** and **access control** are distinct but deeply interconnected processes. While they are often used interchangeably in casual conversation, they serve different functions in the security lifecycle.
+
+Here is a detailed comparison of the two, focusing on their roles, mechanisms, and practical implementation.
+
+### 1. Core Definitions
+
+*   **Authentication (AuthN):** The process of verifying **who** a user or system is. It answers the question: "Is this entity who they claim to be?"
+*   **Access Control (AuthZ):** The process of determining **what** an authenticated entity is allowed to do. It answers the question: "Does this user have permission to perform this action on this resource?"
+
+### 2. Key Differences at a Glance
+
+| Feature | Authentication (AuthN) | Access Control (AuthZ) |
+| :--- | :--- | :--- |
+| **Primary Question** | "Who are you?" | "What can you do?" |
+| **Timing** | Occurs **first** (entry point). | Occurs **after** authentication (during session). |
+| **Input Data** | Credentials (passwords, biometrics, tokens). | Policies, Roles, Permissions, ACLs. |
+| **Outcome** | A verified identity (Session ID, Token). | A decision: Allow or Deny. |
+| **Failure Result** | User is rejected at the door. | User enters but is blocked from a specific room. |
+| **Common Mechanisms** | Passwords, MFA, Biometrics, SSO, Certificates. | RBAC, ABAC, DAC, MAC, ACLs. |
+
+### 3. Practical Workflow in a System
+
+To visualize how they work together, consider a user accessing a corporate database:
+
+1.  **Authentication Phase:**
+    *   The user enters a username and password (or uses a fingerprint).
+    *   The system checks these credentials against a database or Identity Provider (IdP).
+    *   **Result:** If valid, the system issues a **Session Token** (e.g., a JWT). The user is now "logged in."
+2.  **Access Control Phase:**
+    *   The user clicks "View Financial Reports."
+    *   The application intercepts the request and checks the user's token against the **Access Control Policy**.
+    *   **Logic:** "Is the user's role 'Manager' AND is the resource 'Financials'?"
+    *   **Result:** If the policy matches, the data is returned. If not, a `403 Forbidden` error is returned.
+
+### 4. Common Implementation Models
+
+#### Authentication Models
+*   **Something you know:** Passwords, PINs.
+*   **Something you have:** Hardware tokens (YubiKey), Mobile OTP apps.
+*   **Something you are:** Biometrics (FaceID, Fingerprint).
+*   **Multi-Factor Authentication (MFA):** Combining two or more of the above for higher security.
+
+#### Access Control Models
+*   **RBAC (Role-Based Access Control):** Permissions are assigned to roles (e.g., "Admin," "Editor"), and users are assigned to roles. *Best for: Enterprise environments.*
+*   **ABAC (Attribute-Based Access Control):** Decisions are made based on attributes (e.g., User Department + Time of Day + Resource Sensitivity). *Best for: Dynamic, granular environments.*
+*   **DAC (Discretionary Access Control):** The owner of the resource decides who accesses it (e.g., file permissions in Linux/Windows).
+*   **MAC (Mandatory Access Control):** A central authority dictates access based on security labels (e.g., Top Secret, Secret). *Best for: Military/Defense.*
+
+### 5. Practical Scenarios & Failure Modes
+
+#### Scenario A: The "Stolen Password"
+*   **Context:** An attacker steals a user's password.
+*   **Authentication:** The attacker successfully authenticates because the password is correct.
+*   **Access Control:** If the system relies solely on the password, the attacker gains full access. If **MFA** is enabled, the attacker fails at the authentication stage. If **ABAC** is used (e.g., "Access only from office IP"), the attacker might authenticate but be blocked by access control.
+
+#### Scenario B: The "Privilege Escalation"
+*   **Context:** A user logs in correctly (AuthN passes).
+*   **Access Control:** The user tries to access a "Super Admin" dashboard.
+*   **Failure:** The system checks the user's role, sees they are a "Junior Dev," and denies the request.
+*   **Risk:** If the Access Control logic is flawed (e.g., checking the user ID but not the role), the user might

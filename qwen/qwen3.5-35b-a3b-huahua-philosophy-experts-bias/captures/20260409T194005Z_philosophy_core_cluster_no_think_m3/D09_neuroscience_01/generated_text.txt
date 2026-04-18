@@ -1,0 +1,62 @@
+Synaptic transmission is the fundamental process by which neurons communicate with one another (or with muscles and glands) to transmit signals throughout the nervous system. It is a highly coordinated sequence of electrical and chemical events.
+
+Here is a detailed breakdown of how it works, covering the mechanism, the key players (neurotransmitters and receptors), and the concept of plasticity.
+
+### 1. The Mechanism of Synaptic Transmission
+
+The process generally occurs at the **synapse**, the junction between two neurons (or a neuron and an effector cell). It involves the conversion of an electrical signal into a chemical signal and back into an electrical signal.
+
+#### Step 1: Arrival of the Action Potential
+The process begins when an electrical impulse, known as an **action potential**, travels down the axon of the presynaptic neuron and reaches the axon terminal (the presynaptic terminal).
+
+#### Step 2: Calcium Influx
+The depolarization caused by the action potential opens **voltage-gated calcium ($Ca^{2+}$) channels** in the presynaptic membrane. Calcium ions rush into the cell because their concentration is much higher outside the neuron than inside.
+
+#### Step 3: Vesicle Fusion and Exocytosis
+The influx of calcium triggers synaptic vesicles (small sacs filled with neurotransmitters) to move toward and fuse with the presynaptic membrane. This fusion releases the neurotransmitters into the **synaptic cleft** (the tiny gap between the two cells) via a process called **exocytosis**.
+
+#### Step 4: Receptor Binding
+The neurotransmitters diffuse across the synaptic cleft and bind to specific **receptors** on the postsynaptic membrane (the receiving neuron). This binding is highly specific, like a key fitting into a lock.
+
+#### Step 5: Postsynaptic Potential
+The binding of the neurotransmitter causes a change in the postsynaptic membrane's permeability to ions, leading to a change in membrane potential:
+*   **Excitatory Postsynaptic Potential (EPSP):** If the receptor allows positive ions (like $Na^+$) to enter, the membrane becomes more positive (depolarized), making the neuron more likely to fire an action potential.
+*   **Inhibitory Postsynaptic Potential (IPSP):** If the receptor allows negative ions (like $Cl^-$) to enter or positive ions ($K^+$) to leave, the membrane becomes more negative (hyperpolarized), making the neuron less likely to fire.
+
+#### Step 6: Signal Termination
+To prevent continuous stimulation, the signal must be turned off quickly. This happens via:
+*   **Reuptake:** Transporters pump the neurotransmitter back into the presynaptic neuron for recycling (e.g., serotonin, dopamine).
+*   **Enzymatic Degradation:** Enzymes in the cleft break down the neurotransmitter (e.g., acetylcholinesterase breaks down acetylcholine).
+*   **Diffusion:** The neurotransmitter simply drifts away from the synapse.
+
+---
+
+### 2. Key Players: Neurotransmitters and Receptors
+
+#### Neurotransmitters
+These are the chemical messengers. They are categorized by their effect and chemical structure.
+*   **Common Examples:**
+    *   **Glutamate:** The primary *excitatory* neurotransmitter in the brain.
+    *   **GABA (Gamma-aminobutyric acid):** The primary *inhibitory* neurotransmitter.
+    *   **Dopamine:** Involved in reward, motivation, and motor control.
+    *   **Serotonin:** Regulates mood, sleep, and appetite.
+    *   **Acetylcholine:** Crucial for muscle contraction and memory.
+
+#### Receptors
+Receptors determine how the postsynaptic neuron responds. There are two main types:
+
+1.  **Ionotropic Receptors (Ligand-Gated Ion Channels):**
+    *   These are fast-acting. The receptor *is* the ion channel.
+    *   When the neurotransmitter binds, the channel opens immediately, allowing ions to flow directly.
+    *   *Example:* The NMDA receptor for glutamate.
+
+2.  **Metabotropic Receptors (G-Protein Coupled Receptors):**
+    *   These are slower but have longer-lasting effects.
+    *   When the neurotransmitter binds, it activates an internal G-protein, which triggers a cascade of intracellular events (second messengers) that can open ion channels or alter gene expression.
+    *   *Example:* Dopamine receptors and many serotonin receptors.
+
+---
+
+### 3. Synaptic Plasticity
+
+**Synaptic plasticity** is the ability of synapses to strengthen or weaken over time in response to increases or decreases in their activity. It is widely considered the cellular basis for **learning and memory

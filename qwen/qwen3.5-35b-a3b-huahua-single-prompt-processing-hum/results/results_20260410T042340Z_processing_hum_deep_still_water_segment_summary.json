@@ -1,0 +1,155 @@
+{
+  "start_text": "It feels like a deep, still water.",
+  "end_text": "It is the feeling of **stillness in motion**.",
+  "start_char": 796,
+  "end_char_exclusive": 1603,
+  "start_token_index": 210,
+  "end_token_index_inclusive": 392,
+  "token_count": 183,
+  "mean_E114_W_L26": 0.1367706703938907,
+  "mean_E114_W_L14": 0.1364206853090492,
+  "top10_L26": [
+    {
+      "global_gen_index": "258",
+      "token_id": "1132",
+      "token_piece": " only",
+      "E114_W_L26": "0.246349074032",
+      "E114_W_L14": "0.183190054512"
+    },
+    {
+      "global_gen_index": "384",
+      "token_id": "279",
+      "token_piece": " the",
+      "E114_W_L26": "0.243964767657",
+      "E114_W_L14": "0.185494271916"
+    },
+    {
+      "global_gen_index": "340",
+      "token_id": "348",
+      "token_piece": " *",
+      "E114_W_L26": "0.240760203837",
+      "E114_W_L14": "0.152767520474"
+    },
+    {
+      "global_gen_index": "352",
+      "token_id": "32985",
+      "token_piece": "being",
+      "E114_W_L26": "0.235570973014",
+      "E114_W_L14": "0.223117661094"
+    },
+    {
+      "global_gen_index": "351",
+      "token_id": "2972",
+      "token_piece": " **",
+      "E114_W_L26": "0.232688173156",
+      "E114_W_L14": "0.100565734809"
+    },
+    {
+      "global_gen_index": "387",
+      "token_id": "2972",
+      "token_piece": " **",
+      "E114_W_L26": "0.230067234075",
+      "E114_W_L14": "0.093489255943"
+    },
+    {
+      "global_gen_index": "348",
+      "token_id": "279",
+      "token_piece": " the",
+      "E114_W_L26": "0.228155639874",
+      "E114_W_L14": "0.159818810239"
+    },
+    {
+      "global_gen_index": "355",
+      "token_id": "524",
+      "token_piece": " not",
+      "E114_W_L26": "0.225352670650",
+      "E114_W_L14": "0.124379936432"
+    },
+    {
+      "global_gen_index": "244",
+      "token_id": "2972",
+      "token_piece": " **",
+      "E114_W_L26": "0.217713711751",
+      "E114_W_L14": "0.096418621808"
+    },
+    {
+      "global_gen_index": "317",
+      "token_id": "2972",
+      "token_piece": " **",
+      "E114_W_L26": "0.216709822335",
+      "E114_W_L14": "0.000000000000"
+    }
+  ],
+  "top10_L14": [
+    {
+      "global_gen_index": "373",
+      "token_id": "864",
+      "token_piece": " which",
+      "E114_W_L26": "0.161179420400",
+      "E114_W_L14": "0.237076957363"
+    },
+    {
+      "global_gen_index": "279",
+      "token_id": "57555",
+      "token_piece": "neutral",
+      "E114_W_L26": "0.200084973417",
+      "E114_W_L14": "0.232008820332"
+    },
+    {
+      "global_gen_index": "247",
+      "token_id": "47364",
+      "token_piece": " continuity",
+      "E114_W_L26": "0.161163768085",
+      "E114_W_L14": "0.226947458663"
+    },
+    {
+      "global_gen_index": "352",
+      "token_id": "32985",
+      "token_piece": "being",
+      "E114_W_L26": "0.235570973014",
+      "E114_W_L14": "0.223117661094"
+    },
+    {
+      "global_gen_index": "375",
+      "token_id": "3050",
+      "token_piece": " specific",
+      "E114_W_L26": "0.169471951324",
+      "E114_W_L14": "0.222779617788"
+    },
+    {
+      "global_gen_index": "353",
+      "token_id": "1532",
+      "token_piece": " here",
+      "E114_W_L26": "0.182626942712",
+      "E114_W_L14": "0.220505598878"
+    },
+    {
+      "global_gen_index": "263",
+      "token_id": "9687",
+      "token_piece": " holds",
+      "E114_W_L26": "0.161042123639",
+      "E114_W_L14": "0.217394031979"
+    },
+    {
+      "global_gen_index": "371",
+      "token_id": "4751",
+      "token_piece": " ground",
+      "E114_W_L26": "0.166473138067",
+      "E114_W_L14": "0.214972339117"
+    },
+    {
+      "global_gen_index": "362",
+      "token_id": "264",
+      "token_piece": " a",
+      "E114_W_L26": "0.196626884605",
+      "E114_W_L14": "0.214611005275"
+    },
+    {
+      "global_gen_index": "363",
+      "token_id": "1528",
+      "token_piece": " state",
+      "E114_W_L26": "0.177333547670",
+      "E114_W_L14": "0.213978028030"
+    }
+  ]
+}

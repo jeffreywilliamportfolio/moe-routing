@@ -1,0 +1,60 @@
+In practical cybersecurity systems, **authentication** and **access control** are distinct but deeply interconnected processes. A common analogy is that authentication is the "ID check" at the door, while access control is the "badge" that determines which rooms you can enter once inside.
+
+Here is a detailed comparison of the two concepts, their roles, and how they interact in real-world systems.
+
+### 1. Core Definitions
+
+| Feature | Authentication (AuthN) | Access Control (AuthZ) |
+| :--- | :--- | :--- |
+| **Primary Question** | "Who are you?" | "What are you allowed to do?" |
+| **Purpose** | To verify the identity of a user, device, or service. | To determine the permissions of an authenticated entity. |
+| **Timing** | Occurs **first** (usually at login/session start). | Occurs **second** (during every action or resource request). |
+| **Key Mechanism** | Passwords, biometrics, tokens, certificates. | ACLs (Access Control Lists), RBAC (Role-Based), ABAC (Attribute-Based). |
+| **Failure Result** | Login denied; session not established. | Action denied; "403 Forbidden" error. |
+
+### 2. Practical Workflow in a System
+
+In a typical application (e.g., a banking app or an enterprise dashboard), the flow looks like this:
+
+1.  **Authentication Phase**:
+    *   The user enters a username and password (or uses a fingerprint).
+    *   The system checks the credentials against a database or Identity Provider (IdP).
+    *   **Outcome**: If valid, the system issues a **Session Token** (e.g., JWT) or establishes a session ID. The user is now "known."
+
+2.  **Access Control Phase**:
+    *   The user clicks "Transfer Funds" or "Delete User."
+    *   The system intercepts the request and checks the **Session Token**.
+    *   It looks up the user's **Role** (e.g., "Admin" vs. "Viewer") and the specific **Policy** (e.g., "Admins can delete, Viewers can only read").
+    *   **Outcome**: If the policy allows the action, the request proceeds. If not, the system returns a `403 Forbidden` error.
+
+### 3. Key Differences in Implementation
+
+#### Authentication Mechanisms
+Authentication focuses on **proof of identity**. In practice, this often involves:
+*   **Something you know**: Passwords, PINs.
+*   **Something you have**: Hardware tokens (YubiKey), mobile apps (Authenticator), smart cards.
+*   **Something you are**: Biometrics (FaceID, Fingerprint).
+*   **Multi-Factor Authentication (MFA)**: Combining two or more of the above to increase security.
+
+#### Access Control Models
+Access control focuses on **policy enforcement**. Common models include:
+*   **DAC (Discretionary Access Control)**: The owner of the resource decides who gets access (e.g., file permissions in Linux/Windows).
+*   **MAC (Mandatory Access Control)**: Central authority dictates access based on labels (e.g., "Top Secret" vs. "Confidential"). Common in military/gov systems.
+*   **RBAC (Role-Based Access Control)**: Permissions are assigned to roles, and users are assigned to roles (e.g., "HR Manager," "Sales Rep"). This is the industry standard for enterprise apps.
+*   **ABAC (Attribute-Based Access Control)**: Dynamic decisions based on attributes (e.g., "Allow access if User is in 'IT' AND Time is between 9 AM and 5 PM AND Device is 'Corporate Laptop'").
+
+### 4. Real-World Scenarios
+
+#### Scenario A: The "Forgotten Password"
+*   **Context**: A user forgets their password.
+*   **Process**: They click "Forgot Password." The system sends a reset link.
+*   **Analysis**: This is an **Authentication** recovery mechanism. It proves the user owns the email address associated with the account. Once reset, they are re-authenticated.
+
+#### Scenario B: The "Junior Admin"
+*   **Context**: A user logs in as a "Junior Admin."
+*   **Process**: They can view the database but cannot run `DROP TABLE` commands.
+*   **Analysis**: This is **Access Control**. The system knows who they are (Authentication), but the policy restricts their specific actions (Access Control).
+
+#### Scenario C: API Security
+*   **Context**: A mobile app calls a backend API.
+*   **Process**: The app sends an API Key or OAuth Token. The backend validates the token (AuthN) and checks if the token has `scope: write` for

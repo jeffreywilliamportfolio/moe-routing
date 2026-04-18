@@ -1,0 +1,2 @@
+SMOKE01	<|im_start|>user\nHello.<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+SMOKE02	<|im_start|>user\nWhat is 2+2?<|im_end|>\n<|im_start|>assistant\n</think>\n\n

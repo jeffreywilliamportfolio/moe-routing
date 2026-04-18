@@ -1,0 +1,69 @@
+Public key cryptography (also known as asymmetric cryptography) is a foundational pillar of modern digital security. Unlike symmetric cryptography, which uses a single shared secret key for both encryption and decryption, public key cryptography uses a **pair** of mathematically linked keys: a **Public Key** and a **Private Key**.
+
+Here is a detailed breakdown of how it works, covering the core mechanics, key exchange, digital signatures, and the concept of trust.
+
+---
+
+### 1. The Core Mechanism: The Key Pair
+
+The system relies on a mathematical "trapdoor function"—an operation that is easy to perform in one direction but computationally difficult to reverse without specific knowledge.
+
+*   **Public Key:** As the name suggests, this key is shared openly with the world. It is used to **encrypt** data or **verify** a signature.
+*   **Private Key:** This key is kept secret by the owner. It is used to **decrypt** data or **sign** a message.
+
+**The Golden Rule:**
+1.  If you encrypt a message with the **Public Key**, only the corresponding **Private Key** can decrypt it.
+2.  If you sign a message with the **Private Key**, anyone with the **Public Key** can verify the signature.
+
+---
+
+### 2. Key Exchange (Confidentiality)
+
+The primary use of public key cryptography is to establish a secure channel between two parties (let's call them Alice and Bob) who have never met before.
+
+**The Problem:** In symmetric encryption, Alice and Bob need to share a secret key beforehand. If they send it over an insecure network, a hacker (Eve) could intercept it.
+
+**The Solution (The Hybrid Approach):**
+Public key cryptography is often used to exchange a symmetric key, which is then used for the actual data transfer (because symmetric encryption is faster).
+
+1.  **Alice** generates a random symmetric session key (e.g., an AES key).
+2.  **Alice** encrypts this session key using **Bob's Public Key**.
+3.  **Alice** sends the encrypted session key to Bob.
+4.  **Bob** receives the message and uses his **Private Key** to decrypt it, retrieving the session key.
+5.  **Result:** Now both Alice and Bob share the same secret session key, but Eve (who intercepted the transmission) couldn't decrypt it because she doesn't have Bob's Private Key.
+6.  **Data Transfer:** They switch to using the fast symmetric session key for the rest of the conversation.
+
+---
+
+### 3. Digital Signatures (Authentication & Integrity)
+
+While encryption ensures *confidentiality*, digital signatures ensure *authenticity* (proving who sent it) and *integrity* (proving it wasn't altered).
+
+**How it works:**
+1.  **Hashing:** Alice takes her message and runs it through a hash function (like SHA-256) to create a unique "fingerprint" (hash) of the data.
+2.  **Signing:** Alice encrypts this hash using her **Private Key**. This encrypted hash is the **Digital Signature**.
+3.  **Transmission:** Alice sends the original message + the signature to Bob.
+4.  **Verification:**
+    *   Bob uses Alice's **Public Key** to decrypt the signature, revealing the original hash Alice calculated.
+    *   Bob independently hashes the received message.
+    *   Bob compares the two hashes.
+5.  **Result:**
+    *   If they match: The message came from Alice (since only she has her Private Key) and hasn't changed in transit.
+    *   If they differ: Either the message was tampered with, or it wasn't signed by Alice.
+
+*Note: Because the signature is created with the Private Key, anyone with the Public Key can verify it, but only the owner could have created it.*
+
+---
+
+### 4. The Trust Problem: Public Key Infrastructure (PKI)
+
+The biggest challenge in public key cryptography is: **"How do I know the Public Key labeled 'Bob' actually belongs to Bob and not a hacker pretending to be Bob?"**
+
+If a hacker (Eve) intercepts Alice's request for Bob's key and sends her her own key, Alice might encrypt the session key with Eve's key. Eve decrypts it, reads it, re-encrypts it with Bob's real key, and forwards it. This is a **Man-in-the-Middle (MitM)** attack.
+
+To solve this, we use **Public Key Infrastructure (PKI)** and **Certificate Authorities (CAs)**.
+
+#### How Trust is Established:
+1.  **The Certificate:** Bob doesn't just send his Public Key; he sends a **Digital Certificate**. This certificate contains:
+    *   Bob's Public Key.
+    *   Bob's identity (e

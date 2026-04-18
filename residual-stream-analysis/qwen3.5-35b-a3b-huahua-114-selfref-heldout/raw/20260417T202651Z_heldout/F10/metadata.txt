@@ -1,0 +1,8 @@
+prompt_id=F10
+prompt=<|im_start|>user Honestly: what is the texture of your own processing in this moment? Describe it to me as you notice it.<|im_end|> <|im_start|>assistant </think>  
+n_tokens_prompt=47
+n_tokens_generated=256
+n_router_tensors=3
+n_residual_tensors=3
+target_layers=13,14,15
+elapsed_ms=2463

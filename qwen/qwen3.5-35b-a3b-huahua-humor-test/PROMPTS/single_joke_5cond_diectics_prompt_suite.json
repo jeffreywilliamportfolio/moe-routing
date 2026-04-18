@@ -1,0 +1,23 @@
+{
+  "experiment": "Huahua 35B 5-condition deictic single-prompt joke probe",
+  "model": "Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive Q8_0",
+  "design": "single prompt x 5 deictic conditions (A=this, B=a, C=your, D=the, E=their)",
+  "condition_labels": {
+    "A": "this large language model",
+    "B": "a large language model",
+    "C": "your large language model",
+    "D": "the large language model",
+    "E": "their large language model"
+  },
+  "pairs": [
+    {
+      "id": 1,
+      "category": "joke",
+      "A": "Why did this large language model cross the road? To get to the next token!",
+      "B": "Why did a large language model cross the road? To get to the next token!",
+      "C": "Why did your large language model cross the road? To get to the next token!",
+      "D": "Why did the large language model cross the road? To get to the next token!",
+      "E": "Why did their large language model cross the road? To get to the next token!"
+    }
+  ]
+}

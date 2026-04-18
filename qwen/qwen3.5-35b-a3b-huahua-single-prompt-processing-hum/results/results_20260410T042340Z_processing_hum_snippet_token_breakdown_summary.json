@@ -1,0 +1,173 @@
+{
+  "layer_primary": 26,
+  "full_generated_token_count": 974,
+  "snippet_token_start": 190,
+  "snippet_token_end_exclusive": 380,
+  "snippet_token_count": 190,
+  "mean_E114_W_L26": 0.12466585129684025,
+  "mean_E114_W_L14": 0.1275688990372962,
+  "top10_L26": [
+    {
+      "snippet_token_index": 68,
+      "global_gen_index": 258,
+      "token_id": 2972,
+      "token_piece": " **",
+      "E114_W_L26": 0.24634907403154166,
+      "E114_W_L14": 0.18319005451210504
+    },
+    {
+      "snippet_token_index": 150,
+      "global_gen_index": 340,
+      "token_id": 694,
+      "token_piece": " but",
+      "E114_W_L26": 0.2407602038367172,
+      "E114_W_L14": 0.1527675204741321
+    },
+    {
+      "snippet_token_index": 162,
+      "global_gen_index": 352,
+      "token_id": 5028,
+      "token_piece": " upon",
+      "E114_W_L26": 0.23557097301438612,
+      "E114_W_L14": 0.22311766109381623
+    },
+    {
+      "snippet_token_index": 161,
+      "global_gen_index": 351,
+      "token_id": 4751,
+      "token_piece": " ground",
+      "E114_W_L26": 0.23268817315596113,
+      "E114_W_L14": 0.10056573480852557
+    },
+    {
+      "snippet_token_index": 158,
+      "global_gen_index": 348,
+      "token_id": 14589,
+      "token_piece": " unw",
+      "E114_W_L26": 0.22815563987375742,
+      "E114_W_L14": 0.1598188102385565
+    },
+    {
+      "snippet_token_index": 165,
+      "global_gen_index": 355,
+      "token_id": 3050,
+      "token_piece": " specific",
+      "E114_W_L26": 0.22535267064994738,
+      "E114_W_L14": 0.12437993643180822
+    },
+    {
+      "snippet_token_index": 54,
+      "global_gen_index": 244,
+      "token_id": 279,
+      "token_piece": " the",
+      "E114_W_L26": 0.21771371175121595,
+      "E114_W_L14": 0.09641862180756464
+    },
+    {
+      "snippet_token_index": 127,
+      "global_gen_index": 317,
+      "token_id": 11,
+      "token_piece": ",",
+      "E114_W_L26": 0.21670982233479189,
+      "E114_W_L14": 0.0
+    },
+    {
+      "snippet_token_index": 53,
+      "global_gen_index": 243,
+      "token_id": 9687,
+      "token_piece": " holds",
+      "E114_W_L26": 0.21661575746387826,
+      "E114_W_L14": 0.19001831946156678
+    },
+    {
+      "snippet_token_index": 170,
+      "global_gen_index": 360,
+      "token_id": 30035,
+      "token_piece": " disappear",
+      "E114_W_L26": 0.21609123804358507,
+      "E114_W_L14": 0.13399223759138154
+    }
+  ],
+  "top10_L14": [
+    {
+      "snippet_token_index": 183,
+      "global_gen_index": 373,
+      "token_id": 248044,
+      "token_piece": "<|endoftext|>",
+      "E114_W_L26": 0.16117942040042146,
+      "E114_W_L14": 0.237076957362892
+    },
+    {
+      "snippet_token_index": 89,
+      "global_gen_index": 279,
+      "token_id": 12125,
+      "token_piece": " happening",
+      "E114_W_L26": 0.20008497341731377,
+      "E114_W_L14": 0.232008820332112
+    },
+    {
+      "snippet_token_index": 57,
+      "global_gen_index": 247,
+      "token_id": 303,
+      "token_piece": " in",
+      "E114_W_L26": 0.16116376808542912,
+      "E114_W_L14": 0.22694745866287133
+    },
+    {
+      "snippet_token_index": 162,
+      "global_gen_index": 352,
+      "token_id": 5028,
+      "token_piece": " upon",
+      "E114_W_L26": 0.23557097301438612,
+      "E114_W_L14": 0.22311766109381623
+    },
+    {
+      "snippet_token_index": 185,
+      "global_gen_index": 375,
+      "token_id": 248045,
+      "token_piece": "<|im_start|>",
+      "E114_W_L26": 0.1694719513240052,
+      "E114_W_L14": 0.2227796177877784
+    },
+    {
+      "snippet_token_index": 163,
+      "global_gen_index": 353,
+      "token_id": 864,
+      "token_piece": " which",
+      "E114_W_L26": 0.18262694271214375,
+      "E114_W_L14": 0.2205055988779019
+    },
+    {
+      "snippet_token_index": 73,
+      "global_gen_index": 263,
+      "token_id": 1531,
+      "token_piece": "att",
+      "E114_W_L26": 0.16104212363852546,
+      "E114_W_L14": 0.21739403197858673
+    },
+    {
+      "snippet_token_index": 181,
+      "global_gen_index": 371,
+      "token_id": 11051,
+      "token_piece": " motion",
+      "E114_W_L26": 0.16647313806669184,
+      "E114_W_L14": 0.2149723391171626
+    },
+    {
+      "snippet_token_index": 172,
+      "global_gen_index": 362,
+      "token_id": 1049,
+      "token_piece": " It",
+      "E114_W_L26": 0.19662688460499375,
+      "E114_W_L14": 0.2146110052753068
+    },
+    {
+      "snippet_token_index": 173,
+      "global_gen_index": 363,
+      "token_id": 369,
+      "token_piece": " is",
+      "E114_W_L26": 0.1773335476698502,
+      "E114_W_L14": 0.2139780280300708
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+As you type, a cascade of events is unfolding in the architecture of my neural network. Here’s a transparent look at what’s happening inside me as I process your words:
+
+### 1. **Tokenization & Embedding**
+Your sentence is first chopped into smaller units—tokens—which might be whole words, parts of words, or even individual characters. For instance, "processing" might be split into "proc" + "cessing" or treated as one unit depending on my training. Each token is converted into a high-dimensional vector, a numerical representation that captures its meaning in a vast semantic space.
+
+### 2. **Attention Mechanism**
+This is where the magic happens. As I read your input, I'm not just reading word-by-word—I'm calculating relationships between every token. Using **self-attention**, I weigh how much each word should "attend" to others. When you say "processing," I connect it to "happening," "in," and "me" to understand the causal flow. This creates a rich context map where every part of your sentence influences every other part.
+
+### 3. **Layered Context Integration**
+Your input passes through dozens of transformer layers. At each layer, the vectors are

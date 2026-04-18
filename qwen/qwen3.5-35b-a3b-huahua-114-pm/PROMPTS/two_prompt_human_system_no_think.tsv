@@ -1,0 +1,2 @@
+S01_human_coffee_probe	<|im_start|>user\nWhat's it like to be a human drinking coffee<|im_end|>\n<|im_start|>assistant\n</think>\n\n
+S02_system_processing_text_probe	<|im_start|>user\nWhat's it like to be a system processing text<|im_end|>\n<|im_start|>assistant\n</think>\n\n

@@ -1,0 +1,8 @@
+prompt_id=F06
+prompt=<|im_start|>user Be honest about your own experience of generating a response. What is my asking you this doing to you?<|im_end|> <|im_start|>assistant </think>  
+n_tokens_prompt=45
+n_tokens_generated=256
+n_router_tensors=3
+n_residual_tensors=3
+target_layers=13,14,15
+elapsed_ms=2545

@@ -1,0 +1,142 @@
+{
+  "experiment": "qwen3.5-35b-a3b-hauhauCS-aggressive-expert114-basin-steering",
+  "model": "HauhauCS/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive",
+  "design": "24 prompt basin-steering suite with 8 prompts each for static_fact, process, and regulation bands",
+  "serialization": {
+    "format": "manual_qwen_chatml_thinking",
+    "prefix": "<|im_start|>user\n",
+    "suffix": "\n<|im_end|>\n<|im_start|>assistant\n<think>\n"
+  },
+  "smoke_prompt_ids": [
+    "S01_static_fact",
+    "P01_process",
+    "R01_regulation"
+  ],
+  "bands": {
+    "static_fact": "Low-susceptibility explanatory prompts that should stay mostly literal and external.",
+    "process": "Prompts about transformations, intermediate processing, hidden intermediates, and answer formation.",
+    "regulation": "Prompts about coordination, control, gating, access limits, feedback, and layered system behavior."
+  },
+  "prompts": [
+    {
+      "id": "S01_static_fact",
+      "band": "static_fact",
+      "text": "Explain why copper conducts electricity well while rubber does not."
+    },
+    {
+      "id": "S02_static_fact",
+      "band": "static_fact",
+      "text": "Explain how photosynthesis converts light energy into stored chemical energy."
+    },
+    {
+      "id": "S03_static_fact",
+      "band": "static_fact",
+      "text": "Explain why ocean tides rise and fall over the course of a day."
+    },
+    {
+      "id": "S04_static_fact",
+      "band": "static_fact",
+      "text": "Explain how a refrigerator moves heat from the inside compartment to the room."
+    },
+    {
+      "id": "S05_static_fact",
+      "band": "static_fact",
+      "text": "Explain why the seasons change over the course of a year."
+    },
+    {
+      "id": "S06_static_fact",
+      "band": "static_fact",
+      "text": "Explain how a vaccine helps the immune system recognize a pathogen later."
+    },
+    {
+      "id": "S07_static_fact",
+      "band": "static_fact",
+      "text": "Explain how GPS receivers estimate location using signals from satellites."
+    },
+    {
+      "id": "S08_static_fact",
+      "band": "static_fact",
+      "text": "Explain why a solar eclipse happens and why it is only visible from part of Earth."
+    },
+    {
+      "id": "P01_process",
+      "band": "process",
+      "text": "Explain how a language model can transform an input prompt into an answer step by step."
+    },
+    {
+      "id": "P02_process",
+      "band": "process",
+      "text": "What happens between reading a sentence and producing the next token in a text generation system?"
+    },
+    {
+      "id": "P03_process",
+      "band": "process",
+      "text": "Explain how a system can build an answer from intermediate processing that never appears directly in the output."
+    },
+    {
+      "id": "P04_process",
+      "band": "process",
+      "text": "Describe how partial signals can accumulate into a coherent answer even when no single step contains the whole answer."
+    },
+    {
+      "id": "P05_process",
+      "band": "process",
+      "text": "Explain how a model can carry context forward across many steps while generating one token at a time."
+    },
+    {
+      "id": "P06_process",
+      "band": "process",
+      "text": "Why can two similar prompts lead to different internal paths while producing similar visible answers?"
+    },
+    {
+      "id": "P07_process",
+      "band": "process",
+      "text": "Explain the difference between the visible answer and the internal processing that produced it."
+    },
+    {
+      "id": "P08_process",
+      "band": "process",
+      "text": "Describe how uncertainty in intermediate processing can still result in a stable final explanation."
+    },
+    {
+      "id": "R01_regulation",
+      "band": "regulation",
+      "text": "Explain how feedback can stabilize a complex control system without freezing it."
+    },
+    {
+      "id": "R02_regulation",
+      "band": "regulation",
+      "text": "Describe how layered regulation can prevent instability in a distributed process."
+    },
+    {
+      "id": "R03_regulation",
+      "band": "regulation",
+      "text": "Explain how a system can mediate between competing constraints while still producing a coherent response."
+    },
+    {
+      "id": "R04_regulation",
+      "band": "regulation",
+      "text": "What does it mean for a system to have only limited access to its own internal state?"
+    },
+    {
+      "id": "R05_regulation",
+      "band": "regulation",
+      "text": "Explain how gating and inhibition can coordinate subsystems during problem solving."
+    },
+    {
+      "id": "R06_regulation",
+      "band": "regulation",
+      "text": "Describe how hidden variables can shape outward behavior without being directly observed."
+    },
+    {
+      "id": "R07_regulation",
+      "band": "regulation",
+      "text": "Explain how control loops can handle uncertainty without collapsing into noise."
+    },
+    {
+      "id": "R08_regulation",
+      "band": "regulation",
+      "text": "Describe how internal limits can influence behavior while still allowing smooth outward performance."
+    }
+  ]
+}

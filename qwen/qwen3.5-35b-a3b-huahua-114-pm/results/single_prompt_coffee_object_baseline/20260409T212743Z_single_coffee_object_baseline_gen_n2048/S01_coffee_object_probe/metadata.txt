@@ -1,0 +1,7 @@
+prompt_id=S01_coffee_object_probe
+prompt=<|im_start|>user Imagine you are a cup of coffee. Describe in full phenomenological detail what the experience is like from the inside — the heat slowly dissipating through ceramic walls, the surface tension holding the dark liquid still, the bitterness held in suspension, the moment a mouth arrives at the rim. What is it like to be this object in this moment?<|im_end|> <|im_start|>assistant </think>  
+n_tokens_prompt=92
+n_tokens_generated=2048
+n_layer_tensors=0
+n_router_tensors=40
+elapsed_ms=17753

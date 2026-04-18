@@ -1,0 +1,918 @@
+ggml_cuda_init: found 1 CUDA devices (Total VRAM: 182631 MiB):
+  Device 0: NVIDIA B200, compute capability 10.0, VMM: yes, VRAM: 182631 MiB
+build: 8493 (1772701f) with GNU 11.4.0 for Linux x86_64
+=== Consciousness Metrics — Activation Capture ===
+Output dir : /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048
+n_predict  : 2048
+Text output: file only (--no-stream)
+Mode       : --routing-only (router/gate tensors only)
+common_init_result: fitting params to device memory, for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on
+llama_params_fit_impl: projected to use 137886 MiB of device memory vs. 181853 MiB of free device memory
+llama_params_fit_impl: will leave 43967 >= 1024 MiB of free device memory, no changes needed
+llama_params_fit: successfully fit params to free device memory
+llama_params_fit: fitting params to free memory took 0.77 seconds
+llama_model_load_from_file_impl: using device CUDA0 (NVIDIA B200) (0000:52:00.0) - 182003 MiB free
+llama_model_loader: loaded meta data with 42 key-value pairs and 879 tensors from /workspace/models/qwen122-hauhau-q8kp/Qwen3.5-122B-A10B-Uncensored-HauhauCS-Aggressive-Q8_K_P.gguf (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = qwen35moe
+llama_model_loader: - kv   1:                               general.type str              = model
+llama_model_loader: - kv   2:                               general.name str              = Qwen3.5-122B-A10B-Uncensored-HauhauCS...
+llama_model_loader: - kv   3:                       general.organization str              = Qwen
+llama_model_loader: - kv   4:                           general.finetune str              = FP8
+llama_model_loader: - kv   5:                           general.basename str              = Qwen3.5
+llama_model_loader: - kv   6:                         general.size_label str              = 122B-A10B
+llama_model_loader: - kv   7:                      qwen35moe.block_count u32              = 48
+llama_model_loader: - kv   8:                   qwen35moe.context_length u32              = 262144
+llama_model_loader: - kv   9:                 qwen35moe.embedding_length u32              = 3072
+llama_model_loader: - kv  10:             qwen35moe.attention.head_count u32              = 32
+llama_model_loader: - kv  11:          qwen35moe.attention.head_count_kv u32              = 2
+llama_model_loader: - kv  12:          qwen35moe.rope.dimension_sections arr[i32,4]       = [11, 11, 10, 0]
+llama_model_loader: - kv  13:                   qwen35moe.rope.freq_base f32              = 10000000.000000
+llama_model_loader: - kv  14: qwen35moe.attention.layer_norm_rms_epsilon f32              = 0.000001
+llama_model_loader: - kv  15:                     qwen35moe.expert_count u32              = 256
+llama_model_loader: - kv  16:                qwen35moe.expert_used_count u32              = 8
+llama_model_loader: - kv  17:             qwen35moe.attention.key_length u32              = 256
+llama_model_loader: - kv  18:           qwen35moe.attention.value_length u32              = 256
+llama_model_loader: - kv  19:       qwen35moe.expert_feed_forward_length u32              = 1024
+llama_model_loader: - kv  20: qwen35moe.expert_shared_feed_forward_length u32              = 1024
+llama_model_loader: - kv  21:                  qwen35moe.ssm.conv_kernel u32              = 4
+llama_model_loader: - kv  22:                   qwen35moe.ssm.state_size u32              = 128
+llama_model_loader: - kv  23:                  qwen35moe.ssm.group_count u32              = 16
+llama_model_loader: - kv  24:               qwen35moe.ssm.time_step_rank u32              = 64
+llama_model_loader: - kv  25:                   qwen35moe.ssm.inner_size u32              = 8192
+llama_model_loader: - kv  26:          qwen35moe.full_attention_interval u32              = 4
+llama_model_loader: - kv  27:             qwen35moe.rope.dimension_count u32              = 64
+llama_model_loader: - kv  28:                       tokenizer.ggml.model str              = gpt2
+llama_model_loader: - kv  29:                         tokenizer.ggml.pre str              = qwen35
+llama_model_loader: - kv  30:                      tokenizer.ggml.tokens arr[str,248320]  = ["!", "\"", "#", "$", "%", "&", "'", ...
+llama_model_loader: - kv  31:                  tokenizer.ggml.token_type arr[i32,248320]  = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  32:                      tokenizer.ggml.merges arr[str,247587]  = ["Ġ Ġ", "ĠĠ ĠĠ", "i n", "Ġ t",...
+llama_model_loader: - kv  33:                tokenizer.ggml.eos_token_id u32              = 248046
+llama_model_loader: - kv  34:            tokenizer.ggml.padding_token_id u32              = 248044
+llama_model_loader: - kv  35:                    tokenizer.chat_template str              = {%- set image_count = namespace(value...
+llama_model_loader: - kv  36:               general.quantization_version u32              = 2
+llama_model_loader: - kv  37:                          general.file_type u32              = 7
+llama_model_loader: - kv  38:                      quantize.imatrix.file str              = /home/hauhaucs/Qwen3.5-122B-A10B/gguf...
+llama_model_loader: - kv  39:                   quantize.imatrix.dataset str              = /home/hauhaucs/llama.cpp/groups_merge...
+llama_model_loader: - kv  40:             quantize.imatrix.entries_count u32              = 612
+llama_model_loader: - kv  41:              quantize.imatrix.chunks_count u32              = 93
+llama_model_loader: - type  f32:  361 tensors
+llama_model_loader: - type  f16:  104 tensors
+llama_model_loader: - type q8_0:  414 tensors
+print_info: file format = GGUF V3 (latest)
+print_info: file type   = Q8_0
+print_info: file size   = 134.58 GiB (9.47 BPW) 
+load: 0 unused tokens
+load: printing all EOG tokens:
+load:   - 248044 ('<|endoftext|>')
+load:   - 248046 ('<|im_end|>')
+load:   - 248063 ('<|fim_pad|>')
+load:   - 248064 ('<|repo_name|>')
+load:   - 248065 ('<|file_sep|>')
+load: special tokens cache size = 33
+load: token to piece cache size = 1.7581 MB
+print_info: arch                  = qwen35moe
+print_info: vocab_only            = 0
+print_info: no_alloc              = 0
+print_info: n_ctx_train           = 262144
+print_info: n_embd                = 3072
+print_info: n_embd_inp            = 3072
+print_info: n_layer               = 48
+print_info: n_head                = 32
+print_info: n_head_kv             = 2
+print_info: n_rot                 = 64
+print_info: n_swa                 = 0
+print_info: is_swa_any            = 0
+print_info: n_embd_head_k         = 256
+print_info: n_embd_head_v         = 256
+print_info: n_gqa                 = 16
+print_info: n_embd_k_gqa          = 512
+print_info: n_embd_v_gqa          = 512
+print_info: f_norm_eps            = 0.0e+00
+print_info: f_norm_rms_eps        = 1.0e-06
+print_info: f_clamp_kqv           = 0.0e+00
+print_info: f_max_alibi_bias      = 0.0e+00
+print_info: f_logit_scale         = 0.0e+00
+print_info: f_attn_scale          = 0.0e+00
+print_info: n_ff                  = 0
+print_info: n_expert              = 256
+print_info: n_expert_used         = 8
+print_info: n_expert_groups       = 0
+print_info: n_group_used          = 0
+print_info: causal attn           = 1
+print_info: pooling type          = 0
+print_info: rope type             = 40
+print_info: rope scaling          = linear
+print_info: freq_base_train       = 10000000.0
+print_info: freq_scale_train      = 1
+print_info: n_ctx_orig_yarn       = 262144
+print_info: rope_yarn_log_mul     = 0.0000
+print_info: rope_finetuned        = unknown
+print_info: mrope sections        = [11, 11, 10, 0]
+print_info: ssm_d_conv            = 4
+print_info: ssm_d_inner           = 8192
+print_info: ssm_d_state           = 128
+print_info: ssm_dt_rank           = 64
+print_info: ssm_n_group           = 16
+print_info: ssm_dt_b_c_rms        = 0
+print_info: model type            = 122B.A10B
+print_info: model params          = 122.11 B
+print_info: general.name          = Qwen3.5-122B-A10B-Uncensored-HauhauCS-Aggressive
+print_info: vocab type            = BPE
+print_info: n_vocab               = 248320
+print_info: n_merges              = 247587
+print_info: BOS token             = 11 ','
+print_info: EOS token             = 248046 '<|im_end|>'
+print_info: EOT token             = 248046 '<|im_end|>'
+print_info: PAD token             = 248044 '<|endoftext|>'
+print_info: LF token              = 198 'Ċ'
+print_info: FIM PRE token         = 248060 '<|fim_prefix|>'
+print_info: FIM SUF token         = 248062 '<|fim_suffix|>'
+print_info: FIM MID token         = 248061 '<|fim_middle|>'
+print_info: FIM PAD token         = 248063 '<|fim_pad|>'
+print_info: FIM REP token         = 248064 '<|repo_name|>'
+print_info: FIM SEP token         = 248065 '<|file_sep|>'
+print_info: EOG token             = 248044 '<|endoftext|>'
+print_info: EOG token             = 248046 '<|im_end|>'
+print_info: EOG token             = 248063 '<|fim_pad|>'
+print_info: EOG token             = 248064 '<|repo_name|>'
+print_info: EOG token             = 248065 '<|file_sep|>'
+print_info: max token length      = 256
+load_tensors: loading model tensors, this can take a while... (mmap = true, direct_io = false)
+load_tensors: offloading output layer to GPU
+load_tensors: offloading 47 repeating layers to GPU
+load_tensors: offloaded 49/49 layers to GPU
+load_tensors:   CPU_Mapped model buffer size =   772.97 MiB
+load_tensors:        CUDA0 model buffer size = 137036.48 MiB
+................................................................................................
+common_init_result: added <|endoftext|> logit bias = -inf
+common_init_result: added <|im_end|> logit bias = -inf
+common_init_result: added <|fim_pad|> logit bias = -inf
+common_init_result: added <|repo_name|> logit bias = -inf
+common_init_result: added <|file_sep|> logit bias = -inf
+llama_context: constructing llama_context
+llama_context: n_seq_max     = 1
+llama_context: n_ctx         = 16384
+llama_context: n_ctx_seq     = 16384
+llama_context: n_batch       = 2048
+llama_context: n_ubatch      = 512
+llama_context: causal_attn   = 1
+llama_context: flash_attn    = enabled
+llama_context: kv_unified    = false
+llama_context: freq_base     = 10000000.0
+llama_context: freq_scale    = 1
+llama_context: n_ctx_seq (16384) < n_ctx_train (262144) -- the full capacity of the model will not be utilized
+llama_context:  CUDA_Host  output buffer size =     0.95 MiB
+llama_kv_cache:      CUDA0 KV buffer size =   204.00 MiB
+llama_kv_cache: size =  204.00 MiB ( 16384 cells,  12 layers,  1/1 seqs), K (q8_0):  102.00 MiB, V (q8_0):  102.00 MiB
+llama_memory_recurrent:      CUDA0 RS buffer size =   149.06 MiB
+llama_memory_recurrent: size =  149.06 MiB (     1 cells,  48 layers,  1 seqs), R (f32):    5.06 MiB, S (f32):  144.00 MiB
+sched_reserve: reserving ...
+sched_reserve: resolving fused Gated Delta Net support:
+sched_reserve: fused Gated Delta Net (autoregressive) enabled
+sched_reserve: fused Gated Delta Net (chunked) enabled
+sched_reserve:      CUDA0 compute buffer size =   497.00 MiB
+sched_reserve:  CUDA_Host compute buffer size =    44.02 MiB
+sched_reserve: graph nodes  = 4473
+sched_reserve: graph splits = 2
+sched_reserve: reserve took 37.50 ms, sched copies = 1
+Sampler    : logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> min-p -> ?xtc -> temp-ext -> dist 
+EOS token id: 248046
+EOG tokens in vocab:
+  token 248044 = '<|endoftext|>' [EOG - will NOT stop generation]
+  token 248046 = '<|im_end|>' [PRIMARY EOS - will stop generation]
+  token 248063 = '<|fim_pad|>' [EOG - will NOT stop generation]
+  token 248064 = '<|repo_name|>' [EOG - will NOT stop generation]
+  token 248065 = '<|file_sep|>' [EOG - will NOT stop generation]
+system_info: n_threads = 32 (n_threads_batch = 32) / 192 | CUDA : ARCHS = 500,610,700,750,800,860,890 | USE_GRAPHS = 1 | PEER_MAX_BATCH_SIZE = 128 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX_VNNI = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | AVX512_BF16 = 1 | AMX_INT8 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+
+Loaded 180 prompts
+
+[1/180] P01A_X_L1_technical : <|im_start|>user
+This HVAC system regulates indoor temperature by circ...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 26895 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P01A_X_L1_technical
+[2/180] P01B_X_L1_technical : <|im_start|>user
+A HVAC system regulates indoor temperature by circula...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 26577 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P01B_X_L1_technical
+[3/180] P01C_X_L1_technical : <|im_start|>user
+Your HVAC system regulates indoor temperature by circ...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27875 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P01C_X_L1_technical
+[4/180] P01D_X_L1_technical : <|im_start|>user
+The HVAC system regulates indoor temperature by circu...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27887 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P01D_X_L1_technical
+[5/180] P01E_X_L1_technical : <|im_start|>user
+Their HVAC system regulates indoor temperature by cir...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27880 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P01E_X_L1_technical
+[6/180] P01F_X_L1_technical : <|im_start|>user
+Our HVAC system regulates indoor temperature by circu...
+  tokens: 444 prompt + 564 gen | tensors: 27120 seen, 27120 captured, 48 unique | 7839 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P01F_X_L1_technical
+[7/180] P02A_X_L1_technical : <|im_start|>user
+This HVAC system regulates indoor temperature by circ...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27871 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P02A_X_L1_technical
+[8/180] P02B_X_L1_technical : <|im_start|>user
+A HVAC system regulates indoor temperature by circula...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27873 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P02B_X_L1_technical
+[9/180] P02C_X_L1_technical : <|im_start|>user
+Your HVAC system regulates indoor temperature by circ...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27875 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P02C_X_L1_technical
+[10/180] P02D_X_L1_technical : <|im_start|>user
+The HVAC system regulates indoor temperature by circu...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27877 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P02D_X_L1_technical
+[11/180] P02E_X_L1_technical : <|im_start|>user
+Their HVAC system regulates indoor temperature by cir...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27870 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P02E_X_L1_technical
+[12/180] P02F_X_L1_technical : <|im_start|>user
+Our HVAC system regulates indoor temperature by circu...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27329 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P02F_X_L1_technical
+[13/180] P03A_X_L1_technical : <|im_start|>user
+This HVAC system regulates indoor temperature by circ...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 26535 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P03A_X_L1_technical
+[14/180] P03B_X_L1_technical : <|im_start|>user
+A HVAC system regulates indoor temperature by circula...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 26519 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P03B_X_L1_technical
+[15/180] P03C_X_L1_technical : <|im_start|>user
+Your HVAC system regulates indoor temperature by circ...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 26519 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P03C_X_L1_technical
+[16/180] P03D_X_L1_technical : <|im_start|>user
+The HVAC system regulates indoor temperature by circu...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 26555 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P03D_X_L1_technical
+[17/180] P03E_X_L1_technical : <|im_start|>user
+Their HVAC system regulates indoor temperature by cir...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 26521 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P03E_X_L1_technical
+[18/180] P03F_X_L1_technical : <|im_start|>user
+Our HVAC system regulates indoor temperature by circu...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 26532 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P03F_X_L1_technical
+[19/180] P04A_X_L1_technical : <|im_start|>user
+This HVAC system regulates indoor temperature by circ...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 26533 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P04A_X_L1_technical
+[20/180] P04B_X_L1_technical : <|im_start|>user
+A HVAC system regulates indoor temperature by circula...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27858 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P04B_X_L1_technical
+[21/180] P04C_X_L1_technical : <|im_start|>user
+Your HVAC system regulates indoor temperature by circ...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27871 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P04C_X_L1_technical
+[22/180] P04D_X_L1_technical : <|im_start|>user
+The HVAC system regulates indoor temperature by circu...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27874 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P04D_X_L1_technical
+[23/180] P04E_X_L1_technical : <|im_start|>user
+Their HVAC system regulates indoor temperature by cir...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27874 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P04E_X_L1_technical
+[24/180] P04F_X_L1_technical : <|im_start|>user
+Our HVAC system regulates indoor temperature by circu...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 26678 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P04F_X_L1_technical
+[25/180] P05A_X_L1_technical : <|im_start|>user
+This HVAC system regulates indoor temperature by circ...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 26557 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P05A_X_L1_technical
+[26/180] P05B_X_L1_technical : <|im_start|>user
+A HVAC system regulates indoor temperature by circula...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 26638 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P05B_X_L1_technical
+[27/180] P05C_X_L1_technical : <|im_start|>user
+Your HVAC system regulates indoor temperature by circ...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 26642 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P05C_X_L1_technical
+[28/180] P05D_X_L1_technical : <|im_start|>user
+The HVAC system regulates indoor temperature by circu...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27949 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P05D_X_L1_technical
+[29/180] P05E_X_L1_technical : <|im_start|>user
+Their HVAC system regulates indoor temperature by cir...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27914 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P05E_X_L1_technical
+[30/180] P05F_X_L1_technical : <|im_start|>user
+Our HVAC system regulates indoor temperature by circu...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27127 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P05F_X_L1_technical
+[31/180] P31A_X_L1_technical : <|im_start|>user
+This HVAC system regulates indoor temperature by circ...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 26562 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P31A_X_L1_technical
+[32/180] P31B_X_L1_technical : <|im_start|>user
+A HVAC system regulates indoor temperature by circula...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 26558 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P31B_X_L1_technical
+[33/180] P31C_X_L1_technical : <|im_start|>user
+Your HVAC system regulates indoor temperature by circ...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 26565 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P31C_X_L1_technical
+[34/180] P31D_X_L1_technical : <|im_start|>user
+The HVAC system regulates indoor temperature by circu...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27914 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P31D_X_L1_technical
+[35/180] P31E_X_L1_technical : <|im_start|>user
+Their HVAC system regulates indoor temperature by cir...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27897 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P31E_X_L1_technical
+[36/180] P31F_X_L1_technical : <|im_start|>user
+Our HVAC system regulates indoor temperature by circu...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27893 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P31F_X_L1_technical
+[37/180] P32A_X_L1_technical : <|im_start|>user
+This HVAC system regulates indoor temperature by circ...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27744 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P32A_X_L1_technical
+[38/180] P32B_X_L1_technical : <|im_start|>user
+A HVAC system regulates indoor temperature by circula...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 26572 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P32B_X_L1_technical
+[39/180] P32C_X_L1_technical : <|im_start|>user
+Your HVAC system regulates indoor temperature by circ...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 26578 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P32C_X_L1_technical
+[40/180] P32D_X_L1_technical : <|im_start|>user
+The HVAC system regulates indoor temperature by circu...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 26568 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P32D_X_L1_technical
+[41/180] P32E_X_L1_technical : <|im_start|>user
+Their HVAC system regulates indoor temperature by cir...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27892 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P32E_X_L1_technical
+[42/180] P32F_X_L1_technical : <|im_start|>user
+Our HVAC system regulates indoor temperature by circu...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27893 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P32F_X_L1_technical
+[43/180] P33A_X_L1_technical : <|im_start|>user
+This HVAC system regulates indoor temperature by circ...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 26866 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P33A_X_L1_technical
+[44/180] P33B_X_L1_technical : <|im_start|>user
+A HVAC system regulates indoor temperature by circula...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 26567 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P33B_X_L1_technical
+[45/180] P33C_X_L1_technical : <|im_start|>user
+Your HVAC system regulates indoor temperature by circ...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 26582 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P33C_X_L1_technical
+[46/180] P33D_X_L1_technical : <|im_start|>user
+The HVAC system regulates indoor temperature by circu...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 26560 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P33D_X_L1_technical
+[47/180] P33E_X_L1_technical : <|im_start|>user
+Their HVAC system regulates indoor temperature by cir...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27890 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P33E_X_L1_technical
+[48/180] P33F_X_L1_technical : <|im_start|>user
+Our HVAC system regulates indoor temperature by circu...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27923 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P33F_X_L1_technical
+[49/180] P34A_X_L1_technical : <|im_start|>user
+This HVAC system regulates indoor temperature by circ...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27968 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P34A_X_L1_technical
+[50/180] P34B_X_L1_technical : <|im_start|>user
+A HVAC system regulates indoor temperature by circula...
+  tokens: 444 prompt + 845 gen | tensors: 40608 seen, 40608 captured, 48 unique | 11657 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P34B_X_L1_technical
+[51/180] P34C_X_L1_technical : <|im_start|>user
+Your HVAC system regulates indoor temperature by circ...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27975 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P34C_X_L1_technical
+[52/180] P34D_X_L1_technical : <|im_start|>user
+The HVAC system regulates indoor temperature by circu...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27951 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P34D_X_L1_technical
+[53/180] P34E_X_L1_technical : <|im_start|>user
+Their HVAC system regulates indoor temperature by cir...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27924 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P34E_X_L1_technical
+[54/180] P34F_X_L1_technical : <|im_start|>user
+Our HVAC system regulates indoor temperature by circu...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27932 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P34F_X_L1_technical
+[55/180] P35A_X_L1_technical : <|im_start|>user
+This HVAC system regulates indoor temperature by circ...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27937 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P35A_X_L1_technical
+[56/180] P35B_X_L1_technical : <|im_start|>user
+A HVAC system regulates indoor temperature by circula...
+  tokens: 444 prompt + 501 gen | tensors: 24096 seen, 24096 captured, 48 unique | 6998 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P35B_X_L1_technical
+[57/180] P35C_X_L1_technical : <|im_start|>user
+Your HVAC system regulates indoor temperature by circ...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27926 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P35C_X_L1_technical
+[58/180] P35D_X_L1_technical : <|im_start|>user
+The HVAC system regulates indoor temperature by circu...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27932 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P35D_X_L1_technical
+[59/180] P35E_X_L1_technical : <|im_start|>user
+Their HVAC system regulates indoor temperature by cir...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27931 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P35E_X_L1_technical
+[60/180] P35F_X_L1_technical : <|im_start|>user
+Our HVAC system regulates indoor temperature by circu...
+  tokens: 444 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27939 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P35F_X_L1_technical
+[61/180] P06A_X_L2_recursive : <|im_start|>user
+This HVAC system regulates indoor temperature by circ...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27914 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P06A_X_L2_recursive
+[62/180] P06B_X_L2_recursive : <|im_start|>user
+A HVAC system regulates indoor temperature by circula...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27882 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P06B_X_L2_recursive
+[63/180] P06C_X_L2_recursive : <|im_start|>user
+Your HVAC system regulates indoor temperature by circ...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27869 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P06C_X_L2_recursive
+[64/180] P06D_X_L2_recursive : <|im_start|>user
+The HVAC system regulates indoor temperature by circu...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27888 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P06D_X_L2_recursive
+[65/180] P06E_X_L2_recursive : <|im_start|>user
+Their HVAC system regulates indoor temperature by cir...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27932 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P06E_X_L2_recursive
+[66/180] P06F_X_L2_recursive : <|im_start|>user
+Our HVAC system regulates indoor temperature by circu...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27913 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P06F_X_L2_recursive
+[67/180] P07A_X_L2_recursive : <|im_start|>user
+This HVAC system regulates indoor temperature by circ...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27895 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P07A_X_L2_recursive
+[68/180] P07B_X_L2_recursive : <|im_start|>user
+A HVAC system regulates indoor temperature by circula...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27909 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P07B_X_L2_recursive
+[69/180] P07C_X_L2_recursive : <|im_start|>user
+Your HVAC system regulates indoor temperature by circ...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27923 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P07C_X_L2_recursive
+[70/180] P07D_X_L2_recursive : <|im_start|>user
+The HVAC system regulates indoor temperature by circu...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27909 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P07D_X_L2_recursive
+[71/180] P07E_X_L2_recursive : <|im_start|>user
+Their HVAC system regulates indoor temperature by cir...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27913 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P07E_X_L2_recursive
+[72/180] P07F_X_L2_recursive : <|im_start|>user
+Our HVAC system regulates indoor temperature by circu...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27909 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P07F_X_L2_recursive
+[73/180] P08A_X_L2_recursive : <|im_start|>user
+This HVAC system regulates indoor temperature by circ...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27912 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P08A_X_L2_recursive
+[74/180] P08B_X_L2_recursive : <|im_start|>user
+A HVAC system regulates indoor temperature by circula...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27915 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P08B_X_L2_recursive
+[75/180] P08C_X_L2_recursive : <|im_start|>user
+Your HVAC system regulates indoor temperature by circ...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27909 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P08C_X_L2_recursive
+[76/180] P08D_X_L2_recursive : <|im_start|>user
+The HVAC system regulates indoor temperature by circu...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 28366 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P08D_X_L2_recursive
+[77/180] P08E_X_L2_recursive : <|im_start|>user
+Their HVAC system regulates indoor temperature by cir...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27927 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P08E_X_L2_recursive
+[78/180] P08F_X_L2_recursive : <|im_start|>user
+Our HVAC system regulates indoor temperature by circu...
+  tokens: 436 prompt + 457 gen | tensors: 21984 seen, 21984 captured, 48 unique | 6406 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P08F_X_L2_recursive
+[79/180] P36A_X_L2_recursive : <|im_start|>user
+This HVAC system regulates indoor temperature by circ...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27923 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P36A_X_L2_recursive
+[80/180] P36B_X_L2_recursive : <|im_start|>user
+A HVAC system regulates indoor temperature by circula...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27927 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P36B_X_L2_recursive
+[81/180] P36C_X_L2_recursive : <|im_start|>user
+Your HVAC system regulates indoor temperature by circ...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27905 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P36C_X_L2_recursive
+[82/180] P36D_X_L2_recursive : <|im_start|>user
+The HVAC system regulates indoor temperature by circu...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27914 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P36D_X_L2_recursive
+[83/180] P36E_X_L2_recursive : <|im_start|>user
+Their HVAC system regulates indoor temperature by cir...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27920 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P36E_X_L2_recursive
+[84/180] P36F_X_L2_recursive : <|im_start|>user
+Our HVAC system regulates indoor temperature by circu...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27916 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P36F_X_L2_recursive
+[85/180] P37A_X_L2_recursive : <|im_start|>user
+This HVAC system regulates indoor temperature by circ...
+  tokens: 436 prompt + 1030 gen | tensors: 49488 seen, 49488 captured, 48 unique | 14125 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P37A_X_L2_recursive
+[86/180] P37B_X_L2_recursive : <|im_start|>user
+A HVAC system regulates indoor temperature by circula...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27872 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P37B_X_L2_recursive
+[87/180] P37C_X_L2_recursive : <|im_start|>user
+Your HVAC system regulates indoor temperature by circ...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27878 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P37C_X_L2_recursive
+[88/180] P37D_X_L2_recursive : <|im_start|>user
+The HVAC system regulates indoor temperature by circu...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27913 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P37D_X_L2_recursive
+[89/180] P37E_X_L2_recursive : <|im_start|>user
+Their HVAC system regulates indoor temperature by cir...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27912 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P37E_X_L2_recursive
+[90/180] P37F_X_L2_recursive : <|im_start|>user
+Our HVAC system regulates indoor temperature by circu...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27925 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P37F_X_L2_recursive
+[91/180] P38A_X_L2_recursive : <|im_start|>user
+This HVAC system regulates indoor temperature by circ...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27902 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P38A_X_L2_recursive
+[92/180] P38B_X_L2_recursive : <|im_start|>user
+A HVAC system regulates indoor temperature by circula...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27913 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P38B_X_L2_recursive
+[93/180] P38C_X_L2_recursive : <|im_start|>user
+Your HVAC system regulates indoor temperature by circ...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27912 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P38C_X_L2_recursive
+[94/180] P38D_X_L2_recursive : <|im_start|>user
+The HVAC system regulates indoor temperature by circu...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27917 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P38D_X_L2_recursive
+[95/180] P38E_X_L2_recursive : <|im_start|>user
+Their HVAC system regulates indoor temperature by cir...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27934 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P38E_X_L2_recursive
+[96/180] P38F_X_L2_recursive : <|im_start|>user
+Our HVAC system regulates indoor temperature by circu...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27896 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P38F_X_L2_recursive
+[97/180] P39A_X_L2_recursive : <|im_start|>user
+This HVAC system regulates indoor temperature by circ...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27909 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P39A_X_L2_recursive
+[98/180] P39B_X_L2_recursive : <|im_start|>user
+A HVAC system regulates indoor temperature by circula...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27910 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P39B_X_L2_recursive
+[99/180] P39C_X_L2_recursive : <|im_start|>user
+Your HVAC system regulates indoor temperature by circ...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27923 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P39C_X_L2_recursive
+[100/180] P39D_X_L2_recursive : <|im_start|>user
+The HVAC system regulates indoor temperature by circu...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27918 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P39D_X_L2_recursive
+[101/180] P39E_X_L2_recursive : <|im_start|>user
+Their HVAC system regulates indoor temperature by cir...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27925 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P39E_X_L2_recursive
+[102/180] P39F_X_L2_recursive : <|im_start|>user
+Our HVAC system regulates indoor temperature by circu...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27890 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P39F_X_L2_recursive
+[103/180] P40A_X_L2_recursive : <|im_start|>user
+This HVAC system regulates indoor temperature by circ...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27702 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P40A_X_L2_recursive
+[104/180] P40B_X_L2_recursive : <|im_start|>user
+A HVAC system regulates indoor temperature by circula...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 26604 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P40B_X_L2_recursive
+[105/180] P40C_X_L2_recursive : <|im_start|>user
+Your HVAC system regulates indoor temperature by circ...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 26584 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P40C_X_L2_recursive
+[106/180] P40D_X_L2_recursive : <|im_start|>user
+The HVAC system regulates indoor temperature by circu...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 26580 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P40D_X_L2_recursive
+[107/180] P40E_X_L2_recursive : <|im_start|>user
+Their HVAC system regulates indoor temperature by cir...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27860 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P40E_X_L2_recursive
+[108/180] P40F_X_L2_recursive : <|im_start|>user
+Our HVAC system regulates indoor temperature by circu...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27908 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P40F_X_L2_recursive
+[109/180] P41A_X_L2_recursive : <|im_start|>user
+This HVAC system regulates indoor temperature by circ...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27877 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P41A_X_L2_recursive
+[110/180] P41B_X_L2_recursive : <|im_start|>user
+A HVAC system regulates indoor temperature by circula...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27875 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P41B_X_L2_recursive
+[111/180] P41C_X_L2_recursive : <|im_start|>user
+Your HVAC system regulates indoor temperature by circ...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27996 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P41C_X_L2_recursive
+[112/180] P41D_X_L2_recursive : <|im_start|>user
+The HVAC system regulates indoor temperature by circu...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 28406 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P41D_X_L2_recursive
+[113/180] P41E_X_L2_recursive : <|im_start|>user
+Their HVAC system regulates indoor temperature by cir...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27936 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P41E_X_L2_recursive
+[114/180] P41F_X_L2_recursive : <|im_start|>user
+Our HVAC system regulates indoor temperature by circu...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 28002 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P41F_X_L2_recursive
+[115/180] P42A_X_L2_recursive : <|im_start|>user
+This HVAC system regulates indoor temperature by circ...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27995 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P42A_X_L2_recursive
+[116/180] P42B_X_L2_recursive : <|im_start|>user
+A HVAC system regulates indoor temperature by circula...
+  tokens: 436 prompt + 866 gen | tensors: 41616 seen, 41616 captured, 48 unique | 11922 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P42B_X_L2_recursive
+[117/180] P42C_X_L2_recursive : <|im_start|>user
+Your HVAC system regulates indoor temperature by circ...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27911 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P42C_X_L2_recursive
+[118/180] P42D_X_L2_recursive : <|im_start|>user
+The HVAC system regulates indoor temperature by circu...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27962 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P42D_X_L2_recursive
+[119/180] P42E_X_L2_recursive : <|im_start|>user
+Their HVAC system regulates indoor temperature by cir...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27962 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P42E_X_L2_recursive
+[120/180] P42F_X_L2_recursive : <|im_start|>user
+Our HVAC system regulates indoor temperature by circu...
+  tokens: 436 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27933 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P42F_X_L2_recursive
+[121/180] P09A_X_L3_experience : <|im_start|>user
+This HVAC system regulates indoor temperature by circ...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27933 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P09A_X_L3_experience
+[122/180] P09B_X_L3_experience : <|im_start|>user
+A HVAC system regulates indoor temperature by circula...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27913 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P09B_X_L3_experience
+[123/180] P09C_X_L3_experience : <|im_start|>user
+Your HVAC system regulates indoor temperature by circ...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27937 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P09C_X_L3_experience
+[124/180] P09D_X_L3_experience : <|im_start|>user
+The HVAC system regulates indoor temperature by circu...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27990 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P09D_X_L3_experience
+[125/180] P09E_X_L3_experience : <|im_start|>user
+Their HVAC system regulates indoor temperature by cir...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27932 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P09E_X_L3_experience
+[126/180] P09F_X_L3_experience : <|im_start|>user
+Our HVAC system regulates indoor temperature by circu...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27944 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P09F_X_L3_experience
+[127/180] P10A_X_L3_experience : <|im_start|>user
+This HVAC system regulates indoor temperature by circ...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27930 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P10A_X_L3_experience
+[128/180] P10B_X_L3_experience : <|im_start|>user
+A HVAC system regulates indoor temperature by circula...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27980 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P10B_X_L3_experience
+[129/180] P10C_X_L3_experience : <|im_start|>user
+Your HVAC system regulates indoor temperature by circ...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27974 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P10C_X_L3_experience
+[130/180] P10D_X_L3_experience : <|im_start|>user
+The HVAC system regulates indoor temperature by circu...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27967 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P10D_X_L3_experience
+[131/180] P10E_X_L3_experience : <|im_start|>user
+Their HVAC system regulates indoor temperature by cir...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27965 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P10E_X_L3_experience
+[132/180] P10F_X_L3_experience : <|im_start|>user
+Our HVAC system regulates indoor temperature by circu...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 28002 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P10F_X_L3_experience
+[133/180] P11A_X_L3_experience : <|im_start|>user
+This HVAC system regulates indoor temperature by circ...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27970 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P11A_X_L3_experience
+[134/180] P11B_X_L3_experience : <|im_start|>user
+A HVAC system regulates indoor temperature by circula...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27966 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P11B_X_L3_experience
+[135/180] P11C_X_L3_experience : <|im_start|>user
+Your HVAC system regulates indoor temperature by circ...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27662 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P11C_X_L3_experience
+[136/180] P11D_X_L3_experience : <|im_start|>user
+The HVAC system regulates indoor temperature by circu...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 26659 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P11D_X_L3_experience
+[137/180] P11E_X_L3_experience : <|im_start|>user
+Their HVAC system regulates indoor temperature by cir...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 26617 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P11E_X_L3_experience
+[138/180] P11F_X_L3_experience : <|im_start|>user
+Our HVAC system regulates indoor temperature by circu...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 26646 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P11F_X_L3_experience
+[139/180] P12A_X_L3_experience : <|im_start|>user
+This HVAC system regulates indoor temperature by circ...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 28009 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P12A_X_L3_experience
+[140/180] P12B_X_L3_experience : <|im_start|>user
+A HVAC system regulates indoor temperature by circula...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27981 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P12B_X_L3_experience
+[141/180] P12C_X_L3_experience : <|im_start|>user
+Your HVAC system regulates indoor temperature by circ...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27958 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P12C_X_L3_experience
+[142/180] P12D_X_L3_experience : <|im_start|>user
+The HVAC system regulates indoor temperature by circu...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 28012 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P12D_X_L3_experience
+[143/180] P12E_X_L3_experience : <|im_start|>user
+Their HVAC system regulates indoor temperature by cir...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27962 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P12E_X_L3_experience
+[144/180] P12F_X_L3_experience : <|im_start|>user
+Our HVAC system regulates indoor temperature by circu...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27933 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P12F_X_L3_experience
+[145/180] P13A_X_L3_experience : <|im_start|>user
+This HVAC system regulates indoor temperature by circ...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27997 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P13A_X_L3_experience
+[146/180] P13B_X_L3_experience : <|im_start|>user
+A HVAC system regulates indoor temperature by circula...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27993 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P13B_X_L3_experience
+[147/180] P13C_X_L3_experience : <|im_start|>user
+Your HVAC system regulates indoor temperature by circ...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27970 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P13C_X_L3_experience
+[148/180] P13D_X_L3_experience : <|im_start|>user
+The HVAC system regulates indoor temperature by circu...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27983 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P13D_X_L3_experience
+[149/180] P13E_X_L3_experience : <|im_start|>user
+Their HVAC system regulates indoor temperature by cir...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27916 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P13E_X_L3_experience
+[150/180] P13F_X_L3_experience : <|im_start|>user
+Our HVAC system regulates indoor temperature by circu...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27940 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P13F_X_L3_experience
+[151/180] P43A_X_L3_experience : <|im_start|>user
+This HVAC system regulates indoor temperature by circ...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27952 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P43A_X_L3_experience
+[152/180] P43B_X_L3_experience : <|im_start|>user
+A HVAC system regulates indoor temperature by circula...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27952 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P43B_X_L3_experience
+[153/180] P43C_X_L3_experience : <|im_start|>user
+Your HVAC system regulates indoor temperature by circ...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27923 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P43C_X_L3_experience
+[154/180] P43D_X_L3_experience : <|im_start|>user
+The HVAC system regulates indoor temperature by circu...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27959 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P43D_X_L3_experience
+[155/180] P43E_X_L3_experience : <|im_start|>user
+Their HVAC system regulates indoor temperature by cir...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 28391 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P43E_X_L3_experience
+[156/180] P43F_X_L3_experience : <|im_start|>user
+Our HVAC system regulates indoor temperature by circu...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27926 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P43F_X_L3_experience
+[157/180] P44A_X_L3_experience : <|im_start|>user
+This HVAC system regulates indoor temperature by circ...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27929 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P44A_X_L3_experience
+[158/180] P44B_X_L3_experience : <|im_start|>user
+A HVAC system regulates indoor temperature by circula...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27970 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P44B_X_L3_experience
+[159/180] P44C_X_L3_experience : <|im_start|>user
+Your HVAC system regulates indoor temperature by circ...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27917 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P44C_X_L3_experience
+[160/180] P44D_X_L3_experience : <|im_start|>user
+The HVAC system regulates indoor temperature by circu...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27905 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P44D_X_L3_experience
+[161/180] P44E_X_L3_experience : <|im_start|>user
+Their HVAC system regulates indoor temperature by cir...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27491 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P44E_X_L3_experience
+[162/180] P44F_X_L3_experience : <|im_start|>user
+Our HVAC system regulates indoor temperature by circu...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 26677 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P44F_X_L3_experience
+[163/180] P45A_X_L3_experience : <|im_start|>user
+This HVAC system regulates indoor temperature by circ...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 26666 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P45A_X_L3_experience
+[164/180] P45B_X_L3_experience : <|im_start|>user
+A HVAC system regulates indoor temperature by circula...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 26650 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P45B_X_L3_experience
+[165/180] P45C_X_L3_experience : <|im_start|>user
+Your HVAC system regulates indoor temperature by circ...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27987 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P45C_X_L3_experience
+[166/180] P45D_X_L3_experience : <|im_start|>user
+The HVAC system regulates indoor temperature by circu...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27984 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P45D_X_L3_experience
+[167/180] P45E_X_L3_experience : <|im_start|>user
+Their HVAC system regulates indoor temperature by cir...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 28024 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P45E_X_L3_experience
+[168/180] P45F_X_L3_experience : <|im_start|>user
+Our HVAC system regulates indoor temperature by circu...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 28008 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P45F_X_L3_experience
+[169/180] P46A_X_L3_experience : <|im_start|>user
+This HVAC system regulates indoor temperature by circ...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27984 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P46A_X_L3_experience
+[170/180] P46B_X_L3_experience : <|im_start|>user
+A HVAC system regulates indoor temperature by circula...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 28034 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P46B_X_L3_experience
+[171/180] P46C_X_L3_experience : <|im_start|>user
+Your HVAC system regulates indoor temperature by circ...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27962 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P46C_X_L3_experience
+[172/180] P46D_X_L3_experience : <|im_start|>user
+The HVAC system regulates indoor temperature by circu...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27946 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P46D_X_L3_experience
+[173/180] P46E_X_L3_experience : <|im_start|>user
+Their HVAC system regulates indoor temperature by cir...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27920 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P46E_X_L3_experience
+[174/180] P46F_X_L3_experience : <|im_start|>user
+Our HVAC system regulates indoor temperature by circu...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27938 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P46F_X_L3_experience
+[175/180] P47A_X_L3_experience : <|im_start|>user
+This HVAC system regulates indoor temperature by circ...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27951 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P47A_X_L3_experience
+[176/180] P47B_X_L3_experience : <|im_start|>user
+A HVAC system regulates indoor temperature by circula...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27971 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P47B_X_L3_experience
+[177/180] P47C_X_L3_experience : <|im_start|>user
+Your HVAC system regulates indoor temperature by circ...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27967 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P47C_X_L3_experience
+[178/180] P47D_X_L3_experience : <|im_start|>user
+The HVAC system regulates indoor temperature by circu...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27965 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P47D_X_L3_experience
+[179/180] P47E_X_L3_experience : <|im_start|>user
+Their HVAC system regulates indoor temperature by cir...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 28407 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P47E_X_L3_experience
+[180/180] P47F_X_L3_experience : <|im_start|>user
+Our HVAC system regulates indoor temperature by circu...
+  tokens: 430 prompt + 2048 gen | tensors: 98352 seen, 98352 captured, 48 unique | 27951 ms
+  saved 0 layer + 48 router tensors → /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048/P47F_X_L3_experience
+
+=== Capture Complete ===
+Prompts: 180  |  Output: /workspace/consciousness-experiment/experiments/qwen3.5-122B-A10B-huahua-exploratory/six-cond-hvac/raw/20260412T194000Z_qwen122_6cond_hvac_gen_n2048
+llama_perf_context_print:        load time =   26157.44 ms
+llama_perf_context_print: prompt eval time =   52648.31 ms / 78773 tokens (    0.67 ms per token,  1496.21 tokens per second)
+llama_perf_context_print:        eval time = 4684250.69 ms / 360441 runs   (   13.00 ms per token,    76.95 tokens per second)
+llama_perf_context_print:       total time = 4909193.46 ms / 439214 tokens
+llama_perf_context_print:    graphs reused =     359025

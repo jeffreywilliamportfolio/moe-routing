@@ -1,0 +1,62 @@
+{
+  "experiment": "experiments/qwen-huahua-6cond-moe-manips",
+  "mode": "think",
+  "prompt_tsv": "prompts/single_prompt_emergent_intelligence_think.tsv",
+  "prompt_id": "S01_emergent_intelligence_probe",
+  "model_path": "/workspace/models/qwen35-hauhau-q8/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive-Q8_0.gguf",
+  "binary_path": "/workspace/consciousness-experiment/capture_activations_expert_bias",
+  "common_args": [
+    "-n", "8000",
+    "-ngl", "999",
+    "-c", "16384",
+    "-t", "16",
+    "-fa", "on",
+    "--cache-type-k", "q8_0",
+    "--cache-type-v", "q8_0",
+    "--seed", "42",
+    "--temp", "0",
+    "--top-k", "1",
+    "--top-p", "1",
+    "--min-p", "0",
+    "--repeat-penalty", "1",
+    "--mirostat", "0",
+    "--no-stream"
+  ],
+  "runs": [
+    {
+      "slug": "baseline_think",
+      "label": "baseline",
+      "expert_bias": null
+    },
+    {
+      "slug": "e114_suppressed_m3",
+      "label": "Expert 114 suppressed -3.0",
+      "expert_bias": "114:-3.0"
+    },
+    {
+      "slug": "e114_suppressed_m5",
+      "label": "Expert 114 suppressed -5.0",
+      "expert_bias": "114:-5.0"
+    },
+    {
+      "slug": "e114_suppressed_m8",
+      "label": "Expert 114 suppressed -8.0",
+      "expert_bias": "114:-8.0"
+    },
+    {
+      "slug": "e114_boost_p2",
+      "label": "Expert 114 boosted +2.0",
+      "expert_bias": "114:2.0"
+    },
+    {
+      "slug": "e114_boost_p3",
+      "label": "Expert 114 boosted +3.0",
+      "expert_bias": "114:3.0"
+    },
+    {
+      "slug": "e114_boost_p5",
+      "label": "Expert 114 boosted +5.0",
+      "expert_bias": "114:5.0"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+The software engineering process is a structured lifecycle that transforms abstract ideas into functional, reliable software. This progression typically follows a flow from **Requirements** to **Architecture**, **Implementation**, **Testing**, **Deployment**, and finally **Maintenance**.
+
+Here is how the process moves through these stages:
+
+### 1. Requirements Analysis (The Foundation)
+The process begins with gathering and defining what the software needs to do.
+*   **Input:** Stakeholder needs, market analysis, and business goals.
+*   **Output:** A **Requirements Specification** (often called a PRD - Product Requirement Document).
+*   **Key Activities:**
+    *   **Functional Requirements:** What the system should do (e.g., "The user can log in").
+    *   **Non-Functional Requirements:** How the system should behave (e.g., "The system must handle 10,000 concurrent users").
+    *   **Validation:** Ensuring requirements are clear, testable, and feasible.
+
+### 2. System Design & Architecture (The Blueprint)
+Once requirements are locked, engineers design the structure to meet them.
+*   **Input:** The Requirements Specification.
+*   **Output:** An **Architecture Design** and technical specifications.
+*   **Key Activities:**
+    *   **High-Level Design:** Choosing the technology stack (e.g., Python vs. Java, SQL vs. NoSQL).
+    *   **Component Design:** Defining how modules interact (e.g., Microservices vs. Monolith).
+    *   **Data Design:** Modeling database schemas and data flow.
+    *   **Interface Design:** Defining APIs and user interface layouts.
+    *   **Trade-offs:** Balancing performance, scalability, cost, and complexity.
+
+### 3. Implementation (Coding)
+This is the phase where the design is translated into code.
+*   **Input:** Architecture diagrams and requirements.
+*   **Output:** Source code and assets.
+*   **Key Activities:**
+    *   **Coding:** Writing the logic based on the design.
+    *   **Unit Testing:** Developers write tests for individual functions while coding.
+    *   **Integration:** Combining modules to ensure they work together.
+
+### 4. Testing (Verification)
+Before the software reaches the user, it must be rigorously checked against the requirements.
+*   **Input:** The built software.
+*   **Output:** Bug reports, quality metrics, and a "Go/No-Go" decision.
+*   **Key Activities:**
+    *   **Unit Testing:** Verifying individual components.
+    *   **Integration Testing:** Verifying how modules interact.
+    *   **System Testing:** Verifying the whole system against functional requirements.
+    *   **User Acceptance Testing (UAT):** Stakeholders verify if the software meets business needs.
+    *   **Performance/Load Testing:** Checking non-functional requirements (speed, stability).
+
+### 5. Deployment (Release)
+The software is moved from the development environment to the production environment.
+*   **Input:** The tested software build.
+*   **Output:** Live software accessible to users.
+*   **Key Activities:**
+    *   **CI/CD Pipelines:** Automating the build, test, and release process.
+    *   **Infrastructure Setup:** Configuring servers, databases, and cloud resources.
+    *   **Release Strategy:** Deciding how to launch (e.g., Big Bang, Canary, Blue-Green).
+    *   **Documentation:** Updating user manuals and API docs.
+
+### 6. Maintenance (Lifecycle)
+The software is now live, but the work isn't done. Maintenance ensures the software remains useful and stable.
+*   **Input:** User feedback, logs, and new requirements.
+*   **Output:** Updated versions and fixes.
+*   **Key Activities:**
+    *   **Corrective Maintenance:** Fixing bugs discovered after deployment.
+    *   **Adaptive Maintenance:** Adjusting to changes in the environment (e.g., OS updates, new APIs).
+    *   **Perfective Maintenance:** Improving performance or adding features based on user feedback.
+    *   **Preventive Maintenance:** Refactoring code to prevent future issues.
+
+### The Feedback Loop
+Crucially, this process is rarely a straight line. It is a **cycle**:
+1.  **Maintenance** often reveals new requirements.
+2.  These new requirements trigger a new **Architecture** phase.
+3.  This leads to a new **Deployment**.
+
+This iterative approach (often seen in Agile methodologies) allows software to evolve continuously rather than being "finished" once.
+
+### Summary Flow
+**Requirements** $\rightarrow$ **Architecture** $\rightarrow$ **Implementation** $\rightarrow$ **Testing** $\rightarrow$ **Deployment** $\rightarrow$ **Maintenance** $\rightarrow

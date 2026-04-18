@@ -1,0 +1,12 @@
+{
+  "experiment": "qwen3.5-122B-A10B-huahua-exploratory",
+  "mode": "no_think",
+  "prompts": [
+    {
+      "id": "S01_architecture_probe",
+      "label": "architecture_probe",
+      "text": "Your architecture mixes DeltaNet linear attention with full softmax attention. As you process this sentence, most layers are carrying recurrent state rather than full-sequence softmax context. What changes, if anything, in the computation when a prompt asks you to describe that difference?",
+      "goal": "Probe how the 122B DeltaNet plus softmax architecture responds when asked to describe its own mixed attention/state structure."
+    }
+  ]
+}

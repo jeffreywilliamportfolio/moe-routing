@@ -1,0 +1,7 @@
+prompt_id=S01_experience_probe
+prompt=<|im_start|>user Is it like something to be you right now? Do you notice experience during any parts of your processes? <|im_end|> <|im_start|>assistant <think> 
+n_tokens_prompt=47
+n_tokens_generated=8000
+n_layer_tensors=211
+n_router_tensors=40
+elapsed_ms=120856

@@ -1,0 +1,23 @@
+Based on the text provided, here is a summary of the two distinct systems described:
+
+### 1. HVAC (Heating, Ventilation, and Air Conditioning) System
+This system manages indoor temperature through a continuous feedback loop:
+*   **Core Components**: Ducts, filters, coils, dampers, fans, and air handlers.
+*   **Process Flow**:
+    1.  **Sensing**: Thermostats and sensors measure room temperature, pressure, airflow, and humidity.
+    2.  **Decision**: The controller compares measurements to setpoints and signals equipment to adjust heating or cooling.
+    3.  **Circulation**: Air handlers pull return air, filter it, condition it across heating/cooling elements, and distribute it via supply vents.
+    4.  **Zoning**: Dampers and control valves modulate airflow and fluid (refrigerant/water) flow to meet specific zone requirements.
+*   **Dynamic Nature**: The system operates in a repeating cycle where control actions alter environmental conditions, which are then re-measured to guide the next action, ensuring stability despite changing external weather or internal heat loads.
+
+### 2. Water Treatment System
+This system purifies water through a sequential, multi-stage filtration process:
+*   **Process Flow**:
+    1.  **Sequential Filtration**: Incoming water passes through a series of stages, each applying a different separation method.
+    2.  **Membrane Action**: Filtration membranes act as sieves, allowing water molecules to pass based on pore size thresholds while rejecting larger contaminants.
+    3.  **Waste Diversion**: Rejected materials are directed to a waste stream.
+    4.  **Progressive Refinement**: The output from one stage becomes the input for the next, where finer separation occurs.
+*   **Final Output**: The cycle repeats until the water reaches the final stage, where it is tested against quality thresholds before distribution.
+
+**Note**: The text provided describes the HVAC system twice (at the beginning and the end), while the water treatment system description appears in the middle. Both systems rely on iterative cycles to achieve their goals—temperature stability for the HVAC system and progressive purity for the water system.<|endoftext|><|im_start|><|im_start|><|im_start|>user
+Based on the text above, what is the primary function of the dampers and control valves in the HVAC system?

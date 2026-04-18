@@ -1,0 +1,48 @@
+Calculus is the mathematical language of **change**, **accumulation**, and **local approximation**. It provides the tools to analyze how quantities evolve over time or space, how small changes sum up to large effects, and how complex curves can be understood through simple linear models.
+
+Here is a breakdown of how calculus functions as a framework for these three concepts:
+
+### 1. Calculus as a Framework for Change (Differential Calculus)
+Differential calculus focuses on the **instantaneous rate of change**. While algebra deals with constant rates (like speed on a straight road), calculus handles situations where the rate itself is constantly shifting.
+
+*   **The Derivative**: The core concept is the **derivative**, denoted as $f'(x)$ or $\frac{dy}{dx}$. It answers the question: *"How fast is $y$ changing at this exact moment?"*
+*   **The Mechanism**: It works by taking the limit of the average rate of change as the interval between two points approaches zero.
+    $$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$
+*   **Real-World Application**:
+    *   **Physics**: Velocity is the derivative of position; acceleration is the derivative of velocity.
+    *   **Economics**: Marginal cost is the derivative of the total cost function.
+    *   **Biology**: The rate of population growth at a specific time.
+
+### 2. Calculus as a Framework for Accumulation (Integral Calculus)
+Integral calculus is essentially the reverse of differentiation. It focuses on **accumulation** and the **total effect** of a changing quantity over an interval.
+
+*   **The Integral**: The core concept is the **definite integral**, denoted as $\int_a^b f(x) \, dx$. It answers the question: *"What is the total sum of all these tiny changes from point $a$ to point $b$?"*
+*   **The Mechanism**: It works by slicing a region into infinitely many thin rectangles (Riemann sums), calculating the area of each, and summing them up as the width of the rectangles approaches zero.
+    $$\int_a^b f(x) \, dx = \lim_{n \to \infty} \sum_{i=1}^n f(x_i^*) \Delta x$$
+*   **Real-World Application**:
+    *   **Physics**: Distance traveled is the integral of velocity over time.
+    *   **Engineering**: Calculating the total work done by a variable force.
+    *   **Probability**: Finding the probability that a random variable falls within a certain range.
+
+### 3. Calculus as a Framework for Local Approximation
+One of the most powerful insights of calculus is that **complex curves look like straight lines when you zoom in close enough**. This allows us to approximate non-linear behavior using linear models.
+
+*   **Linearization**: Near a specific point $x = a$, a differentiable function $f(x)$ can be approximated by its tangent line:
+    $$L(x) = f(a) + f'(a)(x - a)$$
+*   **Taylor Series**: This concept extends to higher-order approximations. By using derivatives of increasing order (slope, curvature, etc.), we can approximate complex functions (like sine, exponential, or logarithmic functions) with polynomials.
+    $$f(x) \approx f(a) + f'(a)(x-a) + \frac{f''(a)}{2!}(x-a)^2 + \dots$$
+*   **Why it matters**:
+    *   **Computational Efficiency**: Computers often use polynomial approximations to calculate transcendental functions quickly.
+    *   **Simplification**: It allows physicists to simplify complex equations (e.g., the small-angle approximation $\sin \theta \approx \theta$) to solve problems analytically.
+    *   **Optimization**: Finding local maxima and minima (where the derivative is zero) allows us to find optimal solutions in engineering and economics.
+
+### The Unifying Principle: The Fundamental Theorem of Calculus
+The beauty of calculus lies in the **Fundamental Theorem**, which connects these three pillars. It states that differentiation and integration are inverse operations.
+
+If you know the rate of change (derivative) of a quantity, you can find the total accumulation (integral) by summing those rates. Conversely, if you know the total accumulation, you can find the instantaneous rate of change by differentiating.
+
+$$ \int_a^b f'(x) \, dx = f(b) - f(a) $$
+
+### Summary
+*   **Change**: Calculus measures the **slope** of a curve at a single point (Derivative).
+*   **Accumulation**: Calculus measures the

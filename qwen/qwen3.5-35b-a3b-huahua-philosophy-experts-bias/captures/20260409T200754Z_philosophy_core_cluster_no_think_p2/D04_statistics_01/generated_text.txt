@@ -1,0 +1,71 @@
+Hypothesis testing is a formal statistical method used to evaluate the strength of evidence for a claim (hypothesis) based on data. It allows researchers to make decisions about whether a hypothesis is likely true or false, while accounting for the inherent uncertainty in sampling.
+
+Here is a breakdown of how hypothesis testing works, focusing on **Null Models**, **Test Statistics**, and **Error Rates**.
+
+### 1. The Structure of Hypothesis Testing
+
+The process generally follows these steps:
+
+1.  **Define Hypotheses**: Establish the claim to be tested.
+2.  **Set Assumptions**: Define the "Null Model" (the default assumption).
+3.  **Calculate Test Statistic**: Compute a value based on the observed data.
+4.  **Determine Probability**: Calculate the likelihood of the data given the Null Model.
+5.  **Make Decision**: Compare the probability to a threshold (significance level) to accept or reject the hypothesis.
+
+---
+
+### 2. The Null Model ($H_0$)
+
+The **Null Hypothesis** ($H_0$) is the default assumption that there is no effect, no difference, or no relationship. It serves as the baseline against which the alternative hypothesis is tested.
+
+*   **Role**: It acts as the "innocent until proven guilty" assumption. The burden of proof lies on the researcher to show that the data is unlikely under $H_0$.
+*   **Example**:
+    *   *Claim*: A new drug lowers blood pressure.
+    *   *Null Model*: The new drug has **no effect** on blood pressure (mean difference = 0).
+    *   *Alternative Hypothesis* ($H_1$): The new drug lowers blood pressure (mean difference < 0).
+
+**Key Concept**: We do not prove $H_0$ is true; we usually just find that the data is "consistent" with $H_0$ or "inconsistent" with it.
+
+---
+
+### 3. The Test Statistic
+
+The **Test Statistic** is a numerical value calculated from the sample data that summarizes the evidence against the Null Model. It measures how far the observed data deviates from what the Null Model predicts.
+
+*   **Calculation**: It is derived from the sample mean, sample size, and standard deviation.
+*   **Distribution**: Under the assumption that $H_0$ is true, the test statistic follows a known probability distribution (e.g., Normal, t-distribution, Chi-square).
+*   **Common Examples**:
+    *   **Z-score**: Used when population variance is known.
+    *   **t-statistic**: Used when population variance is unknown and estimated from the sample.
+    *   **F-statistic**: Used for comparing variances or in ANOVA.
+
+**Logic**: If the Null Model is true, the test statistic should be close to zero (or a specific center value). If the observed data is extreme, the test statistic will be large (far from the center).
+
+---
+
+### 4. The P-Value and Decision Rule
+
+Once the test statistic is calculated, we determine the **P-value**.
+
+*   **Definition**: The P-value is the probability of observing a test statistic as extreme as (or more extreme than) the one calculated, **assuming the Null Model is true**.
+*   **Decision Rule**:
+    *   If $P < \alpha$ (Significance Level): The data is considered "rare" under $H_0$. We **reject** $H_0$.
+    *   If $P \ge \alpha$: The data is not "rare" enough. We **fail to reject** $H_0$ (but do not necessarily prove it true).
+*   **Common Thresholds**: $\alpha = 0.05$ (5%) or $\alpha = 0.01$ (1%).
+
+---
+
+### 5. Error Rates
+
+Because hypothesis testing relies on probability rather than absolute certainty, two types of errors can occur. These are defined by the relationship between the decision made and the actual truth of the world.
+
+#### Type I Error (False Positive)
+*   **Definition**: Rejecting the Null Hypothesis ($H_0$) when it is actually **True**.
+*   **Probability**: This is controlled by the significance level, $\alpha$.
+*   **Example**: Concluding a drug works when it actually doesn't.
+*   **Control**: Researchers set $\alpha$ (usually 0.05) to limit the chance of this error to 5%.
+
+#### Type II Error (False Negative)
+*   **Definition**: Failing to reject the Null Hypothesis ($H_0$) when it is actually **False**.
+*   **Probability**: This is denoted by $\beta$.
+*
