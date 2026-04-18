@@ -1,0 +1,50 @@
+Syntax is the set of rules that governs how words are arranged to form meaningful phrases and sentences in a language. It acts as the "skeleton" of language, determining the relationships between words and the hierarchical structure of utterances.
+
+Here is a breakdown of how syntax works through **Phrase Structure**, **Dependency**, and **Recursion**.
+
+---
+
+### 1. Phrase Structure (Constituency)
+Phrase structure theory (often associated with Noam Chomsky's Generative Grammar) views sentences as hierarchical trees made of nested groups called **constituents**.
+
+*   **The Core Idea**: Words do not just sit in a line; they group together to form larger units. For example, in the sentence *"The quick brown fox jumps,"* the words *"The quick brown fox"* form a single unit (a Noun Phrase) that acts as the subject.
+*   **Constituents**: A constituent is a word or a group of words that functions as a single unit within a hierarchical structure.
+    *   **Noun Phrase (NP)**: e.g., "the big dog"
+    *   **Verb Phrase (VP)**: e.g., "barked loudly"
+    *   **Prepositional Phrase (PP)**: e.g., "under the table"
+*   **Tree Diagrams**: Syntax is often visualized using tree diagrams. The sentence (S) branches into an NP and a VP. The NP branches into a Determiner (Det) and a Noun (N), and so on.
+    *   *Example*: `[S [NP [Det The] [Adj quick] [N fox]] [VP [V jumps]]]`
+*   **Why it matters**: This structure explains why certain word orders feel natural and others do not. It also explains how we can replace a whole phrase with a single word (e.g., replacing "the quick brown fox" with "it").
+
+### 2. Dependency Grammar
+While phrase structure focuses on grouping words into constituents, **Dependency Grammar** focuses on the direct relationships between individual words.
+
+*   **The Core Idea**: Every word in a sentence (except the root) depends on exactly one other word. There are no "phrases" as distinct entities; instead, there is a network of links.
+*   **Head and Dependent**:
+    *   **Head**: The word that governs the relationship (e.g., the verb is usually the head of a clause).
+    *   **Dependent**: The word that modifies or completes the head (e.g., the object depends on the verb).
+*   **Structure**: Instead of a tree with brackets, dependency grammar looks like a directed graph.
+    *   *Example*: In "The cat sat," "sat" is the root. "The" depends on "cat" (determiner), and "cat" depends on "sat" (subject).
+*   **Why it matters**: Dependency grammar is often preferred in computational linguistics and Natural Language Processing (NLP) because it is more flexible for handling languages with free word order (like Latin or Russian) and is easier to parse algorithmically.
+
+### 3. Recursion
+Recursion is the "secret sauce" of human syntax. It is the ability to embed a structure inside another structure of the same type, theoretically allowing for sentences of infinite length.
+
+*   **The Mechanism**: A rule can apply to its own output.
+    *   *Phrase Structure Recursion*: A Noun Phrase (NP) can contain another Noun Phrase.
+        *   "The [NP dog] barked."
+        *   "The [NP dog [NP that chased the cat]] barked."
+        *   "The [NP dog [NP that chased the cat [NP that ate the mouse]]] barked."
+    *   *Clause Recursion*: A sentence (S) can contain another sentence (S).
+        *   "John said [that Mary left]."
+        *   "John said [that Mary said [that Bill left]]."
+*   **Why it matters**: Recursion allows humans to express complex, nested ideas without needing a new word for every new concept. It is a key feature that distinguishes human language from many animal communication systems.
+*   **Cognitive Load**: While recursion allows for infinite sentences, human working memory usually limits us to embedding 3 or 4 levels deep before the sentence becomes difficult to process.
+
+### Summary Comparison
+
+| Feature | Phrase Structure (Constituency) | Dependency Grammar |
+| :--- | :--- | :--- |
+| **Focus** | Hierarchical grouping of words into phrases. | Direct binary relationships between words. |
+| **Unit of Analysis** | Phrases (NP, VP, PP). | Words (Head vs. Dependent). |
+| **Visualization** | Bracketed trees or nested boxes

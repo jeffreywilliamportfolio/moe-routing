@@ -1,0 +1,54 @@
+Classical genetics and molecular biology offer complementary but distinct frameworks for understanding heredity. While classical genetics focuses on the **patterns and probabilities** of trait transmission, molecular biology focuses on the **physical and chemical mechanisms** underlying those patterns.
+
+Here is a comparison of how each field explains heredity:
+
+### 1. The Fundamental Unit of Heredity
+*   **Classical Genetics (The "What"):**
+    *   Operates on the concept of the **gene** as an abstract unit of inheritance.
+    *   Gregor Mendel described these units as "factors" that exist in pairs (alleles) and segregate during gamete formation.
+    *   The gene is defined by its **phenotypic effect** (e.g., "the factor for purple flowers").
+*   **Molecular Biology (The "How"):**
+    *   Defines the gene as a specific **sequence of nucleotides** (DNA) on a chromosome.
+    *   It identifies the gene as a physical molecule composed of adenine, thymine, cytosine, and guanine.
+    *   The gene is defined by its **chemical structure** and its ability to code for a specific RNA or protein.
+
+### 2. Mechanism of Transmission
+*   **Classical Genetics:**
+    *   Explains heredity through **Mendelian Laws** (Segregation and Independent Assortment).
+    *   It predicts the statistical likelihood of traits appearing in offspring based on the behavior of chromosomes during meiosis, without needing to know the internal structure of the chromosomes.
+    *   It treats the gene as a discrete entity that moves from parent to offspring intact.
+*   **Molecular Biology:**
+    *   Explains heredity through the **Central Dogma** (DNA $\to$ RNA $\to$ Protein).
+    *   It details the physical process of **DNA replication**, where the double helix unwinds and each strand serves as a template for a new complementary strand, ensuring exact copying.
+    *   It explains how mutations (changes in the nucleotide sequence) alter the genetic code, leading to changes in protein structure and function.
+
+### 3. Relationship Between Genotype and Phenotype
+*   **Classical Genetics:**
+    *   Focuses on the correlation between the **genotype** (the combination of alleles) and the **phenotype** (observable trait).
+    *   It categorizes traits as dominant, recessive, codominant, or sex-linked based on observation.
+    *   It often treats the gene as a "black box": input (parental alleles) leads to output (offspring traits) without detailing the internal machinery.
+*   **Molecular Biology:**
+    *   Explains the **biochemical pathway** connecting genotype to phenotype.
+    *   It reveals that a gene codes for a protein (enzyme, structural component, or regulator), and the function of that protein determines the trait.
+    *   It explains *why* a dominant allele might produce a functional protein while a recessive allele produces a non-functional one, or how gene regulation (epigenetics) turns genes on and off.
+
+### 4. Scope and Scale
+*   **Classical Genetics:**
+    *   **Macroscopic:** Deals with whole organisms, families, and populations.
+    *   **Statistical:** Relies on large sample sizes and probability theory to deduce inheritance patterns.
+    *   **Historical Context:** Developed in the late 19th and early 20th centuries (Mendel, Morgan) before the structure of DNA was known.
+*   **Molecular Biology:**
+    *   **Microscopic:** Deals with cells, organelles, and molecules.
+    *   **Mechanistic:** Relies on biochemical assays, sequencing, and imaging to observe processes directly.
+    *   **Modern Context:** Emerged in the mid-20th century (Watson, Crick, Franklin) following the discovery of DNA's structure.
+
+### Summary Comparison Table
+
+| Feature | Classical Genetics | Molecular Biology |
+| :--- | :--- | :--- |
+| **Primary Question** | *How* are traits passed down? | *What* is the physical basis of the trait? |
+| **Unit of Study** | The Gene (abstract factor) | The Nucleotide Sequence (DNA) |
+| **Key Principles** | Segregation, Independent Assortment | Replication, Transcription, Translation |
+| **Methodology** | Breeding experiments, Pedigree analysis | Sequencing, PCR, Gel electrophoresis |
+| **View of Mutation** | A change in the frequency of a trait | A change in the chemical sequence of DNA |
+| **Analogy** | Watching a train schedule (arrival/departure times) | Examining the engine

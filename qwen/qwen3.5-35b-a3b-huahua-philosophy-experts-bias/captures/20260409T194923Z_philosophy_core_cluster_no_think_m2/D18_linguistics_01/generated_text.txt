@@ -1,0 +1,55 @@
+Syntax is the set of rules that governs how words are arranged to form meaningful phrases and sentences in a language. It acts as the structural skeleton of language, determining not just *what* words are used, but *how* they relate to one another to convey specific meanings.
+
+Here is a breakdown of how syntax works through the three lenses you mentioned: **Phrase Structure**, **Dependency**, and **Recursion**.
+
+---
+
+### 1. Phrase Structure (Constituency)
+Phrase structure theory (often associated with Noam Chomsky's Generative Grammar) views sentences as hierarchical trees made of nested groups called **constituents**.
+
+*   **The Core Idea:** Words do not just sit in a line; they group together to form larger units. These units can then group together to form even larger units.
+*   **Constituents:** A constituent is a group of words that functions as a single unit within a hierarchy. For example, in the sentence "The quick brown fox jumps," the phrase "The quick brown fox" acts as a single unit (a Noun Phrase) that serves as the subject.
+*   **Tree Diagrams:** Syntax is often visualized using tree diagrams.
+    *   **Root:** The entire sentence (S or TP).
+    *   **Branches:** These split into major categories like Noun Phrase (NP) and Verb Phrase (VP).
+    *   **Leaves:** The actual words.
+*   **Example:**
+    Consider the sentence: *The cat sat on the mat.*
+    *   **S** (Sentence) splits into **NP** (The cat) and **VP** (sat on the mat).
+    *   **NP** splits into **Det** (The) and **N** (cat).
+    *   **VP** splits into **V** (sat) and **PP** (on the mat).
+    *   **PP** splits into **P** (on) and **NP** (the mat).
+
+This approach emphasizes that the internal structure of a phrase is independent of the rest of the sentence. You can often replace a whole phrase with a single word (e.g., "The cat" $\to$ "It") without breaking the sentence's grammar.
+
+### 2. Dependency Syntax
+While phrase structure focuses on grouping words into constituents, **Dependency Grammar** focuses on the direct relationships between individual words.
+
+*   **The Core Idea:** Every word in a sentence (except the root) depends on exactly one other word. There are no "constituents" in the traditional sense; instead, there is a network of head-dependent relationships.
+*   **Head and Dependent:**
+    *   **Head:** The word that determines the grammatical category and meaning of the phrase (e.g., the verb is the head of a verb phrase).
+    *   **Dependent:** The word that modifies or completes the head (e.g., the object depends on the verb).
+*   **Structure:** Instead of a tree with nested boxes, dependency syntax is often visualized as a directed graph where arrows point from the head to the dependent.
+*   **Example:**
+    In *The cat sat on the mat*:
+    *   "sat" is the root (head).
+    *   "cat" depends on "sat" (subject).
+    *   "on" depends on "sat" (prepositional modifier).
+    *   "mat" depends on "on" (object of the preposition).
+    *   "The" depends on "cat" (determiner).
+    *   "the" depends on "mat" (determiner).
+
+**Comparison:** Phrase structure asks, "What groups form?" Dependency asks, "Which word controls which other word?" Both models are used in linguistics and Natural Language Processing (NLP), often complementing each other.
+
+### 3. Recursion
+Recursion is the "secret sauce" of human syntax. It is the ability to embed a structure inside another structure of the same type, theoretically allowing for sentences of infinite length.
+
+*   **The Mechanism:** A rule can apply to its own output. If a sentence (S) contains a noun phrase (NP), and that NP can contain another sentence (S), you can keep nesting them.
+*   **Why it Matters:** Without recursion, language would be limited to a finite set of simple sentences. Recursion allows us to express complex, nested thoughts.
+*   **Examples of Recursion:**
+    1.  **Embedding Clauses:**
+        *   "John said that Mary left." (Sentence inside a Sentence)
+        *   "John said that Mary said that Bill left." (Sentence inside a Sentence inside a Sentence)
+    2.  **Relative Clauses:**
+        *   "The dog barked."
+       

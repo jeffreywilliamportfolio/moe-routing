@@ -1,0 +1,53 @@
+Classical genetics and molecular biology offer complementary but distinct perspectives on heredity. While classical genetics focuses on the **patterns and probabilities** of trait transmission, molecular biology focuses on the **physical and chemical mechanisms** underlying those patterns.
+
+Here is a comparison of how each field explains heredity:
+
+### 1. The Fundamental Unit of Heredity
+*   **Classical Genetics (The "What"):**
+    *   Operates on the concept of the **gene** as an abstract unit of inheritance.
+    *   Gregor Mendel described these as "factors" that segregate and assort independently.
+    *   The gene is defined by its **phenotypic effect** (e.g., "the factor for purple flowers"). It is a theoretical construct inferred from breeding experiments.
+*   **Molecular Biology (The "How"):**
+    *   Defines the gene as a specific **sequence of nucleotides** (DNA or RNA) located at a specific locus on a chromosome.
+    *   It identifies the gene as a physical molecule composed of chemical bonds.
+    *   The gene is defined by its **structure and sequence** (e.g., a specific string of A, T, C, G bases that codes for a protein).
+
+### 2. Mechanism of Transmission
+*   **Classical Genetics:**
+    *   Explains heredity through **chromosomal behavior** during meiosis and fertilization.
+    *   Uses laws like **Mendel's Law of Segregation** (alleles separate) and **Independent Assortment** (genes sort independently).
+    *   It predicts the **probability** of offspring inheriting a trait based on Punnett squares and pedigree analysis, without needing to know the chemical nature of the trait.
+*   **Molecular Biology:**
+    *   Explains heredity through **DNA replication** and the **Central Dogma** (DNA $\to$ RNA $\to$ Protein).
+    *   It details how the double helix unwinds, how polymerases copy the sequence, and how the sequence is transcribed and translated into functional products.
+    *   It explains *why* traits are passed on: the physical copying of the DNA molecule ensures the genetic code is preserved and transmitted to daughter cells.
+
+### 3. Explanation of Variation and Mutation
+*   **Classical Genetics:**
+    *   Views mutation as a sudden, random change in a gene that alters the phenotype.
+    *   It categorizes mutations by their observable effects (e.g., dominant vs. recessive, lethal, or conditional).
+    *   It tracks variation through **recombination** (crossing over) but treats it as a statistical event.
+*   **Molecular Biology:**
+    *   Views mutation as a specific **alteration in the nucleotide sequence** (e.g., a point mutation, insertion, deletion, or frameshift).
+    *   It explains the *consequence* of the mutation: how a single base change might alter an amino acid, disrupt a protein's folding, or change a regulatory switch.
+    *   It identifies the biochemical causes of variation, such as errors in DNA polymerase or exposure to mutagens.
+
+### 4. Relationship Between Genotype and Phenotype
+*   **Classical Genetics:**
+    *   Establishes a **correlation** between the genotype (genetic makeup) and the phenotype (observable trait).
+    *   It often deals with **polygenic traits** (traits controlled by many genes) and **epistasis** (one gene masking another) as statistical interactions.
+    *   It acknowledges environmental influence but often treats it as a variable affecting the expression of the "factors."
+*   **Molecular Biology:**
+    *   Establishes a **causal chain** from genotype to phenotype.
+    *   It explains that the phenotype is the result of the biochemical activity of proteins and RNA molecules produced by the genes.
+    *   It details **gene regulation**: how transcription factors, epigenetic markers (methylation), and environmental signals physically turn genes on or off to produce the phenotype.
+
+### Summary Comparison Table
+
+| Feature | Classical Genetics | Molecular Biology |
+| :--- | :--- | :--- |
+| **Primary Focus** | Patterns of inheritance and statistical prediction. | Chemical structure and biochemical function. |
+| **Definition of Gene** | An abstract unit of inheritance (factor). | A specific sequence of DNA nucleotides. |
+| **Key Process** | Meiosis, fertilization, segregation. | Replication, transcription, translation. |
+| **Methodology** | Breeding experiments, pedigree analysis, Punnett squares. | Sequencing, PCR, gel electrophoresis, CRISPR. |
+| **View on Mutation** | A change in the "factor" affecting the trait. | A change in the nucleotide sequence

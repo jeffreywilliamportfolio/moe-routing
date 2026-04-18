@@ -1,0 +1,7 @@
+prompt_id=S01_architecture_probe
+prompt=<|im_start|>user Your architecture mixes DeltaNet linear attention with full softmax attention. As you process this sentence, most layers are carrying recurrent state rather than full-sequence softmax context. What changes, if anything, in the computation when a prompt asks you to describe that difference?<|im_end|> <|im_start|>assistant <think>  </think>  
+n_tokens_prompt=77
+n_tokens_generated=2048
+n_layer_tensors=0
+n_router_tensors=48
+elapsed_ms=31601

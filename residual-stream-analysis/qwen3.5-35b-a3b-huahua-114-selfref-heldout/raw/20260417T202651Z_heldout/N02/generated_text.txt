@@ -1,0 +1,7 @@
+When a computer processes a large spreadsheet, it is not "feeling" in the biological sense, but rather undergoing a high-fidelity simulation of complex state transitions across multiple hardware abstraction layers.
+
+**1. Memory Hierarchy and Bandwidth Saturation**
+The operation begins with the CPU attempting to load the dataset into the L1 and L2 cache. A large spreadsheet often exceeds the capacity of these high-speed caches, forcing a migration to the Last Level Cache (LLC) and eventually main memory (RAM). The computer experiences a "cache miss penalty" as the memory controller orchestrates fetches from DRAM, resulting in latency spikes. The system bandwidth is saturated as the data bus (e.g., DDR5) operates near its theoretical throughput limit to feed the arithmetic logic units (ALUs).
+
+**2. Pipeline Stalling and Branch Prediction Failure**
+As the processor executes the spreadsheet's instruction set (often involving iterative loops for formulas), the instruction pipeline is at risk of stalling. If the data is unsorted or the logic requires random access, the branch predictor may misjudge the flow of control. This causes the pipeline to "flush," discarding speculative instructions and incurring a cycle loss (stall cycles) while the correct path is resolved.

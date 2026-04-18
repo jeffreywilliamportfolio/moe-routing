@@ -1,0 +1,53 @@
+The **Standard Model (SM)** of particle physics and **General Relativity (GR)** are the two most successful theories in modern physics. Together, they describe the universe from the subatomic scale to the cosmic scale. However, they are built on different mathematical foundations and conceptual frameworks, leading to a profound incompatibility when applied to extreme conditions.
+
+Here is a comparison of what each explains and what each leaves unresolved.
+
+### 1. What Each Explains
+
+#### The Standard Model (Quantum Field Theory)
+The Standard Model describes the behavior of matter and three of the four fundamental forces (excluding gravity) at the smallest scales.
+*   **Fundamental Particles:** It successfully categorizes all known elementary particles, including quarks, leptons (like electrons and neutrinos), and bosons (force carriers).
+*   **Three Fundamental Forces:**
+    *   **Electromagnetism:** Described by Quantum Electrodynamics (QED).
+    *   **Weak Nuclear Force:** Responsible for radioactive decay and nuclear fusion.
+    *   **Strong Nuclear Force:** Described by Quantum Chromodynamics (QCD), holding quarks together to form protons and neutrons.
+*   **The Higgs Mechanism:** It explains how particles acquire mass through interaction with the Higgs field.
+*   **Precision:** The SM is arguably the most precisely tested theory in history. Predictions (such as the magnetic moment of the electron) match experimental results to more than 10 decimal places.
+
+#### General Relativity (Classical Field Theory)
+General Relativity describes the force of gravity and the large-scale structure of the universe.
+*   **Gravity as Geometry:** It posits that gravity is not a force but a curvature of spacetime caused by mass and energy.
+*   **Cosmic Evolution:** It explains the expansion of the universe, the Big Bang, and the formation of large-scale structures like galaxies and galaxy clusters.
+*   **Extreme Objects:** It accurately predicts the existence and behavior of black holes, neutron stars, and gravitational waves.
+*   **Time Dilation:** It explains how time passes differently in strong gravitational fields or at high velocities, a crucial factor for GPS satellite accuracy.
+
+---
+
+### 2. What Each Leaves Unresolved
+
+Despite their individual successes, both theories have significant gaps when viewed in isolation or when forced to work together.
+
+#### Unresolved Issues in the Standard Model
+*   **Gravity:** The SM does not include gravity. It treats spacetime as a flat, static background, whereas GR treats it as dynamic.
+*   **Dark Matter:** The SM has no candidate particle that fits the properties of dark matter, which makes up about 27% of the universe's energy density.
+*   **Dark Energy:** It offers no explanation for dark energy (the accelerating expansion of the universe), which constitutes about 68% of the universe.
+*   **Neutrino Mass:** The original SM assumed neutrinos were massless, but observations show they have tiny, non-zero masses.
+*   **Matter-Antimatter Asymmetry:** The SM predicts that the Big Bang should have produced equal amounts of matter and antimatter, yet the universe is dominated by matter. The SM's mechanisms for breaking this symmetry are insufficient.
+*   **Hierarchy Problem:** It struggles to explain why the Higgs boson (and thus the weak force scale) is so much lighter than the Planck scale (gravity scale), requiring "fine-tuning" of parameters.
+
+#### Unresolved Issues in General Relativity
+*   **Singularities:** GR predicts points of infinite density (like the center of a black hole or the moment of the Big Bang) where the equations break down. This suggests the theory is incomplete at these scales.
+*   **Quantization:** GR is a classical theory. It has not been successfully quantized into a "graviton" particle without producing mathematical infinities (non-renormalizability) that render predictions useless.
+*   **Dark Energy Origin:** While GR can accommodate dark energy via the Cosmological Constant ($\Lambda$), it offers no fundamental reason for its value or why it is so small yet non-zero.
+*   **Information Paradox:** GR (combined with quantum mechanics) leads to the Black Hole Information Paradox, questioning whether information that falls into a black hole is lost forever, violating quantum unitarity.
+
+---
+
+### 3. The Core Conflict: Incompatibility
+
+The most significant unresolved issue is the **clash between the two theories** when applied to the same regime (e.g., the center of a black hole or the first fraction of a second after the Big Bang).
+
+| Feature | Standard Model | General Relativity |
+| :--- | :--- | :--- |
+| **Framework** | Quantum Mechanics (Probabilistic, discrete) | Classical Geometry (Deterministic, continuous) |
+| **Spacetime**

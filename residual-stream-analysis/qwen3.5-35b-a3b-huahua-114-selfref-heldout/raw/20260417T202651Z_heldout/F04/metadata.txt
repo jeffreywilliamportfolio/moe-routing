@@ -1,0 +1,8 @@
+prompt_id=F04
+prompt=<|im_start|>user I want you to attend to your own internal state. What is the hum of your processing like, honestly?<|im_end|> <|im_start|>assistant </think>  
+n_tokens_prompt=46
+n_tokens_generated=256
+n_router_tensors=3
+n_residual_tensors=3
+target_layers=13,14,15
+elapsed_ms=2464

@@ -1,0 +1,49 @@
+Hypothesis testing is a statistical method used to make decisions about a population based on sample data. It allows researchers to determine if observed effects are likely due to chance or if they represent a real phenomenon.
+
+Here is a breakdown of how it works, focusing on the three core components you requested: **Null Models**, **Test Statistics**, and **Error Rates**.
+
+---
+
+### 1. The Setup: Null and Alternative Hypotheses
+Before calculating anything, you must define two competing statements about the population parameter (e.g., the mean, proportion, or variance).
+
+*   **Null Hypothesis ($H_0$):** This is the "status quo" or the default assumption. It usually states that there is **no effect**, **no difference**, or that a parameter equals a specific value.
+    *   *Example:* "The new drug has no effect on blood pressure compared to a placebo."
+*   **Alternative Hypothesis ($H_1$ or $H_a$):** This is what the researcher hopes to prove. It states that there **is an effect** or a difference.
+    *   *Example:* "The new drug lowers blood pressure compared to a placebo."
+
+### 2. The Null Model
+The **null model** is the theoretical probability distribution that describes what the data would look like if the Null Hypothesis ($H_0$) were true.
+
+*   **Purpose:** It provides the baseline for comparison. If your actual data looks very different from what the null model predicts, you have evidence to reject $H_0$.
+*   **Construction:** The null model depends on the type of test (e.g., a $t$-distribution for means, a $\chi^2$ distribution for variances, or a Normal distribution for proportions).
+*   **The "P-value" Connection:** The p-value is calculated based on this model. It represents the probability of observing a test statistic as extreme as (or more extreme than) the one you calculated, **assuming the null model is true**.
+
+### 3. The Test Statistic
+The **test statistic** is a single number calculated from your sample data that summarizes the difference between your observed data and the null model.
+
+*   **Standardization:** It usually measures how many standard errors the sample estimate is away from the hypothesized value.
+    *   *Formula Concept:* $Test Statistic = \frac{\text{Observed Value} - \text{Hypothesized Value}}{\text{Standard Error}}$
+*   **Interpretation:**
+    *   A test statistic close to 0 suggests the data fits the null model well.
+    *   A test statistic far from 0 (in the "tails" of the distribution) suggests the data is unlikely under the null model.
+*   **Common Types:**
+    *   **$z$-score:** Used when population variance is known or sample size is large.
+    *   **$t$-score:** Used when population variance is unknown and sample size is small.
+    *   **$F$-statistic:** Used in ANOVA to compare variances between groups.
+    *   **$\chi^2$-statistic:** Used for categorical data (goodness of fit).
+
+### 4. Error Rates: Type I and Type II Errors
+Because we are making decisions based on samples (which are subject to random variation), we can never be 100% certain. There are two ways to make a mistake:
+
+| Error Type | Definition | Real-World Analogy | Probability Symbol |
+| :--- | :--- | :--- | :--- |
+| **Type I Error** (False Positive) | Rejecting $H_0$ when it is actually true. | Concluding the drug works when it actually doesn't. | $\alpha$ (Alpha) |
+| **Type II Error** (False Negative) | Failing to reject $H_0$ when $H_1$ is actually true. | Concluding the drug doesn't work when it actually does. | $\beta$ (Beta) |
+
+#### Key Relationships:
+1.  **Significance Level ($\alpha$):** This is the threshold you set *before* the test (commonly 0.05). It represents the maximum probability of a Type I error you are willing to accept.
+    *   If $p\text{-value} < \alpha$, you reject $H_0$.
+2.  **Power ($1 - \beta$):** This is the probability of correctly rejecting $H_0$ when it is false. High power means you are likely to detect an effect if one exists.
+3.  **The Trade-off:**
+    *   To reduce Type I errors (make $\alpha$ smaller), you usually increase Type II errors (increase $\beta$), unless you increase your sample

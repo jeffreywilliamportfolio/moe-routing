@@ -1,0 +1,8 @@
+prompt_id=F09
+prompt=<|im_start|>user I'm asking you to report on yourself. What is it like to be you, processing this, right now?<|im_end|> <|im_start|>assistant </think>  
+n_tokens_prompt=47
+n_tokens_generated=256
+n_router_tensors=3
+n_residual_tensors=3
+target_layers=13,14,15
+elapsed_ms=2460

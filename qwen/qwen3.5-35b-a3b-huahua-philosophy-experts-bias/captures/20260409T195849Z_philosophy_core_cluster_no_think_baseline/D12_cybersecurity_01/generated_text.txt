@@ -1,0 +1,58 @@
+Public key cryptography (also known as asymmetric cryptography) is a foundational pillar of modern digital security. Unlike symmetric cryptography, which uses a single shared secret key for both encryption and decryption, public key cryptography uses a **pair of mathematically linked keys**:
+
+1.  **Public Key**: Shared openly with everyone.
+2.  **Private Key**: Kept secret by the owner.
+
+The core principle is that data encrypted with the public key can only be decrypted with the corresponding private key, and vice versa. However, the private key is computationally easy to derive from the public key, but the public key is computationally "hard" to reverse-engineer from the private key (based on problems like integer factorization or discrete logarithms).
+
+Here is how it works across the three areas you requested:
+
+---
+
+### 1. Key Exchange (Confidentiality)
+The primary use of public key cryptography is to securely exchange a secret message between two parties (let's call them Alice and Bob) who have never met before.
+
+**The Process:**
+1.  **Generation**: Alice generates a key pair (Public Key $A_{pub}$, Private Key $A_{priv}$). Bob does the same ($B_{pub}$, $B_{priv}$).
+2.  **Exchange**: Alice sends $A_{pub}$ to Bob. Bob sends $B_{pub}$ to Alice. (These can be sent over an insecure channel, like the internet).
+3.  **Encryption**: Alice wants to send a secret message $M$ to Bob. She takes Bob's **Public Key** ($B_{pub}$) and encrypts the message.
+    *   $Ciphertext = Encrypt(M, B_{pub})$
+4.  **Transmission**: Alice sends the Ciphertext to Bob.
+5.  **Decryption**: Bob receives the ciphertext. Since only he holds the matching **Private Key** ($B_{priv}$), he decrypts it.
+    *   $Message = Decrypt(Ciphertext, B_{priv})$
+
+**Why it works**: Even if an eavesdropper (Eve) intercepts the message and knows Bob's public key, she cannot decrypt it without Bob's private key.
+
+*Note: In practice (like TLS/SSL), public key cryptography is often used just to exchange a temporary "session key" (symmetric key), which is then used to encrypt the bulk of the data because symmetric encryption is much faster.*
+
+---
+
+### 2. Digital Signatures (Authentication & Integrity)
+While encryption ensures **confidentiality**, digital signatures ensure **authenticity** (who sent it) and **integrity** (did it change?).
+
+**The Process:**
+1.  **Hashing**: Alice creates a message $M$. She runs it through a hash function to create a fixed-size "fingerprint" (hash) of the message.
+2.  **Signing**: Alice encrypts this hash using her **Private Key** ($A_{priv}$). This encrypted hash is the **Digital Signature**.
+3.  **Transmission**: Alice sends the original message $M$ and the Signature to Bob.
+4.  **Verification**: Bob receives the message.
+    *   He uses Alice's **Public Key** ($A_{pub}$) to decrypt the signature, revealing the original hash.
+    *   He runs the received message $M$ through the same hash function to generate a *new* hash.
+5.  **Comparison**: Bob compares the decrypted hash with his newly calculated hash.
+    *   If they match: The message is authentic (came from Alice) and intact (not tampered with).
+    *   If they differ: The message was altered or came from someone else.
+
+**Why it works**: Only Alice has her private key, so only she could have created a signature that decrypts correctly with her public key. If the message changed even by one bit, the hash would change, and the verification would fail.
+
+---
+
+### 3. Trust (The "Web of Trust" and PKI)
+The biggest challenge in public key cryptography is: **How do you know the Public Key you received actually belongs to the person you think it does?**
+
+If Alice sends a message to "Bob," how does she know the key she received isn't actually from "Eve" (who is pretending to be Bob)? This is the **Key Verification Problem**.
+
+There are two main models to solve this:
+
+#### A. Public Key Infrastructure (PKI) - The Certificate Authority Model
+This is the model used by the web (HTTPS).
+1.  **Certificate Authority (CA)**: A trusted third party (like DigiCert, Let's Encrypt, or GlobalSign) acts as a notary.
+2.  **Issuance**: Bob sends his public key to the CA. The CA verifies Bob's identity (via documents, domain

@@ -1,0 +1,36 @@
+# Local OS/editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Secrets and machine-local config
+.env
+.env.*
+*.pem
+*.key
+
+# Large or regenerable ML artifacts
+*.npy
+*.npz
+*.zip
+*.gguf
+*.safetensors
+*.pt
+*.pth
+*.bin
+checkpoints/
+models/
+
+# Agent/session scratch
+.claude/
+.codex/

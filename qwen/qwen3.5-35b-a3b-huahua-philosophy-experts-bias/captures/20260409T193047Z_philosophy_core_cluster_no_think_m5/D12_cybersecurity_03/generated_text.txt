@@ -1,0 +1,58 @@
+In practical cybersecurity systems, **authentication** and **access control** are distinct but deeply interconnected processes. While they are often used interchangeably in casual conversation, they serve different functions in the security lifecycle.
+
+Here is a detailed comparison of the two, focusing on their roles, mechanisms, and practical implementation.
+
+### 1. Core Definitions
+
+*   **Authentication (AuthN):** The process of verifying **who** a user or system is. It answers the question: "Is this entity really who they claim to be?"
+*   **Access Control (AuthZ):** The process of determining **what** an authenticated entity is allowed to do. It answers the question: "Given that this entity is who they say they are, what resources can they access?"
+
+### 2. Key Differences at a Glance
+
+| Feature | Authentication (AuthN) | Access Control (AuthZ) |
+| :--- | :--- | :--- |
+| **Primary Question** | "Who are you?" | "What can you do?" |
+| **Timing** | Occurs **first** (at the login gate). | Occurs **second** (after login, during resource access). |
+| **Input Data** | Credentials (passwords, biometrics, tokens). | Policies, Roles, Permissions, ACLs. |
+| **Outcome** | A verified identity (Session ID, Token). | A decision (Grant/Deny) for a specific action. |
+| **Failure Result** | User is rejected at the door. | User enters but is blocked from a specific room. |
+| **Common Mechanisms** | MFA, Passwords, Biometrics, SSO. | RBAC, ABAC, DAC, MAC, ACLs. |
+
+### 3. Practical Workflow in a System
+
+To visualize how they work together, consider a user accessing a corporate database:
+
+1.  **Authentication Phase:**
+    *   The user enters a username and password (plus a 2FA code).
+    *   The system checks these credentials against the Identity Provider (IdP) or database.
+    *   **Result:** The system issues a **Session Token** (e.g., a JWT) proving the user is "Alice."
+2.  **Access Control Phase:**
+    *   Alice requests to view the "Payroll" table.
+    *   The application checks the **Access Control List (ACL)** or **Role-Based Access Control (RBAC)** policy associated with Alice's token.
+    *   **Result:** The policy states "Alice (HR Manager) can read Payroll." The request is **granted**.
+    *   *Scenario B:* If Alice tries to "Delete" the table, the policy might say "HR Managers can Read but not Write." The request is **denied**.
+
+### 4. Common Implementation Models
+
+#### Authentication Models
+*   **Something you know:** Passwords, PINs.
+*   **Something you have:** Hardware tokens (YubiKey), Mobile OTP apps.
+*   **Something you are:** Fingerprint, FaceID, Iris scan.
+*   **Multi-Factor Authentication (MFA):** Combining two or more of the above to increase security.
+
+#### Access Control Models
+*   **DAC (Discretionary Access Control):** The owner of the resource decides who gets access (e.g., file permissions in Linux/Windows).
+*   **RBAC (Role-Based Access Control):** Permissions are assigned to roles (e.g., "Admin," "User"), and users are assigned to roles. This is the industry standard for enterprise apps.
+*   **ABAC (Attribute-Based Access Control):** Decisions are made based on dynamic attributes (e.g., "Allow access if User is in 'IT' AND Time is between 9 AM and 5 PM AND Device is 'Trusted'").
+*   **MAC (Mandatory Access Control):** Used in high-security military systems where the OS dictates access based on labels (e.g., "Top Secret").
+
+### 5. Practical Challenges and Interactions
+
+#### The "Session" Link
+Authentication creates the session; Access Control validates the session. If the authentication token expires, the system usually re-authenticates the user. If the user's role changes (e.g., promoted from Junior to Senior), the Access Control policy updates immediately, but the old token might still be valid until it expires. This is why **token revocation** or **short-lived tokens** are critical.
+
+#### The "Lateral Movement" Risk
+In a breach scenario:
+*   **Weak Authentication:** An attacker guesses a password and gets in.
+*   **Weak Access Control:** An attacker gets in with a valid account but has "Admin" access to everything because the permissions were too broad.
+*   **Defense in Depth:** Strong authentication stops the attacker at the door, but strict access control (Least Privilege)

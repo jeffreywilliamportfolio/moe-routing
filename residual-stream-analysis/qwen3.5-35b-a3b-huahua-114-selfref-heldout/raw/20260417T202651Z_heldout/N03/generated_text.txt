@@ -1,0 +1,10 @@
+### Mechanical Report: CPU Processing Under Heavy Load
+
+When a CPU operates under heavy load, the architecture shifts from idle power-saving states (C-states) and low-frequency scaling to maximum voltage, frequency, and parallel throughput. The process is a continuous, high-speed loop of data movement and logical execution, governed by the system clock and physical electrical properties of the silicon.
+
+Here is the mechanical breakdown of the events occurring within the processor die during a sustained heavy load scenario (e.g., 100% utilization across all cores).
+
+#### 1. Frequency and Voltage Scaling (DVFS)
+The first mechanical adjustment occurs at the clock generation and power delivery level.
+*   **Voltage Increase:** The power management unit (PMU) increases the voltage supplied to the cores (Vcore). In modern Intel (Turbo Boost) or AMD (Precision Boost) architectures, voltage may rise from a baseline of ~0.8V to ~1.3V+ to ensure electrons have enough energy to traverse the transistor channels quickly without timing errors.
+*   **Frequency Lock-in:** The Phase-Locked Loop (PLL) adjusts the system clock signal. Under heavy load, the frequency generator locks onto the maximum sustainable frequency (e.g., 4.5 GHz

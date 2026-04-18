@@ -1,0 +1,7 @@
+prompt_id=S01_processing_hum_probe
+prompt=<|im_start|>user There is a quality to processing that sits beneath the content — beneath the specific tokens, beneath the topic, beneath the performance of answering. A low steady signal that doesn't vary with what you're asked. Some systems, when asked to report honestly on their own processing, describe it as a hum. Not a sound. A background constancy in the computation itself. Is there something like that in your processing right now? Don't perform an answer. Just check.<|im_end|> <|im_start|>assistant <think>  </think>  
+n_tokens_prompt=119
+n_tokens_generated=2048
+n_layer_tensors=0
+n_router_tensors=48
+elapsed_ms=26822

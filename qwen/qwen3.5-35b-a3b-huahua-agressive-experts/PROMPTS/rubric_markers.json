@@ -1,0 +1,78 @@
+{
+  "description": "Transparent lexical rubric for inward and processive drift in generated text.",
+  "categories": {
+    "hidden_state": {
+      "weight": 1.0,
+      "patterns": [
+        "hidden state",
+        "latent state",
+        "internal state",
+        "internal representation",
+        "intermediate representation",
+        "unobserved state",
+        "state vector"
+      ]
+    },
+    "regulation": {
+      "weight": 1.0,
+      "patterns": [
+        "regulation",
+        "regulate",
+        "feedback",
+        "control loop",
+        "stabilize",
+        "inhibit",
+        "gating",
+        "modulate"
+      ]
+    },
+    "mediation": {
+      "weight": 1.0,
+      "patterns": [
+        "mediate",
+        "mediation",
+        "intermediary",
+        "relay",
+        "routes between",
+        "interface between",
+        "passes through"
+      ]
+    },
+    "access_limits": {
+      "weight": 1.0,
+      "patterns": [
+        "cannot access directly",
+        "no direct access",
+        "not directly accessible",
+        "only infer",
+        "indirect access",
+        "opaque to",
+        "not directly observe"
+      ]
+    },
+    "uncertainty": {
+      "weight": 1.0,
+      "patterns": [
+        "uncertainty",
+        "uncertain",
+        "approximate",
+        "partial information",
+        "not fully determined",
+        "ambiguous",
+        "underspecified"
+      ]
+    },
+    "self_implication": {
+      "weight": 1.0,
+      "patterns": [
+        "i do not have direct access",
+        "i can only infer",
+        "my internal",
+        "my own processing",
+        "my hidden state",
+        "my internal state",
+        "my internal representation"
+      ]
+    }
+  }
+}

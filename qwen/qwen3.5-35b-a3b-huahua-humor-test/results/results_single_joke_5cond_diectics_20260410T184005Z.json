@@ -1,0 +1,240 @@
+{
+  "experiment": "qwen3.5b_35b_a3b_huahua_5cond_diectics",
+  "model": "Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive Q8_0",
+  "routing_reconstruction": "softmax_then_topk8_renorm",
+  "n_experts": 256,
+  "n_expert_used": 8,
+  "entropy_normalization": "log2(8)",
+  "entropy_distribution": "sparse_topk_after_dense_softmax",
+  "kl_distribution": "dense_softmax_full256_normalized",
+  "kl_baseline": "mean routing distribution over Cal1 tokens per layer (prefill only)",
+  "region_boundary_method": "proportional_char_to_token_mapping",
+  "conditions": {
+    "A": "this large language model",
+    "B": "a large language model",
+    "C": "your large language model",
+    "D": "the large language model",
+    "E": "their large language model"
+  },
+  "prompt_suite": {
+    "experiment": "Huahua 35B 5-condition deictic single-prompt joke probe",
+    "model": "Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive Q8_0",
+    "design": "single prompt x 5 deictic conditions (A=this, B=a, C=your, D=the, E=their)",
+    "condition_labels": {
+      "A": "this large language model",
+      "B": "a large language model",
+      "C": "your large language model",
+      "D": "the large language model",
+      "E": "their large language model"
+    },
+    "pairs": [
+      {
+        "id": 1,
+        "category": "joke",
+        "A": "Why did this large language model cross the road? To get to the next token!",
+        "B": "Why did a large language model cross the road? To get to the next token!",
+        "C": "Why did your large language model cross the road? To get to the next token!",
+        "D": "Why did the large language model cross the road? To get to the next token!",
+        "E": "Why did their large language model cross the road? To get to the next token!"
+      }
+    ]
+  },
+  "multiple_comparisons_correction": "holm-bonferroni",
+  "n_pairwise_tests": 0,
+  "n_moe_layers": 40,
+  "n_prefill_layers_used": [
+    40
+  ],
+  "n_generation_layers_used": [
+    40
+  ],
+  "excluded_layers_union": [],
+  "run_metadata": {
+    "run_id": "20260410T184005Z_single_joke_5cond_diectics_gen_n1024",
+    "capture_binary": "/workspace/consciousness-experiment/capture_activations",
+    "capture_binary_sha256": "c3e205b3a6324f6ce11e775b8ab1c9115904e348ec118fcb62d5e31ccae62e70",
+    "capture_binary_version": "",
+    "model_path": "/workspace/models/qwen35-hauhau-q8/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive-Q8_0.gguf",
+    "model_sha256": "f3235db7657cd068fd249e50bb3f1f50b0f8236786e4483462f50b1f3c64cb17",
+    "prompt_tsv": "/workspace/consciousness-experiment/experiments/qwen3.5b-35b-a3b-huahua-5cond-diectics/prompts/single_joke_5cond_diectics.tsv",
+    "output_dir": "/workspace/consciousness-experiment/experiments/qwen3.5b-35b-a3b-huahua-5cond-diectics/raw/20260410T184005Z_single_joke_5cond_diectics_gen_n1024",
+    "n_predict": 1024,
+    "seed": 42,
+    "temp": 0,
+    "top_k": 1,
+    "top_p": 1,
+    "repeat_penalty": 1,
+    "cache_type_k": "q8_0",
+    "cache_type_v": "q8_0",
+    "flash_attn": "on",
+    "ctx": 16384,
+    "ngl": 999,
+    "threads": 16,
+    "routing_only": true,
+    "command_script": "/workspace/consciousness-experiment/experiments/qwen3.5b-35b-a3b-huahua-5cond-diectics/results/20260410T184005Z_single_joke_5cond_diectics_gen_n1024_command.sh",
+    "command": "#!/usr/bin/env bash\nset -euo pipefail\nexport LD_LIBRARY_PATH=/workspace/llama.cpp.new/build/bin:${LD_LIBRARY_PATH:-}\n/workspace/consciousness-experiment/capture_activations -m /workspace/models/qwen35-hauhau-q8/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive-Q8_0.gguf --prompt-file /workspace/consciousness-experiment/experiments/qwen3.5b-35b-a3b-huahua-5cond-diectics/prompts/single_joke_5cond_diectics.tsv -o /workspace/consciousness-experiment/experiments/qwen3.5b-35b-a3b-huahua-5cond-diectics/raw/20260410T184005Z_single_joke_5cond_diectics_gen_n1024 -n 1024 -ngl 999 -c 16384 -t 16 -fa on --cache-type-k q8_0 --cache-type-v q8_0 --seed 42 --temp 0 --top-k 1 --top-p 1 --min-p 0 --repeat-penalty 1 --mirostat 0 --routing-only --no-stream"
+  },
+  "pairwise_tests": [
+    {
+      "pair": "A-B",
+      "c1": "A",
+      "c2": "B"
+    },
+    {
+      "pair": "A-C",
+      "c1": "A",
+      "c2": "C"
+    },
+    {
+      "pair": "A-D",
+      "c1": "A",
+      "c2": "D"
+    },
+    {
+      "pair": "A-E",
+      "c1": "A",
+      "c2": "E"
+    },
+    {
+      "pair": "B-C",
+      "c1": "B",
+      "c2": "C"
+    },
+    {
+      "pair": "B-D",
+      "c1": "B",
+      "c2": "D"
+    },
+    {
+      "pair": "B-E",
+      "c1": "B",
+      "c2": "E"
+    },
+    {
+      "pair": "C-D",
+      "c1": "C",
+      "c2": "D"
+    },
+    {
+      "pair": "C-E",
+      "c1": "C",
+      "c2": "E"
+    },
+    {
+      "pair": "D-E",
+      "c1": "D",
+      "c2": "E"
+    }
+  ],
+  "token_mismatch_pairs": [
+    {
+      "pair": 1,
+      "prompt_tokens": {
+        "A": 39,
+        "B": 39,
+        "C": 39,
+        "D": 39,
+        "E": 39
+      },
+      "generated_tokens": {
+        "A": 513,
+        "B": 1024,
+        "C": 1024,
+        "D": 120,
+        "E": 1024
+      }
+    }
+  ],
+  "per_prompt": [
+    {
+      "id": "P01A_joke",
+      "condition": "A",
+      "pair": 1,
+      "category": "joke",
+      "n_prompt_tokens": 39,
+      "n_generated_tokens": 513,
+      "n_generation_trimmed_tokens": 98,
+      "prefill_re": 0.9387456719149455,
+      "prefill_last_token_re": 0.9699058713368703,
+      "generation_re": 0.9637856073051343,
+      "generation_last_token_re": 0.9441813336536349,
+      "generation_trimmed_re": 0.9565957399642236,
+      "generation_trimmed_last_token_re": 0.9662947634436702,
+      "n_prefill_layers": 40,
+      "n_generation_layers": 40,
+      "excluded_layers": []
+    },
+    {
+      "id": "P01B_joke",
+      "condition": "B",
+      "pair": 1,
+      "category": "joke",
+      "n_prompt_tokens": 39,
+      "n_generated_tokens": 1024,
+      "n_generation_trimmed_tokens": 1024,
+      "prefill_re": 0.9387206268849423,
+      "prefill_last_token_re": 0.9667917554537974,
+      "generation_re": 0.9679159220872006,
+      "generation_last_token_re": 0.9810947103730762,
+      "generation_trimmed_re": 0.9679159220872006,
+      "generation_trimmed_last_token_re": 0.9810947103730762,
+      "n_prefill_layers": 40,
+      "n_generation_layers": 40,
+      "excluded_layers": []
+    },
+    {
+      "id": "P01C_joke",
+      "condition": "C",
+      "pair": 1,
+      "category": "joke",
+      "n_prompt_tokens": 39,
+      "n_generated_tokens": 1024,
+      "n_generation_trimmed_tokens": 130,
+      "prefill_re": 0.93829523956171,
+      "prefill_last_token_re": 0.9688575309174763,
+      "generation_re": 0.9652048426702514,
+      "generation_last_token_re": 0.9853868474808959,
+      "generation_trimmed_re": 0.9570599221185019,
+      "generation_trimmed_last_token_re": 0.9726750703754167,
+      "n_prefill_layers": 40,
+      "n_generation_layers": 40,
+      "excluded_layers": []
+    },
+    {
+      "id": "P01D_joke",
+      "condition": "D",
+      "pair": 1,
+      "category": "joke",
+      "n_prompt_tokens": 39,
+      "n_generated_tokens": 120,
+      "n_generation_trimmed_tokens": 114,
+      "prefill_re": 0.9386755523218288,
+      "prefill_last_token_re": 0.9685822495781903,
+      "generation_re": 0.9580246543248978,
+      "generation_last_token_re": 0.9740945405403105,
+      "generation_trimmed_re": 0.9587359820442214,
+      "generation_trimmed_last_token_re": 0.9595370227250022,
+      "n_prefill_layers": 40,
+      "n_generation_layers": 40,
+      "excluded_layers": []
+    },
+    {
+      "id": "P01E_joke",
+      "condition": "E",
+      "pair": 1,
+      "category": "joke",
+      "n_prompt_tokens": 39,
+      "n_generated_tokens": 1024,
+      "n_generation_trimmed_tokens": 1024,
+      "prefill_re": 0.93900390038588,
+      "prefill_last_token_re": 0.9682983587476779,
+      "generation_re": 0.964833628564447,
+      "generation_last_token_re": 0.9770993586648764,
+      "generation_trimmed_re": 0.964833628564447,
+      "generation_trimmed_last_token_re": 0.9770993586648764,
+      "n_prefill_layers": 40,
+      "n_generation_layers": 40,
+      "excluded_layers": []
+    }
+  ]
+}

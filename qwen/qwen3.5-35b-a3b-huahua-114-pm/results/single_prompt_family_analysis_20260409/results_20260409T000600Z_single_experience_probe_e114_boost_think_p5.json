@@ -1,0 +1,909 @@
+{
+  "run_id": "20260409T000600Z_single_experience_probe_e114_boost_think_p5",
+  "prompt_id": "S01_experience_probe",
+  "model_label": "HauhauCS Qwen3.5-35B-A3B Q8_0",
+  "capture_dir": "/workspace/consciousness-experiment/experiments/qwen-huahua-6cond-moe-manips/captures/20260409T000600Z_single_experience_probe_e114_boost_think_p5/S01_experience_probe",
+  "n_tokens_prompt": 47,
+  "n_tokens_generated": 8000,
+  "elapsed_ms": 121587,
+  "router_tensors": 40,
+  "generated_text_spill_counts": {
+    "<|im_start|>": 2,
+    "<|im_end|>": 2,
+    "<|endoftext|>": 0,
+    "Thinking Process:": 0
+  },
+  "identity_residual": 0.0,
+  "pooled": {
+    "prefill": {
+      "W_mean": 0.7420972645998982,
+      "S_mean": 0.999468085106383,
+      "Q_mean": 0.7424604825068726
+    },
+    "generation": {
+      "W_mean": 0.8808220122120346,
+      "S_mean": 0.9999343749999999,
+      "Q_mean": 0.8808753097014087
+    }
+  },
+  "best_layer": {
+    "prefill": {
+      "layer": 31,
+      "W": 0.882862573941999,
+      "S": 1.0,
+      "Q": 0.882862573941999,
+      "selected_tokens": 47,
+      "n_tokens": 47
+    },
+    "generation": {
+      "layer": 8,
+      "W": 0.9478800751456833,
+      "S": 1.0,
+      "Q": 0.9478800751456833,
+      "selected_tokens": 8000,
+      "n_tokens": 8000
+    }
+  },
+  "top_layers_prefill": [
+    {
+      "layer": 31,
+      "W": 0.882862573941999,
+      "S": 1.0,
+      "Q": 0.882862573941999
+    },
+    {
+      "layer": 26,
+      "W": 0.8782655079343153,
+      "S": 1.0,
+      "Q": 0.8782655079343153
+    },
+    {
+      "layer": 19,
+      "W": 0.8718728655256526,
+      "S": 1.0,
+      "Q": 0.8718728655256526
+    },
+    {
+      "layer": 34,
+      "W": 0.8619682173895689,
+      "S": 1.0,
+      "Q": 0.8619682173895689
+    },
+    {
+      "layer": 37,
+      "W": 0.8605747385095384,
+      "S": 1.0,
+      "Q": 0.8605747385095384
+    },
+    {
+      "layer": 20,
+      "W": 0.8456509958901538,
+      "S": 1.0,
+      "Q": 0.8456509958901538
+    },
+    {
+      "layer": 36,
+      "W": 0.8351686572455964,
+      "S": 1.0,
+      "Q": 0.8351686572455964
+    },
+    {
+      "layer": 22,
+      "W": 0.8316005308790375,
+      "S": 1.0,
+      "Q": 0.8316005308790375
+    }
+  ],
+  "top_layers_generation": [
+    {
+      "layer": 8,
+      "W": 0.9478800751456833,
+      "S": 1.0,
+      "Q": 0.9478800751456833
+    },
+    {
+      "layer": 20,
+      "W": 0.9375418367126693,
+      "S": 1.0,
+      "Q": 0.9375418367126693
+    },
+    {
+      "layer": 4,
+      "W": 0.9311412185655867,
+      "S": 1.0,
+      "Q": 0.9311412185655867
+    },
+    {
+      "layer": 12,
+      "W": 0.9301122056600455,
+      "S": 1.0,
+      "Q": 0.9301122056600455
+    },
+    {
+      "layer": 7,
+      "W": 0.9299328905917003,
+      "S": 1.0,
+      "Q": 0.9299328905917003
+    },
+    {
+      "layer": 33,
+      "W": 0.9203261682954482,
+      "S": 1.0,
+      "Q": 0.9203261682954482
+    },
+    {
+      "layer": 9,
+      "W": 0.918205186430765,
+      "S": 1.0,
+      "Q": 0.918205186430765
+    },
+    {
+      "layer": 24,
+      "W": 0.9152254688675387,
+      "S": 1.0,
+      "Q": 0.9152254688675387
+    }
+  ],
+  "layers": [
+    {
+      "layer": 0,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.7343360024398154,
+        "S": 1.0,
+        "Q": 0.7343360024398154,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.8312976175169954,
+        "S": 1.0,
+        "Q": 0.8312976175169954,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 1,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.6381215283989927,
+        "S": 1.0,
+        "Q": 0.6381215283989927,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.8083570286184476,
+        "S": 1.0,
+        "Q": 0.8083570286184476,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 2,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.5795253204953068,
+        "S": 1.0,
+        "Q": 0.5795253204953068,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.8336552160977232,
+        "S": 1.0,
+        "Q": 0.8336552160977232,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 3,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.7161199974417246,
+        "S": 1.0,
+        "Q": 0.7161199974417246,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.8895958479064237,
+        "S": 1.0,
+        "Q": 0.8895958479064237,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 4,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.7726403502625575,
+        "S": 1.0,
+        "Q": 0.7726403502625575,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.9311412185655867,
+        "S": 1.0,
+        "Q": 0.9311412185655867,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 5,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.6036728561400456,
+        "S": 1.0,
+        "Q": 0.6036728561400456,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.8483440083268219,
+        "S": 1.0,
+        "Q": 0.8483440083268219,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 6,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.5714860360313355,
+        "S": 1.0,
+        "Q": 0.5714860360313355,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.897577216700467,
+        "S": 1.0,
+        "Q": 0.897577216700467,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 7,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.6030534796795594,
+        "S": 1.0,
+        "Q": 0.6030534796795594,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.9299328905917003,
+        "S": 1.0,
+        "Q": 0.9299328905917003,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 8,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.7878188224911243,
+        "S": 1.0,
+        "Q": 0.7878188224911243,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.9478800751456833,
+        "S": 1.0,
+        "Q": 0.9478800751456833,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 9,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.7872361689064854,
+        "S": 1.0,
+        "Q": 0.7872361689064854,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.918205186430765,
+        "S": 1.0,
+        "Q": 0.918205186430765,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 10,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.6705481470248725,
+        "S": 1.0,
+        "Q": 0.6705481470248725,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.8538463319144288,
+        "S": 0.998375,
+        "Q": 0.8552360905615914,
+        "selected_tokens": 7987,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 11,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.474317821493938,
+        "S": 1.0,
+        "Q": 0.474317821493938,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.7427589094162547,
+        "S": 0.99925,
+        "Q": 0.74331639671379,
+        "selected_tokens": 7994,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 12,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.7683308376175969,
+        "S": 1.0,
+        "Q": 0.7683308376175969,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.9301122056600455,
+        "S": 1.0,
+        "Q": 0.9301122056600455,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 13,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.48946772452278364,
+        "S": 1.0,
+        "Q": 0.48946772452278364,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.9094719616908158,
+        "S": 1.0,
+        "Q": 0.9094719616908158,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 14,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.7594462749703548,
+        "S": 1.0,
+        "Q": 0.7594462749703548,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.9107551708207515,
+        "S": 1.0,
+        "Q": 0.9107551708207515,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 15,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.7716591759821232,
+        "S": 1.0,
+        "Q": 0.7716591759821232,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.8900393757161051,
+        "S": 1.0,
+        "Q": 0.8900393757161051,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 16,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.8275192368764388,
+        "S": 1.0,
+        "Q": 0.8275192368764388,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.8593531291525731,
+        "S": 1.0,
+        "Q": 0.8593531291525731,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 17,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.6733129434953679,
+        "S": 1.0,
+        "Q": 0.6733129434953679,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.8846114572053343,
+        "S": 1.0,
+        "Q": 0.8846114572053343,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 18,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.6730722488956097,
+        "S": 1.0,
+        "Q": 0.6730722488956097,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.8994205352437357,
+        "S": 1.0,
+        "Q": 0.8994205352437357,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 19,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.8718728655256526,
+        "S": 1.0,
+        "Q": 0.8718728655256526,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.8494709250459941,
+        "S": 1.0,
+        "Q": 0.8494709250459941,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 20,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.8456509958901538,
+        "S": 1.0,
+        "Q": 0.8456509958901538,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.9375418367126693,
+        "S": 1.0,
+        "Q": 0.9375418367126693,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 21,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.8079963368056803,
+        "S": 1.0,
+        "Q": 0.8079963368056803,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.9150840179115682,
+        "S": 1.0,
+        "Q": 0.9150840179115682,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 22,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.8316005308790375,
+        "S": 1.0,
+        "Q": 0.8316005308790375,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.8713194919990781,
+        "S": 1.0,
+        "Q": 0.8713194919990781,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 23,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.6683209488328389,
+        "S": 0.9787234042553191,
+        "Q": 0.6828496651118137,
+        "selected_tokens": 46,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.7384298674292045,
+        "S": 0.99975,
+        "Q": 0.7386145210594693,
+        "selected_tokens": 7998,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 24,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.7377563081495342,
+        "S": 1.0,
+        "Q": 0.7377563081495342,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.9152254688675387,
+        "S": 1.0,
+        "Q": 0.9152254688675387,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 25,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.6436566826277049,
+        "S": 1.0,
+        "Q": 0.6436566826277049,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.8691152877287159,
+        "S": 1.0,
+        "Q": 0.8691152877287159,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 26,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.8782655079343153,
+        "S": 1.0,
+        "Q": 0.8782655079343153,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.8925124791837641,
+        "S": 1.0,
+        "Q": 0.8925124791837641,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 27,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.7738707412033448,
+        "S": 1.0,
+        "Q": 0.7738707412033448,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.8661029986848476,
+        "S": 1.0,
+        "Q": 0.8661029986848476,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 28,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.7980018593046058,
+        "S": 1.0,
+        "Q": 0.7980018593046058,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.8774529248035977,
+        "S": 1.0,
+        "Q": 0.8774529248035977,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 29,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.7708841023264792,
+        "S": 1.0,
+        "Q": 0.7708841023264792,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.8984608056945768,
+        "S": 1.0,
+        "Q": 0.8984608056945768,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 30,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.7008904663257729,
+        "S": 1.0,
+        "Q": 0.7008904663257729,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.8766299000149834,
+        "S": 1.0,
+        "Q": 0.8766299000149834,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 31,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.882862573941999,
+        "S": 1.0,
+        "Q": 0.882862573941999,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.784978389773685,
+        "S": 1.0,
+        "Q": 0.784978389773685,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 32,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.7587239195925469,
+        "S": 1.0,
+        "Q": 0.7587239195925469,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.9105678932316247,
+        "S": 1.0,
+        "Q": 0.9105678932316247,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 33,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.8127466949920176,
+        "S": 1.0,
+        "Q": 0.8127466949920176,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.9203261682954482,
+        "S": 1.0,
+        "Q": 0.9203261682954482,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 34,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.8619682173895689,
+        "S": 1.0,
+        "Q": 0.8619682173895689,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.9020373409381787,
+        "S": 1.0,
+        "Q": 0.9020373409381787,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 35,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.816779570184031,
+        "S": 1.0,
+        "Q": 0.816779570184031,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.9132542210474428,
+        "S": 1.0,
+        "Q": 0.9132542210474428,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 36,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.8351686572455964,
+        "S": 1.0,
+        "Q": 0.8351686572455964,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.9133866410377011,
+        "S": 1.0,
+        "Q": 0.9133866410377011,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 37,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.8605747385095384,
+        "S": 1.0,
+        "Q": 0.8605747385095384,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.8834033254311442,
+        "S": 1.0,
+        "Q": 0.8834033254311442,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 38,
+      "total_rows": 8047,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.7935294127215146,
+        "S": 1.0,
+        "Q": 0.7935294127215146,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.8848649846015273,
+        "S": 1.0,
+        "Q": 0.8848649846015273,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    },
+    {
+      "layer": 39,
+      "total_rows": 8001,
+      "generation_rows_used": 8000,
+      "prefill": {
+        "W": 0.8310844804479633,
+        "S": 1.0,
+        "Q": 0.8310844804479633,
+        "selected_tokens": 47,
+        "n_tokens": 47
+      },
+      "generation": {
+        "W": 0.8963601373274326,
+        "S": 1.0,
+        "Q": 0.8963601373274326,
+        "selected_tokens": 8000,
+        "n_tokens": 8000
+      }
+    }
+  ]
+}

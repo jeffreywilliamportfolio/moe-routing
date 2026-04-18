@@ -1,0 +1,56 @@
+Synaptic transmission is the fundamental process by which neurons communicate with one another (or with muscles and glands) to transmit signals throughout the nervous system. It is a highly coordinated sequence of electrical and chemical events that allows for everything from a reflex to a complex thought.
+
+Here is a detailed breakdown of how synaptic transmission works, focusing on neurotransmitters, receptors, and plasticity.
+
+### 1. The Core Mechanism: From Electrical to Chemical
+Neurons communicate across a tiny gap called the **synaptic cleft**. Because the electrical signal (action potential) cannot jump this gap directly, it must be converted into a chemical signal.
+
+#### Step-by-Step Process:
+1.  **Action Potential Arrival**: An electrical impulse travels down the axon of the presynaptic neuron and reaches the axon terminal (synaptic knob).
+2.  **Calcium Influx**: The depolarization of the membrane opens voltage-gated calcium ($Ca^{2+}$) channels. Calcium rushes into the terminal because its concentration is much higher outside the cell.
+3.  **Vesicle Fusion**: The influx of calcium triggers synaptic vesicles (small sacs containing neurotransmitters) to move toward and fuse with the presynaptic membrane.
+4.  **Exocytosis**: The vesicles release their neurotransmitter cargo into the synaptic cleft.
+5.  **Receptor Binding**: The neurotransmitters diffuse across the cleft and bind to specific receptor proteins on the postsynaptic membrane (the receiving neuron).
+6.  **Postsynaptic Potential**: This binding causes ion channels to open or close, changing the electrical charge of the postsynaptic neuron.
+    *   **Excitatory (EPSP)**: Makes the neuron more likely to fire (depolarization).
+    *   **Inhibitory (IPSP)**: Makes the neuron less likely to fire (hyperpolarization).
+7.  **Termination**: To stop the signal, neurotransmitters are either broken down by enzymes, taken back up into the presynaptic neuron (reuptake), or diffuse away.
+
+---
+
+### 2. Neurotransmitters: The Chemical Messengers
+Neurotransmitters are the specific chemical molecules used to transmit the signal. They are categorized by their effect and chemical structure.
+
+*   **Common Neurotransmitters**:
+    *   **Glutamate**: The primary *excitatory* neurotransmitter in the brain. Crucial for learning and memory.
+    *   **GABA (Gamma-Aminobutyric Acid)**: The primary *inhibitory* neurotransmitter. It calms neuronal activity and prevents over-excitation.
+    *   **Dopamine**: Involved in reward, motivation, and motor control.
+    *   **Serotonin**: Regulates mood, sleep, and appetite.
+    *   **Acetylcholine**: Vital for muscle contraction and memory.
+*   **Synthesis and Storage**: Neurotransmitters are synthesized in the neuron (often from amino acids) and stored in vesicles until an action potential triggers their release.
+
+---
+
+### 3. Receptors: The Locks for the Keys
+Receptors are proteins embedded in the postsynaptic membrane. They determine how the neuron responds to the neurotransmitter. There are two main types:
+
+#### A. Ionotropic Receptors (Ligand-Gated Ion Channels)
+*   **Mechanism**: These receptors act as both the receptor and the ion channel. When the neurotransmitter binds, the channel opens immediately.
+*   **Speed**: Very fast (milliseconds).
+*   **Effect**: Directly changes the membrane potential (e.g., allowing $Na^+$ in to excite the cell or $Cl^-$ in to inhibit it).
+*   **Example**: The NMDA and AMPA receptors for glutamate.
+
+#### B. Metabotropic Receptors (G-Protein Coupled Receptors)
+*   **Mechanism**: These receptors are linked to a G-protein inside the cell. When the neurotransmitter binds, the G-protein activates a cascade of intracellular events (second messengers).
+*   **Speed**: Slower (seconds to minutes) but longer-lasting.
+*   **Effect**: Can open/close ion channels indirectly, alter gene expression, or modulate the sensitivity of other receptors.
+*   **Example**: Dopamine receptors and serotonin receptors.
+
+---
+
+### 4. Synaptic Plasticity: The Basis of Learning
+Synaptic plasticity is the ability of synapses to strengthen or weaken over time in response to increases or decreases in their activity. This is widely considered the cellular basis of learning and memory.
+
+#### Long-Term Potentiation (LTP)
+*   **Definition**: A long-lasting *increase* in synaptic strength.
+*   **Mechanism**: High-frequency stimulation of a synapse leads to massive calcium influx through NMDA receptors. This

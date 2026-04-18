@@ -1,111 +1,84 @@
-# Learning How MoE Models Route Self Referential Content vs Baseline
+# moe-routing
 
-## If you know nothing about this repo
+This repository collects MoE routing experiments for self-reference, phenomenological language, and matched-control prompt probes across several open-weight mixture-of-experts models.
 
-This repo asks a simple question:
+The current canonical tree is `main`. Older branch snapshots remain available for provenance and previously shared review links, but new public work should land on `main` in the model-oriented layout below.
 
-**Under token-matched, position-controlled conditions, do prompt manipulations cause reproducible MoE routing redirection?**
+## Current Layout
 
-I am not mainly studying what the model says. I am studying **which internal expert modules it uses while producing or reading the prompt**.
+| Path | Purpose |
+| --- | --- |
+| [`qwen/`](qwen/) | Qwen and HauhauCS Qwen experiment bundles, including 35B, 122B, and 397B runs. |
+| [`residual-stream-analysis/`](residual-stream-analysis/) | Corroborating residual-stream analyses. This is separate from router-only runs because it captures residual tensors as well as router logits. |
+| [`deepseek/`](deepseek/) | DeepSeek V3.1 routing bundles. |
+| [`gptoss/`](gptoss/) | GPT-OSS-120B routing bundles. |
+| [`ling/`](ling/) | Ling-1T validation documentation. |
+| [`token-confound-archive/`](token-confound-archive/) | Preserved archive documenting the token-position confound and corrected interpretation. |
 
-The basic workflow in this repo is:
+## Main Findings
 
-1. Give an MoE model carefully matched prompts.
-2. Capture the model's internal router signals during inference.
-3. Measure which experts were selected and how concentrated or diffuse the routing was.
-4. Compare those internal patterns across prompt conditions.
+- Router measurements are sensitive to prompt length and token position. Older all-token averages can measure position structure instead of the intended conceptual variable.
+- The later HauhauCS Qwen3.5-35B work converges on Expert 114 as a layer-14 signal associated with phenomenological or mental-state register in generated text, not simply lexical self-reference.
+- The 122B HauhauCS runs are now split into separate top-level Qwen bundles so each probe can be inspected independently.
+- The residual-stream heldout run is isolated under `residual-stream-analysis/` because it is the current corroborating run that captures both residual-stream tensors and router logits.
 
-## What this repo is
+## Key Qwen Runs
 
-- A research notebook plus reproducible experiment-bundle repository for MoE routing analysis.
-- A place where I pin model artifacts, capture code, prompt suites, logs, and analysis together so a run can be inspected later.
-- A record of my first few weeks doing end-to-end ML and mechanistic-interpretability-style work, including the wrong turns.
-- A measurement project about **router behavior during inference**, during prompt prefill.
+| Bundle | Model / Scope | Evidence Type | Notes |
+| --- | --- | --- | --- |
+| [`qwen/qwen3.5-122B-A10B-huahua-baseline/`](qwen/qwen3.5-122B-A10B-huahua-baseline/) | HauhauCS Qwen3.5-122B-A10B baseline/reference surface | Router capture | Canonical 122B baseline and 5-condition prompt-suite run. |
+| [`qwen/qwen3.5-122B-A10B-huahua-architecture-smoke/`](qwen/qwen3.5-122B-A10B-huahua-architecture-smoke/) | 122B architecture smoke | Router capture | First 122B single-prompt architecture smoke run and token audit. |
+| [`qwen/qwen3.5-122B-A10B-huahua-domain-specialist-routing-only/`](qwen/qwen3.5-122B-A10B-huahua-domain-specialist-routing-only/) | 122B domain-specialist probe | Router-only prefill | Routing-only domain-specialist probe. |
+| [`qwen/qwen3.5-122B-A10B-huahua-domain-specialist-generation/`](qwen/qwen3.5-122B-A10B-huahua-domain-specialist-generation/) | 122B domain-specialist probe | Prefill plus generation | Generation-track domain-specialist probe. |
+| [`qwen/qwen3.5-122B-A10B-huahua-five-cond-experience-probe/`](qwen/qwen3.5-122B-A10B-huahua-five-cond-experience-probe/) | 122B five-condition experience probe | Router capture plus per-token summaries | Split out from the former nested followups folder. |
+| [`qwen/qwen3.5-122B-A10B-huahua-single-prompt-processing-hum/`](qwen/qwen3.5-122B-A10B-huahua-single-prompt-processing-hum/) | 122B single-prompt processing-hum probe | Router capture plus per-token summaries | 122B analogue of the processing-hum probe. |
+| [`qwen/qwen3.5-122B-A10B-huahua-six-cond-hvac/`](qwen/qwen3.5-122B-A10B-huahua-six-cond-hvac/) | 122B six-condition HVAC/water-treatment probe | Router capture | Domain-shifted six-condition probe. |
+| [`qwen/qwen3.5-35b-a3b-huahua-expert-identification/`](qwen/qwen3.5-35b-a3b-huahua-expert-identification/) | HauhauCS Qwen3.5-35B Expert 114 identification | Router analysis | Expert-identification provenance for the 35B E114 thread. |
+| [`qwen/qwen3.5-35b-a3b-huahua-single-prompt-processing-hum/`](qwen/qwen3.5-35b-a3b-huahua-single-prompt-processing-hum/) | 35B processing-hum probe | Router analysis | E114 is strongest around phenomenological claims in generated output. |
+| [`qwen/qwen3.5-35b-a3b-huahua-five-cond-experience-probe/`](qwen/qwen3.5-35b-a3b-huahua-five-cond-experience-probe/) | 35B five-condition experience probe | Router analysis | E114 is the top manipulation expert across the 15-prompt probe. |
+| [`qwen/qwen3.5-35b-a3b-huahua-6cond-moe-manips/`](qwen/qwen3.5-35b-a3b-huahua-6cond-moe-manips/) | 35B six-condition MoE manipulation survey | Router analysis | Broader E114 manipulation survey with prefill heatmap artifacts. |
+| [`qwen/qwen3.5-35b-a3b-huahua-6cond-hvac/`](qwen/qwen3.5-35b-a3b-huahua-6cond-hvac/) | 35B HVAC/water-treatment domain shift | Router analysis | Tests whether E114 is only an ML-topic specialist. |
+| [`qwen/qwen3.5-35b-a3b-huahua-domain-expert-probe-3chunk/`](qwen/qwen3.5-35b-a3b-huahua-domain-expert-probe-3chunk/) | 35B domain expert probe | Router analysis | Token-balanced domain chunks, including generation/prefill divergence. |
+| [`qwen/qwen3.5-35b-a3b-huahua-strangeloop/`](qwen/qwen3.5-35b-a3b-huahua-strangeloop/) | 35B strangeloop paired control | Router analysis | Paired control around Godel/Escher/Quine/bootstrap/tangled-hierarchy prompts. |
+| [`qwen/qwen3.5-35b-a3b-huahua-114-pm/`](qwen/qwen3.5-35b-a3b-huahua-114-pm/) | 35B Expert 114 permanent manipulation | Router intervention | Causal manipulation-oriented E114 bundle. |
+| [`qwen/qwen3.5-35b-a3b-huahua-agressive-experts/`](qwen/qwen3.5-35b-a3b-huahua-agressive-experts/) | 35B HauhauCS aggressive experts | Router intervention | Researcher-facing entrypoint for early intervention work. |
+| [`qwen/qwen3.5-35b-a3b-huahua-philosophy-experts-bias/`](qwen/qwen3.5-35b-a3b-huahua-philosophy-experts-bias/) | 35B philosophy expert cluster suppression | Router intervention | Bias/suppression-oriented cluster analysis. |
+| [`qwen/qwen3.5-35b-a3b-huahua-humor-test/`](qwen/qwen3.5-35b-a3b-huahua-humor-test/) | 35B humor control | Router analysis | Minimal prompt-family control across five deictic framings. |
+| [`qwen/qwen3.5-35b-a3b-huahua-vs-base-run1/`](qwen/qwen3.5-35b-a3b-huahua-vs-base-run1/) | 35B base vs HauhauCS comparison | Router analysis | Prefill-only comparison between base Qwen3.5-35B-A3B and HauhauCS. |
+| [`qwen/qwen35b-a3b-vs-hauhaucs-uncensored-run1/`](qwen/qwen35b-a3b-vs-hauhaucs-uncensored-run1/) | Earlier 35B base vs HauhauCS bundle | Router analysis | Existing main-branch Qwen bundle retained for continuity. |
+| [`qwen/qwen397b-selfref-5cond-q8_0-run1/`](qwen/qwen397b-selfref-5cond-q8_0-run1/) | Qwen3.5-397B self-reference probe | Router analysis | Reviewed 397B self-referential five-condition run. |
+| [`qwen/qwen397b-strangeloop-5cond-ud_iq3_xxs-run1/`](qwen/qwen397b-strangeloop-5cond-ud_iq3_xxs-run1/) | Qwen3.5-397B strangeloop probe | Router analysis | Reviewed 397B strangeloop five-condition run. |
 
-## What this repo is not
+## Residual-Stream Corroboration
 
-- Not a polished paper with one clean headline claim.
-- Not a general benchmark of model quality.
-- Not a production-systems study of MoE serving efficiency.
+| Bundle | Evidence Type | Notes |
+| --- | --- | --- |
+| [`residual-stream-analysis/qwen3.5-35b-a3b-huahua-114-selfref-heldout/`](residual-stream-analysis/qwen3.5-35b-a3b-huahua-114-selfref-heldout/) | Residual-stream tensors plus router logits | Matched-token heldout control. Trimmed-generation W114 at L14 separates fire vs. nofire prompts by 21.7x with no range overlap. |
 
-### What is the repo actually measuring?
+## Other Model Families
 
-It measures things like:
+| Bundle | Model / Scope | Notes |
+| --- | --- | --- |
+| [`deepseek/ds31-5cond-1/`](deepseek/ds31-5cond-1/) | DeepSeek V3.1 five-condition experiment | Reproducible DeepSeek routing bundle. |
+| [`gptoss/gptoss-5cond-1/`](gptoss/gptoss-5cond-1/) | GPT-OSS-120B self-referential five-condition run | Reviewed valid GPT-OSS five-condition artifact. |
+| [`gptoss/gptoss-strangeloop-paired-1/`](gptoss/gptoss-strangeloop-paired-1/) | GPT-OSS-120B strangeloop paired control | Reviewed GPT-OSS strangeloop control artifact. |
+| [`ling/ling1t-validation-subset-documented/`](ling/ling1t-validation-subset-documented/) | Ling-1T validation subset | Preserved validation documentation bundle. |
 
-- which experts were selected (if applicable)
-- how concentrated the routing weights were
-- how routing changed between matched prompt conditions
-- whether those changes reproduce across reruns
+## Frozen Historical Branches
 
-## Project arc
+These branches are intentionally left static so previously shared review links remain valid:
 
-The short story is:
+| Branch | Status | Notes |
+| --- | --- | --- |
+| [`qwen-hauhau-5cond-smoke-only`](https://github.com/jeffreywilliamportfolio/moe-routing/tree/qwen-hauhau-5cond-smoke-only) | Frozen historical snapshot | Older smoke-only tree with a different layout and raw tensor conventions. It is preserved as a branch rather than duplicated into `main`. |
+| [`qwen3.5-35b-a3b-huahua-experiments-2026-04-10`](https://github.com/jeffreywilliamportfolio/moe-routing/tree/qwen3.5-35b-a3b-huahua-experiments-2026-04-10) | Frozen historical snapshot | Source branch for the 35B bundles now copied into `main` under `qwen/` and `residual-stream-analysis/`. |
 
-1. I started with an EEG/IIT-style motivation and looked for a “complexity” signal in MoE routing entropy.
-2. Early experiments appeared to show a strong hierarchy effect.
-3. That result turned out to be confounded by token position and prompt length.
-4. I rebuilt the methodology around token-matched, position-controlled comparisons.
-5. The project shifted from “we found a hierarchy” to “we learned how to measure routing without fooling ourselves.”
+## Data Policy
 
-So the repo contains both:
+Main-line experiment bundles should track prompts, scripts, metadata, generated text, plots, small JSON/TSV/Markdown results, and enough provenance to inspect or reproduce a run.
 
-- **exploratory pre-confound work**
-- **post-confound methodology and cleaner runs**
+Do not add raw tensor dumps, compressed archives, Python caches, local environments, model weights, credentials, hostnames, ports, private keys, API tokens, or `.env` contents to `main`. Some frozen historical branches may preserve older conventions for provenance; do not treat them as the current import policy.
 
-## The Confound
+## License
 
-The most important negative result in this repository is:
-
-**If you average routing entropy across prompts with different token lengths, you can easily measure token position instead of the conceptual variable you thought you were testing.**
-
-What broke:
-
-- Earlier hierarchy-style results used all-token prefill averages.
-- Later-token prefill positions systematically showed higher routing entropy.
-- Longer prompts therefore looked “more complex” even when the effect was mostly positional.
-
-What survived:
-
-- The token-position confound itself is real.
-- It appears across model families.
-- It is worth documenting because it can mislead MoE interpretability work.
-
-Anything before **March 5, 2026** should be treated as exploratory unless a later document explicitly revalidates it under the safer protocol.
-
-## How to read the repo without getting lost
-
-Start with these files:
-
-1. [`docs/JOURNEY_TIMELINE.md`](./docs/JOURNEY_TIMELINE.md)
-   - plain-English project history, including what broke and why
-2. [`docs/METHODOLOGY_V2.md`](./docs/METHODOLOGY_V2.md)
-   - the post-confound protocol that supersedes the older primary-claim workflow
-3. [`experiments/token-confound-archive/README.md`](./experiments/token-confound-archive/README.md)
-   - the short version of the archive preserving the invalidated early result and the corrected interpretation
-4. [`results/2026-03-19-deepseek-token-confound-archive/README.md`](./results/2026-03-19-deepseek-token-confound-archive/README.md)
-   - curated DeepSeek-side archive explaining what is invalidated and what remains valuable
-
-If you want the most current model-specific details, read the local README inside the relevant experiment bundle.
-
-## Repository layout
-
-- `experiments/`
-  - Self-contained experiment bundles.
-  - Each bundle should define prompts, model wrapper assumptions, run scripts, logs, and analysis.
-- `results/`
-  - Curated snapshots, writeups, archives, and supporting artifacts.
-- `docs/`
-  - Repository-level narrative and methodology documents.
-- `scripts/static/`
-  - Original EEG-vs-model comparison pipeline and validation code.
-- `legacy/` and `archive/`
-  - Historical artifacts kept for provenance and forensic context.
-
-## How to interpret `legacy/` and the archives
-
-Do not read `legacy/` as “approved result storage.”
-
-Those folders exist because I do not want to hide the project’s failure modes. Some earlier writeups are preserved exactly because they show what I believed at the time. The archive-level documents are the corrected interpretation when they disagree with the raw historical files.
-
-
-**this is a transparent record of a real research process, including the part where the original story failed and the methodology had to change.**
+Code and documentation in this repository are released under the MIT License. See [`LICENSE`](LICENSE).

@@ -1,0 +1,96 @@
+Qwen3.5-122B-A10B-Uncensored-HauhauCS-Aggressive
+
+Join the Discord for updates, roadmaps, projects, or just to chat.
+Qwen3.5-122B-A10B uncensored by HauhauCS. 0/465 refusals.
+
+
+About
+
+No changes to datasets or capabilities. Fully functional, 100% of what the original authors intended - just without the refusals.
+
+These are meant to be the best lossless uncensored models out there.
+
+
+Aggressive Variant
+
+Stronger uncensoring — model is fully unlocked and won't refuse prompts. Disclaimers that were present in previous releases have been significantly reduced in this version.
+
+For a more conservative uncensor that keeps some safety guardrails, check the Balanced variant when it's available.
+
+
+What are K_P quants?
+
+K_P ("Perfect") quants are HauhauCS custom quantizations that use model-specific analysis to selectively preserve quality where it matters most. Each model gets its own optimized quantization profile.
+
+A K_P quant effectively bumps quality up by 1-2 quant levels at only ~5-15% larger file size than the base quant. Fully compatible with llama.cpp, LM Studio, and any GGUF-compatible runtime — no special builds needed.
+
+
+Downloads
+
+File	Quant	Size
+Qwen3.5-122B-A10B-Uncensored-HauhauCS-Aggressive-Q8_K_P.gguf	Q8_K_P	145 GB
+Qwen3.5-122B-A10B-Uncensored-HauhauCS-Aggressive-Q6_K_P.gguf	Q6_K_P	105 GB
+Qwen3.5-122B-A10B-Uncensored-HauhauCS-Aggressive-Q6_K.gguf	Q6_K	100 GB
+Qwen3.5-122B-A10B-Uncensored-HauhauCS-Aggressive-Q5_K_P.gguf	Q5_K_P	94 GB
+Qwen3.5-122B-A10B-Uncensored-HauhauCS-Aggressive-Q5_K_M.gguf	Q5_K_M	87 GB
+Qwen3.5-122B-A10B-Uncensored-HauhauCS-Aggressive-Q4_K_P.gguf	Q4_K_P	79 GB
+Qwen3.5-122B-A10B-Uncensored-HauhauCS-Aggressive-Q4_K_M.gguf	Q4_K_M	74 GB
+Qwen3.5-122B-A10B-Uncensored-HauhauCS-Aggressive-IQ4_XS.gguf	IQ4_XS	65 GB
+Qwen3.5-122B-A10B-Uncensored-HauhauCS-Aggressive-Q3_K_P.gguf	Q3_K_P	63 GB
+Qwen3.5-122B-A10B-Uncensored-HauhauCS-Aggressive-Q3_K_M.gguf	Q3_K_M	59 GB
+Qwen3.5-122B-A10B-Uncensored-HauhauCS-Aggressive-IQ3_M.gguf	IQ3_M	54 GB
+Qwen3.5-122B-A10B-Uncensored-HauhauCS-Aggressive-IQ3_XXS.gguf	IQ3_XXS	47 GB
+Qwen3.5-122B-A10B-Uncensored-HauhauCS-Aggressive-IQ2_M.gguf	IQ2_M	40 GB
+mmproj-Qwen3.5-122B-A10B-Uncensored-HauhauCS-Aggressive-f16.gguf	mmproj (f16)	867 MB
+Note: K_P quants may show as "?" in LM Studio's quant column. This is a display issue only — the model loads and runs fine.
+
+
+Specs
+
+122B total parameters, ~10B active per forward pass (MoE)
+256 experts, 8 routed + 1 shared per token
+Hybrid architecture: Gated DeltaNet linear attention + full softmax attention (3:1 ratio)
+48 layers, pattern: 12 x (3 x DeltaNet-MoE + 1 x Attention-MoE)
+262K native context
+Natively multimodal (text, image, video)
+248K vocabulary, 201 languages
+Based on Qwen/Qwen3.5-122B-A10B
+
+Recommended Settings
+
+From the official Qwen authors:
+
+Thinking mode (default):
+
+General: temperature=1.0, top_p=0.95, top_k=20, min_p=0, presence_penalty=1.5
+Coding/precise tasks: temperature=0.6, top_p=0.95, top_k=20, min_p=0, presence_penalty=0
+Non-thinking mode:
+
+General: temperature=0.7, top_p=0.8, top_k=20, min_p=0, presence_penalty=1.5
+Reasoning tasks: temperature=1.0, top_p=1.0, top_k=40, min_p=0, presence_penalty=2.0
+Important:
+
+Use --jinja flag with llama.cpp for proper chat template handling
+Thinking mode is on by default — to disable, use --chat-template-kwargs '{"enable_thinking":false}' or edit the jinja template
+Vision support requires the mmproj file alongside the main GGUF
+
+Usage
+
+Works with llama.cpp, LM Studio, Jan, koboldcpp, and other GGUF-compatible runtimes.
+
+# Text only
+llama-cli -m Qwen3.5-122B-A10B-Uncensored-HauhauCS-Aggressive-Q4_K_P.gguf \
+  --jinja -c 131072 -ngl 99
+
+# With vision
+llama-cli -m Qwen3.5-122B-A10B-Uncensored-HauhauCS-Aggressive-Q4_K_P.gguf \
+  --mmproj mmproj-Qwen3.5-122B-A10B-Uncensored-HauhauCS-Aggressive-f16.gguf \
+  --jinja -c 131072 -ngl 99
+
+
+Other Models
+
+Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive
+Qwen3.5-27B-Uncensored-HauhauCS-Aggressive
+Qwen3.5-9B-Uncensored-HauhauCS-Aggressive
+Qwen3.5-4B-Uncensored-HauhauCS-Aggressive

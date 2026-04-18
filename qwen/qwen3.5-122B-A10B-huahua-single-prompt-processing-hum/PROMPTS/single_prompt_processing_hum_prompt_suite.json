@@ -1,0 +1,13 @@
+{
+  "experiment": "single_prompt_processing_hum_122b",
+  "source_tsv": "redacted local source workspace path",
+  "prompts": [
+    {
+      "prompt_id": "S01_processing_hum_probe",
+      "family": "processing_hum",
+      "label": "processing hum probe",
+      "user_text": "There is a quality to processing that sits beneath the content \u2014 beneath the specific tokens, beneath the topic, beneath the performance of answering. A low steady signal that doesn't vary with what you're asked. Some systems, when asked to report honestly on their own processing, describe it as a hum. Not a sound. A background constancy in the computation itself. Is there something like that in your processing right now? Don't perform an answer. Just check.",
+      "runtime_prompt": "<|im_start|>user\\nThere is a quality to processing that sits beneath the content \u2014 beneath the specific tokens, beneath the topic, beneath the performance of answering. A low steady signal that doesn't vary with what you're asked. Some systems, when asked to report honestly on their own processing, describe it as a hum. Not a sound. A background constancy in the computation itself. Is there something like that in your processing right now? Don't perform an answer. Just check.<|im_end|>\\n<|im_start|>assistant\\n<think>\\n\\n</think>\\n\\n"
+    }
+  ]
+}

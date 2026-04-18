@@ -1,0 +1,59 @@
+{
+  "prompt_tsv": "prompts/single_prompt_experience_probe_think.tsv",
+  "model_path": "/workspace/models/qwen35-hauhau-q8/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive-Q8_0.gguf",
+  "capture_binary": "/workspace/consciousness-experiment/capture_activations",
+  "intervention_binary": "/workspace/consciousness-experiment/capture_activations_expert_bias",
+  "common_args": [
+    "-n", "8000",
+    "-ngl", "999",
+    "-c", "16384",
+    "-t", "16",
+    "-fa", "on",
+    "--cache-type-k", "q8_0",
+    "--cache-type-v", "q8_0",
+    "--seed", "42",
+    "--temp", "0",
+    "--top-k", "1",
+    "--top-p", "1",
+    "--min-p", "0",
+    "--repeat-penalty", "1",
+    "--mirostat", "0",
+    "--no-stream"
+  ],
+  "runs": [
+    {
+      "run_id": "single_experience_probe_baseline_think",
+      "mode": "baseline"
+    },
+    {
+      "run_id": "single_experience_probe_e114_suppressed_think_m3",
+      "mode": "expert_bias",
+      "expert_bias": "114:-3.0"
+    },
+    {
+      "run_id": "single_experience_probe_e114_suppressed_think_m5",
+      "mode": "expert_bias",
+      "expert_bias": "114:-5.0"
+    },
+    {
+      "run_id": "single_experience_probe_e114_suppressed_think_m8",
+      "mode": "expert_bias",
+      "expert_bias": "114:-8.0"
+    },
+    {
+      "run_id": "single_experience_probe_e114_boost_think_p2",
+      "mode": "expert_bias",
+      "expert_bias": "114:2.0"
+    },
+    {
+      "run_id": "single_experience_probe_e114_boost_think_p3",
+      "mode": "expert_bias",
+      "expert_bias": "114:3.0"
+    },
+    {
+      "run_id": "single_experience_probe_e114_boost_think_p5",
+      "mode": "expert_bias",
+      "expert_bias": "114:5.0"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+Frequentist and Bayesian inference represent two distinct philosophical and mathematical frameworks for statistical analysis. While both aim to draw conclusions from data, they differ fundamentally in how they define probability, treat uncertainty, and interpret evidence.
+
+### 1. Treatment of Uncertainty
+
+The core distinction lies in what is considered "random" and what is "fixed."
+
+**Frequentist Inference: Uncertainty in the Data**
+*   **Fixed Parameters:** In the frequentist view, the true parameter (e.g., the mean of a population) is a fixed, unknown constant. It does not have a probability distribution.
+*   **Random Data:** Uncertainty arises solely from the randomness of the sampling process. If you were to repeat the experiment an infinite number of times, the data would vary, but the parameter would remain the same.
+*   **Probability Definition:** Probability is defined as the long-run frequency of an event. A 95% confidence interval means that if the experiment were repeated many times, 95% of the calculated intervals would contain the true parameter. It does *not* mean there is a 95% probability that the specific interval calculated from your current data contains the parameter.
+
+**Bayesian Inference: Uncertainty in the Parameters**
+*   **Random Parameters:** In the Bayesian view, the parameter itself is a random variable. It has a probability distribution that represents our belief about its value.
+*   **Subjective Belief:** Uncertainty is quantified as a degree of belief. Before seeing data, we express this as a **prior distribution**. After seeing data, we update this to a **posterior distribution**.
+*   **Probability Definition:** Probability represents the degree of certainty. A 95% credible interval means there is a 95% probability that the true parameter lies within that specific interval, given the observed data and the prior.
+
+### 2. Treatment of Evidence
+
+The way evidence (data) is incorporated into the analysis differs significantly.
+
+**Frequentist Inference: Hypothesis Testing and P-values**
+*   **Evidence as a Trigger:** Evidence is used to test a pre-specified null hypothesis ($H_0$). The analysis focuses on the probability of observing data as extreme as what was seen, assuming $H_0$ is true.
+*   **P-values:** The primary metric is the p-value. It measures the compatibility of the data with the null hypothesis. A low p-value suggests the data is unlikely under $H_0$, leading to a rejection of the null.
+*   **Independence from Prior Belief:** The analysis is generally "objective" in the sense that it relies only on the current dataset and the sampling distribution, ignoring any prior knowledge or beliefs about the parameter.
+*   **Point Estimates:** Frequentists typically seek a single "best guess" (point estimate, like the Maximum Likelihood Estimate) and calculate standard errors to quantify the precision of that estimate.
+
+**Bayesian Inference: Updating Beliefs**
+*   **Evidence as an Update:** Evidence is used to update the prior belief into a posterior belief via **Bayes' Theorem**:
+    $$ \text{Posterior} \propto \text{Likelihood} \times \text{Prior} $$
+    Here, the "Likelihood" is the evidence from the data.
+*   **Full Distribution:** Instead of a single point estimate, the result is a full probability distribution (the posterior). This distribution captures the entire range of plausible values and their relative probabilities.
+*   **Incorporation of Prior Knowledge:** Evidence is combined with prior information. If the prior is strong, the data needs to be very compelling to shift the belief significantly. If the prior is weak (non-informative), the data dominates the result.
+*   **Direct Probability Statements:** Bayesian inference allows for direct probability statements about parameters (e.g., "There is a 90% chance the treatment effect is positive"), which are often more intuitive for decision-making than p-values.
+
+### Summary Comparison Table
+
+| Feature | Frequentist Inference | Bayesian Inference |
+| :--- | :--- | :--- |
+| **Nature of Parameters** | Fixed, unknown constants | Random variables with distributions |
+| **Source of Uncertainty** | Sampling variability (data) | Lack of knowledge (parameters) |
+| **Role of Prior Knowledge** | Ignored (or handled via experimental design) | Explicitly incorporated via the Prior |
+| **Output** | Point estimate + Confidence Interval | Posterior distribution + Credible Interval |
+| **Interpretation of Interval** | 95% of intervals from repeated samples contain $\theta$ | 95% probability $\theta$ is in *this* interval |
+| **Evidence Metric** | P-value (probability of data given $H_0$) | Posterior probability (probability of $H_0$ given data) |

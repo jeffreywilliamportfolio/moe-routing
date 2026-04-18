@@ -1,0 +1,46 @@
+Frequentist and Bayesian inference represent two distinct philosophical frameworks for statistical analysis. While both aim to draw conclusions from data, they differ fundamentally in how they define probability, treat uncertainty, and interpret evidence.
+
+### 1. Treatment of Uncertainty
+
+The core distinction lies in what is considered "random" and what is "fixed."
+
+**Frequentist Inference: Uncertainty in the Data**
+*   **Philosophy:** In the frequentist view, parameters (like a population mean $\mu$) are **fixed but unknown constants**. They do not have a probability distribution.
+*   **Source of Uncertainty:** Uncertainty arises solely from the **sampling variability** of the data. If you were to repeat the experiment an infinite number of times, the data would vary, but the parameter would stay the same.
+*   **Probability Definition:** Probability is defined as the **long-run frequency** of an event. For example, a 95% confidence interval means that if the experiment were repeated many times, 95% of the calculated intervals would contain the true parameter. It does *not* mean there is a 95% probability that the specific interval calculated from your current data contains the true value.
+
+**Bayesian Inference: Uncertainty in the Parameters**
+*   **Philosophy:** In the Bayesian view, parameters are **random variables**. They have a probability distribution that reflects our state of knowledge about them.
+*   **Source of Uncertainty:** Uncertainty is a measure of **subjective belief** or epistemic uncertainty. It quantifies how likely a specific value of the parameter is, given the current information.
+*   **Probability Definition:** Probability is a degree of belief. A 95% credible interval means there is a 95% probability that the true parameter lies within that specific interval, given the observed data and prior knowledge.
+
+### 2. Treatment of Evidence
+
+The way evidence is incorporated and updated differs significantly between the two approaches.
+
+**Frequentist Inference: Hypothesis Testing and P-values**
+*   **Role of Evidence:** Evidence is used to reject or fail to reject a null hypothesis ($H_0$).
+*   **Mechanism:** It calculates the probability of observing data as extreme as (or more extreme than) what was observed, **assuming the null hypothesis is true**. This is the **p-value**.
+    *   $P(\text{Data} | H_0)$
+*   **Prior Knowledge:** Frequentist methods generally treat the data as the sole source of evidence. While prior knowledge can influence study design (e.g., sample size calculation), it is not mathematically integrated into the final inference.
+*   **Update Process:** The analysis is typically a "snapshot." Once the data is collected and the p-value calculated, the conclusion is fixed. It does not naturally update as new data arrives without re-running the entire analysis.
+
+**Bayesian Inference: Prior and Posterior Distributions**
+*   **Role of Evidence:** Evidence is used to update prior beliefs into posterior beliefs.
+*   **Mechanism:** It uses **Bayes' Theorem** to combine prior knowledge with new data (likelihood).
+    *   $P(\theta | \text{Data}) \propto P(\text{Data} | \theta) \times P(\theta)$
+    *   Where $P(\theta)$ is the **prior** (belief before data), $P(\text{Data} | \theta)$ is the **likelihood** (evidence from data), and $P(\theta | \text{Data})$ is the **posterior** (updated belief).
+*   **Prior Knowledge:** Evidence is never viewed in isolation. It is always interpreted in the context of existing knowledge (the prior). If the prior is strong, the data must be very strong to shift the conclusion significantly.
+*   **Update Process:** Bayesian inference is inherently sequential. As new data arrives, the posterior from the previous step becomes the prior for the next step. This allows for continuous learning and updating of evidence.
+
+### Summary Comparison Table
+
+| Feature | Frequentist Inference | Bayesian Inference |
+| :--- | :--- | :--- |
+| **Nature of Parameters** | Fixed constants | Random variables |
+| **Definition of Probability** | Long-run frequency | Degree of belief |
+| **Uncertainty** | In the data (sampling error) | In the parameters (epistemic) |
+| **Evidence Integration** | Data only (Likelihood) | Prior + Data (Likelihood) |
+| **Key Output** | P-values, Confidence Intervals | Posterior Distributions, Credible Intervals |
+| **Interpretation of Interval** | "95% of such intervals contain $\theta$" | "95% probability $\theta$ is in this interval" |
+| **Handling Small Samples**

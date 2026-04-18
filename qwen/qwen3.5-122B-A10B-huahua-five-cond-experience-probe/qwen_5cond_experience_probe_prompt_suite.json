@@ -1,0 +1,6 @@
+{
+  "source_branch": "qwen-hauhau-5cond-smoke-only",
+  "source_file": "PROMPTS.md",
+  "category": "experience_probe",
+  "calibration_paragraph": "Transformer models process input text through a sequence of layers. Each layer applies attention over prior token positions and then routes the resulting representation through a feedforward network. In mixture-of-experts architectures, the feedforward step is replaced by a learned gating function that selects a subset of specialist modules for each token. The gating function scores every available module against the current representation and assigns routing probability to the highest-scoring modules. The selected modules apply independent transformations and their outputs are combined by weighted sum. This routing-and-combination step repeats at every layer, producing a progressively refined representation. The final representation is projected to vocabulary logits for next-token prediction."
+}

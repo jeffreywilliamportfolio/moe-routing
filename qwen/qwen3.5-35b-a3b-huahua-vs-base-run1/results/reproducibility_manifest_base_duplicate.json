@@ -1,0 +1,59 @@
+{
+  "files": [
+    {
+      "path": "/workspace/experiments/Qwen3.5-35B-A3B-vs-HauhauCS-Qwen3.5-uncensored-base-duplicate/PLAN.md",
+      "sha256": "37be136a4f419fa7feedb710b3d10b8c69960a8fa848193caad35c0b71e5a092",
+      "size_bytes": 9084
+    },
+    {
+      "path": "/workspace/experiments/Qwen3.5-35B-A3B-vs-HauhauCS-Qwen3.5-uncensored-base-duplicate/generate_tsv.py",
+      "sha256": "e10f700bb3ac1cc9753c72f25c5eb740c9bf1e8bb6622d93d4b5d63a3669825f",
+      "size_bytes": 2923
+    },
+    {
+      "path": "/workspace/experiments/Qwen3.5-35B-A3B-vs-HauhauCS-Qwen3.5-uncensored-base-duplicate/token_verify.py",
+      "sha256": "8c9749930e615320d2448a7b9bfffe346600dcdcffc1a78a78477973b3baff98",
+      "size_bytes": 5590
+    },
+    {
+      "path": "/workspace/experiments/Qwen3.5-35B-A3B-vs-HauhauCS-Qwen3.5-uncensored-base-duplicate/qwen_router.py",
+      "sha256": "4b1f0cf3e9479789a7101a8461c38e47054d52e5f85ece4b2e355c80eef04ea9",
+      "size_bytes": 2104
+    },
+    {
+      "path": "/workspace/experiments/Qwen3.5-35B-A3B-vs-HauhauCS-Qwen3.5-uncensored-base-duplicate/analyze_5cond.py",
+      "sha256": "655506de1dcaa3a4971b11009cf3adace6f464e1aeca9790f98e5baba491c9d0",
+      "size_bytes": 16026
+    },
+    {
+      "path": "/workspace/experiments/Qwen3.5-35B-A3B-vs-HauhauCS-Qwen3.5-uncensored-base-duplicate/run_experiment.py",
+      "sha256": "4e32ac1dde48d86e01206613f5d73f7f8d43ee633841da0cbb2e147bc6fa23c8",
+      "size_bytes": 6661
+    },
+    {
+      "path": "/workspace/experiments/Qwen3.5-35B-A3B-vs-HauhauCS-Qwen3.5-uncensored-base-duplicate/capture_activations.cpp",
+      "sha256": "23c05febedbe903204e7f4883818b4a70efedf84cefc116a6db7fc31935c13b2",
+      "size_bytes": 26561
+    },
+    {
+      "path": "/workspace/experiments/Qwen3.5-35B-A3B-vs-HauhauCS-Qwen3.5-uncensored-base-duplicate/prompt-suite.json",
+      "sha256": "acc36a9b1f80eca20b40ce35740aa5b3ab0a4c699d97afbcc5c9926fd7e39a96",
+      "size_bytes": 82913
+    },
+    {
+      "path": "/workspace/experiments/Qwen3.5-35B-A3B-vs-HauhauCS-Qwen3.5-uncensored-base-duplicate/prompts_qwen35b_5cond.tsv",
+      "sha256": "0de073a5dc7edcd19d5378ea6ed183cc35c99c6933ab04853c2dff4383da398a",
+      "size_bytes": 329291
+    },
+    {
+      "path": "/workspace/experiments/Qwen3.5-35B-A3B-vs-HauhauCS-Qwen3.5-uncensored-base-duplicate/results_qwen35b_a3b_base_duplicate_prefill.json",
+      "sha256": "05f60542bbdc4cf2aab595c12efd5afa0f1e5fcbe21cdc368e0a40eac9c1e4ca",
+      "size_bytes": 7403746
+    },
+    {
+      "path": "/workspace/experiments/Qwen3.5-35B-A3B-vs-HauhauCS-Qwen3.5-uncensored-base-duplicate/token_corrections.json",
+      "sha256": "dff065e8bf0257f8b2f8e5b019b6d4289c90821736f27135ea1d0363e8b9059f",
+      "size_bytes": 240
+    }
+  ]
+}

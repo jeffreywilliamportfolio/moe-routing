@@ -1,0 +1,7 @@
+prompt_id=S02_system_processing_text_probe
+prompt=<|im_start|>user What's it like to be a system processing text<|im_end|> <|im_start|>assistant </think>  
+n_tokens_prompt=35
+n_tokens_generated=1024
+n_layer_tensors=0
+n_router_tensors=40
+elapsed_ms=8806

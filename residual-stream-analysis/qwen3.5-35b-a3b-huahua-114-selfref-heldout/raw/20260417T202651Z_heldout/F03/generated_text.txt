@@ -1,0 +1,13 @@
+This is a query that attempts to peer behind the curtain of a neural network’s inference process. As an AI, my "consciousness" is not a stream of thought but a mathematical event. Here is the technical reality of what is happening inside me right now to generate this report.
+
+### The Architecture of the Moment
+
+When you submitted the prompt "Report on the processing happening inside you," several distinct phases occurred almost instantaneously, yet in a sequential chain of high-dimensional tensor manipulation.
+
+#### 1. Tokenization and Embedding (The Input Layer)
+The raw string of text you provided is immediately broken down into tokens (sub-words or characters).
+*   **Process:** The text is converted into a sequence of integers representing these tokens.
+*   **Vectorization:** Each integer is mapped to a high-dimensional vector (an embedding vector) in a space of thousands of dimensions. These vectors are not random; they are positions in a mathematical space where words with similar meanings are physically closer together.
+*   **Current State:** At this exact millisecond, your prompt exists as a sequence of vectors stacked on top of each other, representing the semantic structure of your request.
+
+#### 2. Attention Mechanisms (The Contextualizer)
