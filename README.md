@@ -5,6 +5,8 @@ This repository collects controlled routing experiments for large mixture-of-exp
 **IMPORTANT NOTE:** The [`qwen/`](qwen/) folder is the best place to start for current analysis. Other branches are preserved for continuity for people who started reviewing before the latest update. DeepSeek, GPT-OSS, and Ling-1T were exploratory/reference runs. The [`token-confound-archive/`](token-confound-archive/) is a separate section for an important finding made while measuring routing entropy over token length and position. If you are starting fresh, begin with [`qwen/`](qwen/).
 
 
+## The Question
+
 The practical question I'm asking is simple: **when a model starts writing about experience, inner state, agency, or self-reference, which internal experts does the router choose token by token?**
 
 The current main thread follows HauhauCS Qwen3.5-35B-A3B and one routed expert, **Expert 114 at layer 14**. The working interpretation is now narrower and cleaner than the early branch names imply:
