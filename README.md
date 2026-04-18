@@ -20,7 +20,7 @@ If you have no context, read the repo in this order:
 2. **The deictic probes.** Small wording changes such as "I", "you", "this model", "a human", or an external object produce measurable routing changes.
 3. **The E114 thread on 35B.** The deictic studies made E114 stand out, but later runs refined the label away from "self-reference" and toward generated phenomenological language.
 4. **The E48 thread on 122B.** The 122B model does not cleanly reuse the 35B E114 pattern. The clearest 122B processing-hum analogue so far is E48 on the softmax-side generation track.
-5. **The residual-stream heldout.** The strongest corroborating run is the 35B matched-token E114 heldout: same lexical anchors across fire/nofire prompts, residual tensors captured at L13/L14/L15, verified router tap, and a 21.7x class separation in trimmed-generation W114 at L14.
+5. **The residual-stream heldout. The strongest corroborating run is the 35B matched-token E114 heldout: same lexical anchors across fire/nofire prompts, residual tensors captured at L13/L14/L15, verified router tap, and a 21.7x class separation in trimmed-generation W114 at L14.**
 
 ## Main Findings
 
