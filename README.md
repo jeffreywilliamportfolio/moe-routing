@@ -26,6 +26,7 @@ If you have no context, read the repo in this order:
 ## Main Findings
 
 - **Prompt wording matters, but raw all-token averages can mislead.** Token position and prompt length are strong confounds. Later runs are more careful about phase, trimming, and controls.
+- **The token confound happened because longer prompts contain more late-position prefill tokens.** MoE routing entropy changes systematically across token position, so averaging across all tokens made prompt length look like cognitive or self-referential structure.
 - **E114 is not just a self-reference prompt detector.** The heldout boundary cases changed the interpretation. F07 asked about the model but produced third-person technical exposition, and E114 stayed low. N10 asked about a wool sweater but generated first-person personification, and E114 fired in clusters.
 - **The best 35B label right now is generated-output phenomenological / mental-state register.** That label covers first-person experiential language, inner-state claims, and personified agency.
 - **The strongest 35B corroboration is matched-token and residual-backed.** Ten fire and ten nofire prompts share the same anchor tokens, but trimmed-generation W114 at L14 separates 0.0675 vs. 0.0031, a 21.7x ratio with Cohen's d 2.94 and no range overlap.
