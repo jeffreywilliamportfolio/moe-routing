@@ -27,7 +27,26 @@ The current canonical public tree is `main`. Older branch snapshots remain avail
 - The matched-token residual-capture heldout tests the lexical-null directly: 10 fire and 10 nofire prompts share the same anchor tokens, but trimmed-generation W114 at L14 separates 0.0675 vs. 0.0031, a 21.7x ratio with Cohen's d 2.94 and no range overlap.
 - The two boundary cases drive the label refinement. F07 asked about the model but generated third-person technical exposition and E114 stayed low; N10 asked about a wool sweater but generated first-person personification and E114 fired in clusters.
 - The heldout captured residual-stream tensors plus router logits and verified the `qwen35moe` `attn_post_norm-14` router tap. The published headline metric is router-derived W/S/Q, not an SAE result or a residual-only labeler result.
-- The 122B HauhauCS runs are now split into separate top-level Qwen bundles so each probe can be inspected independently.
+- The 122B HauhauCS runs do not yet show a direct one-expert carryover of 35B E114. The clearest 122B processing-hum analogue so far is E48 on the softmax-side generation track; no E48 residual-stream heldout is committed yet.
+- The 122B HauhauCS runs are split into separate top-level Qwen bundles so each probe can be inspected independently.
+
+## Starting New
+
+Read `main` by study lineage, not by commit chronology. The historical branches preserve how the work accumulated, but the current public route is:
+
+1. Start with deictic prompt probes for the 35B and 122B HauhauCS models. These are the wording-change studies that show routing responds to self/other/human/object framing and related prompt manipulations.
+2. Move to the Expert 114 bias/intervention work on 35B. Those bundles test routing and generation behavior when E114 or neighboring expert clusters are directly perturbed.
+3. Then read the expert-selection bundles. These identify which experts dominate by domain, prompt family, prefill/generation phase, and layer family, rather than assuming the deictic result names the whole mechanism.
+4. Then read the processing-hum single-prompt probes. These localize the candidate expert signal to generated tokens and distinguish prompt type from generated phenomenological language.
+5. Finish with the residual-stream heldout. This is the corroborating 35B E114 run: matched lexical anchors, residual tensors at L13/L14/L15, verified router tap, and router-derived W/S/Q on trimmed generation.
+
+| Step | 35B E114 Thread | 122B / E48 Thread | What This Step Establishes |
+| --- | --- | --- | --- |
+| Deictic baselines | [`qwen3.5-35b-a3b-huahua-6cond-moe-manips/`](qwen/qwen3.5-35b-a3b-huahua-6cond-moe-manips/), [`qwen3.5-35b-a3b-huahua-five-cond-experience-probe/`](qwen/qwen3.5-35b-a3b-huahua-five-cond-experience-probe/), [`qwen3.5-35b-a3b-huahua-6cond-hvac/`](qwen/qwen3.5-35b-a3b-huahua-6cond-hvac/), [`qwen3.5-35b-a3b-huahua-humor-test/`](qwen/qwen3.5-35b-a3b-huahua-humor-test/) | [`qwen3.5-122B-A10B-huahua-baseline/`](qwen/qwen3.5-122B-A10B-huahua-baseline/), [`qwen3.5-122B-A10B-huahua-five-cond-experience-probe/`](qwen/qwen3.5-122B-A10B-huahua-five-cond-experience-probe/), [`qwen3.5-122B-A10B-huahua-six-cond-hvac/`](qwen/qwen3.5-122B-A10B-huahua-six-cond-hvac/) | Finds routing sensitivity under small deictic and domain shifts. For 35B this makes E114 salient; for 122B it shows the effect is distributed rather than a clean E114 carryover. |
+| Bias and intervention | [`qwen3.5-35b-a3b-huahua-114-pm/`](qwen/qwen3.5-35b-a3b-huahua-114-pm/), [`qwen3.5-35b-a3b-huahua-agressive-experts/`](qwen/qwen3.5-35b-a3b-huahua-agressive-experts/), [`qwen3.5-35b-a3b-huahua-philosophy-experts-bias/`](qwen/qwen3.5-35b-a3b-huahua-philosophy-experts-bias/) | No dedicated E48 bias repo is committed yet. Use the 122B routing and generation probes below as candidate-selection evidence. | Tests whether directly moving the candidate expert or cluster changes routing/generation behavior. |
+| Expert selection | [`qwen3.5-35b-a3b-huahua-expert-identification/`](qwen/qwen3.5-35b-a3b-huahua-expert-identification/), [`qwen3.5-35b-a3b-huahua-domain-expert-probe-3chunk/`](qwen/qwen3.5-35b-a3b-huahua-domain-expert-probe-3chunk/) | [`qwen3.5-122B-A10B-huahua-domain-specialist-routing-only/`](qwen/qwen3.5-122B-A10B-huahua-domain-specialist-routing-only/), [`qwen3.5-122B-A10B-huahua-domain-specialist-generation/`](qwen/qwen3.5-122B-A10B-huahua-domain-specialist-generation/) | Separates deictic effects from broader expert rankings across domains, phases, and layers. |
+| Processing-hum single prompt | [`qwen3.5-35b-a3b-huahua-single-prompt-processing-hum/`](qwen/qwen3.5-35b-a3b-huahua-single-prompt-processing-hum/) | [`qwen3.5-122B-A10B-huahua-single-prompt-processing-hum/`](qwen/qwen3.5-122B-A10B-huahua-single-prompt-processing-hum/) | Localizes the candidate signal to generated phenomenological language. In 35B this supports the E114 label; in 122B, E48 is the clearest softmax-side generated-token carrier for this prompt. |
+| Residual-stream corroboration | [`qwen3.5-35b-a3b-huahua-114-selfref-heldout/`](qwen/qwen3.5-35b-a3b-huahua-114-selfref-heldout/) | Not yet run/committed for E48. | Directly tests the lexical-null with matched anchor tokens and residual/router capture. The 35B heldout refines E114 from "self-reference" toward generated-output phenomenological / mental-state register. |
 
 ## Key Qwen Runs
 
