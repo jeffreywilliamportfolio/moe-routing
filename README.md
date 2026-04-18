@@ -20,7 +20,8 @@ If you have no context, read the repo in this order:
 2. **The deictic probes.** Small wording changes such as "I", "you", "this model", "a human", or an external object produce measurable routing changes.
 3. **The E114 thread on 35B.** The deictic studies made E114 stand out, but later runs refined the label away from "self-reference" and toward generated phenomenological language.
 4. **The E48 thread on 122B.** The 122B model does not cleanly reuse the 35B E114 pattern. The clearest 122B processing-hum analogue so far is E48 on the softmax-side generation track.
-5. **The residual-stream heldout. The strongest corroborating run is the 35B matched-token E114 heldout: same lexical anchors across fire/nofire prompts, residual tensors captured at L13/L14/L15, verified router tap, and a 21.7x class separation in trimmed-generation W114 at L14.**
+5. **The residual-stream heldout.** The strongest corroborating run is the 35B matched-token E114 heldout: same lexical anchors across fire/nofire prompts, residual tensors captured at L13/L14/L15, verified router tap, and a 21.7x class separation in trimmed-generation W114 at L14.
+6. **Reference and legacy material.** Read the DeepSeek, GPT-OSS, Ling, and token-confound folders after the Qwen thread. They are useful for comparison, validation, provenance, or failure analysis, but they are not the evidence emphasized for the current E114/E48 interpretation.
 
 ## Main Findings
 
@@ -30,6 +31,17 @@ If you have no context, read the repo in this order:
 - **The strongest 35B corroboration is matched-token and residual-backed.** Ten fire and ten nofire prompts share the same anchor tokens, but trimmed-generation W114 at L14 separates 0.0675 vs. 0.0031, a 21.7x ratio with Cohen's d 2.94 and no range overlap.
 - **The published heldout metric is router-derived W/S/Q.** The run also captures residual-stream tensors and verifies the `qwen35moe` `attn_post_norm-14` router tap, but the headline number is not an SAE result and not a residual-only labeler result.
 - **122B is related but not a direct E114 clone.** The 122B runs are split into separate bundles; E48 is the clearest processing-hum softmax-side generation carrier so far, and no E48 residual-stream heldout is committed yet.
+
+## Evidence Status
+
+Use the repository in tiers. The Qwen folders are the current emphasized thread. The other folders are deliberately kept because they explain methodology, validation attempts, and failure modes.
+
+| Tier | Use For | Folders |
+| --- | --- | --- |
+| **Current emphasized evidence** | Current E114/E48 interpretation, Qwen routing behavior, and the residual-stream corroboration. | [`qwen/`](qwen/) |
+| **Reference / method-comparison artifacts** | Cross-model comparison, prompt-suite pattern reuse, and examples of checked routing bundles. Do not cite these as direct support for the current E114/E48 claim. | [`deepseek/ds31-5cond-1/`](deepseek/ds31-5cond-1/), [`gptoss/gptoss-5cond-1/`](gptoss/gptoss-5cond-1/), [`gptoss/gptoss-strangeloop-paired-1/`](gptoss/gptoss-strangeloop-paired-1/) |
+| **Legacy validation subset** | Provenance and tensor-discovery/validation context only. This is a documented subset, not a complete current experiment bundle. | [`ling/ling1t-validation-subset-documented/`](ling/ling1t-validation-subset-documented/) |
+| **Invalidated-result archive** | Failure analysis and cautionary evidence about token-position confounds. These files should not be used as positive evidence for a cognitive-complexity hierarchy. | [`token-confound-archive/`](token-confound-archive/) |
 
 ## Study Lineage
 
@@ -77,11 +89,11 @@ The stochastic generation rows in `main` are [`qwen3.5-35b-a3b-huahua-single-pro
 
 | Path | Purpose |
 | --- | --- |
-| [`qwen/`](qwen/) | Qwen and HauhauCS Qwen experiment bundles, including 35B, 122B, and 397B runs. |
-| [`deepseek/`](deepseek/) | DeepSeek V3.1 routing bundles. |
-| [`gptoss/`](gptoss/) | GPT-OSS-120B routing bundles. |
-| [`ling/`](ling/) | Ling-1T validation documentation. |
-| [`token-confound-archive/`](token-confound-archive/) | Preserved archive documenting the token-position confound and corrected interpretation. |
+| [`qwen/`](qwen/) | Current emphasized Qwen and HauhauCS Qwen experiment bundles, including 35B, 122B, and 397B runs. |
+| [`deepseek/`](deepseek/) | Reference DeepSeek V3.1 routing bundle, useful for method comparison but not part of the current E114/E48 claim. |
+| [`gptoss/`](gptoss/) | Reference GPT-OSS-120B routing bundles, useful for cross-model context. |
+| [`ling/`](ling/) | Legacy Ling-1T validation subset documentation. |
+| [`token-confound-archive/`](token-confound-archive/) | Invalidated-result archive documenting the token-position confound and corrected interpretation. |
 
 Older branch snapshots remain available for provenance and previously shared review links, but new public work should land on `main`.
 
@@ -113,14 +125,17 @@ Older branch snapshots remain available for provenance and previously shared rev
 | [`qwen/qwen397b-selfref-5cond-q8_0-run1/`](qwen/qwen397b-selfref-5cond-q8_0-run1/) | Qwen3.5-397B self-reference probe | Router analysis | Prefill-only greedy argmax; no generation sampling | Reviewed 397B self-referential five-condition run. |
 | [`qwen/qwen397b-strangeloop-5cond-ud_iq3_xxs-run1/`](qwen/qwen397b-strangeloop-5cond-ud_iq3_xxs-run1/) | Qwen3.5-397B strangeloop probe | Router analysis | Prefill-only greedy argmax; no generation sampling | Reviewed 397B strangeloop five-condition run. |
 
-## Other Model Families
+## Reference And Legacy Bundles
 
-| Bundle | Model / Scope | Why It Matters |
+These bundles are intentionally preserved, but they are not the emphasized evidence for the current E114/E48 interpretation.
+
+| Bundle | Status | How To Use It |
 | --- | --- | --- |
-| [`deepseek/ds31-5cond-1/`](deepseek/ds31-5cond-1/) | DeepSeek V3.1 five-condition experiment | Reproducible DeepSeek routing bundle. |
-| [`gptoss/gptoss-5cond-1/`](gptoss/gptoss-5cond-1/) | GPT-OSS-120B self-referential five-condition run | Reviewed valid GPT-OSS five-condition artifact. |
-| [`gptoss/gptoss-strangeloop-paired-1/`](gptoss/gptoss-strangeloop-paired-1/) | GPT-OSS-120B strangeloop paired control | Reviewed GPT-OSS strangeloop control artifact. |
-| [`ling/ling1t-validation-subset-documented/`](ling/ling1t-validation-subset-documented/) | Ling-1T validation subset | Preserved validation documentation bundle. |
+| [`deepseek/ds31-5cond-1/`](deepseek/ds31-5cond-1/) | Reference DeepSeek five-condition bundle | Use for method comparison and reproducibility patterns, not as direct support for the Qwen E114/E48 claim. |
+| [`gptoss/gptoss-5cond-1/`](gptoss/gptoss-5cond-1/) | Reference GPT-OSS five-condition artifact | Usable cross-model routing artifact; separate from the current Qwen claim. |
+| [`gptoss/gptoss-strangeloop-paired-1/`](gptoss/gptoss-strangeloop-paired-1/) | Reference GPT-OSS paired-control artifact | Use for comparison around strangeloop controls, not as E114/E48 evidence. |
+| [`ling/ling1t-validation-subset-documented/`](ling/ling1t-validation-subset-documented/) | Legacy validation subset | Provenance and tensor-validation context only; documented subset, not a full current experiment. |
+| [`token-confound-archive/`](token-confound-archive/) | Invalidated-result archive | Use as a cautionary archive about token-position confounds. Do not cite the original hierarchy results as valid current findings. |
 
 ## What Is In A Run Folder
 
