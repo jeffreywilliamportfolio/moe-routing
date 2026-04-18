@@ -9,7 +9,7 @@ This repository collects controlled routing experiments for large mixture-of-exp
 
 The practical question I'm asking is simple: 
 
-> **when a model starts writing about experience, inner state, agency, or self-reference, which internal experts does the router choose token by token?**
+> ***When a model starts writing about experience, inner state, agency, or self-reference, which internal experts does the router choose token by token?***
 
 The current main thread follows HauhauCS Qwen3.5-35B-A3B and one routed expert, **Expert 114 at layer 14**. The working interpretation is now narrower and cleaner than the early branch names imply:
 
