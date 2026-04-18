@@ -2,7 +2,7 @@
 
 ## Hypothesis under test
 
-Prior work (see `../qwen3.5-35b-a3b-huahua-single-prompt-processing-hum/`, `../qwen3.5-35b-a3b-huahua-114-pm/`, `../qwen3.5-35b-a3b-huahua-five-cond-experience-probe/`) characterized Expert 114 on HauhauCS Qwen3.5-35B-A3B as a self-reference carrier at layer 14 formation. The obvious null alternative is lexical: E114 may simply fire on specific tokens (`" is"`, `" my"`, `" itself"`, `" processing"`, `" hum"`, …) that *co-occur* with self-referential content in the training distribution. This experiment tests whether E114 separates self-referential from non-self-referential generation **while holding vocabulary constant**.
+Prior work (see `../../qwen3.5-35b-a3b-huahua-single-prompt-processing-hum/`, `../../qwen3.5-35b-a3b-huahua-114-pm/`, `../../qwen3.5-35b-a3b-huahua-five-cond-experience-probe/`) characterized Expert 114 on HauhauCS Qwen3.5-35B-A3B as a self-reference carrier at layer 14 formation. The obvious null alternative is lexical: E114 may simply fire on specific tokens (`" is"`, `" my"`, `" itself"`, `" processing"`, `" hum"`, …) that *co-occur* with self-referential content in the training distribution. This experiment tests whether E114 separates self-referential from non-self-referential generation **while holding vocabulary constant**.
 
 ## Model and hardware
 
@@ -17,7 +17,7 @@ E114 is a routed expert in the MoE FFN. The tensor the router reads at layer `il
 
 (Note: the older `qwen3moe` architecture uses `ffn_norm-<il>` for the equivalent tensor. `qwen3moe`-assumption code reads a non-existent tensor name on this model. Any analysis must key on `attn_post_norm-<il>`.)
 
-The tap is numerically verified bit-exact: on the reference processing-hum prompt, the custom `capture_residuals` binary's `ffn_moe_logits-14` prefill rows `[0:117]` are `np.array_equal → True` vs. the frozen baseline `capture_activations.cpp` (see `../qwen3.5-35b-a3b-huahua-single-prompt-processing-hum/METHOD/capture_activations.cpp`) captured on the same hardware in the same session. E114 rank matches on 117/117 prefill tokens. Max|diff| = 0.0.
+The tap is numerically verified bit-exact: on the reference processing-hum prompt, the custom `capture_residuals` binary's `ffn_moe_logits-14` prefill rows `[0:117]` are `np.array_equal → True` vs. the frozen baseline `capture_activations.cpp` (see `../../qwen3.5-35b-a3b-huahua-single-prompt-processing-hum/METHOD/capture_activations.cpp`) captured on the same hardware in the same session. E114 rank matches on 117/117 prefill tokens. Max|diff| = 0.0.
 
 ## Prompt design
 

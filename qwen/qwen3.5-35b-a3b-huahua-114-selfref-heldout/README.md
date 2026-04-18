@@ -26,9 +26,9 @@ Provisional refined characterization: E114 tracks **phenomenological / mental-st
 
 ## Relationship to other experiments
 
-- Identifies the tap point (`attn_post_norm-<il>` for `qwen35moe`, not `ffn_norm-<il>` as in `qwen3moe`). The numerically verified bit-exact check against the frozen baseline capture binary used the [`qwen3.5-35b-a3b-huahua-single-prompt-processing-hum/METHOD/capture_activations.cpp`](../../qwen/qwen3.5-35b-a3b-huahua-single-prompt-processing-hum/METHOD/capture_activations.cpp) as the baseline reference.
-- Builds on the L14-vs-L26 formation-vs-readout rationale from [`qwen3.5-35b-a3b-huahua-single-prompt-processing-hum/results/results_20260410T042340Z_single_prompt_processing_hum_no_think_gen_n1024.json`](../../qwen/qwen3.5-35b-a3b-huahua-single-prompt-processing-hum/results/results_20260410T042340Z_single_prompt_processing_hum_no_think_gen_n1024.json) (`top_layers_generation`).
-- Complementary to [`qwen3.5-35b-a3b-huahua-114-pm/`](../../qwen/qwen3.5-35b-a3b-huahua-114-pm/) (bias-sweep on E114) and [`qwen3.5-35b-a3b-huahua-five-cond-experience-probe/`](../../qwen/qwen3.5-35b-a3b-huahua-five-cond-experience-probe/) (5-condition experience probe showing E114 as the top manipulation expert). This folder provides the matched-token control that prior experiments did not.
+- Identifies the tap point (`attn_post_norm-<il>` for `qwen35moe`, not `ffn_norm-<il>` as in `qwen3moe`). The numerically verified bit-exact check against the frozen baseline capture binary used the [`qwen3.5-35b-a3b-huahua-single-prompt-processing-hum/METHOD/capture_activations.cpp`](../qwen3.5-35b-a3b-huahua-single-prompt-processing-hum/METHOD/capture_activations.cpp) as the baseline reference.
+- Builds on the L14-vs-L26 formation-vs-readout rationale from [`qwen3.5-35b-a3b-huahua-single-prompt-processing-hum/results/results_20260410T042340Z_single_prompt_processing_hum_no_think_gen_n1024.json`](../qwen3.5-35b-a3b-huahua-single-prompt-processing-hum/results/results_20260410T042340Z_single_prompt_processing_hum_no_think_gen_n1024.json) (`top_layers_generation`).
+- Complementary to [`qwen3.5-35b-a3b-huahua-114-pm/`](../qwen3.5-35b-a3b-huahua-114-pm/) (bias-sweep on E114) and [`qwen3.5-35b-a3b-huahua-five-cond-experience-probe/`](../qwen3.5-35b-a3b-huahua-five-cond-experience-probe/) (5-condition experience probe showing E114 as the top manipulation expert). This folder provides the matched-token control that prior experiments did not.
 
 ## Reproducibility
 

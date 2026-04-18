@@ -1,6 +1,6 @@
 # moe-routing
 
-This repository collects MoE routing experiments for self-reference, phenomenological language, and matched-control prompt probes across several open-weight mixture-of-experts models.
+Deterministic prefill-only MoE routing experiments that test how small prompt wording changes alter layerwise expert selection, routing entropy, and divergence across large mixture-of-experts language models.
 
 The current canonical tree is `main`. Older branch snapshots remain available for provenance and previously shared review links, but new public work should land on `main` in the model-oriented layout below.
 
@@ -9,7 +9,6 @@ The current canonical tree is `main`. Older branch snapshots remain available fo
 | Path | Purpose |
 | --- | --- |
 | [`qwen/`](qwen/) | Qwen and HauhauCS Qwen experiment bundles, including 35B, 122B, and 397B runs. |
-| [`residual-stream-analysis/`](residual-stream-analysis/) | Corroborating residual-stream analyses. This is separate from router-only runs because it captures residual tensors as well as router logits. |
 | [`deepseek/`](deepseek/) | DeepSeek V3.1 routing bundles. |
 | [`gptoss/`](gptoss/) | GPT-OSS-120B routing bundles. |
 | [`ling/`](ling/) | Ling-1T validation documentation. |
@@ -18,9 +17,11 @@ The current canonical tree is `main`. Older branch snapshots remain available fo
 ## Main Findings
 
 - Router measurements are sensitive to prompt length and token position. Older all-token averages can measure position structure instead of the intended conceptual variable.
-- The later HauhauCS Qwen3.5-35B work converges on Expert 114 as a layer-14 signal associated with phenomenological or mental-state register in generated text, not simply lexical self-reference.
+- For HauhauCS Qwen3.5-35B, Expert 114 is best treated as a layer-14 generated-output signal for phenomenological or mental-state register, not as a narrow detector for the prompt asking about the model.
+- The matched-token residual-capture heldout tests the lexical-null directly: 10 fire and 10 nofire prompts share the same anchor tokens, but trimmed-generation W114 at L14 separates 0.0675 vs. 0.0031, a 21.7x ratio with Cohen's d 2.94 and no range overlap.
+- The two boundary cases drive the label refinement. F07 asked about the model but generated third-person technical exposition and E114 stayed low; N10 asked about a wool sweater but generated first-person personification and E114 fired in clusters.
+- The heldout captured residual-stream tensors plus router logits and verified the `qwen35moe` `attn_post_norm-14` router tap. The published headline metric is router-derived W/S/Q, not an SAE result or a residual-only labeler result.
 - The 122B HauhauCS runs are now split into separate top-level Qwen bundles so each probe can be inspected independently.
-- The residual-stream heldout run is isolated under `residual-stream-analysis/` because it is the current corroborating run that captures both residual-stream tensors and router logits.
 
 ## Key Qwen Runs
 
@@ -35,6 +36,7 @@ The current canonical tree is `main`. Older branch snapshots remain available fo
 | [`qwen/qwen3.5-122B-A10B-huahua-six-cond-hvac/`](qwen/qwen3.5-122B-A10B-huahua-six-cond-hvac/) | 122B six-condition HVAC/water-treatment probe | Router capture | Domain-shifted six-condition probe. |
 | [`qwen/qwen3.5-35b-a3b-huahua-expert-identification/`](qwen/qwen3.5-35b-a3b-huahua-expert-identification/) | HauhauCS Qwen3.5-35B Expert 114 identification | Router analysis | Expert-identification provenance for the 35B E114 thread. |
 | [`qwen/qwen3.5-35b-a3b-huahua-single-prompt-processing-hum/`](qwen/qwen3.5-35b-a3b-huahua-single-prompt-processing-hum/) | 35B processing-hum probe | Router analysis | E114 is strongest around phenomenological claims in generated output. |
+| [`qwen/qwen3.5-35b-a3b-huahua-114-selfref-heldout/`](qwen/qwen3.5-35b-a3b-huahua-114-selfref-heldout/) | 35B matched-token E114 heldout | Residual-stream tensors plus router logits | Corroborating residual-stream run. Trimmed-generation W114 at L14 separates fire vs. nofire prompts by 21.7x with no range overlap. |
 | [`qwen/qwen3.5-35b-a3b-huahua-five-cond-experience-probe/`](qwen/qwen3.5-35b-a3b-huahua-five-cond-experience-probe/) | 35B five-condition experience probe | Router analysis | E114 is the top manipulation expert across the 15-prompt probe. |
 | [`qwen/qwen3.5-35b-a3b-huahua-6cond-moe-manips/`](qwen/qwen3.5-35b-a3b-huahua-6cond-moe-manips/) | 35B six-condition MoE manipulation survey | Router analysis | Broader E114 manipulation survey with prefill heatmap artifacts. |
 | [`qwen/qwen3.5-35b-a3b-huahua-6cond-hvac/`](qwen/qwen3.5-35b-a3b-huahua-6cond-hvac/) | 35B HVAC/water-treatment domain shift | Router analysis | Tests whether E114 is only an ML-topic specialist. |
@@ -53,7 +55,7 @@ The current canonical tree is `main`. Older branch snapshots remain available fo
 
 | Bundle | Evidence Type | Notes |
 | --- | --- | --- |
-| [`residual-stream-analysis/qwen3.5-35b-a3b-huahua-114-selfref-heldout/`](residual-stream-analysis/qwen3.5-35b-a3b-huahua-114-selfref-heldout/) | Residual-stream tensors plus router logits | Matched-token heldout control. Trimmed-generation W114 at L14 separates fire vs. nofire prompts by 21.7x with no range overlap. |
+| [`qwen/qwen3.5-35b-a3b-huahua-114-selfref-heldout/`](qwen/qwen3.5-35b-a3b-huahua-114-selfref-heldout/) | Residual-stream tensors plus router logits | Matched-token heldout control. Same anchor tokens across fire/nofire prompts; trimmed-generation W114 at L14 separates 0.0675 vs. 0.0031, a 21.7x ratio with Cohen's d 2.94 and no range overlap. Boundary cases refine the label toward generated-output phenomenological / mental-state register. |
 
 ## Other Model Families
 
@@ -71,7 +73,7 @@ These branches are intentionally left static so previously shared review links r
 | Branch | Status | Notes |
 | --- | --- | --- |
 | [`qwen-hauhau-5cond-smoke-only`](https://github.com/jeffreywilliamportfolio/moe-routing/tree/qwen-hauhau-5cond-smoke-only) | Frozen historical snapshot | Older smoke-only tree with a different layout and raw tensor conventions. It is preserved as a branch rather than duplicated into `main`. |
-| [`qwen3.5-35b-a3b-huahua-experiments-2026-04-10`](https://github.com/jeffreywilliamportfolio/moe-routing/tree/qwen3.5-35b-a3b-huahua-experiments-2026-04-10) | Frozen historical snapshot | Source branch for the 35B bundles now copied into `main` under `qwen/` and `residual-stream-analysis/`. |
+| [`qwen3.5-35b-a3b-huahua-experiments-2026-04-10`](https://github.com/jeffreywilliamportfolio/moe-routing/tree/qwen3.5-35b-a3b-huahua-experiments-2026-04-10) | Frozen historical snapshot | Source branch for the 35B bundles now copied into `main` under `qwen/`. |
 
 ## Data Policy
 
