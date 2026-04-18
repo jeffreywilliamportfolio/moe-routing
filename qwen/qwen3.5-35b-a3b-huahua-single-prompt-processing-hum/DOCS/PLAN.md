@@ -15,7 +15,8 @@ Prompt ID: `S01_processing_hum_probe`
 ## Model and Hardware
 
 - Model: HauhauCS Qwen3.5-35B-A3B Q8_0
-- Runtime: no-think, greedy, `-n 1024`
+- Runtime: no-think, stochastic/default generation, `-n 1024`
+- Sampling note: this legacy run should not be grouped with the deterministic `--temp 0 --top-k 1` probes; exact sampler arguments are not preserved in committed metadata.
 - Single prompt, single run
 
 ## Measurements

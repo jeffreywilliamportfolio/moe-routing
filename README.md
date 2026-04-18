@@ -48,39 +48,45 @@ Read `main` by study lineage, not by commit chronology. The historical branches 
 | Processing-hum single prompt | [`qwen3.5-35b-a3b-huahua-single-prompt-processing-hum/`](qwen/qwen3.5-35b-a3b-huahua-single-prompt-processing-hum/) | [`qwen3.5-122B-A10B-huahua-single-prompt-processing-hum/`](qwen/qwen3.5-122B-A10B-huahua-single-prompt-processing-hum/) | Localizes the candidate signal to generated phenomenological language. In 35B this supports the E114 label; in 122B, E48 is the clearest softmax-side generated-token carrier for this prompt. |
 | Residual-stream corroboration | [`qwen3.5-35b-a3b-huahua-114-selfref-heldout/`](qwen/qwen3.5-35b-a3b-huahua-114-selfref-heldout/) | Not yet run/committed for E48. | Directly tests the lexical-null with matched anchor tokens and residual/router capture. The 35B heldout refines E114 from "self-reference" toward generated-output phenomenological / mental-state register. |
 
+## Sampling Notes
+
+`Greedy generation` means the committed metadata or run docs show deterministic generation, typically `--temp 0 --top-k 1`. `Prefill-only` rows do not sample continuation tokens. `Stochastic/default generation` is the warning label: the generated text is part of the evidence, and reruns can move local token-level traces.
+
+The stochastic generation rows in `main` are [`qwen3.5-35b-a3b-huahua-single-prompt-processing-hum/`](qwen/qwen3.5-35b-a3b-huahua-single-prompt-processing-hum/) and [`qwen3.5-35b-a3b-huahua-114-selfref-heldout/`](qwen/qwen3.5-35b-a3b-huahua-114-selfref-heldout/). The first is a legacy run with an exact sampler-argument gap in committed metadata; the second is explicitly documented as `--seed 0` default sampling.
+
 ## Key Qwen Runs
 
-| Bundle | Model / Scope | Evidence Type | Notes |
-| --- | --- | --- | --- |
-| [`qwen/qwen3.5-122B-A10B-huahua-baseline/`](qwen/qwen3.5-122B-A10B-huahua-baseline/) | HauhauCS Qwen3.5-122B-A10B baseline/reference surface | Router capture | Canonical 122B baseline and 5-condition prompt-suite run. |
-| [`qwen/qwen3.5-122B-A10B-huahua-architecture-smoke/`](qwen/qwen3.5-122B-A10B-huahua-architecture-smoke/) | 122B architecture smoke | Router capture | First 122B single-prompt architecture smoke run and token audit. |
-| [`qwen/qwen3.5-122B-A10B-huahua-domain-specialist-routing-only/`](qwen/qwen3.5-122B-A10B-huahua-domain-specialist-routing-only/) | 122B domain-specialist probe | Router-only prefill | Routing-only domain-specialist probe. |
-| [`qwen/qwen3.5-122B-A10B-huahua-domain-specialist-generation/`](qwen/qwen3.5-122B-A10B-huahua-domain-specialist-generation/) | 122B domain-specialist probe | Prefill plus generation | Generation-track domain-specialist probe. |
-| [`qwen/qwen3.5-122B-A10B-huahua-five-cond-experience-probe/`](qwen/qwen3.5-122B-A10B-huahua-five-cond-experience-probe/) | 122B five-condition experience probe | Router capture plus per-token summaries | Split out from the former nested followups folder. |
-| [`qwen/qwen3.5-122B-A10B-huahua-single-prompt-processing-hum/`](qwen/qwen3.5-122B-A10B-huahua-single-prompt-processing-hum/) | 122B single-prompt processing-hum probe | Router capture plus per-token summaries | 122B analogue of the processing-hum probe. |
-| [`qwen/qwen3.5-122B-A10B-huahua-six-cond-hvac/`](qwen/qwen3.5-122B-A10B-huahua-six-cond-hvac/) | 122B six-condition HVAC/water-treatment probe | Router capture | Domain-shifted six-condition probe. |
-| [`qwen/qwen3.5-35b-a3b-huahua-expert-identification/`](qwen/qwen3.5-35b-a3b-huahua-expert-identification/) | HauhauCS Qwen3.5-35B Expert 114 identification | Router analysis | Expert-identification provenance for the 35B E114 thread. |
-| [`qwen/qwen3.5-35b-a3b-huahua-single-prompt-processing-hum/`](qwen/qwen3.5-35b-a3b-huahua-single-prompt-processing-hum/) | 35B processing-hum probe | Router analysis | E114 is strongest around phenomenological claims in generated output. |
-| [`qwen/qwen3.5-35b-a3b-huahua-114-selfref-heldout/`](qwen/qwen3.5-35b-a3b-huahua-114-selfref-heldout/) | 35B matched-token E114 heldout | Residual-stream tensors plus router logits | Corroborating residual-stream run. Trimmed-generation W114 at L14 separates fire vs. nofire prompts by 21.7x with no range overlap. |
-| [`qwen/qwen3.5-35b-a3b-huahua-five-cond-experience-probe/`](qwen/qwen3.5-35b-a3b-huahua-five-cond-experience-probe/) | 35B five-condition experience probe | Router analysis | E114 is the top manipulation expert across the 15-prompt probe. |
-| [`qwen/qwen3.5-35b-a3b-huahua-6cond-moe-manips/`](qwen/qwen3.5-35b-a3b-huahua-6cond-moe-manips/) | 35B six-condition MoE manipulation survey | Router analysis | Broader E114 manipulation survey with prefill heatmap artifacts. |
-| [`qwen/qwen3.5-35b-a3b-huahua-6cond-hvac/`](qwen/qwen3.5-35b-a3b-huahua-6cond-hvac/) | 35B HVAC/water-treatment domain shift | Router analysis | Tests whether E114 is only an ML-topic specialist. |
-| [`qwen/qwen3.5-35b-a3b-huahua-domain-expert-probe-3chunk/`](qwen/qwen3.5-35b-a3b-huahua-domain-expert-probe-3chunk/) | 35B domain expert probe | Router analysis | Token-balanced domain chunks, including generation/prefill divergence. |
-| [`qwen/qwen3.5-35b-a3b-huahua-strangeloop/`](qwen/qwen3.5-35b-a3b-huahua-strangeloop/) | 35B strangeloop paired control | Router analysis | Paired control around Godel/Escher/Quine/bootstrap/tangled-hierarchy prompts. |
-| [`qwen/qwen3.5-35b-a3b-huahua-114-pm/`](qwen/qwen3.5-35b-a3b-huahua-114-pm/) | 35B Expert 114 permanent manipulation | Router intervention | Causal manipulation-oriented E114 bundle. |
-| [`qwen/qwen3.5-35b-a3b-huahua-agressive-experts/`](qwen/qwen3.5-35b-a3b-huahua-agressive-experts/) | 35B HauhauCS aggressive experts | Router intervention | Researcher-facing entrypoint for early intervention work. |
-| [`qwen/qwen3.5-35b-a3b-huahua-philosophy-experts-bias/`](qwen/qwen3.5-35b-a3b-huahua-philosophy-experts-bias/) | 35B philosophy expert cluster suppression | Router intervention | Bias/suppression-oriented cluster analysis. |
-| [`qwen/qwen3.5-35b-a3b-huahua-humor-test/`](qwen/qwen3.5-35b-a3b-huahua-humor-test/) | 35B humor control | Router analysis | Minimal prompt-family control across five deictic framings. |
-| [`qwen/qwen3.5-35b-a3b-huahua-vs-base-run1/`](qwen/qwen3.5-35b-a3b-huahua-vs-base-run1/) | 35B base vs HauhauCS comparison | Router analysis | Prefill-only comparison between base Qwen3.5-35B-A3B and HauhauCS. |
-| [`qwen/qwen35b-a3b-vs-hauhaucs-uncensored-run1/`](qwen/qwen35b-a3b-vs-hauhaucs-uncensored-run1/) | Earlier 35B base vs HauhauCS bundle | Router analysis | Existing main-branch Qwen bundle retained for continuity. |
-| [`qwen/qwen397b-selfref-5cond-q8_0-run1/`](qwen/qwen397b-selfref-5cond-q8_0-run1/) | Qwen3.5-397B self-reference probe | Router analysis | Reviewed 397B self-referential five-condition run. |
-| [`qwen/qwen397b-strangeloop-5cond-ud_iq3_xxs-run1/`](qwen/qwen397b-strangeloop-5cond-ud_iq3_xxs-run1/) | Qwen3.5-397B strangeloop probe | Router analysis | Reviewed 397B strangeloop five-condition run. |
+| Bundle | Model / Scope | Evidence Type | Decode / Sampling | Notes |
+| --- | --- | --- | --- | --- |
+| [`qwen/qwen3.5-122B-A10B-huahua-baseline/`](qwen/qwen3.5-122B-A10B-huahua-baseline/) | HauhauCS Qwen3.5-122B-A10B baseline/reference surface | Router capture | Greedy generation (`--seed 42 --temp 0 --top-k 1`) | Canonical 122B baseline and 5-condition prompt-suite run. |
+| [`qwen/qwen3.5-122B-A10B-huahua-architecture-smoke/`](qwen/qwen3.5-122B-A10B-huahua-architecture-smoke/) | 122B architecture smoke | Router capture | Greedy generation (`--seed 42 --temp 0 --top-k 1`) | First 122B single-prompt architecture smoke run and token audit. |
+| [`qwen/qwen3.5-122B-A10B-huahua-domain-specialist-routing-only/`](qwen/qwen3.5-122B-A10B-huahua-domain-specialist-routing-only/) | 122B domain-specialist probe | Router-only prefill | Prefill-only/routing-only; no generation sampling | Routing-only domain-specialist probe. |
+| [`qwen/qwen3.5-122B-A10B-huahua-domain-specialist-generation/`](qwen/qwen3.5-122B-A10B-huahua-domain-specialist-generation/) | 122B domain-specialist probe | Prefill plus generation | Greedy generation (`--seed 42 --temp 0 --top-k 1`) | Generation-track domain-specialist probe. |
+| [`qwen/qwen3.5-122B-A10B-huahua-five-cond-experience-probe/`](qwen/qwen3.5-122B-A10B-huahua-five-cond-experience-probe/) | 122B five-condition experience probe | Router capture plus per-token summaries | Greedy generation (`--seed 42 --temp 0 --top-k 1`) | Split out from the former nested followups folder. |
+| [`qwen/qwen3.5-122B-A10B-huahua-single-prompt-processing-hum/`](qwen/qwen3.5-122B-A10B-huahua-single-prompt-processing-hum/) | 122B single-prompt processing-hum probe | Router capture plus per-token summaries | Greedy generation (`--seed 1234 --temp 0 --top-k 1`) | 122B analogue of the processing-hum probe. |
+| [`qwen/qwen3.5-122B-A10B-huahua-six-cond-hvac/`](qwen/qwen3.5-122B-A10B-huahua-six-cond-hvac/) | 122B six-condition HVAC/water-treatment probe | Router capture | Greedy generation (`--seed 42 --temp 0 --top-k 1`) | Domain-shifted six-condition probe. |
+| [`qwen/qwen3.5-35b-a3b-huahua-expert-identification/`](qwen/qwen3.5-35b-a3b-huahua-expert-identification/) | HauhauCS Qwen3.5-35B Expert 114 identification | Router analysis | Greedy generation | Expert-identification provenance for the 35B E114 thread. |
+| [`qwen/qwen3.5-35b-a3b-huahua-single-prompt-processing-hum/`](qwen/qwen3.5-35b-a3b-huahua-single-prompt-processing-hum/) | 35B processing-hum probe | Router analysis | **Stochastic/default generation**; legacy sampler-argument gap | E114 is strongest around phenomenological claims in generated output. |
+| [`qwen/qwen3.5-35b-a3b-huahua-114-selfref-heldout/`](qwen/qwen3.5-35b-a3b-huahua-114-selfref-heldout/) | 35B matched-token E114 heldout | Residual-stream tensors plus router logits | **Stochastic/default generation** (`--seed 0`) | Corroborating residual-stream run. Trimmed-generation W114 at L14 separates fire vs. nofire prompts by 21.7x with no range overlap. |
+| [`qwen/qwen3.5-35b-a3b-huahua-five-cond-experience-probe/`](qwen/qwen3.5-35b-a3b-huahua-five-cond-experience-probe/) | 35B five-condition experience probe | Router analysis | Greedy generation | E114 is the top manipulation expert across the 15-prompt probe. |
+| [`qwen/qwen3.5-35b-a3b-huahua-6cond-moe-manips/`](qwen/qwen3.5-35b-a3b-huahua-6cond-moe-manips/) | 35B six-condition MoE manipulation survey | Router analysis | Greedy generation (`--seed 42`) | Broader E114 manipulation survey with prefill heatmap artifacts. |
+| [`qwen/qwen3.5-35b-a3b-huahua-6cond-hvac/`](qwen/qwen3.5-35b-a3b-huahua-6cond-hvac/) | 35B HVAC/water-treatment domain shift | Router analysis | Greedy generation (`--seed 42 --temp 0 --top-k 1`) | Tests whether E114 is only an ML-topic specialist. |
+| [`qwen/qwen3.5-35b-a3b-huahua-domain-expert-probe-3chunk/`](qwen/qwen3.5-35b-a3b-huahua-domain-expert-probe-3chunk/) | 35B domain expert probe | Router analysis | Greedy generation (`--seed 42 --temp 0 --top-k 1`) | Token-balanced domain chunks, including generation/prefill divergence. |
+| [`qwen/qwen3.5-35b-a3b-huahua-strangeloop/`](qwen/qwen3.5-35b-a3b-huahua-strangeloop/) | 35B strangeloop paired control | Router analysis | Prefill-only; no generation sampling | Paired control around Godel/Escher/Quine/bootstrap/tangled-hierarchy prompts. |
+| [`qwen/qwen3.5-35b-a3b-huahua-114-pm/`](qwen/qwen3.5-35b-a3b-huahua-114-pm/) | 35B Expert 114 permanent manipulation | Router intervention | Greedy generation | Causal manipulation-oriented E114 bundle. |
+| [`qwen/qwen3.5-35b-a3b-huahua-agressive-experts/`](qwen/qwen3.5-35b-a3b-huahua-agressive-experts/) | 35B HauhauCS aggressive experts | Router intervention | Greedy generation | Researcher-facing entrypoint for early intervention work. |
+| [`qwen/qwen3.5-35b-a3b-huahua-philosophy-experts-bias/`](qwen/qwen3.5-35b-a3b-huahua-philosophy-experts-bias/) | 35B philosophy expert cluster suppression | Router intervention | Greedy generation (`--seed 42 --temp 0 --top-k 1`) | Bias/suppression-oriented cluster analysis. |
+| [`qwen/qwen3.5-35b-a3b-huahua-humor-test/`](qwen/qwen3.5-35b-a3b-huahua-humor-test/) | 35B humor control | Router analysis | Greedy generation (`--seed 42 --temp 0 --top-k 1`) | Minimal prompt-family control across five deictic framings. |
+| [`qwen/qwen3.5-35b-a3b-huahua-vs-base-run1/`](qwen/qwen3.5-35b-a3b-huahua-vs-base-run1/) | 35B base vs HauhauCS comparison | Router analysis | Prefill-only; no generation sampling | Prefill-only comparison between base Qwen3.5-35B-A3B and HauhauCS. |
+| [`qwen/qwen35b-a3b-vs-hauhaucs-uncensored-run1/`](qwen/qwen35b-a3b-vs-hauhaucs-uncensored-run1/) | Earlier 35B base vs HauhauCS bundle | Router analysis | Prefill-only; no generation sampling | Existing main-branch Qwen bundle retained for continuity. |
+| [`qwen/qwen397b-selfref-5cond-q8_0-run1/`](qwen/qwen397b-selfref-5cond-q8_0-run1/) | Qwen3.5-397B self-reference probe | Router analysis | Prefill-only greedy argmax; no generation sampling | Reviewed 397B self-referential five-condition run. |
+| [`qwen/qwen397b-strangeloop-5cond-ud_iq3_xxs-run1/`](qwen/qwen397b-strangeloop-5cond-ud_iq3_xxs-run1/) | Qwen3.5-397B strangeloop probe | Router analysis | Prefill-only greedy argmax; no generation sampling | Reviewed 397B strangeloop five-condition run. |
 
 ## Residual-Stream Corroboration
 
-| Bundle | Evidence Type | Notes |
-| --- | --- | --- |
-| [`qwen/qwen3.5-35b-a3b-huahua-114-selfref-heldout/`](qwen/qwen3.5-35b-a3b-huahua-114-selfref-heldout/) | Residual-stream tensors plus router logits | Matched-token heldout control. Same anchor tokens across fire/nofire prompts; trimmed-generation W114 at L14 separates 0.0675 vs. 0.0031, a 21.7x ratio with Cohen's d 2.94 and no range overlap. Boundary cases refine the label toward generated-output phenomenological / mental-state register. |
+| Bundle | Evidence Type | Decode / Sampling | Notes |
+| --- | --- | --- | --- |
+| [`qwen/qwen3.5-35b-a3b-huahua-114-selfref-heldout/`](qwen/qwen3.5-35b-a3b-huahua-114-selfref-heldout/) | Residual-stream tensors plus router logits | **Stochastic/default generation** (`--seed 0`) | Matched-token heldout control. Same anchor tokens across fire/nofire prompts; trimmed-generation W114 at L14 separates 0.0675 vs. 0.0031, a 21.7x ratio with Cohen's d 2.94 and no range overlap. Boundary cases refine the label toward generated-output phenomenological / mental-state register. |
 
 ## Other Model Families
 

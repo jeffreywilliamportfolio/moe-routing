@@ -8,6 +8,8 @@ Twenty hand-authored prompts partitioned 10 fire / 10 nofire. Every nofire promp
 
 Run: `heldout_20260417T202651Z` | 20 prompts | 256 tokens/prompt | bare-`</think>` no-think template, `--seed 0` default sampling | 2 × RTX 5090 (Vast.ai), CUDA 12.9, `llama.cpp@1772701f9`, custom `capture_residuals` binary.
 
+**Sampling note:** this is a stochastic/default-sampling generation run. The grouped fire/nofire separation is the result to read; individual generated continuations can vary under a different seed.
+
 **Headline result.** On the trimmed generation track at L14, fire mean-of-means W₁₁₄ = **0.0675 ± 0.0307**, nofire = **0.0031 ± 0.0040**. Ratio **21.7×**, Cohen's d **2.94**, **no range overlap** (worst fire 0.0122 > best nofire 0.0105). The lexical hypothesis is ruled out.
 
 **Refinement.** The two boundary cases sharpen the label:
