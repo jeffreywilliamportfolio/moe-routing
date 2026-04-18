@@ -69,17 +69,21 @@ Most runs in this repository are router-focused. The 35B heldout is different: i
 
 The result is the cleanest current E114 check: [`qwen/qwen3.5-35b-a3b-huahua-114-selfref-heldout/`](qwen/qwen3.5-35b-a3b-huahua-114-selfref-heldout/) uses matched lexical anchors across 10 fire and 10 nofire prompts. On trimmed generation tokens, W114 at L14 separates 0.0675 vs. 0.0031, with a 21.7x ratio, Cohen's d 2.94, and no range overlap.
 
-## What The Metrics Mean
+## Metrics
 
-The run docs use three expert-specific routing metrics:
+The repo uses two related but different metric families. The current Qwen/E114 work mostly uses expert-specific W/S/Q. The earlier 35B, DeepSeek, and GPT-OSS prompt probes also report routing entropy and KL-to-baseline. Do not collapse these into one claim: W/S/Q tracks a named expert, while RE and KL summarize distribution-wide routing behavior.
 
-| Metric | Meaning |
-| --- | --- |
-| `S_e` | Selection rate: fraction of tokens where expert `e` is selected by the top-k router. |
-| `Q_e` | Conditional routed weight when selected. |
-| `W_e` | Unconditional mean routed weight. In these reports, `W = S * Q`. |
+| Metric | Meaning | Use |
+| --- | --- | --- |
+| `S_e` | Selection rate: fraction of tokens where expert `e` is selected by the top-k router. | How often a named expert appears in the selected expert set. |
+| `Q_e` | Conditional routed weight when selected. | How much routed weight the expert receives when it is active. |
+| `W_e = S_e * Q_e` | Unconditional mean routed weight. | Main E114/E48 magnitude metric in the Qwen runs. It combines activation frequency and conditional strength. |
+| `RE` / routing entropy | Entropy of the reconstructed routed expert distribution, usually normalized by `log2(top_k)` (`log2(8)` for Qwen/DeepSeek top-8 runs; `log2(4)` for GPT-OSS top-4 runs). | Measures whether routing is concentrated or diffuse. It is not expert-specific. |
+| all-token RE / mean prefill RE | Mean routing entropy across all prompt/prefill tokens, often averaged across analyzed layers. | Useful as an early prompt-level summary, but vulnerable to token-count and token-position confounds. |
+| last-token RE | Routing entropy at the final prefill token, often averaged across analyzed layers. | Reduces the all-token positional averaging confound by comparing the same prompt position. It is still not a substitute for matched-length or matched-token design. |
+| KL-to-baseline | KL divergence between a manipulation region/token distribution and a calibration or baseline routing distribution. Some reference runs compute this from dense softmax/sigmoid router-proxy distributions rather than the sparse top-k reconstruction. | Measures routing shift away from a baseline. Absolute scale can depend on region boundaries and proxy choice, so paired differences are usually safer than standalone values. |
 
-Most tables report these by layer and by phase:
+Most Qwen W/S/Q tables report expert metrics by layer and by phase:
 
 - **prefill**: the model is reading the prompt; no continuation tokens have been sampled.
 - **generation**: the model is writing the answer; this is where the E114 interpretation is strongest.
