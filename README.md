@@ -1,8 +1,14 @@
 # moe-routing
 
-Deterministic prefill-only MoE routing experiments that test how small prompt wording changes alter layerwise expert selection, routing entropy, and divergence across large mixture-of-experts language models.
+Controlled MoE routing experiments across open-weight mixture-of-experts models, with the current HauhauCS Qwen3.5-35B thread focused on verbalizing Expert 114.
 
-The current canonical tree is `main`. Older branch snapshots remain available for provenance and previously shared review links, but new public work should land on `main` in the model-oriented layout below.
+The updated working interpretation is that E114 at layer 14 is a generated-output signal for phenomenological / mental-state register. It fires densely when the model is producing first-person experiential language, inner-state predicates, or agency-bearing personification; it does not simply track whether the prompt asks about the model, and it is not explained by matched lexical anchor tokens alone.
+
+Most bundles here are router-focused prompt probes measuring expert selection, routing entropy, and divergence under small wording changes. The strongest 35B corroborating run also captures residual-stream tensors at L13/L14/L15, verifies the `qwen35moe` `attn_post_norm-14` router tap, and reports router-derived W/S/Q on trimmed generation tokens.
+
+This is not an SAE-training repository. The E114 work starts from an already identified routed expert and asks what that expert fires on.
+
+The current canonical public tree is `main`. Older branch snapshots remain available for provenance and previously shared review links, but new public work should land on `main` in the model-oriented layout below.
 
 ## Current Layout
 
