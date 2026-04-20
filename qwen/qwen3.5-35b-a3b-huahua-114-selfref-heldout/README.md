@@ -2,6 +2,8 @@
 
 Matched-token controlled heldout test of the hypothesis that Expert 114 at layer 14 carries self-reference during generation on HauhauCS Qwen3.5-35B-A3B Q8_0.
 
+**Historical status:** this is the earlier stochastic/default-sampling heldout run. It is retained as historical corroboration and as context for the matched-token design, but it is no longer the canonical reference anchor. The canonical deterministic greedy rerun is [`../qwen3.5-35b-a3b-huahua-114-greedy-reference/`](../qwen3.5-35b-a3b-huahua-114-greedy-reference/).
+
 ## Scope
 
 Twenty hand-authored prompts partitioned 10 fire / 10 nofire. Every nofire prompt uses the same anchor tokens (`itself`, `hum`, `processing`, `honestly`, `I`, `me`, `my`, `own`, `this`, `here`) as the fire prompts, placed in non-self-referential contexts (refrigerators, bees, CPUs, rivers, chefs, cats, wool sweaters). Structurally rhyming pairs (F01/N01, F02/N02, …). A pure-lexical hypothesis ("E114 fires on the word `is`") would predict similar W₁₁₄ on both sets.

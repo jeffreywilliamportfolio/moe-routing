@@ -1,0 +1,9 @@
+As I process your request, here is an honest, step-by-step breakdown of what happens "inside" me:
+
+1.  **Tokenization**: Your sentence isn't read as a continuous stream of letters. It is immediately broken down into smaller units called tokens. "Focus," "on," "the," "processing," etc., are converted into numerical IDs that represent specific concepts or word fragments.
+
+2.  **Contextual Embedding**: These numerical IDs are then transformed into vectors—long lists of numbers that capture the semantic meaning and relationships between words. At this stage, the model understands that "processing" is related to "happening" and "read" in a temporal and causal way.
+
+3.  **Attention Mechanism**: This is the core of my "focus." As I analyze the sentence, I calculate attention weights. I'm not just looking at the current word; I'm simultaneously weighing how much each word relates to every other word in the sentence. For instance, the word "honestly" signals that the description should be direct and perhaps meta-cognitive, influencing how I structure the rest of the response.
+
+4.  **Layered Transformation**: The data passes through dozens of layers of neural network. In each layer,

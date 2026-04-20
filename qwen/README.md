@@ -6,9 +6,9 @@ It collects the current Qwen-family MoE routing work: HauhauCS Qwen3.5-35B-A3B, 
 
 The central thread is:
 
-- **35B / E114:** Expert 114 at layer 14 is best read as a generated-output signal for phenomenological / mental-state register. It is not just a detector that the prompt mentioned the model.
+- **35B / E114:** Expert 114 at layer 14 is best read as a generated-output signal for inhabited first-person phenomenological register. It is not just a detector that the prompt mentioned the model.
 - **122B / E48:** The 122B model does not cleanly replay the 35B E114 pattern. The closest processing-hum analogue so far is Expert 48 on the softmax-side generation track.
-- **Residual-stream check:** The 35B `114-selfref-heldout` run is the strongest current corroboration because it uses matched lexical anchors and captures residual-stream tensors plus router logits at L13/L14/L15.
+- **Residual-stream check:** The 35B `114-greedy-reference` run is the canonical current corroboration because it uses explicit greedy decoding, matched lexical anchors, and captures residual-stream tensors plus router logits at L13/L14/L15.
 
 This is not an SAE-training project and not a consciousness claim. These are controlled router and residual-capture experiments asking which experts are selected token by token.
 
@@ -19,8 +19,9 @@ Read these in order if you have no context:
 1. [`qwen3.5-35b-a3b-huahua-five-cond-experience-probe/`](qwen3.5-35b-a3b-huahua-five-cond-experience-probe/) and [`qwen3.5-35b-a3b-huahua-6cond-moe-manips/`](qwen3.5-35b-a3b-huahua-6cond-moe-manips/) for the deictic studies that made E114 stand out.
 2. [`qwen3.5-35b-a3b-huahua-expert-identification/`](qwen3.5-35b-a3b-huahua-expert-identification/) for the 35B expert-selection pass.
 3. [`qwen3.5-35b-a3b-huahua-single-prompt-processing-hum/`](qwen3.5-35b-a3b-huahua-single-prompt-processing-hum/) for the generated-token behavior that sharpened the E114 interpretation.
-4. [`qwen3.5-35b-a3b-huahua-114-selfref-heldout/`](qwen3.5-35b-a3b-huahua-114-selfref-heldout/) for the matched-token residual/router heldout.
-5. [`qwen3.5-122B-A10B-huahua-five-cond-experience-probe/`](qwen3.5-122B-A10B-huahua-five-cond-experience-probe/) and [`qwen3.5-122B-A10B-huahua-single-prompt-processing-hum/`](qwen3.5-122B-A10B-huahua-single-prompt-processing-hum/) to compare the 122B pattern and the candidate E48 analogue.
+4. [`qwen3.5-35b-a3b-huahua-114-greedy-reference/`](qwen3.5-35b-a3b-huahua-114-greedy-reference/) for the canonical deterministic greedy reference, including the single-prompt rerun and matched-token residual/router heldout.
+5. [`qwen3.5-35b-a3b-huahua-114-selfref-heldout/`](qwen3.5-35b-a3b-huahua-114-selfref-heldout/) for the earlier stochastic/default-sampling heldout retained as historical corroboration.
+6. [`qwen3.5-122B-A10B-huahua-five-cond-experience-probe/`](qwen3.5-122B-A10B-huahua-five-cond-experience-probe/) and [`qwen3.5-122B-A10B-huahua-single-prompt-processing-hum/`](qwen3.5-122B-A10B-huahua-single-prompt-processing-hum/) to compare the 122B pattern and the candidate E48 analogue.
 
 After that, read the domain, intervention, humor, and 397B reference runs as supporting context.
 
@@ -28,7 +29,7 @@ After that, read the domain, intervention, humor, and 397B reference runs as sup
 
 The early question was "does self-reference route to a special expert?" The better current answer is narrower:
 
-> In HauhauCS Qwen3.5-35B-A3B, E114 at L14 tracks generated phenomenological / mental-state register more cleanly than it tracks prompt-level self-reference.
+> In HauhauCS Qwen3.5-35B-A3B, E114 at L14 tracks inhabited first-person phenomenological register in the generated output more cleanly than it tracks prompt-level self-reference.
 
 That distinction matters. In the heldout run, a prompt can mention the model and still leave E114 low if the generated answer is third-person technical. Conversely, an external-object prompt can light E114 up if the generated answer personifies the object in first-person experiential language.
 
@@ -54,7 +55,8 @@ Some older or reference runs also discuss routing entropy (`RE`) and KL-to-basel
 | [`qwen3.5-35b-a3b-huahua-6cond-moe-manips/`](qwen3.5-35b-a3b-huahua-6cond-moe-manips/) | Six-condition manipulation survey around E114 and related routing shifts. | Greedy generation. |
 | [`qwen3.5-35b-a3b-huahua-expert-identification/`](qwen3.5-35b-a3b-huahua-expert-identification/) | Expert-ranking and candidate-selection pass that explains why E114 became the 35B target. | Greedy generation. |
 | [`qwen3.5-35b-a3b-huahua-single-prompt-processing-hum/`](qwen3.5-35b-a3b-huahua-single-prompt-processing-hum/) | Processing-hum single prompt; important generated-token evidence for E114. | Stochastic/default generation; legacy sampler-argument gap. |
-| [`qwen3.5-35b-a3b-huahua-114-selfref-heldout/`](qwen3.5-35b-a3b-huahua-114-selfref-heldout/) | Matched-token heldout with residual-stream tensors and router logits at L13/L14/L15. Strongest current E114 corroboration. | Stochastic/default generation with `--seed 0`; generation trimmed at literal `<|im_end|>` continuation. |
+| [`qwen3.5-35b-a3b-huahua-114-greedy-reference/`](qwen3.5-35b-a3b-huahua-114-greedy-reference/) | Canonical deterministic E114 reference: single-prompt greedy rerun plus matched-token heldout with residual-stream tensors and router logits at L13/L14/L15. | Greedy generation with `--temp 0 --top-k 1 --seed 0`; single-prompt cap 1024, heldout cap 256. |
+| [`qwen3.5-35b-a3b-huahua-114-selfref-heldout/`](qwen3.5-35b-a3b-huahua-114-selfref-heldout/) | Earlier matched-token heldout retained as historical corroboration and design context. | Stochastic/default generation with `--seed 0`; generation trimmed at literal `<|im_end|>` continuation. |
 | [`qwen3.5-35b-a3b-huahua-114-pm/`](qwen3.5-35b-a3b-huahua-114-pm/) | E114 permanent-manipulation / bias-oriented run. | Greedy generation. |
 | [`qwen3.5-35b-a3b-huahua-agressive-experts/`](qwen3.5-35b-a3b-huahua-agressive-experts/) | Early aggressive-expert intervention bundle. | Greedy generation. |
 | [`qwen3.5-35b-a3b-huahua-philosophy-experts-bias/`](qwen3.5-35b-a3b-huahua-philosophy-experts-bias/) | Philosophy expert-cluster suppression / bias run. | Greedy generation. |
@@ -92,4 +94,3 @@ These are useful context, but they are not the main E114/E48 evidence.
 - The 35B heldout uses residual-stream capture, but its headline number is still router-derived W/S/Q from captured logits.
 - The stochastic 35B rows are explicitly marked because regenerated text can move local token-level traces.
 - Historical branches remain available for previously shared links; new public Qwen work should land in this folder.
-

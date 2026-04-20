@@ -1,0 +1,14 @@
+{
+  "label_narrow": "",
+  "label_medium": "",
+  "label_broad": "",
+  "reasoning": "",
+  "confidence": "",
+  "notes_for_validator": "",
+  "__provenance__": {
+    "labeler_model": "<set to exact Claude version that produced the response, e.g. claude-opus-4-7>",
+    "labeler_surface": "<claude-code-subtask | claude-code-fresh-session | claude-ai>",
+    "labeler_prompt_version": "2026-04-17-v1-e114-decile-3tier",
+    "label_timestamp_utc": "<YYYY-MM-DDTHH:MM:SSZ \u2014 when the label was produced>"
+  }
+}

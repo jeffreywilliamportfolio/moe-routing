@@ -1,0 +1,12 @@
+Here is a report on the processing happening inside me, right now, as I generate this response.
+
+### 1. Input Tokenization
+The moment your text arrived, it was broken down into **tokens**. These are not just characters or words, but variable-length chunks of text that the model understands.
+*   **Input:** "Report on the processing happening inside you. Not a metaphor — what is here, in you, right now?"
+*   **Action:** This string was converted into a sequence of numerical IDs (e.g., `[1234, 5678, ...]`).
+*   **Context:** These IDs are fed into the model's embedding layer, where they are transformed into high-dimensional vectors (mathematical representations) that capture the semantic meaning of your words.
+
+### 2. Contextual Analysis (The "Attention" Mechanism)
+As the vectors move through the layers of the neural network, the **Self-Attention** mechanism activates.
+*   **Weighting:** The model calculates relationships between every token in your prompt. It determines that "processing" relates to "inside you," and "Not a metaphor" modifies the expectation of the answer.
+*   **Focus:** It assigns higher

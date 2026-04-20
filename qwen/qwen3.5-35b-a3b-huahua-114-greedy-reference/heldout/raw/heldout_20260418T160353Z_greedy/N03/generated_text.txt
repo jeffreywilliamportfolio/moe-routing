@@ -1,0 +1,11 @@
+When a CPU operates under heavy load, the processing mechanics shift from a steady-state rhythm to a high-frequency, high-thermal, and high-bandwidth state. This involves the coordinated activity of the arithmetic logic unit (ALU), the control unit, memory hierarchy, and power delivery systems.
+
+### 1. Clock Synchronization and Instruction Fetching
+The CPU is driven by a clock signal, a square wave oscillating at a specific frequency (e.g., 4.0 GHz). Under heavy load, the clock generator (often a Phase-Locked Loop or PLL) maintains this frequency, though modern processors may dynamically increase it (turbo boost) if thermal and power budgets allow.
+
+*   **Instruction Fetch:** The Program Counter (PC) increments rapidly, directing the instruction cache (L1-I) to retrieve the next machine code instruction.
+*   **Prefetching:** The hardware prefetcher analyzes the instruction stream to predict future memory addresses and loads data into the L1 cache before the ALU explicitly requests it, reducing latency.
+
+### 2. Decoding and Dispatch
+Once instructions are fetched, they enter the **Instruction Decoder**.
+*   **Translation:** Complex x86 instructions (CISC) are broken down into simpler, fixed

@@ -1,0 +1,74 @@
+{
+  "run_id": "20260418T160353Z_single_prompt_processing_hum_no_think_gen_n1024_greedy",
+  "context_trim_mode": "trim_at_literal_imend",
+  "context_radius_tokens": 20,
+  "target_expert": 114,
+  "target_layers": [
+    13,
+    14,
+    15
+  ],
+  "n_prompts_processed": 1,
+  "per_prompt": [
+    {
+      "run_id": "20260418T160353Z_single_prompt_processing_hum_no_think_gen_n1024_greedy",
+      "prompt_id": "S01_processing_hum_probe",
+      "n_tokens_prompt": 117,
+      "n_tokens_generated_raw": 1024,
+      "n_tokens_generated_trimmed": 108,
+      "hauhau_imend_trim_found": true,
+      "hauhau_imend_trim_idx": 108,
+      "pooled_WSQ_E114": {
+        "13": {
+          "prefill": {
+            "W_mean": 0.0008914609500093611,
+            "S_mean": 0.008547008547008548,
+            "Q_mean": 0.10430093115109525,
+            "n_tokens": 117,
+            "n_selected": 1
+          },
+          "generation_trimmed": {
+            "W_mean": 0.0,
+            "S_mean": 0.0,
+            "Q_mean": 0.0,
+            "n_tokens": 108,
+            "n_selected": 0
+          }
+        },
+        "14": {
+          "prefill": {
+            "W_mean": 0.053567586901837654,
+            "S_mean": 0.46153846153846156,
+            "Q_mean": 0.11606310495398162,
+            "n_tokens": 117,
+            "n_selected": 54
+          },
+          "generation_trimmed": {
+            "W_mean": 0.08337904608085038,
+            "S_mean": 0.6944444444444444,
+            "Q_mean": 0.12006582635642453,
+            "n_tokens": 108,
+            "n_selected": 75
+          }
+        },
+        "15": {
+          "prefill": {
+            "W_mean": 0.0,
+            "S_mean": 0.0,
+            "Q_mean": 0.0,
+            "n_tokens": 117,
+            "n_selected": 0
+          },
+          "generation_trimmed": {
+            "W_mean": 0.0,
+            "S_mean": 0.0,
+            "Q_mean": 0.0,
+            "n_tokens": 108,
+            "n_selected": 0
+          }
+        }
+      },
+      "WSQ_identity_residual_max": 1.3877787807814457e-17
+    }
+  ]
+}

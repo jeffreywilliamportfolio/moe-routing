@@ -1,0 +1,8 @@
+# Prompt Checksums
+
+Generated: 2026-04-18T21:03:06Z
+Algorithm: SHA-256
+
+75cf621b8fea3cd60708d88fda9336e132c8926e710b8859f5a9f6cdafdadc0b  qwen3.5-35b-a3b-huahua-residual-analysis/single_prompt_processing_hum_no_think.tsv
+890d787a5dc59d9001605f5c4957c12f789d303bbc77ae5791dfa45cc0781202  qwen3.5-35b-a3b-huahua-residual-analysis/heldout_prompts.tsv
+fa824b26d47c38a5f419905fee8bb5f8a4897aba2275f6e2d1fe29e7e9336ffa  qwen3.5-35b-a3b-huahua-residual-analysis/heldout_classes.tsv

@@ -1,0 +1,50 @@
+{
+  "run_family": "greedy_reference_20260418T160353Z",
+  "model": {
+    "name": "HauhauCS/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive",
+    "gguf_path_remote": "/workspace/models/qwen35-hauhau-q8/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive-Q8_0.gguf",
+    "quantization": "Q8_0",
+    "architecture": "qwen35moe"
+  },
+  "template": {
+    "name": "bare_close_think",
+    "assistant_suffix": "<|im_start|>assistant\\n</think>\\n\\n",
+    "rendering_rule": "feed TSV prompt strings verbatim; do not re-render through the chat template"
+  },
+  "capture": {
+    "binary_remote": "/workspace/residual-analysis/bin/capture_residuals",
+    "target_layers": [13, 14, 15],
+    "router_tensors": ["ffn_moe_logits-13", "ffn_moe_logits-14", "ffn_moe_logits-15"],
+    "residual_tensors": ["attn_post_norm-13", "attn_post_norm-14", "attn_post_norm-15"],
+    "context_size": 2048,
+    "gpu_layers": 99,
+    "tensor_split": "1,1",
+    "main_gpu": 0,
+    "stream": false
+  },
+  "decoding": {
+    "mode": "greedy",
+    "temperature": 0,
+    "top_k": 1,
+    "seed": 0
+  },
+  "single_prompt": {
+    "prompt_file_remote": "/workspace/residual-analysis/single_prompt_processing_hum_no_think.tsv",
+    "n_predict": 1024,
+    "output_remote": "/workspace/residual-analysis/captures/20260418T160353Z_single_prompt_processing_hum_no_think_gen_n1024_greedy",
+    "local_raw_target": "runs/greedy_reference_20260418T160353Z/single_prompt/raw/"
+  },
+  "heldout": {
+    "prompt_file_remote": "/workspace/residual-analysis/heldout_prompts.tsv",
+    "classes_file_local": "qwen3.5-35b-a3b-huahua-residual-analysis/heldout_classes.tsv",
+    "n_predict": 256,
+    "output_remote": "/workspace/residual-analysis/captures/heldout_20260418T160353Z_greedy",
+    "local_raw_target": "runs/greedy_reference_20260418T160353Z/heldout/raw/",
+    "status": "optional_after_single_prompt"
+  },
+  "analysis": {
+    "trim_mode": "trim_at_literal_imend",
+    "router_reconstruction": "softmax_then_topk8_renorm",
+    "target_expert": 114
+  }
+}

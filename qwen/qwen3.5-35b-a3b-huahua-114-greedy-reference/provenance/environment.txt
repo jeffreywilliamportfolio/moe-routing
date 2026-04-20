@@ -1,0 +1,45 @@
+# Remote Environment
+
+Captured: 2026-04-19T15:06:58Z
+
+## Runtime
+
+- Provider: Vast.ai fresh rental
+- Image: `nvidia/cuda:12.8.1-devel-ubuntu22.04`
+- OS: Ubuntu 22.04
+- CUDA toolkit: 12.8 (`Build cuda_12.8.r12.8/compiler.35583870_0`)
+- NVIDIA driver: 580.95.05
+- GPUs:
+  - NVIDIA GeForce RTX 5090, 32607 MiB total, 0 MiB used at verification
+  - NVIDIA GeForce RTX 5090, 32607 MiB total, 0 MiB used at verification
+
+## Build
+
+- llama.cpp directory: `/workspace/llama.cpp.new`
+- llama.cpp commit: `1772701f99dd3fc13f5783b282c2361eda8ca47c`
+- llama.cpp reported version: `8493 (1772701f)`
+- Compiler: GNU 11.4.0
+- Capture source workspace: `/workspace/residual-analysis`
+- `capture_activations` sha256: `c3e205b3a6324f6ce11e775b8ab1c9115904e348ec118fcb62d5e31ccae62e70`
+- `capture_residuals` sha256: `d91afb6c8ca2c0b57ae3fbad5aa00ce8dcfe4644c1f40c644265c226fff099c4`
+- `capture_residuals --help`: ok
+
+## Model
+
+- Model repo: `HauhauCS/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive`
+- GGUF path: `/workspace/models/qwen35-hauhau-q8/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive-Q8_0.gguf`
+- File type: regular file
+- File size: 36,903,139,392 bytes
+- GGUF sha256: `f3235db7657cd068fd249e50bb3f1f50b0f8236786e4483462f50b1f3c64cb17`
+- Quantization: Q8_0
+- Architecture: qwen35moe
+
+## Notes
+
+- The selected CUDA image did not include `supervisorctl`; no supervisord-managed `llama` service was present to stop.
+- `/workspace` did not exist initially and was created before staging the repo.
+- System pip on the image was upgraded from 22.0.2 to 26.0.1 so the repository bootstrap script's `--break-system-packages` pip flag would run.
+- The initial Hugging Face/Xet download stalled after writing a partial local-dir cache file. The stuck process was terminated, `hf_transfer` was installed, Xet was disabled for the retry, and the bootstrap was rerun. The final GGUF checksum above is from the completed file.
+- Hugging Face auth was verified with `hf auth whoami`; token material remains only in remote unversioned environment files and is not recorded here.
+- The initial user-selected Vast offer failed before bootstrap with a CDI GPU device injection error. A replacement 2x RTX 5090 / 500 GB instance was used for the successful single-prompt and heldout captures.
+- The capture instance was stopped after the heldout raw bundle and analysis outputs were copied back locally.

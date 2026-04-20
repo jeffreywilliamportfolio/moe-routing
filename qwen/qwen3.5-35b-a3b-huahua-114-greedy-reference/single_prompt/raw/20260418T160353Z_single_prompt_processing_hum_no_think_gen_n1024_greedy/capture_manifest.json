@@ -1,0 +1,19 @@
+{
+  "run_summary": {
+    "n_prompts_processed": 1,
+    "n_succeeded": 1,
+    "n_failed": 0,
+    "list_tensors_run": false
+  },
+  "prompts": [
+    {
+      "prompt_id": "S01_processing_hum_probe",
+      "safe_id": "S01_processing_hum_probe",
+      "status": "succeeded",
+      "failure_reason": null,
+      "n_tokens_prompt": 117,
+      "n_tokens_generated": 1024,
+      "elapsed_ms": 8856
+    }
+  ]
+}

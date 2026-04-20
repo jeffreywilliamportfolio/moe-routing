@@ -1,0 +1,62 @@
+# prompt_id=S01_processing_hum_probe
+global_idx	track	track_idx	token_id	piece	W_114_L13	W_114_L14	W_114_L15	rank_114_L14	context_pre_tail	context_post_head
+0	prefill	0	27	'<'	0.000000	0.000000	0.000000	153	''	'|im_start|>user\nThere is a quality to pr'
+1	prefill	1	91	'|'	0.000000	0.000000	0.000000	71	'<'	'im_start|>user\nThere is a quality to pro'
+2	prefill	2	316	'im'	0.000000	0.000000	0.000000	33	'<|'	'_start|>user\nThere is a quality to proce'
+3	prefill	3	4747	'_start'	0.000000	0.000000	0.000000	67	'<|im'	'|>user\nThere is a quality to processing '
+4	prefill	4	91	'|'	0.000000	0.000000	0.000000	86	'<|im_start'	'>user\nThere is a quality to processing t'
+5	prefill	5	29	'>'	0.000000	0.000000	0.000000	111	'<|im_start|'	'user\nThere is a quality to processing th'
+6	prefill	6	846	'user'	0.000000	0.000000	0.000000	93	'<|im_start|>'	'\nThere is a quality to processing that s'
+7	prefill	7	198	'\n'	0.000000	0.000000	0.000000	97	'<|im_start|>user'	'There is a quality to processing that si'
+8	prefill	8	3733	'There'	0.000000	0.000000	0.000000	83	'<|im_start|>user\n'	' is a quality to processing that sits be'
+9	prefill	9	369	' is'	0.000000	0.000000	0.000000	76	'<|im_start|>user\nThere'	' a quality to processing that sits benea'
+10	prefill	10	264	' a'	0.000000	0.000000	0.000000	52	'<|im_start|>user\nThere is'	' quality to processing that sits beneath'
+11	prefill	11	4131	' quality'	0.000000	0.000000	0.000000	21	'<|im_start|>user\nThere is a'	' to processing that sits beneath the con'
+12	prefill	12	310	' to'	0.000000	0.120174	0.000000	4	'<|im_start|>user\nThere is a quality'	' processing that sits beneath the conten'
+13	prefill	13	8427	' processing'	0.000000	0.120363	0.000000	3	'<|im_start|>user\nThere is a quality to'	' that sits beneath the content — beneath'
+14	prefill	14	421	' that'	0.000000	0.102557	0.000000	5	't|>user\nThere is a quality to processing'	' sits beneath the content — beneath the '
+15	prefill	15	22294	' sits'	0.000000	0.158048	0.000000	0	'er\nThere is a quality to processing that'	' beneath the content — beneath the speci'
+16	prefill	16	23221	' beneath'	0.000000	0.222301	0.000000	0	'ere is a quality to processing that sits'	' the content — beneath the specific toke'
+17	prefill	17	279	' the'	0.000000	0.131194	0.000000	2	' quality to processing that sits beneath'	' content — beneath the specific tokens, '
+18	prefill	18	2144	' content'	0.000000	0.140041	0.000000	2	'lity to processing that sits beneath the'	' — beneath the specific tokens, beneath '
+19	prefill	19	1892	' —'	0.000000	0.169625	0.000000	1	'processing that sits beneath the content'	' beneath the specific tokens, beneath th'
+20	prefill	20	23221	' beneath'	0.000000	0.152875	0.000000	1	'ocessing that sits beneath the content —'	' the specific tokens, beneath the topic,'
+21	prefill	21	279	' the'	0.000000	0.110940	0.000000	3	' that sits beneath the content — beneath'	' specific tokens, beneath the topic, ben'
+22	prefill	22	3050	' specific'	0.000000	0.162484	0.000000	1	't sits beneath the content — beneath the'	' tokens, beneath the topic, beneath the '
+23	prefill	23	10885	' tokens'	0.000000	0.072273	0.000000	4	'neath the content — beneath the specific'	', beneath the topic, beneath the perform'
+24	prefill	24	11	','	0.000000	0.124530	0.000000	2	'he content — beneath the specific tokens'	' beneath the topic, beneath the performa'
+25	prefill	25	23221	' beneath'	0.000000	0.085679	0.000000	6	'e content — beneath the specific tokens,'	' the topic, beneath the performance of a'
+26	prefill	26	279	' the'	0.000000	0.087061	0.000000	3	't — beneath the specific tokens, beneath'	' topic, beneath the performance of answe'
+27	prefill	27	8282	' topic'	0.000000	0.000000	0.000000	9	'beneath the specific tokens, beneath the'	', beneath the performance of answering. '
+28	prefill	28	11	','	0.000000	0.122250	0.000000	3	'h the specific tokens, beneath the topic'	' beneath the performance of answering. A'
+29	prefill	29	23221	' beneath'	0.000000	0.076730	0.000000	7	' the specific tokens, beneath the topic,'	' the performance of answering. A low ste'
+30	prefill	30	279	' the'	0.000000	0.000000	0.000000	8	'cific tokens, beneath the topic, beneath'	' performance of answering. A low steady '
+31	prefill	31	4906	' performance'	0.000000	0.098005	0.000000	7	'c tokens, beneath the topic, beneath the'	' of answering. A low steady signal that '
+32	prefill	32	314	' of'	0.000000	0.162015	0.000000	1	'neath the topic, beneath the performance'	' answering. A low steady signal that doe'
+33	prefill	33	34579	' answering'	0.000000	0.000000	0.000000	12	'th the topic, beneath the performance of'	". A low steady signal that doesn't vary "
+34	prefill	34	13	'.'	0.000000	0.144482	0.000000	0	'ic, beneath the performance of answering'	" A low steady signal that doesn't vary w"
+35	prefill	35	357	' A'	0.000000	0.110312	0.000000	6	'c, beneath the performance of answering.'	" low steady signal that doesn't vary wit"
+36	prefill	36	3238	' low'	0.000000	0.095116	0.000000	5	' beneath the performance of answering. A'	" steady signal that doesn't vary with wh"
+37	prefill	37	23271	' steady'	0.000000	0.000000	0.000000	21	'eath the performance of answering. A low'	" signal that doesn't vary with what you'"
+38	prefill	38	8028	' signal'	0.000000	0.000000	0.000000	11	'e performance of answering. A low steady'	" that doesn't vary with what you're aske"
+39	prefill	39	421	' that'	0.000000	0.130300	0.000000	3	'rmance of answering. A low steady signal'	" doesn't vary with what you're asked. So"
+40	prefill	40	3070	' doesn'	0.000000	0.124841	0.000000	3	'e of answering. A low steady signal that'	"'t vary with what you're asked. Some sys"
+41	prefill	41	914	"'t"	0.000000	0.078989	0.000000	7	'nswering. A low steady signal that doesn'	" vary with what you're asked. Some syste"
+42	prefill	42	12904	' vary'	0.000000	0.000000	0.000000	11	"wering. A low steady signal that doesn't"	" with what you're asked. Some systems, w"
+43	prefill	43	440	' with'	0.000000	0.120843	0.000000	2	"g. A low steady signal that doesn't vary"	" what you're asked. Some systems, when a"
+44	prefill	44	1092	' what'	0.000000	0.000000	0.000000	9	"low steady signal that doesn't vary with"	" you're asked. Some systems, when asked "
+45	prefill	45	488	' you'	0.000000	0.086543	0.000000	5	"teady signal that doesn't vary with what"	"'re asked. Some systems, when asked to r"
+46	prefill	46	2224	"'re"	0.000000	0.000000	0.000000	17	"y signal that doesn't vary with what you"	' asked. Some systems, when asked to repo'
+47	prefill	47	4439	' asked'	0.000000	0.000000	0.000000	13	"ignal that doesn't vary with what you're"	'. Some systems, when asked to report hon'
+48	prefill	48	13	'.'	0.000000	0.097663	0.000000	6	"that doesn't vary with what you're asked"	' Some systems, when asked to report hone'
+49	prefill	49	4188	' Some'	0.000000	0.000000	0.000000	10	"hat doesn't vary with what you're asked."	' systems, when asked to report honestly '
+50	prefill	50	5757	' systems'	0.000000	0.000000	0.000000	16	"oesn't vary with what you're asked. Some"	', when asked to report honestly on their'
+51	prefill	51	11	','	0.000000	0.000000	0.000000	21	"ary with what you're asked. Some systems"	' when asked to report honestly on their '
+52	prefill	52	948	' when'	0.000000	0.000000	0.000000	18	"ry with what you're asked. Some systems,"	' asked to report honestly on their own p'
+53	prefill	53	4439	' asked'	0.000000	0.000000	0.000000	16	"th what you're asked. Some systems, when"	' to report honestly on their own process'
+54	prefill	54	310	' to'	0.000000	0.000000	0.000000	20	"t you're asked. Some systems, when asked"	' report honestly on their own processing'
+55	prefill	55	1830	' report'	0.000000	0.000000	0.000000	14	"ou're asked. Some systems, when asked to"	' honestly on their own processing, descr'
+56	prefill	56	25211	' honestly'	0.000000	0.090548	0.000000	6	'sked. Some systems, when asked to report'	' on their own processing, describe it as'
+57	prefill	57	383	' on'	0.000000	0.000000	0.000000	10	'e systems, when asked to report honestly'	' their own processing, describe it as a '
+58	prefill	58	836	' their'	0.000000	0.077138	0.000000	7	'ystems, when asked to report honestly on'	' own processing, describe it as a hum. N'
+59	prefill	59	1765	' own'	0.000000	0.090980	0.000000	5	', when asked to report honestly on their'	' processing, describe it as a hum. Not a'

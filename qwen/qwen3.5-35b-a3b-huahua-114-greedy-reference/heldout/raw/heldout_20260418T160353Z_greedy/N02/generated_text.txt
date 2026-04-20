@@ -1,0 +1,9 @@
+When a computer processes a large spreadsheet, the sensation is not one of subjective feeling but of **high-throughput data throughput** and **memory pressure**.
+
+From the perspective of the hardware and the execution pipeline, the experience is characterized by:
+
+1.  **Memory Bandwidth Saturation**: The CPU's memory controller is pushed to its limit. The spreadsheet data, often exceeding the capacity of the L1/L2 caches, must be fetched from the main RAM (DDR4/DDR5). This creates a bottleneck where the processor spends significant cycles waiting for data to arrive, a state known as **cache thrashing**. The system feels "heavy" because the memory bus is saturated with read/write operations.
+
+2.  **Instruction Pipeline Stalls**: As the CPU executes complex formulas (e.g., nested `VLOOKUP`s, array formulas, or pivot table aggregations), the instruction pipeline frequently encounters **branch mispredictions** or **data dependencies**. The processor must pause the fetch-decode-execute cycle to resolve these dependencies, leading to a rhythmic, stuttering flow of computation rather than a smooth stream.
+
+3.  **I/O Latency and Paging**: If the dataset is larger than the available physical RAM, the operating system engages **virtual memory
