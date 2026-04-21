@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Analyze HauhauCS Strangeloop paired captures for Cameron-style paired metrics."""
+"""Analyze HauhauCS Strangeloop paired captures for paired-control metrics."""
 
 from __future__ import annotations
 
@@ -253,7 +253,7 @@ def format_report(results: list[dict], paired_summary: dict, pair_rows: list[dic
     lines.append(f"60-prompt paired routing experiment on **{model_label}** using 30 A/B strange-loop prompt pairs.")
     lines.append("All prompts use a **Cal-Manip-Cal** sandwich and **prefill-only** capture (`n_predict=0`).")
     lines.append("")
-    lines.append("This report is targeted at Cameron's 35B definiteness-control ask:")
+    lines.append("This report is targeted at the 35B definiteness-control ask:")
     lines.append("- Does the A=`this ...` vs B=`a ...` contrast show a paired effect on HauhauCS 35B?")
     lines.append("- Do all-token and last-token metrics tell the same story?")
     lines.append("- Does prompt-local KL-to-Cal1 provide a clearer separation than entropy alone?")

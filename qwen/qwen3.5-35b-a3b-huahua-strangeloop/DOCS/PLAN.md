@@ -2,7 +2,7 @@
 
 ## Goal
 
-Test whether the definiteness deictic (A="this" vs. B="a") in a self-referential Cal-Manip-Cal prompt produces a measurable routing difference in HauhauCS Qwen3.5-35B-A3B Q8_0. Addresses Cameron Berg's 35B definiteness-control question.
+Test whether the definiteness deictic (A="this" vs. B="a") in a self-referential Cal-Manip-Cal prompt produces a measurable routing difference in HauhauCS Qwen3.5-35B-A3B Q8_0. Addresses the 35B definiteness-control question.
 
 ## Model and Hardware
 

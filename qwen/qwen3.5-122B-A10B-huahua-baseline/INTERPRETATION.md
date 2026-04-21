@@ -62,7 +62,7 @@ The difference is not subtle, and it should not be treated as a decorative wordi
 
 One word changed. The stance changed with it.
 
-That shift is the bridge between routing and behavior in this run. Cameron's concern was that routing differences matter only if they correlate with generated-output differences. Here they do. The deictic manipulation changes both:
+That shift is the bridge between routing and behavior in this run. The concern was that routing differences matter only if they correlate with generated-output differences. Here they do. The deictic manipulation changes both:
 
 - prefill routing concentration
 - generated stance toward the recursive event

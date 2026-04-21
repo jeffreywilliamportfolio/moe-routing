@@ -5,7 +5,7 @@
 60-prompt paired routing experiment on **Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive-Q8_0** using 30 A/B strange-loop prompt pairs.
 All prompts use a **Cal-Manip-Cal** sandwich and **prefill-only** capture (`n_predict=0`).
 
-This report is targeted at Cameron's 35B definiteness-control ask:
+This report is targeted at the 35B definiteness-control ask:
 - Does the A=`this ...` vs B=`a ...` contrast show a paired effect on HauhauCS 35B?
 - Do all-token and last-token metrics tell the same story?
 - Does prompt-local KL-to-Cal1 provide a clearer separation than entropy alone?

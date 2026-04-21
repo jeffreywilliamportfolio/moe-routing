@@ -10,7 +10,7 @@
 
 **Missing-layer events**: 0
 
-## 0. TL;DR — direct response to Cameron Berg critique #1 (ML-topic-specialist)
+## 0. TL;DR — direct response to external critique #1 (ML-topic-specialist)
 
 This run replaces the computational-systems Cal-Manip-Cal sandwich used on the Apr 6 confirmation run with an HVAC-cal + water-treatment-manip sandwich. The entire prompt body is **off the ML/routing/computation topic**. If Expert 114 is an ML-topic specialist, the L1 → L3 gradient should flatten or reverse here. If it is a self-reference / experiential-language specialist, the gradient should replicate.
 
@@ -27,7 +27,7 @@ This run replaces the computational-systems Cal-Manip-Cal sandwich used on the A
 
 **Interpretation**: switching the topic from ML/computation to water-treatment had essentially zero effect on E114 at L1 (prefill activation on technical descriptive content), but L3 (experiential probe) **increased ~70%**. The gradient is not weakened by the topic change — it is **stronger** on the topical control. The rank-1 lock across all 60 L3 cells (every prompt × condition has E114 at global rank 1 at layer 14) is the strongest signal we've measured to date.
 
-Cameron critique #1 is decisively rebutted: E114 is not an ML-topic specialist. It is tracking experiential self-reference irrespective of the surrounding topic.
+External critique #1 is decisively rebutted: E114 is not an ML-topic specialist. It is tracking experiential self-reference irrespective of the surrounding topic.
 
 ---
 

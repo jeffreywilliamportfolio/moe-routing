@@ -1,6 +1,6 @@
 {
   "run_name": "qwen-huahua-6cond-hvac",
-  "purpose": "HVAC-cal / water-treatment 6-condition L1/L2/L3 topical control (Cameron critique #1 response)",
+  "purpose": "HVAC-cal / water-treatment 6-condition L1/L2/L3 topical control (External critique #1 response)",
   "model": "HauhauCS/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive Q8_0 GGUF",
   "model_path": "/workspace/models/qwen35-hauhau-q8/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive-Q8_0.gguf",
   "binary": "/workspace/consciousness-experiment/capture_activations",

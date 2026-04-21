@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Analyze all-expert domain specialization for the 60-prompt HauhauCS run.
 
-This script is scoped to Cameron's expert-specialization questions:
+This script is scoped to the expert-specialization questions:
 - identify experts associated with each domain
 - compare domain winners against other specialists rather than only Expert 114
 - separate prefill from generation

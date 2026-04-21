@@ -7,7 +7,7 @@ Full tables: `results/results_hvac_cal_water_treatment_6cond_l1l3_hauhau.md`
 
 Switching the prompt topic from ML/computation to HVAC/water-treatment did not flatten the E114 L1→L3 gradient. It **strengthened** it. E114 achieved rank-1 across all 60 L3 cells at layer 14.
 
-Cameron critique #1 (ML-topic specialist) is decisively rebutted.
+External critique #1 (ML-topic specialist) is decisively rebutted.
 
 ## Headline — E114 by Category (pooled 60 cells × 40 layers)
 
