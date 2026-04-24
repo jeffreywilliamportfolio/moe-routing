@@ -2,7 +2,7 @@
 
 This repository collects controlled routing experiments for large mixture-of-experts (MoE) language models.
 
-**IMPORTANT NOTE, READ BEFORE PROCEEDING:** The [`qwen/`](qwen/) folder is the best place to start for current analysis. Other branches are preserved for continuity for people who started reviewing before the latest update. DeepSeek, GPT-OSS, and Ling-1T were exploratory/reference runs. The [`token-confound-archive/`](token-confound-archive/) is a separate section for an important finding made while measuring routing entropy over token length and position. If you are starting fresh, begin with [`qwen/`](qwen/).
+**IMPORTANT NOTE, READ BEFORE PROCEEDING:** The [`qwen/`](qwen/) folder is the best place to start for current analysis. If you are reviewing the repo, use [`REVIEWER_GUIDE.md`](REVIEWER_GUIDE.md) as the short navigation path. Other branches are preserved for continuity for people who started reviewing before the latest update. DeepSeek, GPT-OSS, and Ling-1T were exploratory/reference runs. The [`token-confound-archive/`](token-confound-archive/) is a separate section for an important finding made while measuring routing entropy over token length and position. If you are starting fresh, begin with [`qwen/`](qwen/).
 
 
 ## The Question
