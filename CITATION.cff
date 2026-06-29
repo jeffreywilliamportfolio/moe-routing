@@ -1,0 +1,92 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "A Single-Expert Readout of a Reflective Worldview Register in a Mixture-of-Experts Language Model"
+abstract: >-
+  Mixture-of-experts (MoE) routing emits a discrete, per-token record of which
+  experts fire, a signal unusually legible for interpretability, yet single experts
+  are rarely tied to a specific functional role. We study a reflective worldview
+  register: generated language that sustains an interpretive stance toward meaning,
+  belief, value, existence, or the interiority of a target. Examination is the
+  process we use to elicit this stance; the target can be the model, another
+  entity, a natural object, or an abstract subject. In Qwen3.5-35B-A3B and the refusal-reduced
+  HauhauCS-Aggressive fine-tune, we characterize one routed expert, Expert 114 at
+  layer 14, as a linear readout of this register, and bound what it does. Across
+  held-out, bottom-up, and cross-model tests we show that (1) its recovered router
+  direction separates reflective-worldview-register generations from lexically
+  matched controls with separated ranges (Cohen's d = 3.88); (2) a blind,
+  prompt-independent auto-interpreter recovers the same register at AUC 0.94,
+  broadening it beyond self-reference to abstract examination and
+  philosophical-worldview language; (3) the detector is a readout with weak,
+  conditional control: residual injection induces the register, gate down-bias
+  leaves it intact, and the readout is stable across affirmative and skeptical
+  interiority verdicts; and (4) the role is model-specific: index 114 is local to
+  Qwen3.5-35B-A3B. Model-directed prompts served the discovery and dissociation
+  stages; the coherent-window ladder measures target-directed vantage prompts
+  over rock, river, tree, thermostat, cat, person, all-holding, and God, with a
+  later AI-hidden-state follow-up near the low end of that ladder. We release the
+  prompts, scripts, and provenance under the MIT license.
+type: dataset
+authors:
+  - family-names: Shorthill
+    given-names: "Jeffrey W."
+    affiliation: "Independent researcher"
+    email: jws299792@icloud.com
+version: "1.2.5"
+date-released: "2026-06-29"
+license: MIT
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.20709736"
+    description: "Concept DOI (all versions; cite this)"
+  - type: doi
+    value: "10.5281/zenodo.21048828"
+    description: "Version 1.2.5 (current deposited version)"
+  - type: doi
+    value: "10.5281/zenodo.21048676"
+    description: "Version 1.2.4 (prior deposited version)"
+  - type: doi
+    value: "10.5281/zenodo.21042937"
+    description: "Version 1.2.3 (prior deposited version)"
+  - type: doi
+    value: "10.5281/zenodo.21042938"
+    description: "Version 1.2.3 anonymous sharing copy"
+  - type: doi
+    value: "10.5281/zenodo.21041914"
+    description: "Version 1.2.2 (prior deposited version)"
+  - type: doi
+    value: "10.5281/zenodo.21042440"
+    description: "Version 1.2.2 anonymous sharing copy"
+  - type: doi
+    value: "10.5281/zenodo.21041653"
+    description: "Version 1.2.1 (prior deposited version)"
+  - type: doi
+    value: "10.5281/zenodo.21040909"
+    description: "Version 1.2.0 (legacy sanitized deposited version)"
+  - type: doi
+    value: "10.5281/zenodo.21015922"
+    description: "Version 1.1.0 (prior deposited version)"
+  - type: doi
+    value: "10.5281/zenodo.20785773"
+    description: "Version 1.0.1 (prior deposited version)"
+url: "https://doi.org/10.5281/zenodo.20709736"
+keywords:
+  - mixture-of-experts
+  - mechanistic interpretability
+  - expert routing
+  - sparse autoencoders
+  - reflective worldview register
+  - self-report
+  - first-person language
+  - activation steering
+  - cross-model transfer
+preferred-citation:
+  type: article
+  title: "A Single-Expert Readout of a Reflective Worldview Register in a Mixture-of-Experts Language Model"
+  authors:
+    - family-names: Shorthill
+      given-names: "Jeffrey W."
+      affiliation: "Independent researcher"
+  year: 2026
+  month: 6
+  doi: "10.5281/zenodo.20709736"
+  notes: "Preprint, version 1.2.5. Cite via the concept DOI, which resolves to the latest deposited version. Peer review pending."
